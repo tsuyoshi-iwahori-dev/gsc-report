@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>クルーズプラネット GSC週次レポート 2026-06-04〜2026-06-10</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#1a1a1a;background:#f5f5f3;}
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px;}
+.header{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;}
+.header-title{font-size:15px;font-weight:500;}
+.header-sub{font-size:12px;color:#888;margin-top:4px;}
+.badge{font-size:11px;padding:3px 10px;border-radius:20px;background:#e1f5ee;color:#0f6e56;}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
+.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
+.section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
+.insight:last-child{margin-bottom:0;}
+.insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
+.insight-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+.insight-title{font-size:12px;font-weight:500;margin-bottom:3px;}
+.insight.red .insight-title{color:#a32d2d;}.insight.amber .insight-title{color:#854f0b;}.insight.green .insight-title{color:#0f6e56;}
+.insight-desc{font-size:11px;color:#555;line-height:1.6;}
+.insight-action{font-size:11px;margin-top:5px;padding:4px 8px;background:rgba(0,0,0,0.05);border-radius:4px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{text-align:left;padding:7px 8px;color:#888;border-bottom:0.5px solid #e0e0dc;font-weight:400;}
+td{padding:7px 8px;border-bottom:0.5px solid #e0e0dc;}
+tr:last-child td{border-bottom:none;}
+.url{color:#185fa5;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;border:0.5px solid #e0e0dc;}
+.pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
+.footer{text-align:center;font-size:11px;color:#aaa;padding:16px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+    <div>
+        <div class="header-title">クルーズプラネット — GSC週次レポート</div>
+        <div class="header-sub">対象期間：2026-06-04〜2026-06-10　／　生成日時：2026-06-16 13:36</div>
+    </div>
+    <span class="badge">自動生成</span>
+</div>
+
+<div class="kpi-grid">
+    <div class="kpi">
+        <div class="kpi-label">クリック数</div>
+        <div class="kpi-value">17,875</div>
+        <div class="kpi-diff"><span class="up">▲ 1.9%（前週 17,544）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">表示回数</div>
+        <div class="kpi-value">384,098</div>
+        <div class="kpi-diff"><span class="up">▲ 7.5%（前週 357,152）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">CTR</div>
+        <div class="kpi-value">4.65%</div>
+        <div class="kpi-diff"><span class="down">▼ 5.3%（前週 4.91）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">平均順位</div>
+        <div class="kpi-value">7.7位</div>
+        <div class="kpi-diff"><span class="down">▼ 0.9位悪化（前週 6.8位）</span></div>
+    </div>
+</div>
+
+<div class="chart-row">
+    <div class="chart-box">
+        <div class="section-title">クリック数推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+        </div>
+    </div>
+    <div class="chart-box">
+        <div class="section-title">表示回数推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+        </div>
+    </div>
+    <div class="chart-box">
+        <div class="section-title">平均順位推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-title">SEO分析コメント（自動検出）</div>
+    
+        <div class="insight amber">
+            <div class="insight-icon">!</div>
+            <div class="insight-body">
+                <div class="insight-title">タイトル改善でCTRを伸ばせるページが16件あります</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://www.cruiseplanet.co.jp/special?id=33（順位6.1位・表示25,055回・CTR1.72%）<br>  - https://www.cruiseplanet.co.jp/month/（順位7.3位・表示6,504回・CTR2.84%）<br>  - https://www.cruiseplanet.co.jp/area?area=round_the_world（順位5.7位・表示6,058回・CTR2.87%）<br>  - https://www.cruiseplanet.co.jp/type?type=foreign_ship（順位5.2位・表示5,179回・CTR2.66%）<br>  - https://www.cruiseplanet.co.jp/ship?ship=msc（順位6.4位・表示4,452回・CTR2.25%）</div>
+                <div class="insight-action">→ タイトルに数字・具体性・ベネフィットを追加してCTRを改善する。</div>
+            </div>
+        </div>
+</div>
+
+
+        <div class="section" style="margin-bottom:16px;">
+            <div class="section-title">クエリ比較（今週 vs 前週 上位20件）</div>
+            <div style="overflow-x:auto;">
+                <table style="min-width:600px;">
+                    <thead>
+                        <tr>
+                            <th>クエリ</th>
+                            <th>今週CL</th><th>前週CL</th>
+                            <th>今週順位</th><th>前週順位</th>
+                            <th>今週CTR</th><th>前週CTR</th>
+                            <th>判定</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            <tr>
+                <td>クルーズプラネット</td>
+                <td>1130</td><td>1555</td>
+                <td>1.0</td><td>1.0</td>
+                <td>52.48%</td><td>72.19%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>mscベリッシマ</td>
+                <td>604</td><td>722</td>
+                <td>2.3</td><td>2.3</td>
+                <td>12.64%</td><td>13.71%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>ベリッシマ</td>
+                <td>403</td><td>379</td>
+                <td>2.4</td><td>2.2</td>
+                <td>14.85%</td><td>12.98%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>クルーズ船</td>
+                <td>269</td><td>158</td>
+                <td>3.3</td><td>5.2</td>
+                <td>5.6%</td><td>3.58%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>クルーズ</td>
+                <td>218</td><td>239</td>
+                <td>2.9</td><td>3.4</td>
+                <td>7.64%</td><td>8.28%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>ベリッシマ クルーズ</td>
+                <td>175</td><td>173</td>
+                <td>1.9</td><td>1.8</td>
+                <td>15.36%</td><td>14.11%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>クルーズ旅行</td>
+                <td>167</td><td>148</td>
+                <td>3.4</td><td>4.9</td>
+                <td>6.87%</td><td>5.11%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>ダイヤモンドプリンセス</td>
+                <td>108</td><td>115</td>
+                <td>6.2</td><td>5.8</td>
+                <td>1.05%</td><td>1.49%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>ベリッシマ 2026</td>
+                <td>105</td><td>137</td>
+                <td>1.7</td><td>1.6</td>
+                <td>15.37%</td><td>15.19%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>セレブリティミレニアム</td>
+                <td>98</td><td>-</td>
+                <td>2.4</td><td>-</td>
+                <td>13.01%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>コスタセレーナ</td>
+                <td>78</td><td>107</td>
+                <td>2.3</td><td>2.7</td>
+                <td>5.42%</td><td>9.08%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>三井オーシャンフジ</td>
+                <td>77</td><td>124</td>
+                <td>2.8</td><td>3.4</td>
+                <td>2.97%</td><td>3.61%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>台湾 クルーズ船</td>
+                <td>73</td><td>-</td>
+                <td>1.6</td><td>-</td>
+                <td>23.17%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>クルーズ船 国内</td>
+                <td>72</td><td>80</td>
+                <td>2.9</td><td>3.0</td>
+                <td>12.61%</td><td>10.91%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>台湾クルーズ 2026</td>
+                <td>72</td><td>-</td>
+                <td>1.8</td><td>-</td>
+                <td>19.41%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>台湾 クルーズ</td>
+                <td>71</td><td>-</td>
+                <td>1.8</td><td>-</td>
+                <td>23.75%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>msc ベリッシマ</td>
+                <td>61</td><td>69</td>
+                <td>2.8</td><td>3.2</td>
+                <td>12.87%</td><td>11.0%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>船旅 国内</td>
+                <td>53</td><td>-</td>
+                <td>3.7</td><td>-</td>
+                <td>14.25%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>世界一周クルーズ</td>
+                <td>51</td><td>71</td>
+                <td>3.8</td><td>4.0</td>
+                <td>3.24%</td><td>4.26%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>三井オーシャンサクラ</td>
+                <td>51</td><td>73</td>
+                <td>2.9</td><td>2.9</td>
+                <td>3.6%</td><td>5.39%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="section" style="margin-bottom:16px;">
+            <div class="section-title">🆕 新出現クエリ（5件）</div>
+            <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>セレブリティミレニアム</td>
+                <td>98</td>
+                <td>753</td>
+                <td>13.01%</td>
+                <td>2.4位</td>
+            </tr>
+            <tr>
+                <td>台湾 クルーズ船</td>
+                <td>73</td>
+                <td>315</td>
+                <td>23.17%</td>
+                <td>1.6位</td>
+            </tr>
+            <tr>
+                <td>台湾クルーズ 2026</td>
+                <td>72</td>
+                <td>371</td>
+                <td>19.41%</td>
+                <td>1.8位</td>
+            </tr>
+            <tr>
+                <td>台湾 クルーズ</td>
+                <td>71</td>
+                <td>299</td>
+                <td>23.75%</td>
+                <td>1.8位</td>
+            </tr>
+            <tr>
+                <td>船旅 国内</td>
+                <td>53</td>
+                <td>372</td>
+                <td>14.25%</td>
+                <td>3.7位</td>
+            </tr></tbody></table>
+        </div>
+        
+        <div class="section" style="margin-bottom:16px;">
+            <div class="section-title">❌ 消滅クエリ（5件）</div>
+            <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>地中海クルーズ</td>
+                <td>70</td>
+                <td>758</td>
+                <td>9.23%</td>
+                <td>1.8位</td>
+            </tr>
+            <tr>
+                <td>コスタクルーズ</td>
+                <td>57</td>
+                <td>246</td>
+                <td>23.17%</td>
+                <td>1.5位</td>
+            </tr>
+            <tr>
+                <td>コスタセレーナ 2026</td>
+                <td>55</td>
+                <td>365</td>
+                <td>15.07%</td>
+                <td>2.2位</td>
+            </tr>
+            <tr>
+                <td>mscベリッシマ 2026</td>
+                <td>52</td>
+                <td>377</td>
+                <td>13.79%</td>
+                <td>1.8位</td>
+            </tr>
+            <tr>
+                <td>国内クルーズ</td>
+                <td>47</td>
+                <td>212</td>
+                <td>22.17%</td>
+                <td>3.6位</td>
+            </tr></tbody></table>
+        </div>
+        
+
+<div class="section">
+    <div class="section-title">週次サマリー比較</div>
+    <table>
+        <thead>
+            <tr><th>期間</th><th>クリック数</th><th>表示回数</th><th>CTR</th><th>平均順位</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>今週（2026-06-04〜2026-06-10）</td>
+            <td>17,875</td>
+            <td>384,098</td>
+            <td>4.65%</td>
+            <td>7.7位</td>
+        </tr>
+        <tr>
+            <td>1週前（2026-05-28〜2026-06-03）</td>
+            <td>17,544</td>
+            <td>357,152</td>
+            <td>4.91%</td>
+            <td>6.8位</td>
+        </tr>
+        <tr>
+            <td>2週前（2026-05-21〜2026-05-27）</td>
+            <td>19,301</td>
+            <td>397,804</td>
+            <td>4.85%</td>
+            <td>6.4位</td>
+        </tr>
+        <tr>
+            <td>3週前（2026-05-14〜2026-05-20）</td>
+            <td>20,299</td>
+            <td>410,908</td>
+            <td>4.94%</td>
+            <td>6.7位</td>
+        </tr>
+        <tr>
+            <td>4週前（2026-05-07〜2026-05-13）</td>
+            <td>25,378</td>
+            <td>531,694</td>
+            <td>4.77%</td>
+            <td>7.0位</td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="section">
+    <div class="section-title">クリック上位ページ（先週 top20）</div>
+    <table>
+        <thead>
+            <tr><th>ページURL</th><th>クリック</th><th>表示回数</th><th>CTR</th><th>順位</th><th>判定</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/special/msc_bellissima.html">cruiseplanet.co.jp/special/msc_bellissima.html</td>
+            <td>2,251</td>
+            <td>21,410</td>
+            <td>10.51%</td>
+            <td>3.1位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/">cruiseplanet.co.jp/</td>
+            <td>2,222</td>
+            <td>33,077</td>
+            <td>6.72%</td>
+            <td>5.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/special?id=87">cruiseplanet.co.jp/special?id=87</td>
+            <td>667</td>
+            <td>6,110</td>
+            <td>10.92%</td>
+            <td>3.4位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/special?id=2">cruiseplanet.co.jp/special?id=2</td>
+            <td>441</td>
+            <td>3,950</td>
+            <td>11.16%</td>
+            <td>5.9位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/special?id=33">cruiseplanet.co.jp/special?id=33</td>
+            <td>430</td>
+            <td>25,055</td>
+            <td>1.72%</td>
+            <td>6.1位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/area?area=domestic">cruiseplanet.co.jp/area?area=domestic</td>
+            <td>354</td>
+            <td>3,290</td>
+            <td>10.76%</td>
+            <td>4.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/special?id=71">cruiseplanet.co.jp/special?id=71</td>
+            <td>287</td>
+            <td>2,478</td>
+            <td>11.58%</td>
+            <td>3.5位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/ships/cose.html">cruiseplanet.co.jp/ships/cose.html</td>
+            <td>280</td>
+            <td>4,636</td>
+            <td>6.04%</td>
+            <td>3.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/tour?id=21497">cruiseplanet.co.jp/tour?id=21497</td>
+            <td>238</td>
+            <td>1,591</td>
+            <td>14.96%</td>
+            <td>3.9位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/tour?id=20700">cruiseplanet.co.jp/tour?id=20700</td>
+            <td>222</td>
+            <td>3,534</td>
+            <td>6.28%</td>
+            <td>3.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/special?id=81&start_area=t2&v=&start_place=">cruiseplanet.co.jp/special?id=81&start_area=t2&v=&start_place=</td>
+            <td>199</td>
+            <td>2,190</td>
+            <td>9.09%</td>
+            <td>6.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/special/mitsui_oceanfuji.html">cruiseplanet.co.jp/special/mitsui_oceanfuji.html</td>
+            <td>191</td>
+            <td>7,665</td>
+            <td>2.49%</td>
+            <td>3.9位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/month/">cruiseplanet.co.jp/month/</td>
+            <td>185</td>
+            <td>6,504</td>
+            <td>2.84%</td>
+            <td>7.3位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/tour?id=20948">cruiseplanet.co.jp/tour?id=20948</td>
+            <td>185</td>
+            <td>2,347</td>
+            <td>7.88%</td>
+            <td>4.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/pdf/hotel/newotani_tokyo_floormap.pdf">cruiseplanet.co.jp/pdf/hotel/newotani_tokyo_floormap.pdf</td>
+            <td>184</td>
+            <td>4,419</td>
+            <td>4.16%</td>
+            <td>7.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/area?area=round_the_world">cruiseplanet.co.jp/area?area=round_the_world</td>
+            <td>174</td>
+            <td>6,058</td>
+            <td>2.87%</td>
+            <td>5.7位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/recture/cruisefestival_tyo2026.html">cruiseplanet.co.jp/recture/cruisefestival_tyo2026.html</td>
+            <td>170</td>
+            <td>362</td>
+            <td>46.96%</td>
+            <td>2.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/special?id=91&start_area=t4">cruiseplanet.co.jp/special?id=91&start_area=t4</td>
+            <td>161</td>
+            <td>1,434</td>
+            <td>11.23%</td>
+            <td>6.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/tour?id=19237">cruiseplanet.co.jp/tour?id=19237</td>
+            <td>145</td>
+            <td>2,354</td>
+            <td>6.16%</td>
+            <td>5.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://www.cruiseplanet.co.jp/tour?id=21941">cruiseplanet.co.jp/tour?id=21941</td>
+            <td>143</td>
+            <td>1,570</td>
+            <td>9.11%</td>
+            <td>4.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="footer">自動生成レポート — GSC Weekly Report</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const labels = ["今週", "1週前", "2週前", "3週前", "4週前"];
+const opts = {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{font:{size:10}}},y:{ticks:{font:{size:10}}}}};
+new Chart(document.getElementById('c1'),{type:'line',data:{labels,datasets:[{data:[17875, 17544, 19301, 20299, 25378],borderColor:'#185fa5',backgroundColor:'rgba(24,95,165,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#185fa5'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false}}}});
+new Chart(document.getElementById('c2'),{type:'line',data:{labels,datasets:[{data:[384098, 357152, 397804, 410908, 531694],borderColor:'#1d9e75',backgroundColor:'rgba(29,158,117,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#1d9e75'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:true,ticks:{...opts.scales.y.ticks,callback:v=>(v/1000).toFixed(0)+'K'}}}}});
+new Chart(document.getElementById('c3'),{type:'line',data:{labels,datasets:[{data:[7.7, 6.8, 6.4, 6.7, 7.0],borderColor:'#854f0b',backgroundColor:'rgba(133,79,11,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#854f0b'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false,reverse:true}}}});
+</script>
+</body>
+</html>
