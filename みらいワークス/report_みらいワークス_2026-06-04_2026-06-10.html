@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みらいワークス GSC週次レポート 2026-06-04〜2026-06-10</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#1a1a1a;background:#f5f5f3;}
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px;}
+.header{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;}
+.header-title{font-size:15px;font-weight:500;}
+.header-sub{font-size:12px;color:#888;margin-top:4px;}
+.badge{font-size:11px;padding:3px 10px;border-radius:20px;background:#e1f5ee;color:#0f6e56;}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
+.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
+.section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
+.insight:last-child{margin-bottom:0;}
+.insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
+.insight-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+.insight-title{font-size:12px;font-weight:500;margin-bottom:3px;}
+.insight.red .insight-title{color:#a32d2d;}.insight.amber .insight-title{color:#854f0b;}.insight.green .insight-title{color:#0f6e56;}
+.insight-desc{font-size:11px;color:#555;line-height:1.6;}
+.insight-action{font-size:11px;margin-top:5px;padding:4px 8px;background:rgba(0,0,0,0.05);border-radius:4px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{text-align:left;padding:7px 8px;color:#888;border-bottom:0.5px solid #e0e0dc;font-weight:400;}
+td{padding:7px 8px;border-bottom:0.5px solid #e0e0dc;}
+tr:last-child td{border-bottom:none;}
+.url{color:#185fa5;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;}
+.pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
+.footer{text-align:center;font-size:11px;color:#aaa;padding:16px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+    <div>
+        <div class="header-title">みらいワークス — GSC週次レポート</div>
+        <div class="header-sub">対象期間：2026-06-04〜2026-06-10　／　生成日時：2026-06-16 12:28</div>
+    </div>
+    <span class="badge">自動生成</span>
+</div>
+
+<div class="kpi-grid">
+    <div class="kpi">
+        <div class="kpi-label">クリック数</div>
+        <div class="kpi-value">8,823</div>
+        <div class="kpi-diff"><span class="up">▲ 1.5%（前週 8,694）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">表示回数</div>
+        <div class="kpi-value">509,826</div>
+        <div class="kpi-diff"><span class="up">▲ 3.5%（前週 492,721）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">CTR</div>
+        <div class="kpi-value">1.73%</div>
+        <div class="kpi-diff"><span class="down">▼ 1.7%（前週 1.76）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">平均順位</div>
+        <div class="kpi-value">10.0位</div>
+        <div class="kpi-diff"><span class="up">▲ 0.2位改善（前週 10.2位）</span></div>
+    </div>
+</div>
+
+<div class="chart-row">
+    <div class="chart-box">
+        <div class="section-title">クリック数推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+        </div>
+    </div>
+    <div class="chart-box">
+        <div class="section-title">表示回数推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+        </div>
+    </div>
+    <div class="chart-box">
+        <div class="section-title">平均順位推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-title">SEO分析コメント（自動検出）</div>
+    
+        <div class="insight red">
+            <div class="insight-icon">⚠</div>
+            <div class="insight-body">
+                <div class="insight-title">意図ミスマッチ候補ページ 1件を検出</div>
+                <div class="insight-desc">表示回数1万超・CTR0.1%未満のページ：<br>  - https://mirai-works.co.jp/media-career/column/recruit-agent/（表示49,817回・CTR0.09%）</div>
+                <div class="insight-action">→ 対象ページのタイトル・メタディスクリプションをクエリ意図に合わせて修正する。</div>
+            </div>
+        </div>
+        <div class="insight amber">
+            <div class="insight-icon">!</div>
+            <div class="insight-body">
+                <div class="insight-title">タイトル改善でCTRを伸ばせるページが42件あります</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://mirai-works.co.jp/media-career/column/recruit-agent/（順位6.7位・表示49,817回・CTR0.09%）<br>  - https://mirai-works.co.jp/uragawa/team-lab/4225/（順位7.2位・表示22,422回・CTR0.63%）<br>  - https://mirai-works.co.jp/media-career/column/tenshoku-site/（順位11.2位・表示12,487回・CTR1.08%）<br>  - https://mirai-works.co.jp/consulnext/column/7750/（順位8.7位・表示12,162回・CTR0.18%）<br>  - https://mirai-works.co.jp/consulnext/column/7229/（順位7.4位・表示10,856回・CTR0.23%）</div>
+                <div class="insight-action">→ タイトルに数字・具体性・ベネフィットを追加してCTRを改善する。</div>
+            </div>
+        </div>
+        <div class="insight amber">
+            <div class="insight-icon">!</div>
+            <div class="insight-body">
+                <div class="insight-title">20位以下で表示されている重要ページが2件</div>
+                <div class="insight-desc">表示回数が多いにも関わらず20位以下のページ（上位5件）：<br>  - https://mirai-works.co.jp/consulnext/column/6016/（順位22.1位・表示945回）<br>  - https://mirai-works.co.jp/uragawa/（順位30.6位・表示591回）</div>
+                <div class="insight-action">→ 競合ページとのコンテンツ差・被リンク差を確認し、強化施策を検討する。</div>
+            </div>
+        </div>
+</div>
+
+<div class="section">
+    <div class="section-title">週次サマリー比較</div>
+    <table>
+        <thead>
+            <tr><th>期間</th><th>クリック数</th><th>表示回数</th><th>CTR</th><th>平均順位</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>今週（2026-06-04〜2026-06-10）</td>
+            <td>8,823</td>
+            <td>509,826</td>
+            <td>1.73%</td>
+            <td>10.0位</td>
+        </tr>
+        <tr>
+            <td>1週前（2026-05-28〜2026-06-03）</td>
+            <td>8,694</td>
+            <td>492,721</td>
+            <td>1.76%</td>
+            <td>10.2位</td>
+        </tr>
+        <tr>
+            <td>2週前（2026-05-21〜2026-05-27）</td>
+            <td>9,072</td>
+            <td>532,008</td>
+            <td>1.71%</td>
+            <td>10.2位</td>
+        </tr>
+        <tr>
+            <td>3週前（2026-05-14〜2026-05-20）</td>
+            <td>9,087</td>
+            <td>496,456</td>
+            <td>1.83%</td>
+            <td>10.0位</td>
+        </tr>
+        <tr>
+            <td>4週前（2026-05-07〜2026-05-13）</td>
+            <td>9,245</td>
+            <td>523,845</td>
+            <td>1.76%</td>
+            <td>10.3位</td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="section">
+    <div class="section-title">クリック上位ページ（先週 top20）</div>
+    <table>
+        <thead>
+            <tr><th>ページURL</th><th>クリック</th><th>表示回数</th><th>CTR</th><th>順位</th><th>判定</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/">mirai-works.co.jp/</td>
+            <td>883</td>
+            <td>3,421</td>
+            <td>25.81%</td>
+            <td>3.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/1137/">mirai-works.co.jp/consulnext/column/1137/</td>
+            <td>405</td>
+            <td>9,167</td>
+            <td>4.42%</td>
+            <td>8.5位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/6767/">mirai-works.co.jp/consulnext/column/6767/</td>
+            <td>368</td>
+            <td>10,889</td>
+            <td>3.38%</td>
+            <td>7.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/corporate/overview/">mirai-works.co.jp/corporate/overview/</td>
+            <td>366</td>
+            <td>3,210</td>
+            <td>11.4%</td>
+            <td>2.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/subordinate_quitting/">mirai-works.co.jp/business-pro/business-column/subordinate_quitting/</td>
+            <td>267</td>
+            <td>4,145</td>
+            <td>6.44%</td>
+            <td>8.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/subcontracting_directions/">mirai-works.co.jp/business-pro/business-column/subcontracting_directions/</td>
+            <td>249</td>
+            <td>6,113</td>
+            <td>4.07%</td>
+            <td>5.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/usj-marketing-strategy">mirai-works.co.jp/business-pro/business-column/usj-marketing-strategy</td>
+            <td>145</td>
+            <td>4,927</td>
+            <td>2.94%</td>
+            <td>4.6位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/uragawa/team-lab/4225/">mirai-works.co.jp/uragawa/team-lab/4225/</td>
+            <td>141</td>
+            <td>22,422</td>
+            <td>0.63%</td>
+            <td>7.2位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/media-career/column/tenshoku-site/">mirai-works.co.jp/media-career/column/tenshoku-site/</td>
+            <td>135</td>
+            <td>12,487</td>
+            <td>1.08%</td>
+            <td>11.2位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/project_organizationchart/">mirai-works.co.jp/business-pro/business-column/project_organizationchart/</td>
+            <td>105</td>
+            <td>2,724</td>
+            <td>3.85%</td>
+            <td>3.9位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/6617/">mirai-works.co.jp/consulnext/column/6617/</td>
+            <td>90</td>
+            <td>2,993</td>
+            <td>3.01%</td>
+            <td>3.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/uragawa/award/awwwards/">mirai-works.co.jp/uragawa/award/awwwards/</td>
+            <td>88</td>
+            <td>2,099</td>
+            <td>4.19%</td>
+            <td>6.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/1352/">mirai-works.co.jp/consulnext/column/1352/</td>
+            <td>85</td>
+            <td>2,242</td>
+            <td>3.79%</td>
+            <td>7.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/uragawa/">mirai-works.co.jp/uragawa/</td>
+            <td>82</td>
+            <td>591</td>
+            <td>13.87%</td>
+            <td>30.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/4695/">mirai-works.co.jp/consulnext/column/4695/</td>
+            <td>81</td>
+            <td>1,091</td>
+            <td>7.42%</td>
+            <td>5.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/1448/">mirai-works.co.jp/consulnext/column/1448/</td>
+            <td>71</td>
+            <td>3,528</td>
+            <td>2.01%</td>
+            <td>9.3位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/industry/bridge-one/">mirai-works.co.jp/consulnext/industry/bridge-one/</td>
+            <td>71</td>
+            <td>1,363</td>
+            <td>5.21%</td>
+            <td>6.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/1337/">mirai-works.co.jp/consulnext/column/1337/</td>
+            <td>68</td>
+            <td>1,431</td>
+            <td>4.75%</td>
+            <td>3.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/1642/">mirai-works.co.jp/consulnext/column/1642/</td>
+            <td>64</td>
+            <td>1,734</td>
+            <td>3.69%</td>
+            <td>4.9位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/6200/">mirai-works.co.jp/consulnext/column/6200/</td>
+            <td>63</td>
+            <td>2,125</td>
+            <td>2.96%</td>
+            <td>9.3位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="footer">自動生成レポート — GSC Weekly Report</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const labels = ["今週", "1週前", "2週前", "3週前", "4週前"];
+const opts = {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{font:{size:10}}},y:{ticks:{font:{size:10}}}}};
+new Chart(document.getElementById('c1'),{type:'line',data:{labels,datasets:[{data:[8823, 8694, 9072, 9087, 9245],borderColor:'#185fa5',backgroundColor:'rgba(24,95,165,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#185fa5'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false}}}});
+new Chart(document.getElementById('c2'),{type:'line',data:{labels,datasets:[{data:[509826, 492721, 532008, 496456, 523845],borderColor:'#1d9e75',backgroundColor:'rgba(29,158,117,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#1d9e75'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:true,ticks:{...opts.scales.y.ticks,callback:v=>(v/1000).toFixed(0)+'K'}}}}});
+new Chart(document.getElementById('c3'),{type:'line',data:{labels,datasets:[{data:[10.0, 10.2, 10.2, 10.0, 10.3],borderColor:'#854f0b',backgroundColor:'rgba(133,79,11,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#854f0b'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false,reverse:true}}}});
+</script>
+</body>
+</html>
