@@ -19,8 +19,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client gspread requests PyGithub anthropic
+        run: pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client gspread requests PyGithub anthropic
 
       - name: Create token files from secrets
         run: |
@@ -33,14 +32,7 @@ jobs:
           echo '${{ secrets.CREDENTIALS_JSON }}' > credentials.json
 
       - name: Run GSC report
-        run: |
-          python main.py
+        run: python main.py
         env:
           PYTHONIOENCODING: utf-8
           PYTHONUTF8: '1'
-
-**④ 「Commit new file」をクリック**
-
----
-
-できましたか？
