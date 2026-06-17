@@ -1,0 +1,46 @@
+name: Weekly GSC Report
+
+on:
+  schedule:
+    - cron: '0 23 * * 0'
+  workflow_dispatch:
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client gspread requests PyGithub anthropic
+
+      - name: Create token files from secrets
+        run: |
+          echo '${{ secrets.TOKEN_JSON }}' > token.json
+          echo '${{ secrets.TOKEN_002_JSON }}' > token_002.json
+          echo '${{ secrets.TOKEN_003_JSON }}' > token_003.json
+          echo '${{ secrets.TOKEN_004_JSON }}' > token_004.json
+          echo '${{ secrets.TOKEN_005_JSON }}' > token_005.json
+          echo '${{ secrets.TOKEN_006_JSON }}' > token_006.json
+          echo '${{ secrets.CREDENTIALS_JSON }}' > credentials.json
+
+      - name: Run GSC report
+        run: |
+          python main.py
+        env:
+          PYTHONIOENCODING: utf-8
+          PYTHONUTF8: '1'
+
+**④ 「Commit new file」をクリック**
+
+---
+
+できましたか？
