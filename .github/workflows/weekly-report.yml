@@ -22,6 +22,7 @@ jobs:
         run: pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client gspread requests PyGithub anthropic
 
       - name: Create token files from secrets
+        working-directory: gsc-report
         run: |
           echo '${{ secrets.TOKEN_JSON }}' > token.json
           echo '${{ secrets.TOKEN_002_JSON }}' > token_002.json
@@ -32,6 +33,7 @@ jobs:
           echo '${{ secrets.CREDENTIALS_JSON }}' > credentials.json
 
       - name: Run GSC report
+        working-directory: gsc-report
         run: python main.py
         env:
           PYTHONIOENCODING: utf-8
