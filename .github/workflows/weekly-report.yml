@@ -19,11 +19,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client gspread requests PyGithub anthropic
+        run: |
+          cd gsc-report
+          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client gspread requests PyGithub anthropic
 
       - name: Create token files from secrets
-        working-directory: gsc-report
         run: |
+          cd gsc-report
           echo '${{ secrets.TOKEN_JSON }}' > token.json
           echo '${{ secrets.TOKEN_002_JSON }}' > token_002.json
           echo '${{ secrets.TOKEN_003_JSON }}' > token_003.json
@@ -33,8 +35,9 @@ jobs:
           echo '${{ secrets.CREDENTIALS_JSON }}' > credentials.json
 
       - name: Run GSC report
-        working-directory: gsc-report
-        run: python main.py
+        run: |
+          cd gsc-report
+          python main.py
         env:
           PYTHONIOENCODING: utf-8
           PYTHONUTF8: '1'
