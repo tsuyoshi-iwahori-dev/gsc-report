@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ラビット探偵社 GSC週次レポート 2026-06-11〜2026-06-17</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#1a1a1a;background:#f5f5f3;}
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px;}
+.header{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;}
+.header-title{font-size:15px;font-weight:500;}
+.header-sub{font-size:12px;color:#888;margin-top:4px;}
+.badge{font-size:11px;padding:3px 10px;border-radius:20px;background:#e1f5ee;color:#0f6e56;}
+.nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
+.nav-links a:hover{background:#dce6ff;}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
+.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
+.section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
+.insight:last-child{margin-bottom:0;}
+.insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
+.insight-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+.insight-title{font-size:12px;font-weight:500;margin-bottom:3px;}
+.insight.red .insight-title{color:#a32d2d;}.insight.amber .insight-title{color:#854f0b;}.insight.green .insight-title{color:#0f6e56;}
+.insight-desc{font-size:11px;color:#555;line-height:1.6;}
+.insight-action{font-size:11px;margin-top:5px;padding:4px 8px;background:rgba(0,0,0,0.05);border-radius:4px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{text-align:left;padding:7px 8px;color:#888;border-bottom:0.5px solid #e0e0dc;font-weight:400;}
+td{padding:7px 8px;border-bottom:0.5px solid #e0e0dc;}
+tr:last-child td{border-bottom:none;}
+.url{color:#185fa5;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;border:0.5px solid #e0e0dc;}
+.pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
+.footer{text-align:center;font-size:11px;color:#aaa;padding:16px 0;}
+.ai-section-card{background:#f8f9fc;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid #185fa5;}
+.ai-section-card:last-child{margin-bottom:0;}
+.ai-section-header{font-size:13px;font-weight:600;color:#185fa5;margin-bottom:8px;}
+.ai-section-body{font-size:12px;line-height:1.8;color:#333;}
+.ai-section-body p{margin-bottom:6px;}
+.ai-section-body p:last-child{margin-bottom:0;}
+.ai-section-body ul{margin:6px 0 6px 16px;}
+.ai-section-body li{margin-bottom:4px;}
+.ai-action-card{border-left-color:#854f0b;background:#fdf8f0;}
+.ai-action-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:8px;}
+.ai-action-now{background:#fcebeb;border-radius:6px;padding:10px;}
+.ai-action-month{background:#faeeda;border-radius:6px;padding:10px;}
+.ai-action-later{background:#e1f5ee;border-radius:6px;padding:10px;}
+.ai-action-label{font-size:11px;font-weight:600;margin-bottom:6px;}
+.ai-action-items{font-size:11px;line-height:1.7;color:#333;}
+.ai-action-items ul{margin-left:14px;}
+.ai-action-items li{margin-bottom:3px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+    <div>
+        <div class="header-title">ラビット探偵社 — GSC週次レポート</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-17 10:22</div>
+    </div>
+    <span class="badge">自動生成</span>
+</div>
+
+<div class="nav-links">
+    <a href="#section-kpi">📊 KPI</a>
+    <a href="#section-chart">📈 グラフ</a>
+    <a href="#section-seo-comments">🔍 SEO分析</a>
+    <a href="#section-ai-analysis">🤖 AIたくま分析</a>
+    <a href="#section-query-comparison">🔄 クエリ比較</a>
+    <a href="#section-summary">📋 週次サマリー</a>
+    <a href="#section-pages">📄 ページ一覧</a>
+</div>
+
+<div class="kpi-grid" id="section-kpi">
+    <div class="kpi">
+        <div class="kpi-label">クリック数</div>
+        <div class="kpi-value">841</div>
+        <div class="kpi-diff"><span class="down">▼ 37.8%（前週 1,352）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">表示回数</div>
+        <div class="kpi-value">24,146</div>
+        <div class="kpi-diff"><span class="down">▼ 40.2%（前週 40,352）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">CTR</div>
+        <div class="kpi-value">3.48%</div>
+        <div class="kpi-diff"><span class="up">▲ 3.9%（前週 3.35）</span></div>
+    </div>
+    <div class="kpi">
+        <div class="kpi-label">平均順位</div>
+        <div class="kpi-value">11.4位</div>
+        <div class="kpi-diff"><span class="down">▼ 0.6位悪化（前週 10.8位）</span></div>
+    </div>
+</div>
+
+<div class="chart-row" id="section-chart">
+    <div class="chart-box">
+        <div class="section-title">クリック数推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+        </div>
+    </div>
+    <div class="chart-box">
+        <div class="section-title">表示回数推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+        </div>
+    </div>
+    <div class="chart-box">
+        <div class="section-title">平均順位推移</div>
+        <div style="position:relative;height:120px;">
+            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="section-seo-comments">
+    <div class="section-title">SEO分析コメント（自動検出）</div>
+    <p style="font-size:12px;color:#888;">今週は特筆すべき異常値はありませんでした。</p>
+</div>
+
+
+<div class="section" id="section-ai-analysis">
+    <div class="section-title">🤖 AIたくま分析</div>
+    
+</div>
+
+
+        <div class="section" id="section-query-comparison" style="margin-bottom:16px;">
+            <div class="section-title">クエリ比較（今週 vs 前週 上位20件）</div>
+            <div style="overflow-x:auto;">
+                <table style="min-width:600px;">
+                    <thead>
+                        <tr>
+                            <th>クエリ</th>
+                            <th>今週CL</th><th>前週CL</th>
+                            <th>今週順位</th><th>前週順位</th>
+                            <th>今週CTR</th><th>前週CTR</th>
+                            <th>判定</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            <tr>
+                <td>ラビット探偵社</td>
+                <td>22</td><td>48</td>
+                <td>1.3</td><td>1.0</td>
+                <td>44.0%</td><td>48.98%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>役に たった 浮気調査グッズ</td>
+                <td>7</td><td>-</td>
+                <td>5.0</td><td>-</td>
+                <td>7.53%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>浮気 確認 スマホ</td>
+                <td>6</td><td>-</td>
+                <td>4.4</td><td>-</td>
+                <td>42.86%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>彼女 浮気してるかも</td>
+                <td>6</td><td>-</td>
+                <td>5.0</td><td>-</td>
+                <td>13.95%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>gps 浮気調査アプリ バレない</td>
+                <td>5</td><td>5</td>
+                <td>3.1</td><td>3.0</td>
+                <td>16.13%</td><td>12.82%</td>
+                <td><span class="pill">－</span></td>
+            </tr>
+            <tr>
+                <td>エアタグ 浮気調査 バレる</td>
+                <td>5</td><td>6</td>
+                <td>1</td><td>1.7</td>
+                <td>71.43%</td><td>46.15%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>女 浮気サイン</td>
+                <td>5</td><td>12</td>
+                <td>2</td><td>2.1</td>
+                <td>15.15%</td><td>17.39%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>バレないgpsアプリ</td>
+                <td>5</td><td>-</td>
+                <td>4.7</td><td>-</td>
+                <td>22.73%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>バレない 位置情報アプリ</td>
+                <td>5</td><td>-</td>
+                <td>1.2</td><td>-</td>
+                <td>100%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>gpsアプリ バレない</td>
+                <td>5</td><td>6</td>
+                <td>4.0</td><td>6.0</td>
+                <td>10.42%</td><td>7.14%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>女が不倫する理由</td>
+                <td>4</td><td>-</td>
+                <td>2.1</td><td>-</td>
+                <td>33.33%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>浮気 バレるきっかけ</td>
+                <td>4</td><td>5</td>
+                <td>1.6</td><td>1.5</td>
+                <td>44.44%</td><td>31.25%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>gps バレない アプリ</td>
+                <td>4</td><td>6</td>
+                <td>2.3</td><td>1.5</td>
+                <td>40.0%</td><td>31.58%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>浮気チェック スマホ</td>
+                <td>4</td><td>-</td>
+                <td>4.1</td><td>-</td>
+                <td>23.53%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>スマホ 浮気確認</td>
+                <td>4</td><td>-</td>
+                <td>2.8</td><td>-</td>
+                <td>100%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>ラビット探偵</td>
+                <td>4</td><td>11</td>
+                <td>1</td><td>1.0</td>
+                <td>50.0%</td><td>44.0%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>浮気防止グッズ</td>
+                <td>4</td><td>-</td>
+                <td>2.8</td><td>-</td>
+                <td>33.33%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>airtag 不倫</td>
+                <td>4</td><td>4</td>
+                <td>1</td><td>1.2</td>
+                <td>66.67%</td><td>50.0%</td>
+                <td><span class="pill">－</span></td>
+            </tr>
+            <tr>
+                <td>gps</td>
+                <td>3</td><td>-</td>
+                <td>2.9</td><td>-</td>
+                <td>10.0%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>airtag 他人にバレる</td>
+                <td>3</td><td>-</td>
+                <td>2.3</td><td>-</td>
+                <td>100%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="section" style="margin-bottom:16px;">
+            <div class="section-title">🆕 新出現クエリ（11件）</div>
+            <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>役に たった 浮気調査グッズ</td>
+                <td>7</td>
+                <td>93</td>
+                <td>7.53%</td>
+                <td>5.0位</td>
+            </tr>
+            <tr>
+                <td>彼女 浮気してるかも</td>
+                <td>6</td>
+                <td>43</td>
+                <td>13.95%</td>
+                <td>5.0位</td>
+            </tr>
+            <tr>
+                <td>浮気 確認 スマホ</td>
+                <td>6</td>
+                <td>14</td>
+                <td>42.86%</td>
+                <td>4.4位</td>
+            </tr>
+            <tr>
+                <td>バレない 位置情報アプリ</td>
+                <td>5</td>
+                <td>5</td>
+                <td>100%</td>
+                <td>1.2位</td>
+            </tr>
+            <tr>
+                <td>バレないgpsアプリ</td>
+                <td>5</td>
+                <td>22</td>
+                <td>22.73%</td>
+                <td>4.7位</td>
+            </tr>
+            <tr>
+                <td>スマホ 浮気確認</td>
+                <td>4</td>
+                <td>4</td>
+                <td>100%</td>
+                <td>2.8位</td>
+            </tr>
+            <tr>
+                <td>女が不倫する理由</td>
+                <td>4</td>
+                <td>12</td>
+                <td>33.33%</td>
+                <td>2.1位</td>
+            </tr>
+            <tr>
+                <td>浮気チェック スマホ</td>
+                <td>4</td>
+                <td>17</td>
+                <td>23.53%</td>
+                <td>4.1位</td>
+            </tr>
+            <tr>
+                <td>浮気防止グッズ</td>
+                <td>4</td>
+                <td>12</td>
+                <td>33.33%</td>
+                <td>2.8位</td>
+            </tr>
+            <tr>
+                <td>airtag 他人にバレる</td>
+                <td>3</td>
+                <td>3</td>
+                <td>100%</td>
+                <td>2.3位</td>
+            </tr></tbody></table>
+        </div>
+        
+        <div class="section" style="margin-bottom:16px;">
+            <div class="section-title">❌ 消滅クエリ（11件）</div>
+            <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>旦那 浮気チェック スマホ</td>
+                <td>9</td>
+                <td>19</td>
+                <td>47.37%</td>
+                <td>2.6位</td>
+            </tr>
+            <tr>
+                <td>位置情報アプリ バレない</td>
+                <td>7</td>
+                <td>192</td>
+                <td>3.65%</td>
+                <td>4.0位</td>
+            </tr>
+            <tr>
+                <td>既婚女性 浮気する理由</td>
+                <td>7</td>
+                <td>26</td>
+                <td>26.92%</td>
+                <td>2.0位</td>
+            </tr>
+            <tr>
+                <td>不倫</td>
+                <td>6</td>
+                <td>518</td>
+                <td>1.16%</td>
+                <td>2.0位</td>
+            </tr>
+            <tr>
+                <td>こっそりgps</td>
+                <td>5</td>
+                <td>12</td>
+                <td>41.67%</td>
+                <td>1.1位</td>
+            </tr>
+            <tr>
+                <td>こっそり位置情報共有</td>
+                <td>5</td>
+                <td>6</td>
+                <td>83.33%</td>
+                <td>1.3位</td>
+            </tr>
+            <tr>
+                <td>浮気してる 女 が 言う セリフ</td>
+                <td>5</td>
+                <td>29</td>
+                <td>17.24%</td>
+                <td>1.2位</td>
+            </tr>
+            <tr>
+                <td>相手にバレない位置情報アプリ</td>
+                <td>5</td>
+                <td>6</td>
+                <td>83.33%</td>
+                <td>1.2位</td>
+            </tr>
+            <tr>
+                <td>airtag バレないように</td>
+                <td>4</td>
+                <td>16</td>
+                <td>25.0%</td>
+                <td>2.2位</td>
+            </tr>
+            <tr>
+                <td>バレない位置情報</td>
+                <td>4</td>
+                <td>14</td>
+                <td>28.57%</td>
+                <td>2.2位</td>
+            </tr></tbody></table>
+        </div>
+        
+
+<div class="section" id="section-summary">
+    <div class="section-title">週次サマリー比較</div>
+    <table>
+        <thead>
+            <tr><th>期間</th><th>クリック数</th><th>表示回数</th><th>CTR</th><th>平均順位</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>今週（2026-06-11〜2026-06-17）</td>
+            <td>841</td>
+            <td>24,146</td>
+            <td>3.48%</td>
+            <td>11.4位</td>
+        </tr>
+        <tr>
+            <td>1週前（2026-06-04〜2026-06-10）</td>
+            <td>1,352</td>
+            <td>40,352</td>
+            <td>3.35%</td>
+            <td>10.8位</td>
+        </tr>
+        <tr>
+            <td>2週前（2026-05-28〜2026-06-03）</td>
+            <td>1,500</td>
+            <td>44,960</td>
+            <td>3.34%</td>
+            <td>10.3位</td>
+        </tr>
+        <tr>
+            <td>3週前（2026-05-21〜2026-05-27）</td>
+            <td>1,873</td>
+            <td>47,359</td>
+            <td>3.95%</td>
+            <td>10.7位</td>
+        </tr>
+        <tr>
+            <td>4週前（2026-05-14〜2026-05-20）</td>
+            <td>1,892</td>
+            <td>46,868</td>
+            <td>4.04%</td>
+            <td>10.8位</td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="section" id="section-pages">
+    <div class="section-title">クリック上位ページ（先週 top20）</div>
+    <table>
+        <thead>
+            <tr><th>ページURL</th><th>クリック</th><th>表示回数</th><th>CTR</th><th>順位</th><th>判定</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/how-to-check-for-cheating/">rabbit-tantei.com/uwaki/column/how-to-check-for-cheating/</td>
+            <td>196</td>
+            <td>3,401</td>
+            <td>5.76%</td>
+            <td>7.4位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/cheating-investigation-app/">rabbit-tantei.com/uwaki/column/cheating-investigation-app/</td>
+            <td>108</td>
+            <td>1,685</td>
+            <td>6.41%</td>
+            <td>8.1位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/cheating-and-cell-phone/">rabbit-tantei.com/uwaki/column/cheating-and-cell-phone/</td>
+            <td>106</td>
+            <td>843</td>
+            <td>12.57%</td>
+            <td>8.4位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/phrases-used-by-women-during-cheating/">rabbit-tantei.com/uwaki/column/phrases-used-by-women-during-cheating/</td>
+            <td>98</td>
+            <td>2,963</td>
+            <td>3.31%</td>
+            <td>5.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/airtag-infidelity-investigation/">rabbit-tantei.com/uwaki/column/airtag-infidelity-investigation/</td>
+            <td>52</td>
+            <td>815</td>
+            <td>6.38%</td>
+            <td>4.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/adultery-duration/">rabbit-tantei.com/uwaki/column/adultery-duration/</td>
+            <td>32</td>
+            <td>727</td>
+            <td>4.4%</td>
+            <td>10.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/infidelity-prone/">rabbit-tantei.com/uwaki/column/infidelity-prone/</td>
+            <td>29</td>
+            <td>1,554</td>
+            <td>1.87%</td>
+            <td>7.5位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/">rabbit-tantei.com/</td>
+            <td>24</td>
+            <td>649</td>
+            <td>3.7%</td>
+            <td>21.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/cheating-investigation-gps-recommended/">rabbit-tantei.com/uwaki/column/cheating-investigation-gps-recommended/</td>
+            <td>21</td>
+            <td>625</td>
+            <td>3.36%</td>
+            <td>11.4位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/married-women-infidelity-rate/">rabbit-tantei.com/uwaki/column/married-women-infidelity-rate/</td>
+            <td>20</td>
+            <td>1,073</td>
+            <td>1.86%</td>
+            <td>12.4位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/useful-infidelity-investigation-gadgets/">rabbit-tantei.com/uwaki/column/useful-infidelity-investigation-gadgets/</td>
+            <td>20</td>
+            <td>460</td>
+            <td>4.35%</td>
+            <td>14.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/getting-caught-cheating/">rabbit-tantei.com/uwaki/column/getting-caught-cheating/</td>
+            <td>13</td>
+            <td>552</td>
+            <td>2.36%</td>
+            <td>11.7位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/cheating-reconciliation/">rabbit-tantei.com/uwaki/column/cheating-reconciliation/</td>
+            <td>11</td>
+            <td>248</td>
+            <td>4.44%</td>
+            <td>11.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/double-infidelity/">rabbit-tantei.com/uwaki/column/double-infidelity/</td>
+            <td>11</td>
+            <td>268</td>
+            <td>4.1%</td>
+            <td>14.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/cheating-guilt/">rabbit-tantei.com/uwaki/column/cheating-guilt/</td>
+            <td>10</td>
+            <td>206</td>
+            <td>4.85%</td>
+            <td>8.5位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/husband-not-coming-home/">rabbit-tantei.com/uwaki/column/husband-not-coming-home/</td>
+            <td>8</td>
+            <td>371</td>
+            <td>2.16%</td>
+            <td>10.1位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/reasons-for-cheating/">rabbit-tantei.com/uwaki/column/reasons-for-cheating/</td>
+            <td>7</td>
+            <td>416</td>
+            <td>1.68%</td>
+            <td>12.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/branch/tokyo/?utm_source=google&utm_medium=map&utm_campaign=tokyo">rabbit-tantei.com/branch/tokyo/?utm_source=google&utm_medium=map&utm_campaign=tokyo</td>
+            <td>6</td>
+            <td>622</td>
+            <td>0.96%</td>
+            <td>2.6位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/husband-cheating-signs/">rabbit-tantei.com/uwaki/column/husband-cheating-signs/</td>
+            <td>6</td>
+            <td>210</td>
+            <td>2.86%</td>
+            <td>32.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://rabbit-tantei.com/uwaki/column/long-distance-cheating/">rabbit-tantei.com/uwaki/column/long-distance-cheating/</td>
+            <td>6</td>
+            <td>205</td>
+            <td>2.93%</td>
+            <td>9.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="footer">自動生成レポート — GSC Weekly Report</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const labels = ["今週", "1週前", "2週前", "3週前", "4週前"];
+const opts = {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{font:{size:10}}},y:{ticks:{font:{size:10}}}}};
+new Chart(document.getElementById('c1'),{type:'line',data:{labels,datasets:[{data:[841, 1352, 1500, 1873, 1892],borderColor:'#185fa5',backgroundColor:'rgba(24,95,165,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#185fa5'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false}}}});
+new Chart(document.getElementById('c2'),{type:'line',data:{labels,datasets:[{data:[24146, 40352, 44960, 47359, 46868],borderColor:'#1d9e75',backgroundColor:'rgba(29,158,117,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#1d9e75'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:true,ticks:{...opts.scales.y.ticks,callback:v=>(v/1000).toFixed(0)+'K'}}}}});
+new Chart(document.getElementById('c3'),{type:'line',data:{labels,datasets:[{data:[11.4, 10.8, 10.3, 10.7, 10.8],borderColor:'#854f0b',backgroundColor:'rgba(133,79,11,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#854f0b'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false,reverse:true}}}});
+</script>
+</body>
+</html>
