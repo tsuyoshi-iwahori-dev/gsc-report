@@ -15,16 +15,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
 .nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
 .nav-links a:hover{background:#dce6ff;}
-.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
-.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
-.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
-.kpi-value{font-size:22px;font-weight:500;}
-.kpi-diff{font-size:11px;margin-top:4px;}
 .up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
 .section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
 .section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
-.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -66,14 +67,14 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">表参道デンタルクリニック — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 11:49</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 12:01</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
     <a href="#section-goals">🎯 KGI・KPI</a>
-    <a href="#section-kpi">📊 KPI</a>
+    <a href="#section-performance">📊 サイトパフォーマンス</a>
     <a href="#section-chart">📈 グラフ</a>
     <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
@@ -130,46 +131,48 @@ tr:last-child td{border-bottom:none;}
   </div>
 </div>
 
-<div class="kpi-grid" id="section-kpi">
-    <div class="kpi">
-        <div class="kpi-label">クリック数</div>
-        <div class="kpi-value">432</div>
-        <div class="kpi-diff"><span class="down">▼ 36.3%（前週 678）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">表示回数</div>
-        <div class="kpi-value">27,567</div>
-        <div class="kpi-diff"><span class="down">▼ 22.4%（前週 35,522）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">CTR</div>
-        <div class="kpi-value">1.57%</div>
-        <div class="kpi-diff"><span class="down">▼ 17.8%（前週 1.91）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">平均順位</div>
-        <div class="kpi-value">7.8位</div>
-        <div class="kpi-diff"><span class="up">▲ 0.1位改善（前週 7.9位）</span></div>
-    </div>
-</div>
-
-<div class="chart-row" id="section-chart">
-    <div class="chart-box">
-        <div class="section-title">クリック数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+<div class="performance-section" id="section-performance">
+    <div class="section-title">📊 サイトパフォーマンス</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">432</div>
+            <div class="kpi-diff"><span class="down">▼ 36.3%（前週 678）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">27,567</div>
+            <div class="kpi-diff"><span class="down">▼ 22.4%（前週 35,522）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">1.57%</div>
+            <div class="kpi-diff"><span class="down">▼ 17.8%（前週 1.91）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">7.8位</div>
+            <div class="kpi-diff"><span class="up">▲ 0.1位改善（前週 7.9位）</span></div>
         </div>
     </div>
-    <div class="chart-box">
-        <div class="section-title">表示回数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+    <div class="chart-row" id="section-chart">
+        <div class="chart-box">
+            <div class="section-title">クリック数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+            </div>
         </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">平均順位推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+        <div class="chart-box">
+            <div class="section-title">表示回数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">平均順位推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+            </div>
         </div>
     </div>
 </div>
@@ -260,13 +263,6 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>セラミック矯正とは</td>
-                <td>6</td><td>13</td>
-                <td>2.1</td><td>2.7</td>
-                <td>2.32%</td><td>3.85%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
                 <td>ガミースマイル 女性に多い理由</td>
                 <td>6</td><td>5</td>
                 <td>1.6</td><td>1.6</td>
@@ -274,11 +270,32 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
+                <td>セラミック矯正とは</td>
+                <td>6</td><td>13</td>
+                <td>2.1</td><td>2.7</td>
+                <td>2.32%</td><td>3.85%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
                 <td>銀歯 セラミック 保険適用</td>
                 <td>6</td><td>8</td>
                 <td>2.2</td><td>1.7</td>
                 <td>31.58%</td><td>15.38%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>クラウン 保険適用</td>
+                <td>5</td><td>4</td>
+                <td>1.1</td><td>1.4</td>
+                <td>35.71%</td><td>21.05%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>表参道 デンタルクリニック</td>
+                <td>5</td><td>5</td>
+                <td>1.9</td><td>2</td>
+                <td>45.45%</td><td>26.32%</td>
+                <td><span class="pill">－</span></td>
             </tr>
             <tr>
                 <td>ガミースマイル 手術</td>
@@ -295,25 +312,18 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>表参道 デンタルクリニック</td>
-                <td>5</td><td>5</td>
-                <td>1.9</td><td>2</td>
-                <td>45.45%</td><td>26.32%</td>
-                <td><span class="pill">－</span></td>
-            </tr>
-            <tr>
-                <td>クラウン 保険適用</td>
-                <td>5</td><td>4</td>
-                <td>1.1</td><td>1.4</td>
-                <td>35.71%</td><td>21.05%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
-            </tr>
-            <tr>
                 <td>ガミースマイル 治療</td>
                 <td>5</td><td>17</td>
                 <td>6.0</td><td>6.9</td>
                 <td>1.8%</td><td>3.9%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>ガーミースマイル 整形</td>
+                <td>4</td><td>-</td>
+                <td>3.0</td><td>-</td>
+                <td>7.14%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>銀歯 廃止 いつから</td>
@@ -330,41 +340,6 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>ガーミースマイル 整形</td>
-                <td>4</td><td>-</td>
-                <td>3.0</td><td>-</td>
-                <td>7.14%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>ガミースマイル</td>
-                <td>3</td><td>-</td>
-                <td>2.2</td><td>-</td>
-                <td>0.07%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>ガミースマイル 整形</td>
-                <td>3</td><td>-</td>
-                <td>2.5</td><td>-</td>
-                <td>11.11%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>セラミック 東京</td>
-                <td>3</td><td>5</td>
-                <td>6.1</td><td>1.7</td>
-                <td>16.67%</td><td>29.41%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>ジルコニアクラウン 安い 東京</td>
-                <td>3</td><td>-</td>
-                <td>2.5</td><td>-</td>
-                <td>25.0%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
                 <td>歯の被せ物 セラミック 保険適用</td>
                 <td>3</td><td>-</td>
                 <td>2</td><td>-</td>
@@ -376,6 +351,34 @@ tr:last-child td{border-bottom:none;}
                 <td>3</td><td>-</td>
                 <td>4.4</td><td>-</td>
                 <td>9.38%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>ジルコニアクラウン 安い 東京</td>
+                <td>3</td><td>-</td>
+                <td>2.5</td><td>-</td>
+                <td>25.0%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>ガミースマイル</td>
+                <td>3</td><td>-</td>
+                <td>2.2</td><td>-</td>
+                <td>0.07%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>セラミック 東京</td>
+                <td>3</td><td>5</td>
+                <td>6.1</td><td>1.7</td>
+                <td>16.67%</td><td>29.41%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>ガミースマイル 整形</td>
+                <td>3</td><td>-</td>
+                <td>2.5</td><td>-</td>
+                <td>11.11%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr></tbody>
                 </table>
