@@ -41,3 +41,5 @@ jobs:
         env:
           PYTHONIOENCODING: utf-8
           PYTHONUTF8: '1'
+          GITHUB_TOKEN_VALUE: ${{ secrets.GITHUB_TOKEN_VALUE }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
