@@ -15,16 +15,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
 .nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
 .nav-links a:hover{background:#dce6ff;}
-.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
-.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
-.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
-.kpi-value{font-size:22px;font-weight:500;}
-.kpi-diff{font-size:11px;margin-top:4px;}
 .up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
 .section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
 .section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
-.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -66,74 +67,84 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">ヒューマンワーク — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-17 17:28</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 11:56</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
-    <a href="#section-kpi">📊 KPI</a>
+    <a href="#section-goals">🎯 KGI・KPI</a>
+    <a href="#section-performance">📊 サイトパフォーマンス</a>
     <a href="#section-chart">📈 グラフ</a>
-    <a href="#section-seo-comments">🔍 SEO分析</a>
+    <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
     <a href="#section-query-comparison">🔄 クエリ比較</a>
     <a href="#section-summary">📋 週次サマリー</a>
     <a href="#section-pages">📄 ページ一覧</a>
 </div>
 
-<div class="kpi-grid" id="section-kpi">
-    <div class="kpi">
-        <div class="kpi-label">クリック数</div>
-        <div class="kpi-value">970</div>
-        <div class="kpi-diff"><span class="up">▲ 48.1%（前週 655）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">表示回数</div>
-        <div class="kpi-value">124,820</div>
-        <div class="kpi-diff"><span class="up">▲ 22.5%（前週 101,889）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">CTR</div>
-        <div class="kpi-value">0.78%</div>
-        <div class="kpi-diff"><span class="up">▲ 21.9%（前週 0.64）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">平均順位</div>
-        <div class="kpi-value">8.3位</div>
-        <div class="kpi-diff"><span class="up">▲ 1.6位改善（前週 9.9位）</span></div>
+
+<div class="section" id="section-goals">
+    <div class="section-title">🎯 KGI・KPI達成状況</div>
+    <div style="color:#aaa;font-size:13px;padding:8px 0;">
+        目標値未設定
     </div>
 </div>
 
-<div class="chart-row" id="section-chart">
-    <div class="chart-box">
-        <div class="section-title">クリック数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+<div class="performance-section" id="section-performance">
+    <div class="section-title">📊 サイトパフォーマンス</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">970</div>
+            <div class="kpi-diff"><span class="up">▲ 48.1%（前週 655）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">124,820</div>
+            <div class="kpi-diff"><span class="up">▲ 22.5%（前週 101,889）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">0.78%</div>
+            <div class="kpi-diff"><span class="up">▲ 21.9%（前週 0.64）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">8.3位</div>
+            <div class="kpi-diff"><span class="up">▲ 1.6位改善（前週 9.9位）</span></div>
         </div>
     </div>
-    <div class="chart-box">
-        <div class="section-title">表示回数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+    <div class="chart-row" id="section-chart">
+        <div class="chart-box">
+            <div class="section-title">クリック数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+            </div>
         </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">平均順位推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+        <div class="chart-box">
+            <div class="section-title">表示回数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">平均順位推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="section" id="section-seo-comments">
-    <div class="section-title">SEO分析コメント（自動検出）</div>
+<div class="section" id="section-seo-summary">
+    <div class="section-title">SEOサマリ</div>
     
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
                 <div class="insight-title">意図ミスマッチ候補ページ 1件を検出</div>
                 <div class="insight-desc">表示回数1万超・CTR0.1%未満のページ：<br>  - https://www.human-work.co.jp/column/vol_123/（表示82,609回・CTR0.05%）</div>
-                <div class="insight-action">→ 対象ページのタイトル・メタディスクリプションをクエリ意図に合わせて修正する。</div>
             </div>
         </div>
         <div class="insight amber">
@@ -141,23 +152,20 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">タイトル改善でCTRを伸ばせるページが14件あります</div>
                 <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://www.human-work.co.jp/column/vol_123/（順位5.9位・表示82,609回・CTR0.05%）<br>  - https://www.human-work.co.jp/airwork/（順位7.2位・表示11,326回・CTR0.16%）<br>  - https://www.human-work.co.jp/column/vol_054/（順位6.6位・表示1,748回・CTR0.29%）<br>  - https://www.human-work.co.jp/column/vol_040/（順位7.4位・表示1,610回・CTR1.68%）<br>  - https://www.human-work.co.jp/column/vol_030/（順位11.0位・表示1,040回・CTR0.87%）</div>
-                <div class="insight-action">→ タイトルに数字・具体性・ベネフィットを追加してCTRを改善する。</div>
             </div>
         </div>
         <div class="insight green">
             <div class="insight-icon">✓</div>
             <div class="insight-body">
                 <div class="insight-title">平均順位が改善：9.9位 → 8.3位</div>
-                <div class="insight-desc">全体の平均掲載順位が前週より改善している。コンテンツ評価またはリンク評価が上昇している可能性がある。</div>
-                <div class="insight-action">→ どのページ・クエリで順位が改善しているかをGSCで個別確認する。</div>
+                <div class="insight-desc">平均順位：9.9位 → 8.3位</div>
             </div>
         </div>
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
                 <div class="insight-title">20位以下で表示されている重要ページが5件</div>
-                <div class="insight-desc">表示回数が多いにも関わらず20位以下のページ（上位5件）：<br>  - https://www.human-work.co.jp/column/vol_068/（順位24.2位・表示581回）<br>  - https://www.human-work.co.jp/column/vol_094/（順位36.3位・表示506回）<br>  - https://www.human-work.co.jp/column/vol_133/（順位28.7位・表示454回）<br>  - https://www.human-work.co.jp/column/vol_176/（順位28.3位・表示255回）<br>  - https://www.human-work.co.jp/lp3/（順位31.0位・表示202回）</div>
-                <div class="insight-action">→ 競合ページとのコンテンツ差・被リンク差を確認し、強化施策を検討する。</div>
+                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://www.human-work.co.jp/column/vol_068/（順位24.2位・表示581回）<br>  - https://www.human-work.co.jp/column/vol_094/（順位36.3位・表示506回）<br>  - https://www.human-work.co.jp/column/vol_133/（順位28.7位・表示454回）<br>  - https://www.human-work.co.jp/column/vol_176/（順位28.3位・表示255回）<br>  - https://www.human-work.co.jp/lp3/（順位31.0位・表示202回）</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -165,7 +173,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">今週新たに上位20位以内に入ったクエリが11件</div>
                 <div class="insight-desc">株式会社ヒューマンワーク 求人、ヒューマンワーク indeed、株式会社 ヒューマンワーク、休日にメール、年齢不問 何歳までなど</div>
-                <div class="insight-action">→ 新出現クエリのページを確認し、コンテンツ強化・内部リンク追加を検討する。</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -173,7 +180,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">先週上位20位以内にいたクエリが11件圏外に</div>
                 <div class="insight-desc">air work、人間力、airwork、indeed 勝手に掲載、インディード 勝手に掲載など</div>
-                <div class="insight-action">→ 対象クエリのページを確認し、コンテンツの鮮度・relevanceを見直す。</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -181,7 +187,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">クリック数が50%以上増加したクエリが5件</div>
                 <div class="insight-desc">  - ヒューマンワークス（3→13CL, +333.3%）<br>  - 株式会社ヒューマンワーク（53→178CL, +235.8%）<br>  - ヒューマンワーク 求人（6→20CL, +233.3%）<br>  - ヒューマンワーク（93→305CL, +228.0%）<br>  - インディード（16→38CL, +137.5%）</div>
-                <div class="insight-action">→ 好調クエリのページをさらに強化し、関連クエリへの展開を検討する。</div>
             </div>
         </div>
         <div class="insight red">
@@ -189,7 +194,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">クリック数が30%以上減少したクエリが4件</div>
                 <div class="insight-desc">  - プレミアムエンプロイヤー（8→2CL, -75.0%）<br>  - airワーク（5→2CL, -60.0%）<br>  - premium employer（4→2CL, -50.0%）<br>  - エアワーク（11→7CL, -36.4%）</div>
-                <div class="insight-action">→ 対象クエリのページのタイトル・コンテンツ・競合状況を確認する。</div>
             </div>
         </div>
 </div>
@@ -289,34 +293,6 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
-                <td>プレミアムエンプロイヤー</td>
-                <td>2</td><td>8</td>
-                <td>2.7</td><td>1.3</td>
-                <td>8.7%</td><td>14.55%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>クローリング型サービスとは</td>
-                <td>2</td><td>-</td>
-                <td>1.3</td><td>-</td>
-                <td>33.33%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>airワーク</td>
-                <td>2</td><td>5</td>
-                <td>6.3</td><td>6.6</td>
-                <td>0.13%</td><td>0.21%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>教育係 言い方 きつい</td>
-                <td>2</td><td>-</td>
-                <td>6.5</td><td>-</td>
-                <td>5.71%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
                 <td>human work</td>
                 <td>2</td><td>-</td>
                 <td>1.5</td><td>-</td>
@@ -331,6 +307,34 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
+                <td>premium employer</td>
+                <td>2</td><td>4</td>
+                <td>2</td><td>1.8</td>
+                <td>18.18%</td><td>15.38%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>教育係 言い方 きつい</td>
+                <td>2</td><td>-</td>
+                <td>6.5</td><td>-</td>
+                <td>5.71%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>airワーク</td>
+                <td>2</td><td>5</td>
+                <td>6.3</td><td>6.6</td>
+                <td>0.13%</td><td>0.21%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>クローリング型サービスとは</td>
+                <td>2</td><td>-</td>
+                <td>1.3</td><td>-</td>
+                <td>33.33%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
                 <td>株式会社ヒューマンワークス</td>
                 <td>2</td><td>-</td>
                 <td>3.2</td><td>-</td>
@@ -338,10 +342,10 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
-                <td>premium employer</td>
-                <td>2</td><td>4</td>
-                <td>2</td><td>1.8</td>
-                <td>18.18%</td><td>15.38%</td>
+                <td>プレミアムエンプロイヤー</td>
+                <td>2</td><td>8</td>
+                <td>2.7</td><td>1.3</td>
+                <td>8.7%</td><td>14.55%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
