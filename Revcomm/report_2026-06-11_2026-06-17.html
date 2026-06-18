@@ -24,8 +24,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
 .kpi-value{font-size:22px;font-weight:500;}
 .kpi-diff{font-size:11px;margin-top:4px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
-.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -67,19 +65,19 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">Revcomm — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 12:07</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 15:55</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
     <a href="#section-goals">🎯 KGI・KPI</a>
-    <a href="#section-performance">📊 サイトパフォーマンス</a>
-    <a href="#section-chart">📈 グラフ</a>
+    <a href="#section-gsc-performance">📊 GSCパフォーマンス</a>
+    <a href="#section-ga-performance">📊 GAパフォーマンス</a>
     <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
-    <a href="#section-query-comparison">🔄 クエリ比較</a>
-    <a href="#section-summary">📋 週次サマリー</a>
+    <a href="#section-query">🔍 クエリ</a>
+    <a href="#section-weekly-gsc">📋 週次GSC</a>
     <a href="#section-pages">📄 ページ一覧</a>
 </div>
 
@@ -91,50 +89,36 @@ tr:last-child td{border-bottom:none;}
     </div>
 </div>
 
-<div class="performance-section" id="section-performance">
-    <div class="section-title">📊 サイトパフォーマンス</div>
+<div class="performance-section" id="section-gsc-performance">
+    <div class="section-title">📊 GSCパフォーマンス</div>
     <div class="performance-grid">
         <div class="kpi">
             <div class="kpi-label">クリック数</div>
-            <div class="kpi-value">1,939</div>
-            <div class="kpi-diff"><span class="down">▼ 35.1%（前週 2,989）</span></div>
+            <div class="kpi-value">2,471</div>
+            <div class="kpi-diff"><span class="down">▼ 17.3%（前週 2,989）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">表示回数</div>
-            <div class="kpi-value">65,450</div>
-            <div class="kpi-diff"><span class="down">▼ 33.2%（前週 98,040）</span></div>
+            <div class="kpi-value">80,566</div>
+            <div class="kpi-diff"><span class="down">▼ 17.8%（前週 98,040）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">CTR</div>
-            <div class="kpi-value">2.96%</div>
-            <div class="kpi-diff"><span class="down">▼ 3.0%（前週 3.05）</span></div>
+            <div class="kpi-value">3.07%</div>
+            <div class="kpi-diff"><span class="up">▲ 0.7%（前週 3.05）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">平均順位</div>
-            <div class="kpi-value">7.9位</div>
-            <div class="kpi-diff"><span class="down">▼ 0.3位悪化（前週 7.6位）</span></div>
+            <div class="kpi-value">7.7位</div>
+            <div class="kpi-diff"><span class="down">▼ 0.1位悪化（前週 7.6位）</span></div>
         </div>
     </div>
-    <div class="chart-row" id="section-chart">
-        <div class="chart-box">
-            <div class="section-title">クリック数推移</div>
-            <div style="position:relative;height:120px;">
-                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
-            </div>
-        </div>
-        <div class="chart-box">
-            <div class="section-title">表示回数推移</div>
-            <div style="position:relative;height:120px;">
-                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
-            </div>
-        </div>
-        <div class="chart-box">
-            <div class="section-title">平均順位推移</div>
-            <div style="position:relative;height:120px;">
-                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
-            </div>
-        </div>
-    </div>
+</div>
+
+
+<div class="section" id="section-ga-performance">
+    <div class="section-title">📊 GAパフォーマンス</div>
+    <p style="font-size:12px;color:#888;">GA4データなし</p>
 </div>
 
 <div class="section" id="section-seo-summary">
@@ -144,49 +128,49 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
                 <div class="insight-title">意図ミスマッチ候補ページ 2件を検出</div>
-                <div class="insight-desc">表示回数1万超・CTR0.1%未満のページ：<br>  - https://miitel.com/jp/column/mobile-call-recording/#4（表示11,712回・CTR0.02%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#iPhone（表示11,861回・CTR0.02%）</div>
+                <div class="insight-desc">表示回数1万超・CTR0.1%未満のページ：<br>  - https://miitel.com/jp/column/mobile-call-recording/#4（表示14,440回・CTR0.01%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#iPhone（表示14,596回・CTR0.01%）</div>
             </div>
         </div>
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
-                <div class="insight-title">タイトル改善でCTRを伸ばせるページが13件あります</div>
-                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://miitel.com/jp/column/mobile-call-recording/（順位6.9位・表示33,571回・CTR1.18%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#iPhone（順位6.5位・表示11,861回・CTR0.02%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#4（順位6.4位・表示11,712回・CTR0.02%）<br>  - https://miitel.com/jp/column/sales-calls-time/（順位6.4位・表示1,942回・CTR0.41%）<br>  - https://miitel.com/jp/column/callcenter-recording/（順位7.1位・表示1,625回・CTR0.25%）</div>
+                <div class="insight-title">タイトル改善でCTRを伸ばせるページが17件あります</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://miitel.com/jp/column/mobile-call-recording/（順位6.9位・表示40,950回・CTR1.2%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#iPhone（順位6.4位・表示14,596回・CTR0.01%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#4（順位6.4位・表示14,440回・CTR0.01%）<br>  - https://miitel.com/jp/column/sales-calls-time/（順位6.4位・表示2,284回・CTR0.53%）<br>  - https://miitel.com/jp/column/callcenter-recording/（順位7.2位・表示2,054回・CTR0.19%）</div>
             </div>
         </div>
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
-                <div class="insight-title">20位以下で表示されている重要ページが1件</div>
-                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://miitel.com/jp/column/call-center-turnover/（順位22.6位・表示363回）</div>
+                <div class="insight-title">20位以下で表示されている重要ページが2件</div>
+                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://miitel.com/jp/column/about-cti/（順位22.1位・表示524回）<br>  - https://miitel.com/jp/column/call-center-turnover/（順位22.7位・表示436回）</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が急落（前週比-35.1%）</div>
-                <div class="insight-desc">クリック数前週比-35.1%（今週1,939回・前週2,989回）</div>
+                <div class="insight-title">クリック数が急落（前週比-17.3%）</div>
+                <div class="insight-desc">クリック数前週比-17.3%（今週2,471回・前週2,989回）</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
                 <div class="insight-title">今週新たに上位20位以内に入ったクエリが4件</div>
-                <div class="insight-desc">miitel meetings、電話の録音、miitel analytics、miitel 料金</div>
+                <div class="insight-desc">miitel meetings、電話の録音、android 電話 録音、ラップアップ</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
                 <div class="insight-title">先週上位20位以内にいたクエリが4件圏外に</div>
-                <div class="insight-desc">mi-teru、通話 録音、meetel、android 通話 録音</div>
+                <div class="insight-desc">通話 録音、通話を録音する、meetel、android 通話 録音</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が30%以上減少したクエリが6件</div>
-                <div class="insight-desc">  - 電話録音（24→9CL, -62.5%）<br>  - miitel ログイン（166→79CL, -52.4%）<br>  - miitel（547→330CL, -39.7%）<br>  - miitel phone（41→25CL, -39.0%）<br>  - miitel recpod（11→7CL, -36.4%）</div>
+                <div class="insight-title">クリック数が30%以上減少したクエリが3件</div>
+                <div class="insight-desc">  - 電話録音（24→12CL, -50.0%）<br>  - miitel ログイン（166→99CL, -40.4%）<br>  - mi-teru（15→10CL, -33.3%）</div>
             </div>
         </div>
 </div>
@@ -194,213 +178,214 @@ tr:last-child td{border-bottom:none;}
 
 
 
-        <div class="section" id="section-query-comparison" style="margin-bottom:16px;">
-            <div class="section-title">クエリ比較（今週 vs 前週 上位20件）</div>
-            <div style="overflow-x:auto;">
-                <table style="min-width:600px;">
-                    <thead>
-                        <tr>
-                            <th>クエリ</th>
-                            <th>今週CL</th><th>前週CL</th>
-                            <th>今週順位</th><th>前週順位</th>
-                            <th>今週CTR</th><th>前週CTR</th>
-                            <th>判定</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+        <div class="section" id="section-query">
+            <div class="section-title">🔍 クエリ</div>
+            <div style="margin-bottom:14px;">
+                <div style="font-size:12px;font-weight:500;color:#555;margin-bottom:8px;">今週 vs 前週（上位20件）</div>
+                <div style="overflow-x:auto;">
+                    <table style="min-width:600px;">
+                        <thead>
+                            <tr>
+                                <th>クエリ</th>
+                                <th>今週CL</th><th>前週CL</th>
+                                <th>今週順位</th><th>前週順位</th>
+                                <th>今週CTR</th><th>前週CTR</th>
+                                <th>判定</th>
+                            </tr>
+                        </thead>
+                        <tbody>
             <tr>
                 <td>miitel</td>
-                <td>330</td><td>547</td>
-                <td>1.2</td><td>1.3</td>
-                <td>44.47%</td><td>44.4%</td>
+                <td>426</td><td>547</td>
+                <td>1.4</td><td>1.3</td>
+                <td>43.56%</td><td>44.4%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>ミーテル</td>
-                <td>273</td><td>396</td>
-                <td>1.3</td><td>1.3</td>
-                <td>54.6%</td><td>52.73%</td>
+                <td>341</td><td>396</td>
+                <td>1.4</td><td>1.3</td>
+                <td>54.39%</td><td>52.73%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>ミーテル ログイン</td>
-                <td>114</td><td>149</td>
+                <td>140</td><td>149</td>
                 <td>1.5</td><td>1.1</td>
-                <td>78.62%</td><td>84.66%</td>
+                <td>79.55%</td><td>84.66%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>miitel ログイン</td>
-                <td>79</td><td>166</td>
-                <td>1.8</td><td>1.0</td>
-                <td>61.24%</td><td>80.98%</td>
+                <td>99</td><td>166</td>
+                <td>1.7</td><td>1.0</td>
+                <td>61.11%</td><td>80.98%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>通話録音</td>
-                <td>73</td><td>91</td>
+                <td>83</td><td>91</td>
                 <td>2.7</td><td>3.1</td>
-                <td>6.07%</td><td>4.84%</td>
+                <td>5.67%</td><td>4.84%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>みーてる</td>
-                <td>62</td><td>82</td>
+                <td>74</td><td>82</td>
                 <td>1</td><td>1</td>
-                <td>70.45%</td><td>67.21%</td>
+                <td>72.55%</td><td>67.21%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>miitel phone</td>
-                <td>25</td><td>41</td>
-                <td>2.0</td><td>1</td>
-                <td>39.06%</td><td>43.62%</td>
+                <td>40</td><td>41</td>
+                <td>1.7</td><td>1</td>
+                <td>44.44%</td><td>43.62%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>電話 録音</td>
-                <td>22</td><td>25</td>
-                <td>3.4</td><td>4.2</td>
-                <td>2.95%</td><td>2.34%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>31</td><td>25</td>
+                <td>3.3</td><td>4.2</td>
+                <td>3.41%</td><td>2.34%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>mitel</td>
-                <td>16</td><td>20</td>
-                <td>1.2</td><td>1.1</td>
-                <td>29.63%</td><td>21.98%</td>
+                <td>19</td><td>20</td>
+                <td>1.3</td><td>1.1</td>
+                <td>25.33%</td><td>21.98%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>スマホ 通話 録音</td>
-                <td>15</td><td>12</td>
+                <td>16</td><td>12</td>
                 <td>2.1</td><td>2.8</td>
-                <td>8.02%</td><td>4.6%</td>
+                <td>7.34%</td><td>4.6%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>ミーテルログイン</td>
+                <td>13</td><td>9</td>
+                <td>1.6</td><td>1.4</td>
+                <td>72.22%</td><td>69.23%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>ミーてる</td>
-                <td>11</td><td>13</td>
+                <td>13</td><td>13</td>
                 <td>1</td><td>1</td>
-                <td>50.0%</td><td>59.09%</td>
+                <td>52.0%</td><td>59.09%</td>
+                <td><span class="pill">－</span></td>
+            </tr>
+            <tr>
+                <td>電話録音</td>
+                <td>12</td><td>24</td>
+                <td>3.3</td><td>4.0</td>
+                <td>2.44%</td><td>4.08%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>ミーテルログイン</td>
-                <td>11</td><td>9</td>
-                <td>1.6</td><td>1.4</td>
-                <td>68.75%</td><td>69.23%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
+                <td>電話の録音</td>
+                <td>10</td><td>-</td>
+                <td>3.0</td><td>-</td>
+                <td>5.49%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>mi-teru</td>
+                <td>10</td><td>15</td>
+                <td>1</td><td>1</td>
+                <td>43.48%</td><td>65.22%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>miitel meetings</td>
                 <td>10</td><td>-</td>
-                <td>1.9</td><td>-</td>
-                <td>37.04%</td><td>-</td>
+                <td>2.0</td><td>-</td>
+                <td>29.41%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>通話録音 android</td>
                 <td>10</td><td>9</td>
-                <td>2.1</td><td>2.2</td>
-                <td>4.15%</td><td>2.78%</td>
+                <td>2.2</td><td>2.2</td>
+                <td>3.46%</td><td>2.78%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>通話を録音する</td>
-                <td>9</td><td>11</td>
-                <td>3.0</td><td>3.4</td>
-                <td>5.62%</td><td>4.91%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>電話録音</td>
-                <td>9</td><td>24</td>
-                <td>3.3</td><td>4.0</td>
-                <td>2.19%</td><td>4.08%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>電話の録音</td>
-                <td>9</td><td>-</td>
-                <td>3.2</td><td>-</td>
-                <td>6.12%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>miitel analytics</td>
-                <td>7</td><td>-</td>
-                <td>1</td><td>-</td>
-                <td>63.64%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>miitel 料金</td>
-                <td>7</td><td>-</td>
-                <td>7.0</td><td>-</td>
-                <td>23.33%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
                 <td>miitel recpod</td>
-                <td>7</td><td>11</td>
+                <td>9</td><td>11</td>
                 <td>1.1</td><td>1</td>
-                <td>36.84%</td><td>26.83%</td>
+                <td>34.62%</td><td>26.83%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>android 電話 録音</td>
+                <td>9</td><td>-</td>
+                <td>2.7</td><td>-</td>
+                <td>15.25%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>ラップアップ</td>
+                <td>9</td><td>-</td>
+                <td>1.5</td><td>-</td>
+                <td>0.69%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr></tbody>
-                </table>
+                    </table>
+                </div>
             </div>
-        </div>
-        
-        <div class="section" style="margin-bottom:16px;">
-            <div class="section-title">🆕 新出現クエリ（4件）</div>
-            <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;">
+                <div style="background:#e1f5ee;border-radius:8px;padding:12px 14px;border:0.5px solid #b2dfdb;">
+                    <div style="font-size:12px;font-weight:600;color:#0f6e56;margin-bottom:8px;">🆕 新出現クエリ（4件）</div>
+                    <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
             <tr>
                 <td>miitel meetings</td>
                 <td>10</td>
-                <td>27</td>
-                <td>37.04%</td>
-                <td>1.9位</td>
+                <td>34</td>
+                <td>29.41%</td>
+                <td>2.0位</td>
             </tr>
             <tr>
                 <td>電話の録音</td>
+                <td>10</td>
+                <td>182</td>
+                <td>5.49%</td>
+                <td>3.0位</td>
+            </tr>
+            <tr>
+                <td>android 電話 録音</td>
                 <td>9</td>
-                <td>147</td>
-                <td>6.12%</td>
-                <td>3.2位</td>
+                <td>59</td>
+                <td>15.25%</td>
+                <td>2.7位</td>
             </tr>
             <tr>
-                <td>miitel analytics</td>
-                <td>7</td>
-                <td>11</td>
-                <td>63.64%</td>
-                <td>1位</td>
-            </tr>
-            <tr>
-                <td>miitel 料金</td>
-                <td>7</td>
-                <td>30</td>
-                <td>23.33%</td>
-                <td>7.0位</td>
+                <td>ラップアップ</td>
+                <td>9</td>
+                <td>1,309</td>
+                <td>0.69%</td>
+                <td>1.5位</td>
             </tr></tbody></table>
-        </div>
-        
-        <div class="section" style="margin-bottom:16px;">
-            <div class="section-title">❌ 消滅クエリ（4件）</div>
-            <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
-            <tr>
-                <td>mi-teru</td>
-                <td>15</td>
-                <td>23</td>
-                <td>65.22%</td>
-                <td>1位</td>
-            </tr>
+                </div>
+                <div style="background:#fcebeb;border-radius:8px;padding:12px 14px;border:0.5px solid #ffcdd2;">
+                    <div style="font-size:12px;font-weight:600;color:#a32d2d;margin-bottom:8px;">❌ 消滅クエリ（4件）</div>
+                    <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
             <tr>
                 <td>通話 録音</td>
                 <td>14</td>
                 <td>331</td>
                 <td>4.23%</td>
                 <td>3.2位</td>
+            </tr>
+            <tr>
+                <td>通話を録音する</td>
+                <td>11</td>
+                <td>224</td>
+                <td>4.91%</td>
+                <td>3.4位</td>
             </tr>
             <tr>
                 <td>meetel</td>
@@ -416,11 +401,13 @@ tr:last-child td{border-bottom:none;}
                 <td>6.35%</td>
                 <td>1.9位</td>
             </tr></tbody></table>
+                </div>
+            </div>
         </div>
         
 
-<div class="section" id="section-summary">
-    <div class="section-title">週次サマリー比較</div>
+<div class="section" id="section-weekly-gsc">
+    <div class="section-title">週次GSC比較</div>
     <table>
         <thead>
             <tr><th>期間</th><th>クリック数</th><th>表示回数</th><th>CTR</th><th>平均順位</th></tr>
@@ -428,10 +415,10 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td>今週（2026-06-11〜2026-06-17）</td>
-            <td>1,939</td>
-            <td>65,450</td>
-            <td>2.96%</td>
-            <td>7.9位</td>
+            <td>2,471</td>
+            <td>80,566</td>
+            <td>3.07%</td>
+            <td>7.7位</td>
         </tr>
         <tr>
             <td>1週前（2026-06-04〜2026-06-10）</td>
@@ -473,162 +460,162 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td class="url" title="https://miitel.com/jp/">miitel.com/jp/</td>
-            <td>1,012</td>
-            <td>3,594</td>
-            <td>28.16%</td>
-            <td>2.7位</td>
+            <td>1,274</td>
+            <td>4,544</td>
+            <td>28.04%</td>
+            <td>2.8位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/column/mobile-call-recording/">miitel.com/jp/column/mobile-call-recording/</td>
-            <td>397</td>
-            <td>33,571</td>
-            <td>1.18%</td>
+            <td>490</td>
+            <td>40,950</td>
+            <td>1.2%</td>
             <td>6.9位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/service/phone/">miitel.com/jp/service/phone/</td>
-            <td>63</td>
-            <td>3,026</td>
-            <td>2.08%</td>
-            <td>2.8位</td>
+            <td>82</td>
+            <td>3,790</td>
+            <td>2.16%</td>
+            <td>2.7位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/service/phone/functions/">miitel.com/jp/service/phone/functions/</td>
-            <td>40</td>
-            <td>1,003</td>
-            <td>3.99%</td>
+            <td>57</td>
+            <td>1,336</td>
+            <td>4.27%</td>
             <td>5.1位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/about/">miitel.com/jp/about/</td>
-            <td>27</td>
-            <td>1,941</td>
-            <td>1.39%</td>
-            <td>1.5位</td>
+            <td>36</td>
+            <td>2,468</td>
+            <td>1.46%</td>
+            <td>1.6位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/service/meetings/">miitel.com/jp/service/meetings/</td>
-            <td>24</td>
-            <td>1,105</td>
-            <td>2.17%</td>
+            <td>31</td>
+            <td>1,410</td>
+            <td>2.2%</td>
             <td>2.0位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://miitel.com/jp/recpod/lp/">miitel.com/jp/recpod/lp/</td>
-            <td>19</td>
-            <td>165</td>
-            <td>11.52%</td>
-            <td>3.7位</td>
-            <td><span class="pill pill-green">良好</span></td>
-        </tr>
-        <tr>
             <td class="url" title="https://miitel.com/jp/service/callcenter/faq/">miitel.com/jp/service/callcenter/faq/</td>
-            <td>19</td>
-            <td>507</td>
-            <td>3.75%</td>
+            <td>29</td>
+            <td>689</td>
+            <td>4.21%</td>
             <td>5.1位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://miitel.com/jp/service/callcenter/functions/">miitel.com/jp/service/callcenter/functions/</td>
-            <td>18</td>
-            <td>707</td>
-            <td>2.55%</td>
-            <td>5.4位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://miitel.com/jp/column/miitel002/">miitel.com/jp/column/miitel002/</td>
-            <td>15</td>
-            <td>282</td>
-            <td>5.32%</td>
-            <td>4.6位</td>
-            <td><span class="pill pill-green">良好</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://miitel.com/jp/column/sales-meeting-recording/">miitel.com/jp/column/sales-meeting-recording/</td>
-            <td>14</td>
-            <td>564</td>
-            <td>2.48%</td>
-            <td>6.8位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://miitel.com/jp/about/synapse/">miitel.com/jp/about/synapse/</td>
-            <td>12</td>
-            <td>242</td>
-            <td>4.96%</td>
-            <td>5.5位</td>
+            <td class="url" title="https://miitel.com/jp/recpod/lp/">miitel.com/jp/recpod/lp/</td>
+            <td>27</td>
+            <td>215</td>
+            <td>12.56%</td>
+            <td>3.6位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/column/sales-wrap-up/">miitel.com/jp/column/sales-wrap-up/</td>
-            <td>12</td>
-            <td>4,043</td>
-            <td>0.3%</td>
-            <td>3.3位</td>
+            <td>21</td>
+            <td>5,311</td>
+            <td>0.4%</td>
+            <td>3.2位</td>
             <td><span class="pill pill-red">要改善</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://miitel.com/jp/callcenter/lp/">miitel.com/jp/callcenter/lp/</td>
-            <td>11</td>
-            <td>490</td>
-            <td>2.24%</td>
+            <td class="url" title="https://miitel.com/jp/service/callcenter/functions/">miitel.com/jp/service/callcenter/functions/</td>
+            <td>19</td>
+            <td>942</td>
+            <td>2.02%</td>
             <td>5.4位</td>
-            <td><span class="pill pill-green">良好</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://miitel.com/jp/case/">miitel.com/jp/case/</td>
-            <td>11</td>
-            <td>1,720</td>
-            <td>0.64%</td>
-            <td>1.3位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/service/phone/faq/">miitel.com/jp/service/phone/faq/</td>
-            <td>11</td>
-            <td>306</td>
-            <td>3.59%</td>
-            <td>5.0位</td>
+            <td>19</td>
+            <td>467</td>
+            <td>4.07%</td>
+            <td>5.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://miitel.com/jp/column/miitel002/">miitel.com/jp/column/miitel002/</td>
+            <td>18</td>
+            <td>338</td>
+            <td>5.33%</td>
+            <td>5.1位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://miitel.com/jp/about/synapse/">miitel.com/jp/about/synapse/</td>
+            <td>16</td>
+            <td>329</td>
+            <td>4.86%</td>
+            <td>5.5位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://miitel.com/jp/callcenter/lp/">miitel.com/jp/callcenter/lp/</td>
+            <td>15</td>
+            <td>666</td>
+            <td>2.25%</td>
+            <td>5.5位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://miitel.com/jp/case/">miitel.com/jp/case/</td>
+            <td>15</td>
+            <td>2,207</td>
+            <td>0.68%</td>
+            <td>1.3位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://miitel.com/jp/column/sales-meeting-recording/">miitel.com/jp/column/sales-meeting-recording/</td>
+            <td>14</td>
+            <td>703</td>
+            <td>1.99%</td>
+            <td>6.6位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://miitel.com/jp/column/sales-calls-time/">miitel.com/jp/column/sales-calls-time/</td>
+            <td>12</td>
+            <td>2,284</td>
+            <td>0.53%</td>
+            <td>6.4位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://miitel.com/jp/contact/">miitel.com/jp/contact/</td>
+            <td>12</td>
+            <td>69</td>
+            <td>17.39%</td>
+            <td>3.0位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/column/sales-efficiency/">miitel.com/jp/column/sales-efficiency/</td>
-            <td>10</td>
-            <td>1,613</td>
+            <td>11</td>
+            <td>1,782</td>
             <td>0.62%</td>
-            <td>7.5位</td>
+            <td>7.6位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://miitel.com/jp/service/recpod/">miitel.com/jp/service/recpod/</td>
-            <td>9</td>
-            <td>255</td>
-            <td>3.53%</td>
+            <td>11</td>
+            <td>343</td>
+            <td>3.21%</td>
             <td>3.1位</td>
-            <td><span class="pill pill-green">良好</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://miitel.com/jp/column/sales-calls-time/">miitel.com/jp/column/sales-calls-time/</td>
-            <td>8</td>
-            <td>1,942</td>
-            <td>0.41%</td>
-            <td>6.4位</td>
-            <td><span class="pill pill-red">要改善</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://miitel.com/jp/column/voice-accuracy/">miitel.com/jp/column/voice-accuracy/</td>
-            <td>8</td>
-            <td>430</td>
-            <td>1.86%</td>
-            <td>6.7位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr></tbody>
     </table>
@@ -637,14 +624,5 @@ tr:last-child td{border-bottom:none;}
 <div class="footer">自動生成レポート — GSC Weekly Report</div>
 
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script>
-const labels = ["今週", "1週前", "2週前", "3週前", "4週前"];
-const opts = {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{font:{size:10}}},y:{ticks:{font:{size:10}}}}};
-new Chart(document.getElementById('c1'),{type:'line',data:{labels,datasets:[{data:[1939, 2989, 2994, 2832, 2632],borderColor:'#185fa5',backgroundColor:'rgba(24,95,165,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#185fa5'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false}}}});
-new Chart(document.getElementById('c2'),{type:'line',data:{labels,datasets:[{data:[65450, 98040, 98565, 103319, 97214],borderColor:'#1d9e75',backgroundColor:'rgba(29,158,117,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#1d9e75'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:true,ticks:{...opts.scales.y.ticks,callback:v=>(v/1000).toFixed(0)+'K'}}}}});
-new Chart(document.getElementById('c3'),{type:'line',data:{labels,datasets:[{data:[7.9, 7.6, 7.5, 7.7, 7.8],borderColor:'#854f0b',backgroundColor:'rgba(133,79,11,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#854f0b'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false,reverse:true}}}});
-</script>
 </body>
 </html>
