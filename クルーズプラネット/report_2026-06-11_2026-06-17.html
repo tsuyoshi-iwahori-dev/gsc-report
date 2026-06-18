@@ -15,16 +15,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
 .nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
 .nav-links a:hover{background:#dce6ff;}
-.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
-.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
-.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
-.kpi-value{font-size:22px;font-weight:500;}
-.kpi-diff{font-size:11px;margin-top:4px;}
 .up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
 .section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
 .section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
-.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -66,82 +67,107 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">クルーズプラネット — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-17 17:32</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 11:59</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
-    <a href="#section-kpi">📊 KPI</a>
+    <a href="#section-goals">🎯 KGI・KPI</a>
+    <a href="#section-performance">📊 サイトパフォーマンス</a>
     <a href="#section-chart">📈 グラフ</a>
-    <a href="#section-seo-comments">🔍 SEO分析</a>
+    <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
     <a href="#section-query-comparison">🔄 クエリ比較</a>
     <a href="#section-summary">📋 週次サマリー</a>
     <a href="#section-pages">📄 ページ一覧</a>
 </div>
 
-<div class="kpi-grid" id="section-kpi">
-    <div class="kpi">
-        <div class="kpi-label">クリック数</div>
-        <div class="kpi-value">11,233</div>
-        <div class="kpi-diff"><span class="down">▼ 37.2%（前週 17,875）</span></div>
+
+<div class="section" id="section-goals">
+  <div class="section-title">🎯 KGI・KPI達成状況</div>
+  <div style="margin-bottom:12px;">
+    <span style="font-size:12px;color:#888;">KGI：</span>
+    <span style="font-size:14px;font-weight:600;">CV数</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+    
+<div style="background:#f8f9fc;border-radius:8px;padding:14px 16px;border:0.5px solid #e0e0dc;">
+  <div style="font-size:11px;color:#888;margin-bottom:4px;">月間CV数</div>
+  <div style="font-size:18px;font-weight:700;color:#1F3864;">－</div>
+  <div style="font-size:11px;color:#888;margin-top:2px;">目標：876件 （2026年11月時点）</div>
+  <div style="font-size:11px;margin-top:4px;color:#888;">GA4連携待ち</div>
+</div>
+<div style="background:#f8f9fc;border-radius:8px;padding:14px 16px;border:0.5px solid #e0e0dc;">
+  <div style="font-size:11px;color:#888;margin-bottom:4px;">月間セッション数</div>
+  <div style="font-size:18px;font-weight:700;color:#1F3864;">－</div>
+  <div style="font-size:11px;color:#888;margin-top:2px;">目標：145,936件 （2026年11月時点）</div>
+  <div style="font-size:11px;margin-top:4px;color:#888;">GA4連携待ち</div>
+</div>
+  </div>
+</div>
+
+<div class="performance-section" id="section-performance">
+    <div class="section-title">📊 サイトパフォーマンス</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">11,233</div>
+            <div class="kpi-diff"><span class="down">▼ 37.2%（前週 17,875）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">316,224</div>
+            <div class="kpi-diff"><span class="down">▼ 17.7%（前週 384,098）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">3.55%</div>
+            <div class="kpi-diff"><span class="down">▼ 23.7%（前週 4.65）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">11.0位</div>
+            <div class="kpi-diff"><span class="down">▼ 3.3位悪化（前週 7.7位）</span></div>
+        </div>
     </div>
-    <div class="kpi">
-        <div class="kpi-label">表示回数</div>
-        <div class="kpi-value">316,224</div>
-        <div class="kpi-diff"><span class="down">▼ 17.7%（前週 384,098）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">CTR</div>
-        <div class="kpi-value">3.55%</div>
-        <div class="kpi-diff"><span class="down">▼ 23.7%（前週 4.65）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">平均順位</div>
-        <div class="kpi-value">11.0位</div>
-        <div class="kpi-diff"><span class="down">▼ 3.3位悪化（前週 7.7位）</span></div>
+    <div class="chart-row" id="section-chart">
+        <div class="chart-box">
+            <div class="section-title">クリック数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">表示回数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">平均順位推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="chart-row" id="section-chart">
-    <div class="chart-box">
-        <div class="section-title">クリック数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
-        </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">表示回数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
-        </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">平均順位推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
-        </div>
-    </div>
-</div>
-
-<div class="section" id="section-seo-comments">
-    <div class="section-title">SEO分析コメント（自動検出）</div>
+<div class="section" id="section-seo-summary">
+    <div class="section-title">SEOサマリ</div>
     
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
                 <div class="insight-title">タイトル改善でCTRを伸ばせるページが23件あります</div>
                 <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://www.cruiseplanet.co.jp/special?id=33（順位6.0位・表示13,965回・CTR1.77%）<br>  - https://www.cruiseplanet.co.jp/area?area=round_the_world（順位6.0位・表示4,232回・CTR2.58%）<br>  - https://www.cruiseplanet.co.jp/ship?ship=msc（順位6.3位・表示4,195回・CTR1.79%）<br>  - https://www.cruiseplanet.co.jp/special/guntu.html（順位6.2位・表示3,944回・CTR1.09%）<br>  - https://www.cruiseplanet.co.jp/type?type=foreign_ship（順位6.2位・表示3,927回・CTR2.24%）</div>
-                <div class="insight-action">→ タイトルに数字・具体性・ベネフィットを追加してCTRを改善する。</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
                 <div class="insight-title">クリック数が急落（前週比-37.2%）</div>
-                <div class="insight-desc">クリック数が大幅に減少している。アルゴリズムアップデート・ペナルティ・競合変化のいずれかが原因の可能性がある。</div>
-                <div class="insight-action">→ Googleアップデート履歴と照合し、影響を受けたページを特定する。</div>
+                <div class="insight-desc">クリック数前週比-37.2%（今週11,233回・前週17,875回）</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -149,7 +175,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">今週新たに上位20位以内に入ったクエリが4件</div>
                 <div class="insight-desc">地中海クルーズ、クルーズ客船、クルージング、mscクルーズ</div>
-                <div class="insight-action">→ 新出現クエリのページを確認し、コンテンツ強化・内部リンク追加を検討する。</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -157,7 +182,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">先週上位20位以内にいたクエリが4件圏外に</div>
                 <div class="insight-desc">台湾 クルーズ船、台湾クルーズ 2026、台湾 クルーズ、三井オーシャンサクラ</div>
-                <div class="insight-action">→ 対象クエリのページを確認し、コンテンツの鮮度・relevanceを見直す。</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -165,7 +189,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">クリック数が50%以上増加したクエリが1件</div>
                 <div class="insight-desc">  - msc ベリッシマ（61→93CL, +52.5%）</div>
-                <div class="insight-action">→ 好調クエリのページをさらに強化し、関連クエリへの展開を検討する。</div>
             </div>
         </div>
         <div class="insight red">
@@ -173,7 +196,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">クリック数が30%以上減少したクエリが11件</div>
                 <div class="insight-desc">  - セレブリティミレニアム（98→34CL, -65.3%）<br>  - ベリッシマ クルーズ（175→93CL, -46.9%）<br>  - クルーズ船（269→148CL, -45.0%）<br>  - クルーズプラネット（1130→637CL, -43.6%）<br>  - ダイヤモンドプリンセス（108→64CL, -40.7%）</div>
-                <div class="insight-action">→ 対象クエリのページのタイトル・コンテンツ・競合状況を確認する。</div>
             </div>
         </div>
 </div>
@@ -238,18 +260,18 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>msc ベリッシマ</td>
-                <td>93</td><td>61</td>
-                <td>2.9</td><td>2.8</td>
-                <td>5.9%</td><td>12.87%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
-            </tr>
-            <tr>
                 <td>ベリッシマ クルーズ</td>
                 <td>93</td><td>175</td>
                 <td>2.1</td><td>1.9</td>
                 <td>13.56%</td><td>15.36%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>msc ベリッシマ</td>
+                <td>93</td><td>61</td>
+                <td>2.9</td><td>2.8</td>
+                <td>5.9%</td><td>12.87%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>ベリッシマ 2026</td>
