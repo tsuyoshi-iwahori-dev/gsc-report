@@ -24,8 +24,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
 .kpi-value{font-size:22px;font-weight:500;}
 .kpi-diff{font-size:11px;margin-top:4px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
-.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -67,19 +65,19 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">3大セキュリティ — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 12:10</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 15:59</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
     <a href="#section-goals">🎯 KGI・KPI</a>
-    <a href="#section-performance">📊 サイトパフォーマンス</a>
-    <a href="#section-chart">📈 グラフ</a>
+    <a href="#section-gsc-performance">📊 GSCパフォーマンス</a>
+    <a href="#section-ga-performance">📊 GAパフォーマンス</a>
     <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
-    <a href="#section-query-comparison">🔄 クエリ比較</a>
-    <a href="#section-summary">📋 週次サマリー</a>
+    <a href="#section-query">🔍 クエリ</a>
+    <a href="#section-weekly-gsc">📋 週次GSC</a>
     <a href="#section-pages">📄 ページ一覧</a>
 </div>
 
@@ -94,81 +92,75 @@ tr:last-child td{border-bottom:none;}
     
 <div style="background:#f8f9fc;border-radius:8px;padding:14px 16px;border:0.5px solid #e0e0dc;">
   <div style="font-size:11px;color:#888;margin-bottom:4px;">月間セッション数</div>
-  <div style="font-size:18px;font-weight:700;color:#1F3864;">－</div>
-  <div style="font-size:11px;color:#888;margin-top:2px;">目標：72,392件 （2027年1月時点）</div>
-  <div style="font-size:11px;margin-top:4px;color:#888;">GA4連携待ち</div>
+  <div style="font-size:22px;font-weight:700;color:#1F3864;">－</div>
+  <div style="font-size:11px;color:#888;margin-top:2px;">目標：72,392件</div>
+  
+  <div style="font-size:10px;color:#aaa;margin-top:4px;">2027年1月時点</div>
 </div>
   </div>
 </div>
 
-<div class="performance-section" id="section-performance">
-    <div class="section-title">📊 サイトパフォーマンス</div>
+<div class="performance-section" id="section-gsc-performance">
+    <div class="section-title">📊 GSCパフォーマンス</div>
     <div class="performance-grid">
         <div class="kpi">
             <div class="kpi-label">クリック数</div>
-            <div class="kpi-value">11,355</div>
-            <div class="kpi-diff"><span class="down">▼ 36.9%（前週 17,984）</span></div>
+            <div class="kpi-value">14,328</div>
+            <div class="kpi-diff"><span class="down">▼ 20.3%（前週 17,984）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">表示回数</div>
-            <div class="kpi-value">711,354</div>
-            <div class="kpi-diff"><span class="down">▼ 30.3%（前週 1,021,076）</span></div>
+            <div class="kpi-value">868,265</div>
+            <div class="kpi-diff"><span class="down">▼ 15.0%（前週 1,021,076）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">CTR</div>
-            <div class="kpi-value">1.6%</div>
-            <div class="kpi-diff"><span class="down">▼ 9.1%（前週 1.76）</span></div>
+            <div class="kpi-value">1.65%</div>
+            <div class="kpi-diff"><span class="down">▼ 6.3%（前週 1.76）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">平均順位</div>
-            <div class="kpi-value">8.5位</div>
-            <div class="kpi-diff"><span class="down">▼ 0.3位悪化（前週 8.2位）</span></div>
+            <div class="kpi-value">8.4位</div>
+            <div class="kpi-diff"><span class="down">▼ 0.2位悪化（前週 8.2位）</span></div>
         </div>
     </div>
-    <div class="chart-row" id="section-chart">
-        <div class="chart-box">
-            <div class="section-title">クリック数推移</div>
-            <div style="position:relative;height:120px;">
-                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
-            </div>
-        </div>
-        <div class="chart-box">
-            <div class="section-title">表示回数推移</div>
-            <div style="position:relative;height:120px;">
-                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
-            </div>
-        </div>
-        <div class="chart-box">
-            <div class="section-title">平均順位推移</div>
-            <div style="position:relative;height:120px;">
-                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
-            </div>
-        </div>
-    </div>
+</div>
+
+
+<div class="section" id="section-ga-performance">
+    <div class="section-title">📊 GAパフォーマンス</div>
+    <p style="font-size:12px;color:#888;">GA4データなし</p>
 </div>
 
 <div class="section" id="section-seo-summary">
     <div class="section-title">SEOサマリ</div>
     
+        <div class="insight red">
+            <div class="insight-icon">⚠</div>
+            <div class="insight-body">
+                <div class="insight-title">意図ミスマッチ候補ページ 1件を検出</div>
+                <div class="insight-desc">表示回数1万超・CTR0.1%未満のページ：<br>  - https://group.gmo/security/ciphersecurity/http-https/blog/what-is-https/（表示35,874回・CTR0.03%）</div>
+            </div>
+        </div>
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
                 <div class="insight-title">タイトル改善でCTRを伸ばせるページが71件あります</div>
-                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://group.gmo/security/security-all/information-security/blog/deepfake/（順位6.8位・表示13,821回・CTR0.48%）<br>  - https://group.gmo/security/security-all/information-security/blog/smartphone-virus/（順位8.3位・表示10,276回・CTR0.67%）<br>  - https://group.gmo/security/brandsecurity/dns/blog/dns-server/（順位6.1位・表示8,687回・CTR0.23%）<br>  - https://group.gmo/security/brandsecurity/dns/blog/domain-name/（順位9.2位・表示8,680回・CTR0.26%）<br>  - https://group.gmo/security/security-all/information-security/blog/smartphone-hijacking/（順位7.2位・表示7,780回・CTR2.26%）</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://group.gmo/security/ciphersecurity/http-https/blog/what-is-https/（順位9.5位・表示35,874回・CTR0.03%）<br>  - https://group.gmo/security/security-all/information-security/blog/deepfake/（順位6.7位・表示15,934回・CTR0.47%）<br>  - https://group.gmo/security/security-all/information-security/blog/smartphone-virus/（順位8.2位・表示12,329回・CTR0.7%）<br>  - https://group.gmo/security/brandsecurity/dns/blog/domain-name/（順位9.1位・表示10,802回・CTR0.23%）<br>  - https://group.gmo/security/brandsecurity/dns/blog/dns-server/（順位6.2位・表示10,168回・CTR0.28%）</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が急落（前週比-36.9%）</div>
-                <div class="insight-desc">クリック数前週比-36.9%（今週11,355回・前週17,984回）</div>
+                <div class="insight-title">クリック数が急落（前週比-20.3%）</div>
+                <div class="insight-desc">クリック数前週比-20.3%（今週14,328回・前週17,984回）</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
                 <div class="insight-title">今週新たに上位20位以内に入ったクエリが7件</div>
-                <div class="insight-desc">ジーエムオー、gmo グループ、ryotak、gmo グループ会社一覧、gmo 社長など</div>
+                <div class="insight-desc">ジーエムオー、gmo グループ、gmo グループ会社一覧、ryotak、スピリットベンチャー宣言など</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -178,11 +170,18 @@ tr:last-child td{border-bottom:none;}
                 <div class="insight-desc">gmoアリーナさいたま、このサイトのセキュリティ証明書には問題があります、ディープフェイク、ディープフェイクとは、こどものでんしけいやくなど</div>
             </div>
         </div>
+        <div class="insight neutral">
+            <div class="insight-icon">•</div>
+            <div class="insight-body">
+                <div class="insight-title">クリック数が50%以上増加したクエリが1件</div>
+                <div class="insight-desc">  - gmoグループ（93→154CL, +65.6%）</div>
+            </div>
+        </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が30%以上減少したクエリが11件</div>
-                <div class="insight-desc">  - さいたまスーパーアリーナ（58→21CL, -63.8%）<br>  - この接続ではプライバシーが保護されません（291→132CL, -54.6%）<br>  - gmo internet group（79→38CL, -51.9%）<br>  - gmo 問い合わせ 電話番号（73→37CL, -49.3%）<br>  - 1アカウント（33→17CL, -48.5%）</div>
+                <div class="insight-title">クリック数が30%以上減少したクエリが5件</div>
+                <div class="insight-desc">  - さいたまスーパーアリーナ（58→28CL, -51.7%）<br>  - この接続ではプライバシーが保護されません（291→148CL, -49.1%）<br>  - gmo internet group（79→51CL, -35.4%）<br>  - サイバー対処能力強化法（71→47CL, -33.8%）<br>  - gmo 問い合わせ 電話番号（73→51CL, -30.1%）</div>
             </div>
         </div>
 </div>
@@ -190,221 +189,222 @@ tr:last-child td{border-bottom:none;}
 
 
 
-        <div class="section" id="section-query-comparison" style="margin-bottom:16px;">
-            <div class="section-title">クエリ比較（今週 vs 前週 上位20件）</div>
-            <div style="overflow-x:auto;">
-                <table style="min-width:600px;">
-                    <thead>
-                        <tr>
-                            <th>クエリ</th>
-                            <th>今週CL</th><th>前週CL</th>
-                            <th>今週順位</th><th>前週順位</th>
-                            <th>今週CTR</th><th>前週CTR</th>
-                            <th>判定</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+        <div class="section" id="section-query">
+            <div class="section-title">🔍 クエリ</div>
+            <div style="margin-bottom:14px;">
+                <div style="font-size:12px;font-weight:500;color:#555;margin-bottom:8px;">今週 vs 前週（上位20件）</div>
+                <div style="overflow-x:auto;">
+                    <table style="min-width:600px;">
+                        <thead>
+                            <tr>
+                                <th>クエリ</th>
+                                <th>今週CL</th><th>前週CL</th>
+                                <th>今週順位</th><th>前週順位</th>
+                                <th>今週CTR</th><th>前週CTR</th>
+                                <th>判定</th>
+                            </tr>
+                        </thead>
+                        <tbody>
             <tr>
                 <td>gmo</td>
-                <td>1426</td><td>2208</td>
+                <td>1773</td><td>2208</td>
                 <td>2.8</td><td>2.7</td>
-                <td>8.53%</td><td>9.42%</td>
+                <td>8.42%</td><td>9.42%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>gmoインターネットグループ</td>
-                <td>238</td><td>437</td>
-                <td>1.0</td><td>1.0</td>
-                <td>29.6%</td><td>34.99%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>この接続ではプライバシーが保護されません</td>
-                <td>132</td><td>291</td>
-                <td>1.9</td><td>2.0</td>
-                <td>16.97%</td><td>21.3%</td>
+                <td>311</td><td>437</td>
+                <td>1.1</td><td>1.0</td>
+                <td>28.48%</td><td>34.99%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>gmoグループ</td>
-                <td>109</td><td>93</td>
+                <td>154</td><td>93</td>
                 <td>1.1</td><td>1.0</td>
-                <td>32.44%</td><td>46.97%</td>
+                <td>34.15%</td><td>46.97%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
+                <td>この接続ではプライバシーが保護されません</td>
+                <td>148</td><td>291</td>
+                <td>1.9</td><td>2.0</td>
+                <td>16.72%</td><td>21.3%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
                 <td>gmoインターネットグループ株式会社</td>
-                <td>83</td><td>134</td>
+                <td>107</td><td>134</td>
                 <td>1.1</td><td>1.1</td>
-                <td>40.69%</td><td>45.12%</td>
+                <td>40.23%</td><td>45.12%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>gmoインターネット</td>
-                <td>66</td><td>101</td>
+                <td>84</td><td>101</td>
                 <td>3.6</td><td>4.6</td>
-                <td>3.2%</td><td>3.33%</td>
+                <td>3.23%</td><td>3.33%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>私はロボットではありません</td>
-                <td>61</td><td>75</td>
-                <td>5.2</td><td>6.9</td>
-                <td>1.62%</td><td>1.3%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>サイバー対処能力強化法</td>
-                <td>38</td><td>71</td>
-                <td>1.3</td><td>1.3</td>
-                <td>11.59%</td><td>12.05%</td>
+                <td>70</td><td>75</td>
+                <td>5.9</td><td>6.9</td>
+                <td>1.52%</td><td>1.3%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>gmo internet group</td>
-                <td>38</td><td>79</td>
+                <td>51</td><td>79</td>
                 <td>1.0</td><td>1.4</td>
-                <td>34.23%</td><td>41.36%</td>
+                <td>35.92%</td><td>41.36%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>gmo 問い合わせ 電話番号</td>
-                <td>37</td><td>73</td>
+                <td>51</td><td>73</td>
                 <td>1.3</td><td>1.4</td>
-                <td>48.68%</td><td>48.34%</td>
+                <td>50.0%</td><td>48.34%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>サイバー対処能力強化法</td>
+                <td>47</td><td>71</td>
+                <td>1.3</td><td>1.3</td>
+                <td>11.52%</td><td>12.05%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>ジーエムオー</td>
-                <td>36</td><td>-</td>
-                <td>2.3</td><td>-</td>
-                <td>9.5%</td><td>-</td>
+                <td>42</td><td>-</td>
+                <td>2.4</td><td>-</td>
+                <td>8.82%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>gmoとは</td>
-                <td>31</td><td>50</td>
+                <td>38</td><td>50</td>
                 <td>1.7</td><td>1.5</td>
-                <td>7.06%</td><td>8.91%</td>
+                <td>6.7%</td><td>8.91%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>gmo グループ</td>
-                <td>26</td><td>-</td>
-                <td>1.0</td><td>-</td>
-                <td>50.98%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>ryotak</td>
-                <td>23</td><td>-</td>
-                <td>3.2</td><td>-</td>
-                <td>9.16%</td><td>-</td>
+                <td>33</td><td>-</td>
+                <td>1.1</td><td>-</td>
+                <td>48.53%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>さいたまスーパーアリーナ</td>
-                <td>21</td><td>58</td>
-                <td>7.6</td><td>6.5</td>
-                <td>0.7%</td><td>1.19%</td>
+                <td>28</td><td>58</td>
+                <td>7.4</td><td>6.5</td>
+                <td>0.79%</td><td>1.19%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>gmo グループ会社一覧</td>
-                <td>21</td><td>-</td>
-                <td>1.4</td><td>-</td>
+                <td>24</td><td>-</td>
+                <td>1.3</td><td>-</td>
                 <td>50.0%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
-                <td>gmo 社長</td>
-                <td>20</td><td>-</td>
-                <td>2.5</td><td>-</td>
-                <td>12.5%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>セキュリティ警告とは</td>
-                <td>18</td><td>-</td>
-                <td>2.2</td><td>-</td>
-                <td>12.24%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
                 <td>1アカウント</td>
-                <td>17</td><td>33</td>
-                <td>1.4</td><td>1.2</td>
-                <td>37.78%</td><td>48.53%</td>
+                <td>24</td><td>33</td>
+                <td>1.3</td><td>1.2</td>
+                <td>37.5%</td><td>48.53%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>gmo スピリットベンチャー宣言</td>
-                <td>17</td><td>-</td>
-                <td>1</td><td>-</td>
-                <td>77.27%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr></tbody>
-                </table>
-            </div>
-        </div>
-        
-        <div class="section" style="margin-bottom:16px;">
-            <div class="section-title">🆕 新出現クエリ（7件）</div>
-            <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
-            <tr>
-                <td>ジーエムオー</td>
-                <td>36</td>
-                <td>379</td>
-                <td>9.5%</td>
-                <td>2.3位</td>
-            </tr>
-            <tr>
-                <td>gmo グループ</td>
-                <td>26</td>
-                <td>51</td>
-                <td>50.98%</td>
-                <td>1.0位</td>
-            </tr>
-            <tr>
                 <td>ryotak</td>
-                <td>23</td>
-                <td>251</td>
-                <td>9.16%</td>
-                <td>3.2位</td>
+                <td>24</td><td>-</td>
+                <td>3.3</td><td>-</td>
+                <td>8.16%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
-                <td>gmo グループ会社一覧</td>
-                <td>21</td>
-                <td>42</td>
-                <td>50.0%</td>
-                <td>1.4位</td>
+                <td>スピリットベンチャー宣言</td>
+                <td>22</td><td>-</td>
+                <td>1</td><td>-</td>
+                <td>78.57%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>gmo 社長</td>
-                <td>20</td>
-                <td>160</td>
-                <td>12.5%</td>
+                <td>21</td><td>-</td>
+                <td>2.5</td><td>-</td>
+                <td>10.66%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>この接続ではプライバシーが保護されません 解決方法</td>
+                <td>20</td><td>-</td>
+                <td>1.0</td><td>-</td>
+                <td>29.41%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;">
+                <div style="background:#e1f5ee;border-radius:8px;padding:12px 14px;border:0.5px solid #b2dfdb;">
+                    <div style="font-size:12px;font-weight:600;color:#0f6e56;margin-bottom:8px;">🆕 新出現クエリ（7件）</div>
+                    <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>ジーエムオー</td>
+                <td>42</td>
+                <td>476</td>
+                <td>8.82%</td>
+                <td>2.4位</td>
+            </tr>
+            <tr>
+                <td>gmo グループ</td>
+                <td>33</td>
+                <td>68</td>
+                <td>48.53%</td>
+                <td>1.1位</td>
+            </tr>
+            <tr>
+                <td>gmo グループ会社一覧</td>
+                <td>24</td>
+                <td>48</td>
+                <td>50.0%</td>
+                <td>1.3位</td>
+            </tr>
+            <tr>
+                <td>ryotak</td>
+                <td>24</td>
+                <td>294</td>
+                <td>8.16%</td>
+                <td>3.3位</td>
+            </tr>
+            <tr>
+                <td>スピリットベンチャー宣言</td>
+                <td>22</td>
+                <td>28</td>
+                <td>78.57%</td>
+                <td>1位</td>
+            </tr>
+            <tr>
+                <td>gmo 社長</td>
+                <td>21</td>
+                <td>197</td>
+                <td>10.66%</td>
                 <td>2.5位</td>
             </tr>
             <tr>
-                <td>セキュリティ警告とは</td>
-                <td>18</td>
-                <td>147</td>
-                <td>12.24%</td>
-                <td>2.2位</td>
-            </tr>
-            <tr>
-                <td>gmo スピリットベンチャー宣言</td>
-                <td>17</td>
-                <td>22</td>
-                <td>77.27%</td>
-                <td>1位</td>
+                <td>この接続ではプライバシーが保護されません 解決方法</td>
+                <td>20</td>
+                <td>68</td>
+                <td>29.41%</td>
+                <td>1.0位</td>
             </tr></tbody></table>
-        </div>
-        
-        <div class="section" style="margin-bottom:16px;">
-            <div class="section-title">❌ 消滅クエリ（7件）</div>
-            <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+                </div>
+                <div style="background:#fcebeb;border-radius:8px;padding:12px 14px;border:0.5px solid #ffcdd2;">
+                    <div style="font-size:12px;font-weight:600;color:#a32d2d;margin-bottom:8px;">❌ 消滅クエリ（7件）</div>
+                    <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
             <tr>
                 <td>gmoアリーナさいたま</td>
                 <td>62</td>
@@ -454,11 +454,13 @@ tr:last-child td{border-bottom:none;}
                 <td>69.81%</td>
                 <td>2.1位</td>
             </tr></tbody></table>
+                </div>
+            </div>
         </div>
         
 
-<div class="section" id="section-summary">
-    <div class="section-title">週次サマリー比較</div>
+<div class="section" id="section-weekly-gsc">
+    <div class="section-title">週次GSC比較</div>
     <table>
         <thead>
             <tr><th>期間</th><th>クリック数</th><th>表示回数</th><th>CTR</th><th>平均順位</th></tr>
@@ -466,10 +468,10 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td>今週（2026-06-11〜2026-06-17）</td>
-            <td>11,355</td>
-            <td>711,354</td>
-            <td>1.6%</td>
-            <td>8.5位</td>
+            <td>14,328</td>
+            <td>868,265</td>
+            <td>1.65%</td>
+            <td>8.4位</td>
         </tr>
         <tr>
             <td>1週前（2026-06-04〜2026-06-10）</td>
@@ -511,162 +513,162 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/recaptcha/">group.gmo/security/security-all/information-security/blog/recaptcha/</td>
-            <td>964</td>
-            <td>21,365</td>
-            <td>4.51%</td>
-            <td>4.3位</td>
+            <td>1,181</td>
+            <td>26,360</td>
+            <td>4.48%</td>
+            <td>4.4位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/connection-is-not-private/">group.gmo/security/ciphersecurity/connection-is-not-private/</td>
-            <td>527</td>
-            <td>7,306</td>
-            <td>7.21%</td>
+            <td>624</td>
+            <td>8,778</td>
+            <td>7.11%</td>
             <td>4.9位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/security-warning/blog/virus-detection/">group.gmo/security/security-all/security-warning/blog/virus-detection/</td>
-            <td>272</td>
-            <td>7,743</td>
-            <td>3.51%</td>
-            <td>6.3位</td>
+            <td>334</td>
+            <td>9,146</td>
+            <td>3.65%</td>
+            <td>6.2位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/connection-is-not-private/blog/unable-to-connect-securely/">group.gmo/security/ciphersecurity/connection-is-not-private/blog/unable-to-connect-securely/</td>
-            <td>196</td>
-            <td>7,559</td>
-            <td>2.59%</td>
-            <td>7.1位</td>
+            <td>246</td>
+            <td>9,412</td>
+            <td>2.61%</td>
+            <td>6.9位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/smartphone-hijacking/">group.gmo/security/security-all/information-security/blog/smartphone-hijacking/</td>
-            <td>176</td>
-            <td>7,780</td>
-            <td>2.26%</td>
+            <td>208</td>
+            <td>9,284</td>
+            <td>2.24%</td>
             <td>7.2位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/ciphersecurity/not-secure/">group.gmo/security/ciphersecurity/not-secure/</td>
-            <td>144</td>
-            <td>3,235</td>
-            <td>4.45%</td>
-            <td>6.6位</td>
-            <td><span class="pill pill-green">良好</span></td>
-        </tr>
-        <tr>
             <td class="url" title="https://group.gmo/security/brandsecurity/dns/blog/ip-address/">group.gmo/security/brandsecurity/dns/blog/ip-address/</td>
-            <td>140</td>
-            <td>6,121</td>
-            <td>2.29%</td>
-            <td>7.7位</td>
+            <td>185</td>
+            <td>7,608</td>
+            <td>2.43%</td>
+            <td>7.4位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
+            <td class="url" title="https://group.gmo/security/ciphersecurity/not-secure/">group.gmo/security/ciphersecurity/not-secure/</td>
+            <td>178</td>
+            <td>4,056</td>
+            <td>4.39%</td>
+            <td>6.4位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
             <td class="url" title="https://group.gmo/security/security-all/security-warning/blog/security-certificate/">group.gmo/security/security-all/security-warning/blog/security-certificate/</td>
-            <td>125</td>
-            <td>2,037</td>
-            <td>6.14%</td>
+            <td>149</td>
+            <td>2,536</td>
+            <td>5.88%</td>
             <td>5.0位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/security-all/security-warning/">group.gmo/security/security-all/security-warning/</td>
-            <td>124</td>
-            <td>4,771</td>
-            <td>2.6%</td>
-            <td>8.6位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/encryption/blog/network-security-key/">group.gmo/security/ciphersecurity/encryption/blog/network-security-key/</td>
-            <td>105</td>
-            <td>3,171</td>
-            <td>3.31%</td>
-            <td>5.9位</td>
+            <td>148</td>
+            <td>3,871</td>
+            <td>3.82%</td>
+            <td>5.8位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/brandsecurity/domain-hijacking/blog/computer-virus/">group.gmo/security/brandsecurity/domain-hijacking/blog/computer-virus/</td>
-            <td>100</td>
-            <td>3,553</td>
-            <td>2.81%</td>
-            <td>7.3位</td>
+            <td class="url" title="https://group.gmo/security/security-all/security-warning/">group.gmo/security/security-all/security-warning/</td>
+            <td>146</td>
+            <td>5,785</td>
+            <td>2.52%</td>
+            <td>8.5位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/ai-information-leakage/">group.gmo/security/security-all/information-security/blog/ai-information-leakage/</td>
-            <td>88</td>
-            <td>3,835</td>
-            <td>2.29%</td>
-            <td>7.3位</td>
+            <td>123</td>
+            <td>4,924</td>
+            <td>2.5%</td>
+            <td>7.2位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/security-all/information-security/blog/unauthorized-computer-access-law/">group.gmo/security/security-all/information-security/blog/unauthorized-computer-access-law/</td>
-            <td>87</td>
-            <td>10,560</td>
-            <td>0.82%</td>
-            <td>4.8位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://group.gmo/security/cybersecurity/white-hat-hacker/blog/hacking/">group.gmo/security/cybersecurity/white-hat-hacker/blog/hacking/</td>
-            <td>84</td>
-            <td>4,491</td>
-            <td>1.87%</td>
-            <td>6.5位</td>
+            <td class="url" title="https://group.gmo/security/brandsecurity/domain-hijacking/blog/computer-virus/">group.gmo/security/brandsecurity/domain-hijacking/blog/computer-virus/</td>
+            <td>121</td>
+            <td>4,423</td>
+            <td>2.74%</td>
+            <td>7.2位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/cyber-response-capability-enhancement-act/">group.gmo/security/security-all/information-security/blog/cyber-response-capability-enhancement-act/</td>
-            <td>81</td>
-            <td>2,843</td>
-            <td>2.85%</td>
-            <td>4.6位</td>
+            <td>112</td>
+            <td>3,367</td>
+            <td>3.33%</td>
+            <td>4.5位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://group.gmo/security/security-all/information-security/blog/unauthorized-computer-access-law/">group.gmo/security/security-all/information-security/blog/unauthorized-computer-access-law/</td>
+            <td>109</td>
+            <td>13,077</td>
+            <td>0.83%</td>
+            <td>4.7位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/http-https/blog/always-on-ssl/">group.gmo/security/ciphersecurity/http-https/blog/always-on-ssl/</td>
-            <td>76</td>
-            <td>1,892</td>
-            <td>4.02%</td>
-            <td>10.6位</td>
+            <td>107</td>
+            <td>2,395</td>
+            <td>4.47%</td>
+            <td>10.2位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
+            <td class="url" title="https://group.gmo/security/cybersecurity/white-hat-hacker/blog/hacking/">group.gmo/security/cybersecurity/white-hat-hacker/blog/hacking/</td>
+            <td>104</td>
+            <td>5,399</td>
+            <td>1.93%</td>
+            <td>6.4位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/smartphone-virus/">group.gmo/security/security-all/information-security/blog/smartphone-virus/</td>
-            <td>69</td>
-            <td>10,276</td>
-            <td>0.67%</td>
-            <td>8.3位</td>
+            <td>86</td>
+            <td>12,329</td>
+            <td>0.7%</td>
+            <td>8.2位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/cybersecurity/cyberattack/blog/account-hijacking/">group.gmo/security/cybersecurity/cyberattack/blog/account-hijacking/</td>
-            <td>68</td>
-            <td>6,513</td>
-            <td>1.04%</td>
-            <td>9.9位</td>
+            <td>84</td>
+            <td>7,847</td>
+            <td>1.07%</td>
+            <td>9.7位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/security-all/information-security/blog/deepfake/">group.gmo/security/security-all/information-security/blog/deepfake/</td>
-            <td>67</td>
-            <td>13,821</td>
-            <td>0.48%</td>
-            <td>6.8位</td>
-            <td><span class="pill pill-red">要改善</span></td>
+            <td class="url" title="https://group.gmo/security/ciphersecurity/http-https/blog/self-signed-certificate/">group.gmo/security/ciphersecurity/http-https/blog/self-signed-certificate/</td>
+            <td>81</td>
+            <td>2,212</td>
+            <td>3.66%</td>
+            <td>8.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/ciphersecurity/encryption/">group.gmo/security/ciphersecurity/encryption/</td>
-            <td>64</td>
-            <td>5,047</td>
-            <td>1.27%</td>
-            <td>6.4位</td>
+            <td class="url" title="https://group.gmo/security/brandsecurity/dns/">group.gmo/security/brandsecurity/dns/</td>
+            <td>80</td>
+            <td>9,103</td>
+            <td>0.88%</td>
+            <td>9.3位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr></tbody>
     </table>
@@ -675,14 +677,5 @@ tr:last-child td{border-bottom:none;}
 <div class="footer">自動生成レポート — GSC Weekly Report</div>
 
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-<script>
-const labels = ["今週", "1週前", "2週前", "3週前", "4週前"];
-const opts = {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{font:{size:10}}},y:{ticks:{font:{size:10}}}}};
-new Chart(document.getElementById('c1'),{type:'line',data:{labels,datasets:[{data:[11355, 17984, 18434, 19573, 19606],borderColor:'#185fa5',backgroundColor:'rgba(24,95,165,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#185fa5'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false}}}});
-new Chart(document.getElementById('c2'),{type:'line',data:{labels,datasets:[{data:[711354, 1021076, 945210, 1067649, 1037813],borderColor:'#1d9e75',backgroundColor:'rgba(29,158,117,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#1d9e75'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:true,ticks:{...opts.scales.y.ticks,callback:v=>(v/1000).toFixed(0)+'K'}}}}});
-new Chart(document.getElementById('c3'),{type:'line',data:{labels,datasets:[{data:[8.5, 8.2, 8.1, 7.9, 8.2],borderColor:'#854f0b',backgroundColor:'rgba(133,79,11,0.07)',tension:0.3,fill:true,pointRadius:3,pointBackgroundColor:'#854f0b'}]},options:{...opts,scales:{...opts.scales,y:{...opts.scales.y,beginAtZero:false,reverse:true}}}});
-</script>
 </body>
 </html>
