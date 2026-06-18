@@ -15,16 +15,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
 .nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
 .nav-links a:hover{background:#dce6ff;}
-.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
-.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
-.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
-.kpi-value{font-size:22px;font-weight:500;}
-.kpi-diff{font-size:11px;margin-top:4px;}
 .up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
 .section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
 .section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
-.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -66,74 +67,84 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">Revcomm — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-17 17:29</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 11:56</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
-    <a href="#section-kpi">📊 KPI</a>
+    <a href="#section-goals">🎯 KGI・KPI</a>
+    <a href="#section-performance">📊 サイトパフォーマンス</a>
     <a href="#section-chart">📈 グラフ</a>
-    <a href="#section-seo-comments">🔍 SEO分析</a>
+    <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
     <a href="#section-query-comparison">🔄 クエリ比較</a>
     <a href="#section-summary">📋 週次サマリー</a>
     <a href="#section-pages">📄 ページ一覧</a>
 </div>
 
-<div class="kpi-grid" id="section-kpi">
-    <div class="kpi">
-        <div class="kpi-label">クリック数</div>
-        <div class="kpi-value">1,939</div>
-        <div class="kpi-diff"><span class="down">▼ 35.1%（前週 2,989）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">表示回数</div>
-        <div class="kpi-value">65,450</div>
-        <div class="kpi-diff"><span class="down">▼ 33.2%（前週 98,040）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">CTR</div>
-        <div class="kpi-value">2.96%</div>
-        <div class="kpi-diff"><span class="down">▼ 3.0%（前週 3.05）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">平均順位</div>
-        <div class="kpi-value">7.9位</div>
-        <div class="kpi-diff"><span class="down">▼ 0.3位悪化（前週 7.6位）</span></div>
+
+<div class="section" id="section-goals">
+    <div class="section-title">🎯 KGI・KPI達成状況</div>
+    <div style="color:#aaa;font-size:13px;padding:8px 0;">
+        目標値未設定
     </div>
 </div>
 
-<div class="chart-row" id="section-chart">
-    <div class="chart-box">
-        <div class="section-title">クリック数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+<div class="performance-section" id="section-performance">
+    <div class="section-title">📊 サイトパフォーマンス</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">1,939</div>
+            <div class="kpi-diff"><span class="down">▼ 35.1%（前週 2,989）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">65,450</div>
+            <div class="kpi-diff"><span class="down">▼ 33.2%（前週 98,040）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">2.96%</div>
+            <div class="kpi-diff"><span class="down">▼ 3.0%（前週 3.05）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">7.9位</div>
+            <div class="kpi-diff"><span class="down">▼ 0.3位悪化（前週 7.6位）</span></div>
         </div>
     </div>
-    <div class="chart-box">
-        <div class="section-title">表示回数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+    <div class="chart-row" id="section-chart">
+        <div class="chart-box">
+            <div class="section-title">クリック数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+            </div>
         </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">平均順位推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+        <div class="chart-box">
+            <div class="section-title">表示回数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">平均順位推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="section" id="section-seo-comments">
-    <div class="section-title">SEO分析コメント（自動検出）</div>
+<div class="section" id="section-seo-summary">
+    <div class="section-title">SEOサマリ</div>
     
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
                 <div class="insight-title">意図ミスマッチ候補ページ 2件を検出</div>
                 <div class="insight-desc">表示回数1万超・CTR0.1%未満のページ：<br>  - https://miitel.com/jp/column/mobile-call-recording/#4（表示11,712回・CTR0.02%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#iPhone（表示11,861回・CTR0.02%）</div>
-                <div class="insight-action">→ 対象ページのタイトル・メタディスクリプションをクエリ意図に合わせて修正する。</div>
             </div>
         </div>
         <div class="insight amber">
@@ -141,23 +152,20 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">タイトル改善でCTRを伸ばせるページが13件あります</div>
                 <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://miitel.com/jp/column/mobile-call-recording/（順位6.9位・表示33,571回・CTR1.18%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#iPhone（順位6.5位・表示11,861回・CTR0.02%）<br>  - https://miitel.com/jp/column/mobile-call-recording/#4（順位6.4位・表示11,712回・CTR0.02%）<br>  - https://miitel.com/jp/column/sales-calls-time/（順位6.4位・表示1,942回・CTR0.41%）<br>  - https://miitel.com/jp/column/callcenter-recording/（順位7.1位・表示1,625回・CTR0.25%）</div>
-                <div class="insight-action">→ タイトルに数字・具体性・ベネフィットを追加してCTRを改善する。</div>
             </div>
         </div>
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
                 <div class="insight-title">20位以下で表示されている重要ページが1件</div>
-                <div class="insight-desc">表示回数が多いにも関わらず20位以下のページ（上位5件）：<br>  - https://miitel.com/jp/column/call-center-turnover/（順位22.6位・表示363回）</div>
-                <div class="insight-action">→ 競合ページとのコンテンツ差・被リンク差を確認し、強化施策を検討する。</div>
+                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://miitel.com/jp/column/call-center-turnover/（順位22.6位・表示363回）</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
                 <div class="insight-title">クリック数が急落（前週比-35.1%）</div>
-                <div class="insight-desc">クリック数が大幅に減少している。アルゴリズムアップデート・ペナルティ・競合変化のいずれかが原因の可能性がある。</div>
-                <div class="insight-action">→ Googleアップデート履歴と照合し、影響を受けたページを特定する。</div>
+                <div class="insight-desc">クリック数前週比-35.1%（今週1,939回・前週2,989回）</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -165,7 +173,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">今週新たに上位20位以内に入ったクエリが4件</div>
                 <div class="insight-desc">miitel meetings、電話の録音、miitel analytics、miitel 料金</div>
-                <div class="insight-action">→ 新出現クエリのページを確認し、コンテンツ強化・内部リンク追加を検討する。</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -173,7 +180,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">先週上位20位以内にいたクエリが4件圏外に</div>
                 <div class="insight-desc">mi-teru、通話 録音、meetel、android 通話 録音</div>
-                <div class="insight-action">→ 対象クエリのページを確認し、コンテンツの鮮度・relevanceを見直す。</div>
             </div>
         </div>
         <div class="insight red">
@@ -181,7 +187,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">クリック数が30%以上減少したクエリが6件</div>
                 <div class="insight-desc">  - 電話録音（24→9CL, -62.5%）<br>  - miitel ログイン（166→79CL, -52.4%）<br>  - miitel（547→330CL, -39.7%）<br>  - miitel phone（41→25CL, -39.0%）<br>  - miitel recpod（11→7CL, -36.4%）</div>
-                <div class="insight-action">→ 対象クエリのページのタイトル・コンテンツ・競合状況を確認する。</div>
             </div>
         </div>
 </div>
@@ -302,6 +307,13 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
+                <td>電話録音</td>
+                <td>9</td><td>24</td>
+                <td>3.3</td><td>4.0</td>
+                <td>2.19%</td><td>4.08%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
                 <td>電話の録音</td>
                 <td>9</td><td>-</td>
                 <td>3.2</td><td>-</td>
@@ -316,11 +328,11 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>電話録音</td>
-                <td>9</td><td>24</td>
-                <td>3.3</td><td>4.0</td>
-                <td>2.19%</td><td>4.08%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>miitel 料金</td>
+                <td>7</td><td>-</td>
+                <td>7.0</td><td>-</td>
+                <td>23.33%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>miitel recpod</td>
@@ -334,13 +346,6 @@ tr:last-child td{border-bottom:none;}
                 <td>7</td><td>-</td>
                 <td>1</td><td>-</td>
                 <td>63.64%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>miitel 料金</td>
-                <td>7</td><td>-</td>
-                <td>7.0</td><td>-</td>
-                <td>23.33%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr></tbody>
                 </table>
