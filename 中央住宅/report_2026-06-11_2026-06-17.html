@@ -15,16 +15,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
 .nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
 .nav-links a:hover{background:#dce6ff;}
-.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
-.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
-.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
-.kpi-value{font-size:22px;font-weight:500;}
-.kpi-diff{font-size:11px;margin-top:4px;}
 .up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
 .section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
 .section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
-.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -66,82 +67,107 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">中央住宅 — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-17 17:33</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 12:01</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
-    <a href="#section-kpi">📊 KPI</a>
+    <a href="#section-goals">🎯 KGI・KPI</a>
+    <a href="#section-performance">📊 サイトパフォーマンス</a>
     <a href="#section-chart">📈 グラフ</a>
-    <a href="#section-seo-comments">🔍 SEO分析</a>
+    <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
     <a href="#section-query-comparison">🔄 クエリ比較</a>
     <a href="#section-summary">📋 週次サマリー</a>
     <a href="#section-pages">📄 ページ一覧</a>
 </div>
 
-<div class="kpi-grid" id="section-kpi">
-    <div class="kpi">
-        <div class="kpi-label">クリック数</div>
-        <div class="kpi-value">2,061</div>
-        <div class="kpi-diff"><span class="down">▼ 27.5%（前週 2,842）</span></div>
+
+<div class="section" id="section-goals">
+  <div class="section-title">🎯 KGI・KPI達成状況</div>
+  <div style="margin-bottom:12px;">
+    <span style="font-size:12px;color:#888;">KGI：</span>
+    <span style="font-size:14px;font-weight:600;">CV数</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+    
+<div style="background:#f8f9fc;border-radius:8px;padding:14px 16px;border:0.5px solid #e0e0dc;">
+  <div style="font-size:11px;color:#888;margin-bottom:4px;">年間CV数</div>
+  <div style="font-size:18px;font-weight:700;color:#1F3864;">－</div>
+  <div style="font-size:11px;color:#888;margin-top:2px;">目標：200件 （2026年全体）</div>
+  <div style="font-size:11px;margin-top:4px;color:#888;">GA4連携待ち</div>
+</div>
+<div style="background:#f8f9fc;border-radius:8px;padding:14px 16px;border:0.5px solid #e0e0dc;">
+  <div style="font-size:11px;color:#888;margin-bottom:4px;">年間セッション数</div>
+  <div style="font-size:18px;font-weight:700;color:#1F3864;">－</div>
+  <div style="font-size:11px;color:#888;margin-top:2px;">目標：117,493件 （2026年全体）</div>
+  <div style="font-size:11px;margin-top:4px;color:#888;">GA4連携待ち</div>
+</div>
+  </div>
+</div>
+
+<div class="performance-section" id="section-performance">
+    <div class="section-title">📊 サイトパフォーマンス</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">2,061</div>
+            <div class="kpi-diff"><span class="down">▼ 27.5%（前週 2,842）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">154,022</div>
+            <div class="kpi-diff"><span class="down">▼ 33.3%（前週 230,831）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">1.34%</div>
+            <div class="kpi-diff"><span class="up">▲ 8.9%（前週 1.23）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">7.1位</div>
+            <div class="kpi-diff"><span class="down">▼ 0.7位悪化（前週 6.4位）</span></div>
+        </div>
     </div>
-    <div class="kpi">
-        <div class="kpi-label">表示回数</div>
-        <div class="kpi-value">154,022</div>
-        <div class="kpi-diff"><span class="down">▼ 33.3%（前週 230,831）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">CTR</div>
-        <div class="kpi-value">1.34%</div>
-        <div class="kpi-diff"><span class="up">▲ 8.9%（前週 1.23）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">平均順位</div>
-        <div class="kpi-value">7.1位</div>
-        <div class="kpi-diff"><span class="down">▼ 0.7位悪化（前週 6.4位）</span></div>
+    <div class="chart-row" id="section-chart">
+        <div class="chart-box">
+            <div class="section-title">クリック数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">表示回数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">平均順位推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="chart-row" id="section-chart">
-    <div class="chart-box">
-        <div class="section-title">クリック数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
-        </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">表示回数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
-        </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">平均順位推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
-        </div>
-    </div>
-</div>
-
-<div class="section" id="section-seo-comments">
-    <div class="section-title">SEO分析コメント（自動検出）</div>
+<div class="section" id="section-seo-summary">
+    <div class="section-title">SEOサマリ</div>
     
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
                 <div class="insight-title">タイトル改善でCTRを伸ばせるページが33件あります</div>
                 <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://www.polus-kodate.com/kurashi/area/saitama-shi/omiya-st.php（順位6.8位・表示30,191回・CTR0.96%）<br>  - https://www.polus-kodate.com/kurashi/area/kashiwa-shi/kashiwa-st.php（順位6.0位・表示11,020回・CTR1.22%）<br>  - https://www.polus-kodate.com/kurashi/area/saitama-shi/urawa-st.php（順位5.3位・表示9,170回・CTR1.69%）<br>  - https://www.polus-kodate.com/kurashi/area/funabashi-shi/funabashi-st.php（順位6.6位・表示8,243回・CTR0.69%）<br>  - https://www.polus-kodate.com/kurashi/area/kawaguchi-shi/kawaguchi-st.php（順位7.2位・表示4,177回・CTR0.89%）</div>
-                <div class="insight-action">→ タイトルに数字・具体性・ベネフィットを追加してCTRを改善する。</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
                 <div class="insight-title">クリック数が急落（前週比-27.5%）</div>
-                <div class="insight-desc">クリック数が大幅に減少している。アルゴリズムアップデート・ペナルティ・競合変化のいずれかが原因の可能性がある。</div>
-                <div class="insight-action">→ Googleアップデート履歴と照合し、影響を受けたページを特定する。</div>
+                <div class="insight-desc">クリック数前週比-27.5%（今週2,061回・前週2,842回）</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -149,7 +175,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">今週新たに上位20位以内に入ったクエリが3件</div>
                 <div class="insight-desc">大袋駅、柏駅周辺、大宮 路線図</div>
-                <div class="insight-action">→ 新出現クエリのページを確認し、コンテンツ強化・内部リンク追加を検討する。</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -157,7 +182,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">先週上位20位以内にいたクエリが3件圏外に</div>
                 <div class="insight-desc">松戸駅 暇つぶし、柏駅 観光、草加駅周辺</div>
-                <div class="insight-action">→ 対象クエリのページを確認し、コンテンツの鮮度・relevanceを見直す。</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -165,7 +189,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">クリック数が50%以上増加したクエリが2件</div>
                 <div class="insight-desc">  - 守谷駅（12→24CL, +100.0%）<br>  - 川口駅（14→23CL, +64.3%）</div>
-                <div class="insight-action">→ 好調クエリのページをさらに強化し、関連クエリへの展開を検討する。</div>
             </div>
         </div>
         <div class="insight red">
@@ -173,7 +196,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">クリック数が30%以上減少したクエリが6件</div>
                 <div class="insight-desc">  - 越谷駅（68→32CL, -52.9%）<br>  - ポラス 分譲（15→8CL, -46.7%）<br>  - 柏駅（130→70CL, -46.2%）<br>  - 草加駅（74→43CL, -41.9%）<br>  - 船橋駅（46→30CL, -34.8%）</div>
-                <div class="insight-action">→ 対象クエリのページのタイトル・コンテンツ・競合状況を確認する。</div>
             </div>
         </div>
 </div>
