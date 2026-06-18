@@ -15,16 +15,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
 .nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
 .nav-links a:hover{background:#dce6ff;}
-.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
-.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
-.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
-.kpi-value{font-size:22px;font-weight:500;}
-.kpi-diff{font-size:11px;margin-top:4px;}
 .up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
 .section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
 .section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
-.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -66,14 +67,14 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">ラビット探偵社 — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 11:47</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 11:59</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
     <a href="#section-goals">🎯 KGI・KPI</a>
-    <a href="#section-kpi">📊 KPI</a>
+    <a href="#section-performance">📊 サイトパフォーマンス</a>
     <a href="#section-chart">📈 グラフ</a>
     <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
@@ -90,46 +91,48 @@ tr:last-child td{border-bottom:none;}
     </div>
 </div>
 
-<div class="kpi-grid" id="section-kpi">
-    <div class="kpi">
-        <div class="kpi-label">クリック数</div>
-        <div class="kpi-value">1,067</div>
-        <div class="kpi-diff"><span class="down">▼ 21.1%（前週 1,352）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">表示回数</div>
-        <div class="kpi-value">30,465</div>
-        <div class="kpi-diff"><span class="down">▼ 24.5%（前週 40,352）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">CTR</div>
-        <div class="kpi-value">3.5%</div>
-        <div class="kpi-diff"><span class="up">▲ 4.5%（前週 3.35）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">平均順位</div>
-        <div class="kpi-value">11.3位</div>
-        <div class="kpi-diff"><span class="down">▼ 0.5位悪化（前週 10.8位）</span></div>
-    </div>
-</div>
-
-<div class="chart-row" id="section-chart">
-    <div class="chart-box">
-        <div class="section-title">クリック数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+<div class="performance-section" id="section-performance">
+    <div class="section-title">📊 サイトパフォーマンス</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">1,067</div>
+            <div class="kpi-diff"><span class="down">▼ 21.1%（前週 1,352）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">30,465</div>
+            <div class="kpi-diff"><span class="down">▼ 24.5%（前週 40,352）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">3.5%</div>
+            <div class="kpi-diff"><span class="up">▲ 4.5%（前週 3.35）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">11.3位</div>
+            <div class="kpi-diff"><span class="down">▼ 0.5位悪化（前週 10.8位）</span></div>
         </div>
     </div>
-    <div class="chart-box">
-        <div class="section-title">表示回数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+    <div class="chart-row" id="section-chart">
+        <div class="chart-box">
+            <div class="section-title">クリック数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+            </div>
         </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">平均順位推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+        <div class="chart-box">
+            <div class="section-title">表示回数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">平均順位推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+            </div>
         </div>
     </div>
 </div>
@@ -227,18 +230,11 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>gps 浮気調査アプリ バレない</td>
-                <td>6</td><td>5</td>
-                <td>3.1</td><td>3.0</td>
-                <td>16.67%</td><td>12.82%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
-            </tr>
-            <tr>
-                <td>彼女 浮気してるかも</td>
-                <td>6</td><td>-</td>
-                <td>5.7</td><td>-</td>
-                <td>12.0%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
+                <td>ラビット探偵</td>
+                <td>6</td><td>11</td>
+                <td>1</td><td>1.0</td>
+                <td>60.0%</td><td>44.0%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>浮気 確認 スマホ</td>
@@ -248,11 +244,11 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
-                <td>ラビット探偵</td>
-                <td>6</td><td>11</td>
-                <td>1</td><td>1.0</td>
-                <td>60.0%</td><td>44.0%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>gps 浮気調査アプリ バレない</td>
+                <td>6</td><td>5</td>
+                <td>3.1</td><td>3.0</td>
+                <td>16.67%</td><td>12.82%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>エアタグ 浮気調査 バレる</td>
@@ -262,18 +258,18 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill">－</span></td>
             </tr>
             <tr>
+                <td>彼女 浮気してるかも</td>
+                <td>6</td><td>-</td>
+                <td>5.7</td><td>-</td>
+                <td>12.0%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
                 <td>バレない 位置情報アプリ</td>
                 <td>5</td><td>-</td>
                 <td>1.2</td><td>-</td>
                 <td>100%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>airtag 不倫</td>
-                <td>5</td><td>4</td>
-                <td>1</td><td>1.2</td>
-                <td>55.56%</td><td>50.0%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>位置情報アプリ バレない</td>
@@ -283,18 +279,18 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
+                <td>airtag 不倫</td>
+                <td>5</td><td>4</td>
+                <td>1</td><td>1.2</td>
+                <td>55.56%</td><td>50.0%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
                 <td>バレないgpsアプリ</td>
                 <td>5</td><td>-</td>
                 <td>4.8</td><td>-</td>
                 <td>18.52%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>gps バレない アプリ</td>
-                <td>4</td><td>6</td>
-                <td>2.5</td><td>1.5</td>
-                <td>36.36%</td><td>31.58%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>gps アプリ バレない</td>
@@ -304,17 +300,17 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
-                <td>女が不倫する理由</td>
-                <td>4</td><td>-</td>
-                <td>2.1</td><td>-</td>
-                <td>33.33%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
                 <td>バレずに位置情報 アプリ</td>
                 <td>4</td><td>-</td>
                 <td>1</td><td>-</td>
                 <td>66.67%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>スマホ 浮気確認</td>
+                <td>4</td><td>-</td>
+                <td>2.8</td><td>-</td>
+                <td>100%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
@@ -332,10 +328,17 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>スマホ 浮気確認</td>
+                <td>gps バレない アプリ</td>
+                <td>4</td><td>6</td>
+                <td>2.5</td><td>1.5</td>
+                <td>36.36%</td><td>31.58%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>女が不倫する理由</td>
                 <td>4</td><td>-</td>
-                <td>2.8</td><td>-</td>
-                <td>100%</td><td>-</td>
+                <td>2.1</td><td>-</td>
+                <td>33.33%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr></tbody>
                 </table>
