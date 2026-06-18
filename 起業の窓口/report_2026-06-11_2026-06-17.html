@@ -15,16 +15,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
 .nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
 .nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
 .nav-links a:hover{background:#dce6ff;}
-.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;}
-.kpi{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px;}
-.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
-.kpi-value{font-size:22px;font-weight:500;}
-.kpi-diff{font-size:11px;margin-top:4px;}
 .up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
 .section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
 .section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;}
-.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
 .insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
 .insight:last-child{margin-bottom:0;}
 .insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
@@ -66,90 +67,98 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">起業の窓口 — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-17 17:33</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 12:00</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
 
 <div class="nav-links">
-    <a href="#section-kpi">📊 KPI</a>
+    <a href="#section-goals">🎯 KGI・KPI</a>
+    <a href="#section-performance">📊 サイトパフォーマンス</a>
     <a href="#section-chart">📈 グラフ</a>
-    <a href="#section-seo-comments">🔍 SEO分析</a>
+    <a href="#section-seo-summary">🔍 SEOサマリ</a>
     
     <a href="#section-query-comparison">🔄 クエリ比較</a>
     <a href="#section-summary">📋 週次サマリー</a>
     <a href="#section-pages">📄 ページ一覧</a>
 </div>
 
-<div class="kpi-grid" id="section-kpi">
-    <div class="kpi">
-        <div class="kpi-label">クリック数</div>
-        <div class="kpi-value">1,292</div>
-        <div class="kpi-diff"><span class="down">▼ 29.2%（前週 1,826）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">表示回数</div>
-        <div class="kpi-value">115,532</div>
-        <div class="kpi-diff"><span class="down">▼ 26.2%（前週 156,513）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">CTR</div>
-        <div class="kpi-value">1.12%</div>
-        <div class="kpi-diff"><span class="down">▼ 4.3%（前週 1.17）</span></div>
-    </div>
-    <div class="kpi">
-        <div class="kpi-label">平均順位</div>
-        <div class="kpi-value">16.9位</div>
-        <div class="kpi-diff"><span class="down">▼ 1.2位悪化（前週 15.7位）</span></div>
+
+<div class="section" id="section-goals">
+    <div class="section-title">🎯 KGI・KPI達成状況</div>
+    <div style="color:#aaa;font-size:13px;padding:8px 0;">
+        目標値未設定
     </div>
 </div>
 
-<div class="chart-row" id="section-chart">
-    <div class="chart-box">
-        <div class="section-title">クリック数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+<div class="performance-section" id="section-performance">
+    <div class="section-title">📊 サイトパフォーマンス</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">1,292</div>
+            <div class="kpi-diff"><span class="down">▼ 29.2%（前週 1,826）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">115,532</div>
+            <div class="kpi-diff"><span class="down">▼ 26.2%（前週 156,513）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">1.12%</div>
+            <div class="kpi-diff"><span class="down">▼ 4.3%（前週 1.17）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">16.9位</div>
+            <div class="kpi-diff"><span class="down">▼ 1.2位悪化（前週 15.7位）</span></div>
         </div>
     </div>
-    <div class="chart-box">
-        <div class="section-title">表示回数推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+    <div class="chart-row" id="section-chart">
+        <div class="chart-box">
+            <div class="section-title">クリック数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c1" role="img" aria-label="クリック数推移"></canvas>
+            </div>
         </div>
-    </div>
-    <div class="chart-box">
-        <div class="section-title">平均順位推移</div>
-        <div style="position:relative;height:120px;">
-            <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+        <div class="chart-box">
+            <div class="section-title">表示回数推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c2" role="img" aria-label="表示回数推移"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="section-title">平均順位推移</div>
+            <div style="position:relative;height:120px;">
+                <canvas id="c3" role="img" aria-label="平均順位推移"></canvas>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="section" id="section-seo-comments">
-    <div class="section-title">SEO分析コメント（自動検出）</div>
+<div class="section" id="section-seo-summary">
+    <div class="section-title">SEOサマリ</div>
     
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
                 <div class="insight-title">タイトル改善でCTRを伸ばせるページが32件あります</div>
                 <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://kigyo.gmo/magazine/sidejob/（順位18.3位・表示5,240回・CTR0.48%）<br>  - https://kigyo.gmo/magazine/opening/list/resident-tax-sole-proprietorship/（順位10.8位・表示2,669回・CTR0.26%）<br>  - https://kigyo.gmo/magazine/sidejob/list/ai-sidejob/（順位9.2位・表示1,915回・CTR0.73%）<br>  - https://kigyo.gmo/magazine/accounting/list/seal-certification-fees/（順位7.2位・表示1,889回・CTR0.53%）<br>  - https://kigyo.gmo/magazine/sidejob/list/sidejob-unemployment-benefits/（順位5.9位・表示1,662回・CTR2.35%）</div>
-                <div class="insight-action">→ タイトルに数字・具体性・ベネフィットを追加してCTRを改善する。</div>
             </div>
         </div>
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
                 <div class="insight-title">20位以下で表示されている重要ページが17件</div>
-                <div class="insight-desc">表示回数が多いにも関わらず20位以下のページ（上位5件）：<br>  - https://kigyo.gmo/magazine/sidejob/list/sidejob-not-get-caught-top9-methods/（順位20.7位・表示2,074回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-make-a-profit/（順位25.4位・表示1,956回）<br>  - https://kigyo.gmo/magazine/sidejob/list/additional-income/（順位24.6位・表示1,504回）<br>  - https://kigyo.gmo/magazine/accounting/list/annual-income-of-5-million-sole-proprietorship/（順位20.6位・表示1,220回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-recommend-10000-yen-per-month/（順位30.6位・表示1,210回）</div>
-                <div class="insight-action">→ 競合ページとのコンテンツ差・被リンク差を確認し、強化施策を検討する。</div>
+                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://kigyo.gmo/magazine/sidejob/list/sidejob-not-get-caught-top9-methods/（順位20.7位・表示2,074回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-make-a-profit/（順位25.4位・表示1,956回）<br>  - https://kigyo.gmo/magazine/sidejob/list/additional-income/（順位24.6位・表示1,504回）<br>  - https://kigyo.gmo/magazine/accounting/list/annual-income-of-5-million-sole-proprietorship/（順位20.6位・表示1,220回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-recommend-10000-yen-per-month/（順位30.6位・表示1,210回）</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
                 <div class="insight-title">クリック数が急落（前週比-29.2%）</div>
-                <div class="insight-desc">クリック数が大幅に減少している。アルゴリズムアップデート・ペナルティ・競合変化のいずれかが原因の可能性がある。</div>
-                <div class="insight-action">→ Googleアップデート履歴と照合し、影響を受けたページを特定する。</div>
+                <div class="insight-desc">クリック数前週比-29.2%（今週1,292回・前週1,826回）</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -157,7 +166,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">今週新たに上位20位以内に入ったクエリが9件</div>
                 <div class="insight-desc">副収入、副業に ならない お小遣い稼ぎ、岩田うの、趣味 副業、開業届 e-taxなど</div>
-                <div class="insight-action">→ 新出現クエリのページを確認し、コンテンツ強化・内部リンク追加を検討する。</div>
             </div>
         </div>
         <div class="insight neutral">
@@ -165,7 +173,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">先週上位20位以内にいたクエリが9件圏外に</div>
                 <div class="insight-desc">副業にならない稼ぎ方、株式会社md、転売おすすめ、個人事業主 何がある、出金伝票 書き方など</div>
-                <div class="insight-action">→ 対象クエリのページを確認し、コンテンツの鮮度・relevanceを見直す。</div>
             </div>
         </div>
         <div class="insight red">
@@ -173,7 +180,6 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-body">
                 <div class="insight-title">クリック数が30%以上減少したクエリが6件</div>
                 <div class="insight-desc">  - 李佑記 hanamichi（42→20CL, -52.4%）<br>  - 転売 おすすめ（53→26CL, -50.9%）<br>  - 転売で儲かる商品リスト 2026（37→21CL, -43.2%）<br>  - 会社にバレない副業 おすすめ（10→6CL, -40.0%）<br>  - sns副業とは（8→5CL, -37.5%）</div>
-                <div class="insight-action">→ 対象クエリのページのタイトル・コンテンツ・競合状況を確認する。</div>
             </div>
         </div>
 </div>
@@ -266,13 +272,6 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>岩田うの</td>
-                <td>6</td><td>-</td>
-                <td>4.6</td><td>-</td>
-                <td>27.27%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
                 <td>会社にバレない副業 おすすめ</td>
                 <td>6</td><td>10</td>
                 <td>5.2</td><td>6.8</td>
@@ -285,6 +284,20 @@ tr:last-child td{border-bottom:none;}
                 <td>5.1</td><td>6.1</td>
                 <td>3.21%</td><td>2.45%</td>
                 <td><span class="pill">－</span></td>
+            </tr>
+            <tr>
+                <td>岩田うの</td>
+                <td>6</td><td>-</td>
+                <td>4.6</td><td>-</td>
+                <td>27.27%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>sns副業とは</td>
+                <td>5</td><td>8</td>
+                <td>2.1</td><td>3.6</td>
+                <td>14.71%</td><td>11.76%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>趣味 副業</td>
@@ -301,11 +314,11 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
-                <td>sns副業とは</td>
-                <td>5</td><td>8</td>
-                <td>2.1</td><td>3.6</td>
-                <td>14.71%</td><td>11.76%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>副業 バレない</td>
+                <td>4</td><td>-</td>
+                <td>19.8</td><td>-</td>
+                <td>5.41%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>個人事業主 仕事内容</td>
@@ -319,13 +332,6 @@ tr:last-child td{border-bottom:none;}
                 <td>4</td><td>-</td>
                 <td>6.4</td><td>-</td>
                 <td>1.64%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>副業 バレない</td>
-                <td>4</td><td>-</td>
-                <td>19.8</td><td>-</td>
-                <td>5.41%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
