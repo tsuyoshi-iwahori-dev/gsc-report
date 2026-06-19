@@ -40,6 +40,9 @@ tr:last-child td{border-bottom:none;}
 .pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;border:0.5px solid #e0e0dc;}
 .pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
 .footer{text-align:center;font-size:11px;color:#aaa;padding:16px 0;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.chart-box-title{font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:10px;}
 .ai-section-card{background:#f8f9fc;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid #185fa5;}
 .ai-section-card:last-child{margin-bottom:0;}
 .ai-section-header{font-size:13px;font-weight:600;color:#185fa5;margin-bottom:8px;}
@@ -65,7 +68,7 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">田所商店 — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 23:57</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-19 16:32</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
@@ -93,18 +96,18 @@ tr:last-child td{border-bottom:none;}
     <div class="performance-grid">
         <div class="kpi">
             <div class="kpi-label">クリック数</div>
-            <div class="kpi-value">35,844</div>
-            <div class="kpi-diff"><span class="down">▼ 10.0%（前週 39,806）</span></div>
+            <div class="kpi-value">41,499</div>
+            <div class="kpi-diff"><span class="up">▲ 4.3%（前週 39,806）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">表示回数</div>
-            <div class="kpi-value">314,168</div>
-            <div class="kpi-diff"><span class="down">▼ 10.7%（前週 351,663）</span></div>
+            <div class="kpi-value">358,814</div>
+            <div class="kpi-diff"><span class="up">▲ 2.0%（前週 351,663）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">CTR</div>
-            <div class="kpi-value">11.41%</div>
-            <div class="kpi-diff"><span class="up">▲ 0.8%（前週 11.32）</span></div>
+            <div class="kpi-value">11.57%</div>
+            <div class="kpi-diff"><span class="up">▲ 2.2%（前週 11.32）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">平均順位</div>
@@ -112,12 +115,26 @@ tr:last-child td{border-bottom:none;}
             <div class="kpi-diff"><span class="down">▼ 0.1位悪化（前週 8.9位）</span></div>
         </div>
     </div>
+    <div class="chart-row">
+        <div class="chart-box">
+            <div class="chart-box-title">クリック数推移</div>
+            <canvas id="chart-clicks" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">表示回数推移</div>
+            <canvas id="chart-imp" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">平均順位推移</div>
+            <canvas id="chart-pos" height="120"></canvas>
+        </div>
+    </div>
 </div>
 
 <div class="section" id="section-ga-performance">
     <div class="section-title">📊 GAパフォーマンス</div>
     <div style="font-size:12px;color:#888;margin-bottom:12px;">2026年5月累計</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
         <div class="kpi">
             <div class="kpi-label">月間セッション数</div>
             <div class="kpi-value">282,425</div>
@@ -135,36 +152,36 @@ tr:last-child td{border-bottom:none;}
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
-                <div class="insight-title">タイトル改善でCTRを伸ばせるページが17件あります</div>
-                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://misoya.net/store_category/04/（順位6.1位・表示10,074回・CTR1.73%）<br>  - https://misoya.net/store/tadokoro-ikegami/（順位9.2位・表示4,260回・CTR1.13%）<br>  - https://misoya.net/store/tadokoro-senrioka/（順位5.5位・表示4,016回・CTR2.51%）<br>  - https://misoya.net/store/tadokoro-miyamae/?utm_source=google&amp;utm_medium=google_map&amp;utm_campaign=miyamae（順位5.6位・表示3,547回・CTR1.33%）<br>  - https://misoya.net/store/ichiroku/（順位5.6位・表示3,323回・CTR2.89%）</div>
+                <div class="insight-title">タイトル改善でCTRを伸ばせるページが13件あります</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://misoya.net/store_category/04/（順位6.1位・表示11,278回・CTR1.68%）<br>  - https://misoya.net/store/tadokoro-ikegami/（順位9.3位・表示5,003回・CTR1.06%）<br>  - https://misoya.net/store/tadokoro-senrioka/（順位5.5位・表示4,481回・CTR2.45%）<br>  - https://misoya.net/store/tadokoro-tama-newtown/?utm_source=google&amp;utm_medium=google_map&amp;utm_campaign=tama-newtown（順位6.9位・表示4,365回・CTR1.15%）<br>  - https://misoya.net/store/ichiroku/（順位5.7位・表示4,094回・CTR2.71%）</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
-                <div class="insight-title">今週新たに上位20位以内に入ったクエリが143件</div>
-                <div class="insight-desc">田所担々麺、田所商店 東広島、一六、田所商店 千葉北、田所商店 松戸など</div>
+                <div class="insight-title">今週新たに上位20位以内に入ったクエリが136件</div>
+                <div class="insight-desc">田所担々麺、田所商店 東広島、田所商店 高崎 メニュー、一六、庄助 ラーメンなど</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
-                <div class="insight-title">先週上位20位以内にいたクエリが143件圏外に</div>
-                <div class="insight-desc">田所商店 泉大津 メニュー、田所商店 木更津 メニュー、味噌ラーメン 五日市、沖縄 田所商店、田所商店 クレジットカードなど</div>
+                <div class="insight-title">先週上位20位以内にいたクエリが136件圏外に</div>
+                <div class="insight-desc">田所商店 泉大津 メニュー、田所商店 北海道味噌、田所商店 木更津 メニュー、味噌ラーメン 五日市、沖縄 田所商店など</div>
             </div>
         </div>
         <div class="insight green">
             <div class="insight-icon">✓</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が50%以上増加したクエリが41件</div>
-                <div class="insight-desc">  - 田所商店亀有（36→153CL, +325.0%）<br>  - ラーメン田所商店（25→43CL, +72.0%）<br>  - 亀有田所商店（13→42CL, +223.1%）<br>  - 田所商店 冷やし中華（23→39CL, +69.6%）<br>  - 田所商店 アプリ（17→30CL, +76.5%）</div>
+                <div class="insight-title">クリック数が50%以上増加したクエリが59件</div>
+                <div class="insight-desc">  - 田所商店亀有（36→279CL, +675.0%）<br>  - 亀有 田所商店（105→197CL, +87.6%）<br>  - 亀有田所商店（13→66CL, +407.7%）<br>  - 田所 ラーメン（31→52CL, +67.7%）<br>  - ラーメン田所商店（25→46CL, +84.0%）</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が30%以上減少したクエリが86件</div>
-                <div class="insight-desc">  - 田所商店 沖縄（84→56CL, -33.3%）<br>  - 田所商店 支払い方法（91→55CL, -39.6%）<br>  - 田所商店 浜松（46→32CL, -30.4%）<br>  - 田所商店 メニュー 値段 2026（44→29CL, -34.1%）<br>  - 田所商店 岡山（48→29CL, -39.6%）</div>
+                <div class="insight-title">クリック数が30%以上減少したクエリが47件</div>
+                <div class="insight-desc">  - 田所商店 支払い方法（91→58CL, -36.3%）<br>  - たどころしょうてん（48→32CL, -33.3%）<br>  - 田所商店 岡山（48→31CL, -35.4%）<br>  - 田所商店 ひたちなか（46→29CL, -37.0%）<br>  - 田所商店 広島（40→24CL, -40.0%）</div>
             </div>
         </div>
 </div>
@@ -188,142 +205,142 @@ tr:last-child td{border-bottom:none;}
                         <tbody>
             <tr>
                 <td>田所商店</td>
-                <td>12752</td><td>14403</td>
+                <td>14700</td><td>14403</td>
                 <td>1.0</td><td>1.0</td>
-                <td>42.42%</td><td>42.32%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>42.54%</td><td>42.32%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所商店 メニュー</td>
-                <td>4657</td><td>5130</td>
+                <td>5319</td><td>5130</td>
                 <td>1.0</td><td>1.0</td>
-                <td>71.37%</td><td>71.99%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>71.58%</td><td>71.99%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所商店 - メニュー</td>
-                <td>698</td><td>786</td>
+                <td>812</td><td>786</td>
                 <td>1.0</td><td>1.0</td>
-                <td>64.15%</td><td>61.21%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>64.19%</td><td>61.21%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所商店 店舗</td>
-                <td>414</td><td>445</td>
+                <td>495</td><td>445</td>
                 <td>1.0</td><td>1.0</td>
-                <td>35.69%</td><td>34.28%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>36.26%</td><td>34.28%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>麺場 田所商店</td>
-                <td>397</td><td>440</td>
+                <td>459</td><td>440</td>
                 <td>1.0</td><td>1.0</td>
-                <td>45.22%</td><td>50.69%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>44.22%</td><td>50.69%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所商店 亀有</td>
-                <td>237</td><td>288</td>
+                <td>407</td><td>288</td>
                 <td>1.0</td><td>1.0</td>
-                <td>52.2%</td><td>56.69%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>57.0%</td><td>56.69%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>田所商店亀有</td>
+                <td>279</td><td>36</td>
+                <td>1.0</td><td>1</td>
+                <td>58.13%</td><td>63.16%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>味噌ラーメン</td>
-                <td>224</td><td>274</td>
-                <td>6.8</td><td>6.9</td>
-                <td>1.9%</td><td>1.75%</td>
+                <td>256</td><td>274</td>
+                <td>6.9</td><td>6.9</td>
+                <td>1.88%</td><td>1.75%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>田所商店 メニュー 期間限定</td>
-                <td>189</td><td>200</td>
+                <td>214</td><td>200</td>
                 <td>1</td><td>1</td>
-                <td>67.26%</td><td>64.94%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>味噌ラーメン 田所商店</td>
-                <td>167</td><td>177</td>
-                <td>1.0</td><td>1.0</td>
-                <td>37.28%</td><td>34.57%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>田所商店亀有</td>
-                <td>153</td><td>36</td>
-                <td>1.0</td><td>1</td>
-                <td>51.0%</td><td>63.16%</td>
+                <td>65.64%</td><td>64.94%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>亀有 田所商店</td>
-                <td>136</td><td>105</td>
+                <td>197</td><td>105</td>
                 <td>1.0</td><td>1</td>
-                <td>55.06%</td><td>49.3%</td>
+                <td>56.61%</td><td>49.3%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>味噌ラーメン 田所商店</td>
+                <td>188</td><td>177</td>
+                <td>1.0</td><td>1.0</td>
+                <td>36.43%</td><td>34.57%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所製麺</td>
-                <td>133</td><td>154</td>
+                <td>156</td><td>154</td>
                 <td>1.0</td><td>1.0</td>
-                <td>31.29%</td><td>33.62%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>31.2%</td><td>33.62%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所商店 - メニュー 値段</td>
-                <td>119</td><td>149</td>
+                <td>136</td><td>149</td>
                 <td>1.6</td><td>1.4</td>
-                <td>11.31%</td><td>13.0%</td>
+                <td>11.14%</td><td>13.0%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>ラーメン</td>
-                <td>111</td><td>125</td>
+                <td>122</td><td>125</td>
                 <td>14.9</td><td>14.8</td>
-                <td>0.72%</td><td>0.74%</td>
+                <td>0.7%</td><td>0.74%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>麺場田所商店</td>
-                <td>102</td><td>111</td>
+                <td>117</td><td>111</td>
                 <td>1.0</td><td>1.0</td>
-                <td>39.08%</td><td>44.76%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>田所商店 期間限定メニュー</td>
-                <td>90</td><td>89</td>
-                <td>1</td><td>1</td>
-                <td>53.57%</td><td>51.15%</td>
+                <td>39.39%</td><td>44.76%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所</td>
-                <td>88</td><td>121</td>
+                <td>106</td><td>121</td>
                 <td>1.1</td><td>1.1</td>
-                <td>7.15%</td><td>8.11%</td>
+                <td>7.4%</td><td>8.11%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>田所商店 期間限定メニュー</td>
+                <td>97</td><td>89</td>
+                <td>1</td><td>1</td>
+                <td>51.87%</td><td>51.15%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所ラーメン</td>
-                <td>81</td><td>91</td>
-                <td>1.1</td><td>1.0</td>
-                <td>24.04%</td><td>21.72%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>95</td><td>91</td>
+                <td>1.0</td><td>1.0</td>
+                <td>24.8%</td><td>21.72%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所商店 メニュー ランキング</td>
-                <td>80</td><td>80</td>
+                <td>92</td><td>80</td>
                 <td>1.9</td><td>1.9</td>
-                <td>13.84%</td><td>11.14%</td>
-                <td><span class="pill">－ 横ばい</span></td>
+                <td>14.0%</td><td>11.14%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>田所商店 メニュー 期間限定 2026</td>
-                <td>78</td><td>107</td>
-                <td>1.5</td><td>1.4</td>
-                <td>45.09%</td><td>48.86%</td>
+                <td>89</td><td>107</td>
+                <td>1.4</td><td>1.4</td>
+                <td>44.72%</td><td>48.86%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr></tbody>
                     </table>
@@ -335,73 +352,73 @@ tr:last-child td{border-bottom:none;}
                     <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
             <tr>
                 <td>田所担々麺</td>
-                <td>23</td>
-                <td>51</td>
-                <td>45.1%</td>
+                <td>32</td>
+                <td>74</td>
+                <td>43.24%</td>
                 <td>1.2位</td>
             </tr>
             <tr>
                 <td>田所商店 東広島</td>
-                <td>16</td>
-                <td>58</td>
-                <td>27.59%</td>
-                <td>1位</td>
-            </tr>
-            <tr>
-                <td>一六</td>
-                <td>12</td>
-                <td>134</td>
-                <td>8.96%</td>
-                <td>4.6位</td>
-            </tr>
-            <tr>
-                <td>田所商店 千葉北</td>
-                <td>12</td>
-                <td>26</td>
-                <td>46.15%</td>
-                <td>1位</td>
-            </tr>
-            <tr>
-                <td>田所商店 松戸</td>
-                <td>12</td>
-                <td>55</td>
-                <td>21.82%</td>
+                <td>19</td>
+                <td>65</td>
+                <td>29.23%</td>
                 <td>1位</td>
             </tr>
             <tr>
                 <td>田所商店 高崎 メニュー</td>
-                <td>12</td>
-                <td>21</td>
-                <td>57.14%</td>
+                <td>14</td>
+                <td>23</td>
+                <td>60.87%</td>
                 <td>1.0位</td>
             </tr>
             <tr>
+                <td>一六</td>
+                <td>13</td>
+                <td>141</td>
+                <td>9.22%</td>
+                <td>4.4位</td>
+            </tr>
+            <tr>
                 <td>庄助 ラーメン</td>
-                <td>11</td>
-                <td>50</td>
-                <td>22.0%</td>
+                <td>13</td>
+                <td>61</td>
+                <td>21.31%</td>
                 <td>2.4位</td>
             </tr>
             <tr>
-                <td>田所 商店 大垣 メニュー</td>
-                <td>11</td>
-                <td>27</td>
-                <td>40.74%</td>
-                <td>2.0位</td>
+                <td>田所商店 営業時間</td>
+                <td>13</td>
+                <td>88</td>
+                <td>14.77%</td>
+                <td>1.6位</td>
             </tr>
             <tr>
-                <td>田所 商店 市原 メニュー</td>
-                <td>11</td>
-                <td>21</td>
-                <td>52.38%</td>
+                <td>田所商店 松戸</td>
+                <td>13</td>
+                <td>62</td>
+                <td>20.97%</td>
                 <td>1位</td>
             </tr>
             <tr>
-                <td>田所商店 南浦和</td>
-                <td>11</td>
-                <td>49</td>
-                <td>22.45%</td>
+                <td>田所しょうてん</td>
+                <td>12</td>
+                <td>22</td>
+                <td>54.55%</td>
                 <td>1位</td>
+            </tr>
+            <tr>
+                <td>田所商店 千葉北</td>
+                <td>12</td>
+                <td>31</td>
+                <td>38.71%</td>
+                <td>1位</td>
+            </tr>
+            <tr>
+                <td>田所商店 担々麺</td>
+                <td>12</td>
+                <td>33</td>
+                <td>36.36%</td>
+                <td>1.5位</td>
             </tr></tbody></table>
                 </div>
                 <div style="background:#fcebeb;border-radius:8px;padding:12px 14px;border:0.5px solid #ffcdd2;">
@@ -412,6 +429,13 @@ tr:last-child td{border-bottom:none;}
                 <td>18</td>
                 <td>38</td>
                 <td>47.37%</td>
+                <td>1位</td>
+            </tr>
+            <tr>
+                <td>田所商店 北海道味噌</td>
+                <td>15</td>
+                <td>33</td>
+                <td>45.45%</td>
                 <td>1位</td>
             </tr>
             <tr>
@@ -441,13 +465,6 @@ tr:last-child td{border-bottom:none;}
                 <td>38</td>
                 <td>28.95%</td>
                 <td>1.7位</td>
-            </tr>
-            <tr>
-                <td>味噌ラーメン 亀有</td>
-                <td>10</td>
-                <td>19</td>
-                <td>52.63%</td>
-                <td>1.8位</td>
             </tr>
             <tr>
                 <td>田所 商店 メニュー 期間 限定 5 月</td>
@@ -492,9 +509,9 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td>今週（2026-06-11〜2026-06-17）</td>
-            <td>35,844</td>
-            <td>314,168</td>
-            <td>11.41%</td>
+            <td>41,499</td>
+            <td>358,814</td>
+            <td>11.57%</td>
             <td>9.0位</td>
         </tr>
         <tr>
@@ -517,6 +534,13 @@ tr:last-child td{border-bottom:none;}
             <td>355,478</td>
             <td>11.71%</td>
             <td>8.6位</td>
+        </tr>
+        <tr>
+            <td>4週前（2026-05-14〜2026-05-20）</td>
+            <td>38,501</td>
+            <td>339,804</td>
+            <td>11.33%</td>
+            <td>8.9位</td>
         </tr></tbody>
     </table>
 </div>
@@ -530,162 +554,162 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td class="url" title="https://misoya.net/">misoya.net/</td>
-            <td>11185</td>
-            <td>96,175</td>
-            <td>11.63%</td>
-            <td>6.3位</td>
+            <td>13041</td>
+            <td>109,868</td>
+            <td>11.87%</td>
+            <td>6.2位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/menu_list/">misoya.net/menu_list/</td>
-            <td>8469</td>
-            <td>52,859</td>
-            <td>16.02%</td>
+            <td>9526</td>
+            <td>59,796</td>
+            <td>15.93%</td>
             <td>2.5位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/menu/">misoya.net/menu/</td>
-            <td>1798</td>
-            <td>15,985</td>
-            <td>11.25%</td>
-            <td>4.6位</td>
+            <td>2083</td>
+            <td>17,970</td>
+            <td>11.59%</td>
+            <td>4.5位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/store/tadokoro-premium/">misoya.net/store/tadokoro-premium/</td>
-            <td>1594</td>
-            <td>24,475</td>
-            <td>6.51%</td>
+            <td>1605</td>
+            <td>24,732</td>
+            <td>6.49%</td>
             <td>1.5位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/open-kameari/">misoya.net/open-kameari/</td>
-            <td>751</td>
-            <td>2,604</td>
-            <td>28.84%</td>
-            <td>2.5位</td>
+            <td>1234</td>
+            <td>3,989</td>
+            <td>30.94%</td>
+            <td>2.7位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/store_map/">misoya.net/store_map/</td>
-            <td>581</td>
-            <td>8,764</td>
-            <td>6.63%</td>
-            <td>4.3位</td>
+            <td>682</td>
+            <td>9,939</td>
+            <td>6.86%</td>
+            <td>4.2位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://misoya.net/news/">misoya.net/news/</td>
-            <td>382</td>
-            <td>21,441</td>
-            <td>1.78%</td>
-            <td>1.3位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
+            <td class="url" title="https://misoya.net/store/tadokoro-funabashi/">misoya.net/store/tadokoro-funabashi/</td>
+            <td>565</td>
+            <td>8,328</td>
+            <td>6.78%</td>
+            <td>1.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/store_category/02/">misoya.net/store_category/02/</td>
-            <td>378</td>
-            <td>35,460</td>
-            <td>1.07%</td>
+            <td>471</td>
+            <td>41,258</td>
+            <td>1.14%</td>
             <td>2.5位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
+            <td class="url" title="https://misoya.net/news/">misoya.net/news/</td>
+            <td>439</td>
+            <td>24,857</td>
+            <td>1.77%</td>
+            <td>1.3位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
             <td class="url" title="https://misoya.net/202606-edomaeaka/">misoya.net/202606-edomaeaka/</td>
-            <td>296</td>
-            <td>5,480</td>
-            <td>5.4%</td>
-            <td>1.8位</td>
+            <td>324</td>
+            <td>5,693</td>
+            <td>5.69%</td>
+            <td>1.9位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/newshop/">misoya.net/newshop/</td>
-            <td>284</td>
-            <td>31,690</td>
-            <td>0.9%</td>
+            <td>324</td>
+            <td>36,568</td>
+            <td>0.89%</td>
             <td>1.5位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://misoya.net/store/tadokoro-funabashi/">misoya.net/store/tadokoro-funabashi/</td>
-            <td>278</td>
-            <td>4,442</td>
-            <td>6.26%</td>
-            <td>2.0位</td>
-            <td><span class="pill pill-green">良好</span></td>
-        </tr>
-        <tr>
             <td class="url" title="https://misoya.net/open-setagaya/">misoya.net/open-setagaya/</td>
-            <td>213</td>
-            <td>1,711</td>
-            <td>12.45%</td>
-            <td>3.5位</td>
+            <td>246</td>
+            <td>2,020</td>
+            <td>12.18%</td>
+            <td>3.4位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/2026-gomamisohiyashi/">misoya.net/2026-gomamisohiyashi/</td>
-            <td>204</td>
-            <td>1,763</td>
-            <td>11.57%</td>
+            <td>224</td>
+            <td>1,972</td>
+            <td>11.36%</td>
             <td>4.7位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/store_category/01/">misoya.net/store_category/01/</td>
-            <td>177</td>
-            <td>6,572</td>
-            <td>2.69%</td>
-            <td>4.7位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://misoya.net/store_category/04/">misoya.net/store_category/04/</td>
-            <td>174</td>
-            <td>10,074</td>
-            <td>1.73%</td>
-            <td>6.1位</td>
+            <td>203</td>
+            <td>7,619</td>
+            <td>2.66%</td>
+            <td>4.4位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/store/tadokoro-okinawa-ginowan/">misoya.net/store/tadokoro-okinawa-ginowan/</td>
-            <td>168</td>
-            <td>2,296</td>
-            <td>7.32%</td>
-            <td>5.1位</td>
-            <td><span class="pill pill-green">良好</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://misoya.net/open-tadokoro-naratomio/">misoya.net/open-tadokoro-naratomio/</td>
-            <td>161</td>
-            <td>4,015</td>
-            <td>4.01%</td>
-            <td>4.6位</td>
+            <td>192</td>
+            <td>2,607</td>
+            <td>7.36%</td>
+            <td>5.0位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/store/tadokoro-naratomio/">misoya.net/store/tadokoro-naratomio/</td>
-            <td>159</td>
-            <td>2,001</td>
-            <td>7.95%</td>
-            <td>4.2位</td>
+            <td>190</td>
+            <td>2,531</td>
+            <td>7.51%</td>
+            <td>4.4位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
+            <td class="url" title="https://misoya.net/store_category/04/">misoya.net/store_category/04/</td>
+            <td>189</td>
+            <td>11,278</td>
+            <td>1.68%</td>
+            <td>6.1位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
             <td class="url" title="https://misoya.net/store/sendaishoten/">misoya.net/store/sendaishoten/</td>
-            <td>153</td>
-            <td>2,783</td>
-            <td>5.5%</td>
-            <td>7.3位</td>
+            <td>179</td>
+            <td>3,358</td>
+            <td>5.33%</td>
+            <td>7.6位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://misoya.net/store/tadkoro-tennozu/">misoya.net/store/tadkoro-tennozu/</td>
-            <td>151</td>
-            <td>3,047</td>
-            <td>4.96%</td>
-            <td>4.0位</td>
+            <td>177</td>
+            <td>3,622</td>
+            <td>4.89%</td>
+            <td>3.9位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://misoya.net/open-tadokoro-naratomio/">misoya.net/open-tadokoro-naratomio/</td>
+            <td>166</td>
+            <td>4,134</td>
+            <td>4.02%</td>
+            <td>4.6位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr></tbody>
     </table>
@@ -695,5 +719,53 @@ tr:last-child td{border-bottom:none;}
 
 </div>
 <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:24px;right:24px;background:#1F3864;color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:999;opacity:0.85;display:flex;align-items:center;justify-content:center;">▲</button>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  var labels = ["4週前","3週前","2週前","1週前","今週"];
+  var tickStyle = {font:{size:11},color:'#888'};
+  var gridStyle = {color:'rgba(0,0,0,0.05)'};
+  var baseOpts = {
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:tickStyle,grid:gridStyle},
+      y:{ticks:tickStyle,grid:gridStyle,beginAtZero:true}
+    }
+  };
+  new Chart(document.getElementById('chart-clicks'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'クリック数',data:[38501,41618,36381,39806,41499],
+      borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#2563eb',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-imp'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'表示回数',data:[339804,355478,321702,351663,358814],
+      borderColor:'#059669',backgroundColor:'rgba(5,150,105,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#059669',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-pos'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'平均順位',data:[8.9,8.6,8.8,8.9,9.0],
+      borderColor:'#d97706',backgroundColor:'rgba(217,119,6,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#d97706',tension:0.3,fill:true
+    }]},
+    options:{
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{ticks:tickStyle,grid:gridStyle},
+        y:{ticks:tickStyle,grid:gridStyle,reverse:false,min:6,max:13}
+      }
+    }
+  });
+})();
+</script>
 </body>
 </html>
