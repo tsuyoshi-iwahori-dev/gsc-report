@@ -40,6 +40,9 @@ tr:last-child td{border-bottom:none;}
 .pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;border:0.5px solid #e0e0dc;}
 .pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
 .footer{text-align:center;font-size:11px;color:#aaa;padding:16px 0;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.chart-box-title{font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:10px;}
 .ai-section-card{background:#f8f9fc;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid #185fa5;}
 .ai-section-card:last-child{margin-bottom:0;}
 .ai-section-header{font-size:13px;font-weight:600;color:#185fa5;margin-bottom:8px;}
@@ -65,7 +68,7 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">起業の窓口 — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 23:59</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-19 16:33</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
@@ -93,23 +96,37 @@ tr:last-child td{border-bottom:none;}
     <div class="performance-grid">
         <div class="kpi">
             <div class="kpi-label">クリック数</div>
-            <div class="kpi-value">1,599</div>
-            <div class="kpi-diff"><span class="down">▼ 12.4%（前週 1,826）</span></div>
+            <div class="kpi-value">1,986</div>
+            <div class="kpi-diff"><span class="up">▲ 8.8%（前週 1,826）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">表示回数</div>
-            <div class="kpi-value">140,677</div>
-            <div class="kpi-diff"><span class="down">▼ 10.1%（前週 156,513）</span></div>
+            <div class="kpi-value">166,171</div>
+            <div class="kpi-diff"><span class="up">▲ 6.2%（前週 156,513）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">CTR</div>
-            <div class="kpi-value">1.14%</div>
-            <div class="kpi-diff"><span class="down">▼ 2.6%（前週 1.17）</span></div>
+            <div class="kpi-value">1.2%</div>
+            <div class="kpi-diff"><span class="up">▲ 2.6%（前週 1.17）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">平均順位</div>
-            <div class="kpi-value">16.3位</div>
-            <div class="kpi-diff"><span class="down">▼ 0.6位悪化（前週 15.7位）</span></div>
+            <div class="kpi-value">16.1位</div>
+            <div class="kpi-diff"><span class="down">▼ 0.4位悪化（前週 15.7位）</span></div>
+        </div>
+    </div>
+    <div class="chart-row">
+        <div class="chart-box">
+            <div class="chart-box-title">クリック数推移</div>
+            <canvas id="chart-clicks" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">表示回数推移</div>
+            <canvas id="chart-imp" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">平均順位推移</div>
+            <canvas id="chart-pos" height="120"></canvas>
         </div>
     </div>
 </div>
@@ -117,7 +134,7 @@ tr:last-child td{border-bottom:none;}
 <div class="section" id="section-ga-performance">
     <div class="section-title">📊 GAパフォーマンス</div>
     <div style="font-size:12px;color:#888;margin-bottom:12px;">2026年5月累計</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
         <div class="kpi">
             <div class="kpi-label">月間セッション数</div>
             <div class="kpi-value">14,377</div>
@@ -135,43 +152,43 @@ tr:last-child td{border-bottom:none;}
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
-                <div class="insight-title">タイトル改善でCTRを伸ばせるページが38件あります</div>
-                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://kigyo.gmo/magazine/sidejob/（順位18.0位・表示6,179回・CTR0.58%）<br>  - https://kigyo.gmo/magazine/opening/list/resident-tax-sole-proprietorship/（順位10.3位・表示3,417回・CTR0.32%）<br>  - https://kigyo.gmo/magazine/accounting/list/seal-certification-fees/（順位7.1位・表示2,395回・CTR0.58%）<br>  - https://kigyo.gmo/magazine/sidejob/list/ai-sidejob/（順位9.3位・表示2,295回・CTR0.74%）<br>  - https://kigyo.gmo/magazine/sidejob/list/sidejob-unemployment-benefits/（順位5.9位・表示2,134回・CTR2.34%）</div>
+                <div class="insight-title">タイトル改善でCTRを伸ばせるページが41件あります</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://kigyo.gmo/magazine/sidejob/（順位17.8位・表示7,068回・CTR0.61%）<br>  - https://kigyo.gmo/magazine/opening/list/resident-tax-sole-proprietorship/（順位10.0位・表示4,066回・CTR0.34%）<br>  - https://kigyo.gmo/magazine/accounting/list/estimated-tax-check/（順位7.5位・表示3,344回・CTR1.14%）<br>  - https://kigyo.gmo/magazine/accounting/list/seal-certification-fees/（順位7.1位・表示2,925回・CTR0.62%）<br>  - https://kigyo.gmo/magazine/sidejob/list/ai-sidejob/（順位9.5位・表示2,668回・CTR0.75%）</div>
             </div>
         </div>
         <div class="insight amber">
             <div class="insight-icon">!</div>
             <div class="insight-body">
-                <div class="insight-title">20位以下で表示されている重要ページが20件</div>
-                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://kigyo.gmo/magazine/sidejob/list/sidejob-not-get-caught-top9-methods/（順位20.2位・表示2,490回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-make-a-profit/（順位24.1位・表示2,402回）<br>  - https://kigyo.gmo/magazine/sidejob/list/additional-income/（順位23.8位・表示1,770回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-recommend-10000-yen-per-month/（順位29.3位・表示1,366回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-at-home/（順位22.3位・表示1,299回）</div>
+                <div class="insight-title">20位以下で表示されている重要ページが15件</div>
+                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-make-a-profit/（順位22.7位・表示2,850回）<br>  - https://kigyo.gmo/magazine/sidejob/list/additional-income/（順位23.6位・表示2,016回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-at-home/（順位21.0位・表示1,514回）<br>  - https://kigyo.gmo/magazine/sidejob/list/side-job-recommend-10000-yen-per-month/（順位29.3位・表示1,478回）<br>  - https://kigyo.gmo/magazine/sidejob/list/exposed-side-job/（順位24.1位・表示871回）</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
-                <div class="insight-title">今週新たに上位20位以内に入ったクエリが335件</div>
-                <div class="insight-desc">副収入、岩田うの、副業 バレない、失業保険 副業、npo法人設立 難しいなど</div>
+                <div class="insight-title">今週新たに上位20位以内に入ったクエリが336件</div>
+                <div class="insight-desc">副収入、岩田うの、副業 バレない、ハンドメイド 副業、個人事業主 何してるなど</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
-                <div class="insight-title">先週上位20位以内にいたクエリが335件圏外に</div>
-                <div class="insight-desc">出金伝票 交通費 書き方、マイ ナンバーカード 作ら ない方が いい 理由 2026、マイナンバーカード作らない方がいい理由2026、収入を増やす方法、kobushi marketingなど</div>
+                <div class="insight-title">先週上位20位以内にいたクエリが336件圏外に</div>
+                <div class="insight-desc">出金伝票 交通費 書き方、マイ ナンバーカード 作ら ない方が いい 理由 2026、マイナンバーカード作らない方がいい理由2026、kobushi marketing、副業 1万円など</div>
             </div>
         </div>
         <div class="insight green">
             <div class="insight-icon">✓</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が50%以上増加したクエリが31件</div>
-                <div class="insight-desc">  - 副業に ならない お小遣い稼ぎ（1→8CL, +700.0%）<br>  - 開業届 e-tax（3→7CL, +133.3%）<br>  - 貸借対照表 作り方（4→6CL, +50.0%）<br>  - ブログ 起業（1→3CL, +200.0%）<br>  - 個人事業 種類（2→3CL, +50.0%）</div>
+                <div class="insight-title">クリック数が50%以上増加したクエリが44件</div>
+                <div class="insight-desc">  - 会社にバレない副業ランキング（8→17CL, +112.5%）<br>  - 初心者 起業 おすすめ（5→10CL, +100.0%）<br>  - 貸借対照表 作り方（4→9CL, +125.0%）<br>  - 副業に ならない お小遣い稼ぎ（1→8CL, +700.0%）<br>  - 開業届 e-tax（3→8CL, +166.7%）</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が30%以上減少したクエリが51件</div>
-                <div class="insight-desc">  - 転売 おすすめ（53→32CL, -39.6%）<br>  - 会社にバレない副業 おすすめ（10→7CL, -30.0%）<br>  - sns副業とは（8→5CL, -37.5%）<br>  - 個人事業主 何がある（9→4CL, -55.6%）<br>  - 株式会社md（10→4CL, -60.0%）</div>
+                <div class="insight-title">クリック数が30%以上減少したクエリが53件</div>
+                <div class="insight-desc">  - 転売 おすすめ（53→37CL, -30.2%）<br>  - 会社にバレない副業 おすすめ（10→7CL, -30.0%）<br>  - 副業にならない稼ぎ方（10→6CL, -40.0%）<br>  - 株式会社md（10→6CL, -40.0%）<br>  - sns副業とは（8→5CL, -37.5%）</div>
             </div>
         </div>
 </div>
@@ -194,18 +211,25 @@ tr:last-child td{border-bottom:none;}
                         </thead>
                         <tbody>
             <tr>
+                <td>転売 おすすめ</td>
+                <td>37</td><td>53</td>
+                <td>4.9</td><td>3.9</td>
+                <td>7.17%</td><td>8.73%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>転売で儲かる商品リスト 2026</td>
+                <td>33</td><td>37</td>
+                <td>1.4</td><td>1.3</td>
+                <td>30.0%</td><td>29.37%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
                 <td>ハナミチ 営業コンサル</td>
                 <td>32</td><td>31</td>
                 <td>1.9</td><td>1.6</td>
                 <td>94.12%</td><td>91.18%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
-            </tr>
-            <tr>
-                <td>転売 おすすめ</td>
-                <td>32</td><td>53</td>
-                <td>4.7</td><td>3.9</td>
-                <td>7.21%</td><td>8.73%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>李佑記 hanamichi</td>
@@ -215,123 +239,116 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>転売で儲かる商品リスト 2026</td>
-                <td>27</td><td>37</td>
-                <td>1.4</td><td>1.3</td>
-                <td>28.72%</td><td>29.37%</td>
+                <td>起業の窓口</td>
+                <td>20</td><td>22</td>
+                <td>1</td><td>1</td>
+                <td>43.48%</td><td>51.16%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>起業の窓口</td>
-                <td>18</td><td>22</td>
-                <td>1</td><td>1</td>
-                <td>45.0%</td><td>51.16%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>会社にバレない副業ランキング</td>
+                <td>17</td><td>8</td>
+                <td>1.7</td><td>3.4</td>
+                <td>15.89%</td><td>7.48%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>副収入</td>
                 <td>14</td><td>-</td>
-                <td>17.2</td><td>-</td>
-                <td>4.12%</td><td>-</td>
+                <td>17.7</td><td>-</td>
+                <td>3.73%</td><td>-</td>
                 <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>定款</td>
                 <td>12</td><td>11</td>
-                <td>1.3</td><td>1.3</td>
-                <td>0.31%</td><td>0.21%</td>
+                <td>1.5</td><td>1.3</td>
+                <td>0.29%</td><td>0.21%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>会社にバレない副業ランキング</td>
-                <td>11</td><td>8</td>
-                <td>1.8</td><td>3.4</td>
-                <td>12.94%</td><td>7.48%</td>
+                <td>初心者 起業 おすすめ</td>
+                <td>10</td><td>5</td>
+                <td>5.8</td><td>6.2</td>
+                <td>2.69%</td><td>1.51%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>貸借対照表 作り方</td>
+                <td>9</td><td>4</td>
+                <td>3.7</td><td>3.7</td>
+                <td>3.25%</td><td>1.53%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>開業届 e-tax</td>
+                <td>8</td><td>3</td>
+                <td>9.2</td><td>9.2</td>
+                <td>1.44%</td><td>0.45%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>副業に ならない お小遣い稼ぎ</td>
                 <td>8</td><td>1</td>
                 <td>1.5</td><td>2.2</td>
-                <td>22.86%</td><td>3.7%</td>
+                <td>21.62%</td><td>3.7%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>一人 起業成功例</td>
                 <td>8</td><td>6</td>
-                <td>2.0</td><td>1.9</td>
-                <td>19.51%</td><td>15.79%</td>
+                <td>1.9</td><td>1.9</td>
+                <td>18.6%</td><td>15.79%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>岩田うの</td>
+                <td>8</td><td>-</td>
+                <td>4.5</td><td>-</td>
+                <td>32.0%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>副業 バレない</td>
+                <td>7</td><td>-</td>
+                <td>19.3</td><td>-</td>
+                <td>6.31%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
             </tr>
             <tr>
                 <td>会社にバレない副業 おすすめ</td>
                 <td>7</td><td>10</td>
                 <td>5.3</td><td>6.8</td>
-                <td>4.19%</td><td>5.05%</td>
+                <td>3.93%</td><td>5.05%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>開業届 e-tax</td>
-                <td>7</td><td>3</td>
-                <td>9.2</td><td>9.2</td>
-                <td>1.61%</td><td>0.45%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>公務員 副業</td>
                 <td>7</td><td>6</td>
-                <td>5.3</td><td>6.1</td>
-                <td>3.12%</td><td>2.45%</td>
+                <td>5.6</td><td>6.1</td>
+                <td>2.76%</td><td>2.45%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>岩田うの</td>
-                <td>7</td><td>-</td>
-                <td>4.5</td><td>-</td>
-                <td>29.17%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>副業 バレない</td>
-                <td>6</td><td>-</td>
-                <td>18.5</td><td>-</td>
-                <td>6.0%</td><td>-</td>
-                <td><span class="pill pill-green">🆕 新出現</span></td>
-            </tr>
-            <tr>
-                <td>貸借対照表 作り方</td>
-                <td>6</td><td>4</td>
-                <td>3.5</td><td>3.7</td>
-                <td>2.7%</td><td>1.53%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
-            </tr>
-            <tr>
-                <td>sns副業とは</td>
-                <td>5</td><td>8</td>
-                <td>2.1</td><td>3.6</td>
-                <td>12.5%</td><td>11.76%</td>
+                <td>株式会社md</td>
+                <td>6</td><td>10</td>
+                <td>4.8</td><td>6.4</td>
+                <td>2.93%</td><td>4.33%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>趣味 副業</td>
-                <td>5</td><td>5</td>
-                <td>2.6</td><td>1.9</td>
-                <td>8.77%</td><td>8.62%</td>
-                <td><span class="pill">－ 横ばい</span></td>
+                <td>副業にならない稼ぎ方</td>
+                <td>6</td><td>10</td>
+                <td>2.2</td><td>2.1</td>
+                <td>7.79%</td><td>11.36%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>初心者 起業 おすすめ</td>
+                <td>副業おすすめ バレない</td>
                 <td>5</td><td>5</td>
-                <td>6.2</td><td>6.2</td>
-                <td>1.61%</td><td>1.51%</td>
+                <td>4.5</td><td>5.4</td>
+                <td>6.25%</td><td>7.14%</td>
                 <td><span class="pill">－ 横ばい</span></td>
-            </tr>
-            <tr>
-                <td>個人事業主 仕事内容</td>
-                <td>4</td><td>3</td>
-                <td>2.8</td><td>2.3</td>
-                <td>28.57%</td><td>12.5%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr></tbody>
                     </table>
                 </div>
@@ -343,44 +360,65 @@ tr:last-child td{border-bottom:none;}
             <tr>
                 <td>副収入</td>
                 <td>14</td>
-                <td>340</td>
-                <td>4.12%</td>
-                <td>17.2位</td>
+                <td>375</td>
+                <td>3.73%</td>
+                <td>17.7位</td>
             </tr>
             <tr>
                 <td>岩田うの</td>
-                <td>7</td>
-                <td>24</td>
-                <td>29.17%</td>
+                <td>8</td>
+                <td>25</td>
+                <td>32.0%</td>
                 <td>4.5位</td>
             </tr>
             <tr>
                 <td>副業 バレない</td>
-                <td>6</td>
-                <td>100</td>
-                <td>6.0%</td>
-                <td>18.5位</td>
+                <td>7</td>
+                <td>111</td>
+                <td>6.31%</td>
+                <td>19.3位</td>
+            </tr>
+            <tr>
+                <td>ハンドメイド 副業</td>
+                <td>5</td>
+                <td>173</td>
+                <td>2.89%</td>
+                <td>6.7位</td>
+            </tr>
+            <tr>
+                <td>個人事業主 種類</td>
+                <td>4</td>
+                <td>26</td>
+                <td>15.38%</td>
+                <td>4位</td>
             </tr>
             <tr>
                 <td>失業保険 副業</td>
                 <td>4</td>
-                <td>87</td>
-                <td>4.6%</td>
-                <td>7.2位</td>
+                <td>99</td>
+                <td>4.04%</td>
+                <td>6.9位</td>
             </tr>
             <tr>
                 <td>npo法人設立 難しい</td>
                 <td>3</td>
-                <td>12</td>
-                <td>25.0%</td>
+                <td>13</td>
+                <td>23.08%</td>
                 <td>1.3位</td>
             </tr>
             <tr>
                 <td>サイドビジネス</td>
                 <td>3</td>
-                <td>49</td>
-                <td>6.12%</td>
-                <td>11.0位</td>
+                <td>61</td>
+                <td>4.92%</td>
+                <td>10.8位</td>
+            </tr>
+            <tr>
+                <td>バーチャルオフィス 電話番号</td>
+                <td>3</td>
+                <td>44</td>
+                <td>6.82%</td>
+                <td>5.3位</td>
             </tr>
             <tr>
                 <td>個人事業主 種類 一覧</td>
@@ -388,27 +426,6 @@ tr:last-child td{border-bottom:none;}
                 <td>10</td>
                 <td>30.0%</td>
                 <td>4.7位</td>
-            </tr>
-            <tr>
-                <td>お金を稼ぐ方法</td>
-                <td>2</td>
-                <td>57</td>
-                <td>3.51%</td>
-                <td>18.6位</td>
-            </tr>
-            <tr>
-                <td>ふるさと納税 個人事業主 早見表</td>
-                <td>2</td>
-                <td>132</td>
-                <td>1.52%</td>
-                <td>4.2位</td>
-            </tr>
-            <tr>
-                <td>ニッチ 副業</td>
-                <td>2</td>
-                <td>13</td>
-                <td>15.38%</td>
-                <td>12.2位</td>
             </tr></tbody></table>
                 </div>
                 <div style="background:#fcebeb;border-radius:8px;padding:12px 14px;border:0.5px solid #ffcdd2;">
@@ -436,25 +453,11 @@ tr:last-child td{border-bottom:none;}
                 <td>2.3位</td>
             </tr>
             <tr>
-                <td>収入を増やす方法</td>
-                <td>5</td>
-                <td>121</td>
-                <td>4.13%</td>
-                <td>4.4位</td>
-            </tr>
-            <tr>
                 <td>kobushi marketing</td>
                 <td>4</td>
                 <td>37</td>
                 <td>10.81%</td>
                 <td>3.2位</td>
-            </tr>
-            <tr>
-                <td>つぶやきワークとは</td>
-                <td>3</td>
-                <td>23</td>
-                <td>13.04%</td>
-                <td>1.0位</td>
             </tr>
             <tr>
                 <td>ハンドメイド 儲かるもの</td>
@@ -471,18 +474,32 @@ tr:last-child td{border-bottom:none;}
                 <td>4.8位</td>
             </tr>
             <tr>
-                <td>個人事業 何がある</td>
-                <td>3</td>
-                <td>10</td>
-                <td>30.0%</td>
-                <td>2.3位</td>
-            </tr>
-            <tr>
                 <td>公務員 副業 できること</td>
                 <td>3</td>
                 <td>42</td>
                 <td>7.14%</td>
                 <td>9.2位</td>
+            </tr>
+            <tr>
+                <td>公務員 副業バレない</td>
+                <td>3</td>
+                <td>11</td>
+                <td>27.27%</td>
+                <td>4.1位</td>
+            </tr>
+            <tr>
+                <td>公務員副業</td>
+                <td>3</td>
+                <td>24</td>
+                <td>12.5%</td>
+                <td>7.9位</td>
+            </tr>
+            <tr>
+                <td>家で出来る副業</td>
+                <td>3</td>
+                <td>164</td>
+                <td>1.83%</td>
+                <td>7.2位</td>
             </tr></tbody></table>
                 </div>
             </div>
@@ -499,10 +516,10 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td>今週（2026-06-11〜2026-06-17）</td>
-            <td>1,599</td>
-            <td>140,677</td>
-            <td>1.14%</td>
-            <td>16.3位</td>
+            <td>1,986</td>
+            <td>166,171</td>
+            <td>1.2%</td>
+            <td>16.1位</td>
         </tr>
         <tr>
             <td>1週前（2026-06-04〜2026-06-10）</td>
@@ -524,6 +541,13 @@ tr:last-child td{border-bottom:none;}
             <td>150,883</td>
             <td>1.26%</td>
             <td>17.9位</td>
+        </tr>
+        <tr>
+            <td>4週前（2026-05-14〜2026-05-20）</td>
+            <td>1,794</td>
+            <td>148,122</td>
+            <td>1.21%</td>
+            <td>15.9位</td>
         </tr></tbody>
     </table>
 </div>
@@ -536,163 +560,163 @@ tr:last-child td{border-bottom:none;}
         </thead>
         <tbody>
         <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/side-business-resale-profit/">kigyo.gmo/magazine/sidejob/list/side-business-resale-profit/</td>
-            <td>102</td>
-            <td>2,706</td>
-            <td>3.77%</td>
-            <td>10.8位</td>
+            <td class="url" title="https://kigyo.gmo/magazine/interview/humans/">kigyo.gmo/magazine/interview/humans/</td>
+            <td>153</td>
+            <td>826</td>
+            <td>18.52%</td>
+            <td>5.1位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/civil-servant-side-job-recommendation/">kigyo.gmo/magazine/sidejob/list/civil-servant-side-job-recommendation/</td>
-            <td>100</td>
-            <td>2,482</td>
-            <td>4.03%</td>
-            <td>6.9位</td>
+            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/side-business-resale-profit/">kigyo.gmo/magazine/sidejob/list/side-business-resale-profit/</td>
+            <td>119</td>
+            <td>3,083</td>
+            <td>3.86%</td>
+            <td>10.7位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/sidejob-not-get-caught-top9-methods/">kigyo.gmo/magazine/sidejob/list/sidejob-not-get-caught-top9-methods/</td>
-            <td>93</td>
-            <td>2,490</td>
-            <td>3.73%</td>
-            <td>20.2位</td>
+            <td>116</td>
+            <td>2,899</td>
+            <td>4.0%</td>
+            <td>19.7位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/interview/humans/">kigyo.gmo/magazine/interview/humans/</td>
-            <td>74</td>
-            <td>672</td>
-            <td>11.01%</td>
-            <td>4.9位</td>
+            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/civil-servant-side-job-recommendation/">kigyo.gmo/magazine/sidejob/list/civil-servant-side-job-recommendation/</td>
+            <td>110</td>
+            <td>2,893</td>
+            <td>3.8%</td>
+            <td>6.9位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/not-side-job-earn-pocket-money/">kigyo.gmo/magazine/sidejob/list/not-side-job-earn-pocket-money/</td>
-            <td>73</td>
-            <td>1,560</td>
-            <td>4.68%</td>
-            <td>11.1位</td>
-            <td><span class="pill pill-green">良好</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/not-prohibited-side-job/">kigyo.gmo/magazine/sidejob/list/not-prohibited-side-job/</td>
-            <td>57</td>
-            <td>1,448</td>
-            <td>3.94%</td>
-            <td>17.1位</td>
+            <td>82</td>
+            <td>1,842</td>
+            <td>4.45%</td>
+            <td>11.0位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/opening/list/occupation-sole-proprietorship/">kigyo.gmo/magazine/opening/list/occupation-sole-proprietorship/</td>
-            <td>56</td>
-            <td>1,275</td>
-            <td>4.39%</td>
-            <td>12.2位</td>
+            <td>70</td>
+            <td>1,527</td>
+            <td>4.58%</td>
+            <td>11.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/not-prohibited-side-job/">kigyo.gmo/magazine/sidejob/list/not-prohibited-side-job/</td>
+            <td>63</td>
+            <td>1,638</td>
+            <td>3.85%</td>
+            <td>16.6位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/sidejob-unemployment-benefits/">kigyo.gmo/magazine/sidejob/list/sidejob-unemployment-benefits/</td>
-            <td>50</td>
-            <td>2,134</td>
-            <td>2.34%</td>
+            <td>58</td>
+            <td>2,510</td>
+            <td>2.31%</td>
             <td>5.9位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/hobby-side-business/">kigyo.gmo/magazine/sidejob/list/hobby-side-business/</td>
-            <td>41</td>
-            <td>455</td>
-            <td>9.01%</td>
+            <td>44</td>
+            <td>518</td>
+            <td>8.49%</td>
             <td>6.5位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/sidejob/">kigyo.gmo/magazine/sidejob/</td>
-            <td>36</td>
-            <td>6,179</td>
-            <td>0.58%</td>
-            <td>18.0位</td>
+            <td>43</td>
+            <td>7,068</td>
+            <td>0.61%</td>
+            <td>17.8位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/">kigyo.gmo/</td>
-            <td>33</td>
-            <td>182</td>
-            <td>18.13%</td>
-            <td>5.3位</td>
+            <td>39</td>
+            <td>210</td>
+            <td>18.57%</td>
+            <td>5.5位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
+            <td class="url" title="https://kigyo.gmo/magazine/accounting/list/estimated-tax-check/">kigyo.gmo/magazine/accounting/list/estimated-tax-check/</td>
+            <td>38</td>
+            <td>3,344</td>
+            <td>1.14%</td>
+            <td>7.5位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
             <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/side-job-easy/">kigyo.gmo/magazine/sidejob/list/side-job-easy/</td>
-            <td>32</td>
-            <td>1,828</td>
-            <td>1.75%</td>
-            <td>16.5位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/additional-income/">kigyo.gmo/magazine/sidejob/list/additional-income/</td>
-            <td>26</td>
-            <td>1,770</td>
-            <td>1.47%</td>
-            <td>23.8位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/side-job-recommend-10000-yen-per-month/">kigyo.gmo/magazine/sidejob/list/side-job-recommend-10000-yen-per-month/</td>
-            <td>26</td>
-            <td>1,366</td>
-            <td>1.9%</td>
-            <td>29.3位</td>
+            <td>35</td>
+            <td>2,090</td>
+            <td>1.67%</td>
+            <td>16.4位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/side-job-make-a-profit/">kigyo.gmo/magazine/sidejob/list/side-job-make-a-profit/</td>
-            <td>25</td>
-            <td>2,402</td>
-            <td>1.04%</td>
-            <td>24.1位</td>
+            <td>32</td>
+            <td>2,850</td>
+            <td>1.12%</td>
+            <td>22.7位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/accounting/list/estimated-tax-check/">kigyo.gmo/magazine/accounting/list/estimated-tax-check/</td>
-            <td>24</td>
-            <td>2,096</td>
-            <td>1.15%</td>
-            <td>8.2位</td>
+            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/additional-income/">kigyo.gmo/magazine/sidejob/list/additional-income/</td>
+            <td>31</td>
+            <td>2,016</td>
+            <td>1.54%</td>
+            <td>23.6位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/side-job-recommend-10000-yen-per-month/">kigyo.gmo/magazine/sidejob/list/side-job-recommend-10000-yen-per-month/</td>
+            <td>30</td>
+            <td>1,478</td>
+            <td>2.03%</td>
+            <td>29.3位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/opening/list/tax-exempt-sole-proprietor/">kigyo.gmo/magazine/opening/list/tax-exempt-sole-proprietor/</td>
-            <td>23</td>
-            <td>1,774</td>
-            <td>1.3%</td>
-            <td>15.7位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/opening/list/number-card-moving-individual/">kigyo.gmo/magazine/opening/list/number-card-moving-individual/</td>
-            <td>22</td>
-            <td>1,452</td>
-            <td>1.52%</td>
-            <td>10.1位</td>
+            <td>29</td>
+            <td>2,100</td>
+            <td>1.38%</td>
+            <td>15.3位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://kigyo.gmo/magazine/opening/list/merit-risk-individual-number-card/">kigyo.gmo/magazine/opening/list/merit-risk-individual-number-card/</td>
-            <td>19</td>
-            <td>1,441</td>
-            <td>1.32%</td>
+            <td>25</td>
+            <td>1,716</td>
+            <td>1.46%</td>
+            <td>9.7位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://kigyo.gmo/magazine/opening/list/number-card-moving-individual/">kigyo.gmo/magazine/opening/list/number-card-moving-individual/</td>
+            <td>24</td>
+            <td>1,704</td>
+            <td>1.41%</td>
             <td>9.9位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/sns-sidejob/">kigyo.gmo/magazine/sidejob/list/sns-sidejob/</td>
-            <td>19</td>
-            <td>1,474</td>
-            <td>1.29%</td>
-            <td>13.1位</td>
+            <td class="url" title="https://kigyo.gmo/magazine/sidejob/list/side-job-the-weekend/">kigyo.gmo/magazine/sidejob/list/side-job-the-weekend/</td>
+            <td>22</td>
+            <td>946</td>
+            <td>2.33%</td>
+            <td>18.1位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr></tbody>
     </table>
@@ -702,5 +726,53 @@ tr:last-child td{border-bottom:none;}
 
 </div>
 <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:24px;right:24px;background:#1F3864;color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:999;opacity:0.85;display:flex;align-items:center;justify-content:center;">▲</button>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  var labels = ["4週前","3週前","2週前","1週前","今週"];
+  var tickStyle = {font:{size:11},color:'#888'};
+  var gridStyle = {color:'rgba(0,0,0,0.05)'};
+  var baseOpts = {
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:tickStyle,grid:gridStyle},
+      y:{ticks:tickStyle,grid:gridStyle,beginAtZero:true}
+    }
+  };
+  new Chart(document.getElementById('chart-clicks'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'クリック数',data:[1794,1908,1753,1826,1986],
+      borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#2563eb',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-imp'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'表示回数',data:[148122,150883,148962,156513,166171],
+      borderColor:'#059669',backgroundColor:'rgba(5,150,105,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#059669',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-pos'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'平均順位',data:[15.9,17.9,16.4,15.7,16.1],
+      borderColor:'#d97706',backgroundColor:'rgba(217,119,6,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#d97706',tension:0.3,fill:true
+    }]},
+    options:{
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{ticks:tickStyle,grid:gridStyle},
+        y:{ticks:tickStyle,grid:gridStyle,reverse:false,min:12,max:23}
+      }
+    }
+  });
+})();
+</script>
 </body>
 </html>
