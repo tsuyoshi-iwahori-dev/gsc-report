@@ -40,6 +40,9 @@ tr:last-child td{border-bottom:none;}
 .pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;border:0.5px solid #e0e0dc;}
 .pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
 .footer{text-align:center;font-size:11px;color:#aaa;padding:16px 0;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.chart-box-title{font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:10px;}
 .ai-section-card{background:#f8f9fc;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid #185fa5;}
 .ai-section-card:last-child{margin-bottom:0;}
 .ai-section-header{font-size:13px;font-weight:600;color:#185fa5;margin-bottom:8px;}
@@ -65,7 +68,7 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">3大セキュリティ — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-18 23:58</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-19 16:33</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
@@ -107,18 +110,18 @@ tr:last-child td{border-bottom:none;}
     <div class="performance-grid">
         <div class="kpi">
             <div class="kpi-label">クリック数</div>
-            <div class="kpi-value">14,328</div>
-            <div class="kpi-diff"><span class="down">▼ 20.3%（前週 17,984）</span></div>
+            <div class="kpi-value">17,288</div>
+            <div class="kpi-diff"><span class="down">▼ 3.9%（前週 17,984）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">表示回数</div>
-            <div class="kpi-value">868,265</div>
-            <div class="kpi-diff"><span class="down">▼ 15.0%（前週 1,021,076）</span></div>
+            <div class="kpi-value">1,022,211</div>
+            <div class="kpi-diff"><span class="up">▲ 0.1%（前週 1,021,076）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">CTR</div>
-            <div class="kpi-value">1.65%</div>
-            <div class="kpi-diff"><span class="down">▼ 6.3%（前週 1.76）</span></div>
+            <div class="kpi-value">1.69%</div>
+            <div class="kpi-diff"><span class="down">▼ 4.0%（前週 1.76）</span></div>
         </div>
         <div class="kpi">
             <div class="kpi-label">平均順位</div>
@@ -126,12 +129,26 @@ tr:last-child td{border-bottom:none;}
             <div class="kpi-diff"><span class="down">▼ 0.2位悪化（前週 8.2位）</span></div>
         </div>
     </div>
+    <div class="chart-row">
+        <div class="chart-box">
+            <div class="chart-box-title">クリック数推移</div>
+            <canvas id="chart-clicks" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">表示回数推移</div>
+            <canvas id="chart-imp" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">平均順位推移</div>
+            <canvas id="chart-pos" height="120"></canvas>
+        </div>
+    </div>
 </div>
 
 <div class="section" id="section-ga-performance">
     <div class="section-title">📊 GAパフォーマンス</div>
     <div style="font-size:12px;color:#888;margin-bottom:12px;">2026年5月累計</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
         <div class="kpi">
             <div class="kpi-label">月間セッション数</div>
             <div class="kpi-value">64,804</div>
@@ -150,42 +167,42 @@ tr:last-child td{border-bottom:none;}
             <div class="insight-icon">!</div>
             <div class="insight-body">
                 <div class="insight-title">タイトル改善でCTRを伸ばせるページが71件あります</div>
-                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://group.gmo/security/ciphersecurity/http-https/blog/what-is-https/（順位9.5位・表示35,874回・CTR0.03%）<br>  - https://group.gmo/security/security-all/information-security/blog/deepfake/（順位6.7位・表示15,934回・CTR0.47%）<br>  - https://group.gmo/security/security-all/information-security/blog/smartphone-virus/（順位8.2位・表示12,329回・CTR0.7%）<br>  - https://group.gmo/security/brandsecurity/dns/blog/domain-name/（順位9.1位・表示10,802回・CTR0.23%）<br>  - https://group.gmo/security/brandsecurity/dns/blog/dns-server/（順位6.2位・表示10,168回・CTR0.28%）</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://group.gmo/security/ciphersecurity/http-https/blog/what-is-https/（順位9.1位・表示41,196回・CTR0.03%）<br>  - https://group.gmo/security/security-all/information-security/blog/deepfake/（順位6.6位・表示17,978回・CTR0.49%）<br>  - https://group.gmo/security/security-all/information-security/blog/smartphone-virus/（順位8.2位・表示14,469回・CTR0.67%）<br>  - https://group.gmo/security/brandsecurity/dns/blog/domain-name/（順位9.1位・表示12,766回・CTR0.26%）<br>  - https://group.gmo/security/brandsecurity/dns/blog/dns-server/（順位6.4位・表示11,719回・CTR0.31%）</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
                 <div class="insight-title">クエリ意図ミスマッチの疑い：表示回数+1件を検出</div>
-                <div class="insight-desc">表示回数1万超・CTR0.1%未満のページ：<br>  - https://group.gmo/security/ciphersecurity/http-https/blog/what-is-https/（表示35,874回・CTR0.03%）</div>
+                <div class="insight-desc">表示回数1万超・CTR0.1%未満のページ：<br>  - https://group.gmo/security/ciphersecurity/http-https/blog/what-is-https/（表示41,196回・CTR0.03%）</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
-                <div class="insight-title">今週新たに上位20位以内に入ったクエリが259件</div>
-                <div class="insight-desc">ランサムウェア事件、情報セキュリティポリシーには，情報セキュリティに対する組織の基本方針・宣言をまとめた基本方針，基本方針を実施するための具体的な規則をまとめた対策基準，対象者や用途によって必要な手続きをまとめた【 10 】の3つがある。、f5アタックとは、フォレンジック調査とは、生成ai 悪用事例など</div>
+                <div class="insight-title">今週新たに上位20位以内に入ったクエリが246件</div>
+                <div class="insight-desc">ランサムウェア事件、ランサム ウェア 事例 有名、コンピューターウイルス、情報セキュリティポリシーには，情報セキュリティに対する組織の基本方針・宣言をまとめた基本方針，基本方針を実施するための具体的な規則をまとめた対策基準，対象者や用途によって必要な手続きをまとめた【 10 】の3つがある。、f5アタックとはなど</div>
             </div>
         </div>
         <div class="insight neutral">
             <div class="insight-icon">•</div>
             <div class="insight-body">
-                <div class="insight-title">先週上位20位以内にいたクエリが259件圏外に</div>
-                <div class="insight-desc">zipファイル パスワード設定 mac、ハッキングする方法、マルバタイジング、自己署名証明書とは、google ロボットによる操作でないことを証明しますなど</div>
+                <div class="insight-title">先週上位20位以内にいたクエリが246件圏外に</div>
+                <div class="insight-desc">zipファイル パスワード設定 mac、ハッキングする方法、マルバタイジング、google ロボットによる操作でないことを証明します、コマンドインジェクションとはなど</div>
             </div>
         </div>
         <div class="insight green">
             <div class="insight-icon">✓</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が50%以上増加したクエリが35件</div>
-                <div class="insight-desc">  - セキュリティ警告 証明書（5→15CL, +200.0%）<br>  - セキュリティ警告 スマホ（3→13CL, +333.3%）<br>  - プライバシーエラーとは（7→13CL, +85.7%）<br>  - google 私はロボットではありません（5→12CL, +140.0%）<br>  - アカウント乗っ取り 原因（8→12CL, +50.0%）</div>
+                <div class="insight-title">クリック数が50%以上増加したクエリが55件</div>
+                <div class="insight-desc">  - gmoセキュリティ24（12→37CL, +208.3%）<br>  - コンピューターウイルス 種類（16→30CL, +87.5%）<br>  - ネットワークセキュリティキーとは（18→28CL, +55.6%）<br>  - セキュリティ警告 証明書（5→16CL, +220.0%）<br>  - アカウント乗っ取り 原因（8→15CL, +87.5%）</div>
             </div>
         </div>
         <div class="insight red">
             <div class="insight-icon">⚠</div>
             <div class="insight-body">
-                <div class="insight-title">クリック数が30%以上減少したクエリが98件</div>
-                <div class="insight-desc">  - この接続ではプライバシーが保護されません（291→148CL, -49.1%）<br>  - サイバー対処能力強化法（71→47CL, -33.8%）<br>  - このサイトのセキュリティ証明書には問題があります（55→19CL, -65.5%）<br>  - デジタル署名（29→17CL, -41.4%）<br>  - ブランド戦略 事例 ニャース.ltd（37→17CL, -54.1%）</div>
+                <div class="insight-title">クリック数が30%以上減少したクエリが78件</div>
+                <div class="insight-desc">  - この接続ではプライバシーが保護されません（291→176CL, -39.5%）<br>  - このサイトのセキュリティ証明書には問題があります（55→22CL, -60.0%）<br>  - プライバシーエラー（39→22CL, -43.6%）<br>  - bimi（33→19CL, -42.4%）<br>  - ディープフェイク（54→18CL, -66.7%）</div>
             </div>
         </div>
 </div>
@@ -209,142 +226,142 @@ tr:last-child td{border-bottom:none;}
                         <tbody>
             <tr>
                 <td>この接続ではプライバシーが保護されません</td>
-                <td>148</td><td>291</td>
+                <td>176</td><td>291</td>
                 <td>2.0</td><td>2.1</td>
-                <td>16.63%</td><td>21.21%</td>
+                <td>17.02%</td><td>21.21%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>私はロボットではありません</td>
-                <td>70</td><td>75</td>
+                <td>79</td><td>75</td>
                 <td>5.8</td><td>7.3</td>
-                <td>0.43%</td><td>0.25%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
+                <td>0.45%</td><td>0.25%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>サイバー対処能力強化法</td>
-                <td>47</td><td>71</td>
+                <td>61</td><td>71</td>
                 <td>2.6</td><td>2.6</td>
-                <td>2.52%</td><td>2.62%</td>
+                <td>2.58%</td><td>2.62%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>この接続ではプライバシーが保護されません 解決方法</td>
-                <td>20</td><td>22</td>
-                <td>1.0</td><td>1.8</td>
-                <td>29.41%</td><td>23.4%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>この接続ではプライバシーが保護されません 解除</td>
-                <td>20</td><td>16</td>
-                <td>1.6</td><td>2.0</td>
-                <td>18.52%</td><td>16.49%</td>
+                <td>gmoセキュリティ24</td>
+                <td>37</td><td>12</td>
+                <td>1</td><td>1</td>
+                <td>12.42%</td><td>6.7%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
-            </tr>
-            <tr>
-                <td>セキュリティ警告とは</td>
-                <td>20</td><td>26</td>
-                <td>2.5</td><td>2.4</td>
-                <td>1.48%</td><td>2.07%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>私はロボット では ありません 解除 方法</td>
-                <td>19</td><td>18</td>
-                <td>2.0</td><td>1.9</td>
-                <td>1.44%</td><td>1.21%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
-            </tr>
-            <tr>
-                <td>このサイトのセキュリティ証明書には問題があります</td>
-                <td>19</td><td>55</td>
-                <td>3.5</td><td>3.3</td>
-                <td>1.2%</td><td>1.52%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>あなたはロボットですか</td>
-                <td>19</td><td>27</td>
-                <td>1.9</td><td>2.0</td>
-                <td>2.66%</td><td>2.7%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>コンピューターウイルス 種類</td>
-                <td>18</td><td>16</td>
+                <td>30</td><td>16</td>
                 <td>1.8</td><td>1.7</td>
-                <td>5.31%</td><td>4.44%</td>
+                <td>6.52%</td><td>4.44%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
                 <td>ネットワークセキュリティキーとは</td>
-                <td>18</td><td>18</td>
+                <td>28</td><td>18</td>
                 <td>2.4</td><td>2.4</td>
-                <td>0.95%</td><td>0.81%</td>
-                <td><span class="pill">－ 横ばい</span></td>
-            </tr>
-            <tr>
-                <td>このサイトは安全に接続できません</td>
-                <td>18</td><td>22</td>
-                <td>4.4</td><td>4.2</td>
-                <td>0.94%</td><td>1.0%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
-                <td>err_ssl_protocol_error</td>
-                <td>18</td><td>16</td>
-                <td>2.1</td><td>2.5</td>
-                <td>6.67%</td><td>5.56%</td>
+                <td>1.27%</td><td>0.81%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>暗号化</td>
-                <td>17</td><td>20</td>
-                <td>3.4</td><td>3.4</td>
-                <td>0.48%</td><td>0.45%</td>
+                <td>あなたはロボットですか</td>
+                <td>26</td><td>27</td>
+                <td>1.9</td><td>2.0</td>
+                <td>2.96%</td><td>2.7%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>ブランド戦略 事例 ニャース.ltd</td>
-                <td>17</td><td>37</td>
-                <td>3.6</td><td>2.2</td>
-                <td>8.1%</td><td>14.8%</td>
+                <td>この接続ではプライバシーが保護されません 解決方法</td>
+                <td>25</td><td>22</td>
+                <td>1.0</td><td>1.8</td>
+                <td>28.09%</td><td>23.4%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>私はロボット では ありません 解除 方法</td>
+                <td>23</td><td>18</td>
+                <td>2.0</td><td>1.9</td>
+                <td>1.57%</td><td>1.21%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>このサイトのセキュリティ証明書には問題があります</td>
+                <td>22</td><td>55</td>
+                <td>3.5</td><td>3.3</td>
+                <td>1.25%</td><td>1.52%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>デジタル署名</td>
-                <td>17</td><td>29</td>
-                <td>4.7</td><td>4.2</td>
-                <td>0.49%</td><td>0.77%</td>
+                <td>セキュリティ警告とは</td>
+                <td>22</td><td>26</td>
+                <td>2.6</td><td>2.4</td>
+                <td>1.39%</td><td>2.07%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>プライバシーエラー</td>
-                <td>16</td><td>39</td>
+                <td>22</td><td>39</td>
                 <td>1.2</td><td>1.1</td>
-                <td>17.2%</td><td>20.74%</td>
+                <td>18.64%</td><td>20.74%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>不正アクセス禁止法 事例</td>
-                <td>16</td><td>12</td>
-                <td>3.4</td><td>3.5</td>
-                <td>1.34%</td><td>1.21%</td>
+                <td>クライアント証明書</td>
+                <td>22</td><td>23</td>
+                <td>3.3</td><td>2.9</td>
+                <td>1.06%</td><td>1.07%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>この接続ではプライバシーが保護されません 解除</td>
+                <td>21</td><td>16</td>
+                <td>1.6</td><td>2.0</td>
+                <td>17.65%</td><td>16.49%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>ipアドレス クラス</td>
-                <td>15</td><td>16</td>
-                <td>2.8</td><td>2.7</td>
-                <td>1.74%</td><td>1.49%</td>
+                <td>err_ssl_protocol_error</td>
+                <td>21</td><td>16</td>
+                <td>2.4</td><td>2.5</td>
+                <td>6.69%</td><td>5.56%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>暗号化</td>
+                <td>20</td><td>20</td>
+                <td>3.4</td><td>3.4</td>
+                <td>0.47%</td><td>0.45%</td>
+                <td><span class="pill">－ 横ばい</span></td>
+            </tr>
+            <tr>
+                <td>bimi</td>
+                <td>19</td><td>33</td>
+                <td>5.3</td><td>4.1</td>
+                <td>3.36%</td><td>4.23%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
-                <td>ブランドtld</td>
-                <td>15</td><td>21</td>
-                <td>2.8</td><td>3.8</td>
-                <td>3.03%</td><td>3.36%</td>
+                <td>このサイトは安全に接続できません</td>
+                <td>19</td><td>22</td>
+                <td>4.5</td><td>4.2</td>
+                <td>0.87%</td><td>1.0%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>ブランド戦略 事例 ニャース.ltd</td>
+                <td>18</td><td>37</td>
+                <td>3.7</td><td>2.2</td>
+                <td>7.17%</td><td>14.8%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>オレオレ証明書</td>
+                <td>18</td><td>19</td>
+                <td>2.7</td><td>2.6</td>
+                <td>1.73%</td><td>1.72%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr></tbody>
                     </table>
@@ -356,73 +373,73 @@ tr:last-child td{border-bottom:none;}
                     <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
             <tr>
                 <td>ランサムウェア事件</td>
+                <td>10</td>
+                <td>815</td>
+                <td>1.23%</td>
+                <td>5.5位</td>
+            </tr>
+            <tr>
+                <td>ランサム ウェア 事例 有名</td>
+                <td>9</td>
+                <td>285</td>
+                <td>3.16%</td>
+                <td>6.4位</td>
+            </tr>
+            <tr>
+                <td>コンピューターウイルス</td>
                 <td>8</td>
-                <td>574</td>
-                <td>1.39%</td>
-                <td>5.2位</td>
+                <td>1980</td>
+                <td>0.4%</td>
+                <td>6.7位</td>
             </tr>
             <tr>
                 <td>情報セキュリティポリシーには，情報セキュリティに対する組織の基本方針・宣言をまとめた基本方針，基本方針を実施するための具体的な規則をまとめた対策基準，対象者や用途によって必要な手続きをまとめた【 10 】の3つがある。</td>
                 <td>8</td>
-                <td>1227</td>
-                <td>0.65%</td>
-                <td>2.4位</td>
+                <td>1267</td>
+                <td>0.63%</td>
+                <td>2.5位</td>
             </tr>
             <tr>
                 <td>f5アタックとは</td>
                 <td>7</td>
-                <td>480</td>
-                <td>1.46%</td>
+                <td>492</td>
+                <td>1.42%</td>
                 <td>2.2位</td>
             </tr>
             <tr>
-                <td>フォレンジック調査とは</td>
-                <td>7</td>
-                <td>1438</td>
-                <td>0.49%</td>
-                <td>5.3位</td>
-            </tr>
-            <tr>
-                <td>生成ai 悪用事例</td>
-                <td>7</td>
-                <td>227</td>
-                <td>3.08%</td>
-                <td>4.2位</td>
-            </tr>
-            <tr>
                 <td>https化</td>
-                <td>6</td>
-                <td>218</td>
-                <td>2.75%</td>
-                <td>3.3位</td>
+                <td>7</td>
+                <td>276</td>
+                <td>2.54%</td>
+                <td>3.2位</td>
             </tr>
             <tr>
                 <td>windows ウイルスが見つかりました</td>
-                <td>6</td>
-                <td>291</td>
-                <td>2.06%</td>
+                <td>7</td>
+                <td>323</td>
+                <td>2.17%</td>
+                <td>1.9位</td>
+            </tr>
+            <tr>
+                <td>お使いのデバイスにウイルスが検出されました</td>
+                <td>7</td>
+                <td>343</td>
+                <td>2.04%</td>
                 <td>1.9位</td>
             </tr>
             <tr>
                 <td>ドメインとは</td>
-                <td>6</td>
-                <td>6910</td>
+                <td>7</td>
+                <td>8147</td>
                 <td>0.09%</td>
                 <td>10.6位</td>
             </tr>
             <tr>
-                <td>プライバシーエラー 対処</td>
-                <td>6</td>
-                <td>15</td>
-                <td>40.0%</td>
-                <td>1.1位</td>
-            </tr>
-            <tr>
-                <td>ランサム ウェア 事例 有名</td>
-                <td>6</td>
-                <td>197</td>
-                <td>3.05%</td>
-                <td>6.2位</td>
+                <td>フォレンジック調査とは</td>
+                <td>7</td>
+                <td>1804</td>
+                <td>0.39%</td>
+                <td>5.4位</td>
             </tr></tbody></table>
                 </div>
                 <div style="background:#fcebeb;border-radius:8px;padding:12px 14px;border:0.5px solid #ffcdd2;">
@@ -448,13 +465,6 @@ tr:last-child td{border-bottom:none;}
                 <td>440</td>
                 <td>1.59%</td>
                 <td>3.1位</td>
-            </tr>
-            <tr>
-                <td>自己署名証明書とは</td>
-                <td>7</td>
-                <td>219</td>
-                <td>3.2%</td>
-                <td>1.9位</td>
             </tr>
             <tr>
                 <td>google ロボットによる操作でないことを証明します</td>
@@ -497,6 +507,13 @@ tr:last-child td{border-bottom:none;}
                 <td>308</td>
                 <td>1.95%</td>
                 <td>2.6位</td>
+            </tr>
+            <tr>
+                <td>不正アクセス禁止法違反 事例</td>
+                <td>6</td>
+                <td>763</td>
+                <td>0.79%</td>
+                <td>4.7位</td>
             </tr></tbody></table>
                 </div>
             </div>
@@ -513,9 +530,9 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td>今週（2026-06-11〜2026-06-17）</td>
-            <td>14,328</td>
-            <td>868,265</td>
-            <td>1.65%</td>
+            <td>17,288</td>
+            <td>1,022,211</td>
+            <td>1.69%</td>
             <td>8.4位</td>
         </tr>
         <tr>
@@ -538,6 +555,13 @@ tr:last-child td{border-bottom:none;}
             <td>1,067,649</td>
             <td>1.83%</td>
             <td>7.9位</td>
+        </tr>
+        <tr>
+            <td>4週前（2026-05-14〜2026-05-20）</td>
+            <td>19,606</td>
+            <td>1,037,813</td>
+            <td>1.89%</td>
+            <td>8.2位</td>
         </tr></tbody>
     </table>
 </div>
@@ -551,162 +575,162 @@ tr:last-child td{border-bottom:none;}
         <tbody>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/recaptcha/">group.gmo/security/security-all/information-security/blog/recaptcha/</td>
-            <td>1181</td>
-            <td>26,360</td>
-            <td>4.48%</td>
+            <td>1381</td>
+            <td>31,581</td>
+            <td>4.37%</td>
             <td>4.4位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/connection-is-not-private/">group.gmo/security/ciphersecurity/connection-is-not-private/</td>
-            <td>624</td>
-            <td>8,778</td>
-            <td>7.11%</td>
-            <td>4.9位</td>
+            <td>726</td>
+            <td>10,093</td>
+            <td>7.19%</td>
+            <td>5.0位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/security-warning/blog/virus-detection/">group.gmo/security/security-all/security-warning/blog/virus-detection/</td>
-            <td>334</td>
-            <td>9,146</td>
-            <td>3.65%</td>
-            <td>6.2位</td>
+            <td>397</td>
+            <td>10,653</td>
+            <td>3.73%</td>
+            <td>6.3位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/connection-is-not-private/blog/unable-to-connect-securely/">group.gmo/security/ciphersecurity/connection-is-not-private/blog/unable-to-connect-securely/</td>
-            <td>246</td>
-            <td>9,412</td>
+            <td>287</td>
+            <td>11,008</td>
             <td>2.61%</td>
             <td>6.9位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/smartphone-hijacking/">group.gmo/security/security-all/information-security/blog/smartphone-hijacking/</td>
-            <td>208</td>
-            <td>9,284</td>
-            <td>2.24%</td>
-            <td>7.2位</td>
+            <td>239</td>
+            <td>10,991</td>
+            <td>2.17%</td>
+            <td>7.3位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/brandsecurity/dns/blog/ip-address/">group.gmo/security/brandsecurity/dns/blog/ip-address/</td>
-            <td>185</td>
-            <td>7,608</td>
-            <td>2.43%</td>
-            <td>7.4位</td>
+            <td>220</td>
+            <td>9,101</td>
+            <td>2.42%</td>
+            <td>7.3位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/not-secure/">group.gmo/security/ciphersecurity/not-secure/</td>
-            <td>178</td>
-            <td>4,056</td>
-            <td>4.39%</td>
+            <td>200</td>
+            <td>4,745</td>
+            <td>4.21%</td>
             <td>6.4位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
+            <td class="url" title="https://group.gmo/security/ciphersecurity/encryption/blog/network-security-key/">group.gmo/security/ciphersecurity/encryption/blog/network-security-key/</td>
+            <td>173</td>
+            <td>4,503</td>
+            <td>3.84%</td>
+            <td>5.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
             <td class="url" title="https://group.gmo/security/security-all/security-warning/blog/security-certificate/">group.gmo/security/security-all/security-warning/blog/security-certificate/</td>
-            <td>149</td>
-            <td>2,536</td>
-            <td>5.88%</td>
+            <td>170</td>
+            <td>2,952</td>
+            <td>5.76%</td>
             <td>5.0位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/ciphersecurity/encryption/blog/network-security-key/">group.gmo/security/ciphersecurity/encryption/blog/network-security-key/</td>
-            <td>148</td>
-            <td>3,871</td>
-            <td>3.82%</td>
-            <td>5.8位</td>
+            <td class="url" title="https://group.gmo/security/brandsecurity/domain-hijacking/blog/computer-virus/">group.gmo/security/brandsecurity/domain-hijacking/blog/computer-virus/</td>
+            <td>169</td>
+            <td>5,426</td>
+            <td>3.11%</td>
+            <td>7.1位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/security-warning/">group.gmo/security/security-all/security-warning/</td>
-            <td>146</td>
-            <td>5,785</td>
-            <td>2.52%</td>
-            <td>8.5位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://group.gmo/security/security-all/information-security/blog/ai-information-leakage/">group.gmo/security/security-all/information-security/blog/ai-information-leakage/</td>
-            <td>123</td>
-            <td>4,924</td>
-            <td>2.5%</td>
-            <td>7.2位</td>
-            <td><span class="pill pill-amber">改善余地</span></td>
-        </tr>
-        <tr>
-            <td class="url" title="https://group.gmo/security/brandsecurity/domain-hijacking/blog/computer-virus/">group.gmo/security/brandsecurity/domain-hijacking/blog/computer-virus/</td>
-            <td>121</td>
-            <td>4,423</td>
-            <td>2.74%</td>
-            <td>7.2位</td>
+            <td>163</td>
+            <td>6,796</td>
+            <td>2.4%</td>
+            <td>8.9位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/cyber-response-capability-enhancement-act/">group.gmo/security/security-all/information-security/blog/cyber-response-capability-enhancement-act/</td>
-            <td>112</td>
-            <td>3,367</td>
-            <td>3.33%</td>
-            <td>4.5位</td>
+            <td>148</td>
+            <td>3,886</td>
+            <td>3.81%</td>
+            <td>4.4位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
+            <td class="url" title="https://group.gmo/security/security-all/information-security/blog/ai-information-leakage/">group.gmo/security/security-all/information-security/blog/ai-information-leakage/</td>
+            <td>131</td>
+            <td>5,921</td>
+            <td>2.21%</td>
+            <td>7.2位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
             <td class="url" title="https://group.gmo/security/security-all/information-security/blog/unauthorized-computer-access-law/">group.gmo/security/security-all/information-security/blog/unauthorized-computer-access-law/</td>
-            <td>109</td>
-            <td>13,077</td>
-            <td>0.83%</td>
+            <td>127</td>
+            <td>15,133</td>
+            <td>0.84%</td>
             <td>4.7位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/http-https/blog/always-on-ssl/">group.gmo/security/ciphersecurity/http-https/blog/always-on-ssl/</td>
-            <td>107</td>
-            <td>2,395</td>
-            <td>4.47%</td>
-            <td>10.2位</td>
+            <td>125</td>
+            <td>2,712</td>
+            <td>4.61%</td>
+            <td>9.8位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/cybersecurity/white-hat-hacker/blog/hacking/">group.gmo/security/cybersecurity/white-hat-hacker/blog/hacking/</td>
-            <td>104</td>
-            <td>5,399</td>
-            <td>1.93%</td>
+            <td>121</td>
+            <td>6,299</td>
+            <td>1.92%</td>
             <td>6.4位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/security-all/information-security/blog/smartphone-virus/">group.gmo/security/security-all/information-security/blog/smartphone-virus/</td>
-            <td>86</td>
-            <td>12,329</td>
-            <td>0.7%</td>
-            <td>8.2位</td>
+            <td class="url" title="https://group.gmo/security/brandsecurity/dns/">group.gmo/security/brandsecurity/dns/</td>
+            <td>108</td>
+            <td>10,683</td>
+            <td>1.01%</td>
+            <td>9.3位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/cybersecurity/cyberattack/blog/account-hijacking/">group.gmo/security/cybersecurity/cyberattack/blog/account-hijacking/</td>
-            <td>84</td>
-            <td>7,847</td>
-            <td>1.07%</td>
-            <td>9.7位</td>
+            <td>102</td>
+            <td>9,166</td>
+            <td>1.11%</td>
+            <td>10.0位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr>
         <tr>
             <td class="url" title="https://group.gmo/security/ciphersecurity/http-https/blog/self-signed-certificate/">group.gmo/security/ciphersecurity/http-https/blog/self-signed-certificate/</td>
-            <td>81</td>
-            <td>2,212</td>
-            <td>3.66%</td>
-            <td>8.3位</td>
+            <td>97</td>
+            <td>2,578</td>
+            <td>3.76%</td>
+            <td>7.8位</td>
             <td><span class="pill pill-green">良好</span></td>
         </tr>
         <tr>
-            <td class="url" title="https://group.gmo/security/brandsecurity/dns/">group.gmo/security/brandsecurity/dns/</td>
-            <td>80</td>
-            <td>9,103</td>
-            <td>0.88%</td>
-            <td>9.3位</td>
+            <td class="url" title="https://group.gmo/security/security-all/information-security/blog/smartphone-virus/">group.gmo/security/security-all/information-security/blog/smartphone-virus/</td>
+            <td>97</td>
+            <td>14,469</td>
+            <td>0.67%</td>
+            <td>8.2位</td>
             <td><span class="pill pill-amber">改善余地</span></td>
         </tr></tbody>
     </table>
@@ -716,5 +740,53 @@ tr:last-child td{border-bottom:none;}
 
 </div>
 <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:24px;right:24px;background:#1F3864;color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:999;opacity:0.85;display:flex;align-items:center;justify-content:center;">▲</button>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  var labels = ["4週前","3週前","2週前","1週前","今週"];
+  var tickStyle = {font:{size:11},color:'#888'};
+  var gridStyle = {color:'rgba(0,0,0,0.05)'};
+  var baseOpts = {
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:tickStyle,grid:gridStyle},
+      y:{ticks:tickStyle,grid:gridStyle,beginAtZero:true}
+    }
+  };
+  new Chart(document.getElementById('chart-clicks'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'クリック数',data:[19606,19573,18434,17984,17288],
+      borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#2563eb',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-imp'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'表示回数',data:[1037813,1067649,945210,1021076,1022211],
+      borderColor:'#059669',backgroundColor:'rgba(5,150,105,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#059669',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-pos'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'平均順位',data:[8.2,7.9,8.1,8.2,8.4],
+      borderColor:'#d97706',backgroundColor:'rgba(217,119,6,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#d97706',tension:0.3,fill:true
+    }]},
+    options:{
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{ticks:tickStyle,grid:gridStyle},
+        y:{ticks:tickStyle,grid:gridStyle,reverse:false,min:5,max:12}
+      }
+    }
+  });
+})();
+</script>
 </body>
 </html>
