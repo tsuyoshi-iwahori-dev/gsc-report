@@ -68,7 +68,7 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">Revcomm — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-19 09:53</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-19 09:54</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
@@ -113,6 +113,20 @@ tr:last-child td{border-bottom:none;}
             <div class="kpi-label">平均順位</div>
             <div class="kpi-value">7.7位</div>
             <div class="kpi-diff"><span class="down">▼ 0.1位悪化（前週 7.6位）</span></div>
+        </div>
+    </div>
+    <div class="chart-row">
+        <div class="chart-box">
+            <div class="chart-box-title">クリック数推移</div>
+            <canvas id="chart-clicks" height="140"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">表示回数推移</div>
+            <canvas id="chart-imp" height="140"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">平均順位推移</div>
+            <canvas id="chart-pos" height="140"></canvas>
         </div>
     </div>
 </div>
@@ -288,13 +302,6 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>mi-teru</td>
-                <td>10</td><td>15</td>
-                <td>1</td><td>1</td>
-                <td>43.48%</td><td>65.22%</td>
-                <td><span class="pill pill-red">🔴 減少</span></td>
-            </tr>
-            <tr>
                 <td>電話の録音</td>
                 <td>10</td><td>7</td>
                 <td>3.0</td><td>3.7</td>
@@ -309,11 +316,11 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>電話しながら録音機能</td>
-                <td>9</td><td>2</td>
-                <td>3.1</td><td>6.4</td>
-                <td>10.98%</td><td>1.94%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
+                <td>mi-teru</td>
+                <td>10</td><td>15</td>
+                <td>1</td><td>1</td>
+                <td>43.48%</td><td>65.22%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
                 <td>ラップアップ</td>
@@ -328,6 +335,13 @@ tr:last-child td{border-bottom:none;}
                 <td>3.0</td><td>3.4</td>
                 <td>4.48%</td><td>4.91%</td>
                 <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>android 電話 録音</td>
+                <td>9</td><td>2</td>
+                <td>2.7</td><td>2.1</td>
+                <td>15.25%</td><td>2.86%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
             </tr></tbody>
                     </table>
                 </div>
@@ -698,5 +712,15 @@ tr:last-child td{border-bottom:none;}
 
 </div>
 <button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:24px;right:24px;background:#1F3864;color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:999;opacity:0.85;display:flex;align-items:center;justify-content:center;">▲</button>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  var labels = ["3週前","2週前","1週前","今週"];
+  var defaults = {borderWidth:2,pointRadius:3,tension:0.3,fill:false};
+  new Chart(document.getElementById('chart-clicks'),{type:'line',data:{labels:labels,datasets:[Object.assign({label:'クリック数',data:[2832,2994,2989,2471],borderColor:'#185fa5',backgroundColor:'rgba(24,95,165,0.08)'},defaults)]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  new Chart(document.getElementById('chart-imp'),{type:'line',data:{labels:labels,datasets:[Object.assign({label:'表示回数',data:[103319,98565,98040,80566],borderColor:'#0f6e56',backgroundColor:'rgba(15,110,86,0.08)'},defaults)]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
+  new Chart(document.getElementById('chart-pos'),{type:'line',data:{labels:labels,datasets:[Object.assign({label:'平均順位',data:[7.7,7.5,7.6,7.7],borderColor:'#854f0b',backgroundColor:'rgba(133,79,11,0.08)'},defaults)]},options:{plugins:{legend:{display:false}},scales:{y:{reverse:true,beginAtZero:false}}}});
+})();
+</script>
 </body>
 </html>
