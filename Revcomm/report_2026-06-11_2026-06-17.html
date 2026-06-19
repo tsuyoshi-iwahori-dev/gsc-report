@@ -41,8 +41,8 @@ tr:last-child td{border-bottom:none;}
 .pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
 .footer{text-align:center;font-size:11px;color:#aaa;padding:16px 0;}
 .chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
-.chart-box{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:12px;}
-.chart-box-title{font-size:11px;color:#888;margin-bottom:8px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.chart-box-title{font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:10px;}
 .ai-section-card{background:#f8f9fc;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid #185fa5;}
 .ai-section-card:last-child{margin-bottom:0;}
 .ai-section-header{font-size:13px;font-weight:600;color:#185fa5;margin-bottom:8px;}
@@ -68,7 +68,7 @@ tr:last-child td{border-bottom:none;}
 <div class="header">
     <div>
         <div class="header-title">Revcomm — GSC週次レポート</div>
-        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-19 09:59</div>
+        <div class="header-sub">対象期間：2026-06-11〜2026-06-17　／　生成日時：2026-06-19 12:10</div>
     </div>
     <span class="badge">自動生成</span>
 </div>
@@ -118,33 +118,19 @@ tr:last-child td{border-bottom:none;}
     <div class="chart-row">
         <div class="chart-box">
             <div class="chart-box-title">クリック数推移</div>
-            <canvas id="chart-clicks" height="140"></canvas>
+            <canvas id="chart-clicks" height="120"></canvas>
         </div>
         <div class="chart-box">
             <div class="chart-box-title">表示回数推移</div>
-            <canvas id="chart-imp" height="140"></canvas>
+            <canvas id="chart-imp" height="120"></canvas>
         </div>
         <div class="chart-box">
             <div class="chart-box-title">平均順位推移</div>
-            <canvas id="chart-pos" height="140"></canvas>
+            <canvas id="chart-pos" height="120"></canvas>
         </div>
     </div>
 </div>
 
-<div class="section" id="section-ga-performance">
-    <div class="section-title">📊 GAパフォーマンス</div>
-    <div style="font-size:12px;color:#888;margin-bottom:12px;">2026年5月累計</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-        <div class="kpi">
-            <div class="kpi-label">月間セッション数</div>
-            <div class="kpi-value">17,910</div>
-        </div>
-        <div class="kpi">
-            <div class="kpi-label">月間CV数</div>
-            <div class="kpi-value">73</div>
-        </div>
-    </div>
-</div>
 
 <div class="section" id="section-seo-summary">
     <div class="section-title">SEOサマリ</div>
@@ -309,6 +295,13 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-red">🔴 減少</span></td>
             </tr>
             <tr>
+                <td>miitel meetings</td>
+                <td>10</td><td>6</td>
+                <td>2.0</td><td>13.0</td>
+                <td>29.41%</td><td>14.29%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
                 <td>mi-teru</td>
                 <td>10</td><td>15</td>
                 <td>1</td><td>1</td>
@@ -323,13 +316,6 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>miitel meetings</td>
-                <td>10</td><td>6</td>
-                <td>2.0</td><td>13.0</td>
-                <td>29.41%</td><td>14.29%</td>
-                <td><span class="pill pill-green">✅ 増加</span></td>
-            </tr>
-            <tr>
                 <td>通話録音 android</td>
                 <td>10</td><td>9</td>
                 <td>2.2</td><td>2.2</td>
@@ -337,10 +323,10 @@ tr:last-child td{border-bottom:none;}
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
-                <td>電話しながら録音機能</td>
+                <td>android 電話 録音</td>
                 <td>9</td><td>2</td>
-                <td>3.1</td><td>6.4</td>
-                <td>10.98%</td><td>1.94%</td>
+                <td>2.7</td><td>2.1</td>
+                <td>15.25%</td><td>2.86%</td>
                 <td><span class="pill pill-green">✅ 増加</span></td>
             </tr>
             <tr>
@@ -730,10 +716,48 @@ tr:last-child td{border-bottom:none;}
 <script>
 (function(){
   var labels = ["3週前","2週前","1週前","今週"];
-  var defaults = {borderWidth:2,pointRadius:3,tension:0.3,fill:false};
-  new Chart(document.getElementById('chart-clicks'),{type:'line',data:{labels:labels,datasets:[Object.assign({label:'クリック数',data:[2832,2994,2989,2471],borderColor:'#185fa5',backgroundColor:'rgba(24,95,165,0.08)'},defaults)]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
-  new Chart(document.getElementById('chart-imp'),{type:'line',data:{labels:labels,datasets:[Object.assign({label:'表示回数',data:[103319,98565,98040,80566],borderColor:'#0f6e56',backgroundColor:'rgba(15,110,86,0.08)'},defaults)]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}});
-  new Chart(document.getElementById('chart-pos'),{type:'line',data:{labels:labels,datasets:[Object.assign({label:'平均順位',data:[7.7,7.5,7.6,7.7],borderColor:'#854f0b',backgroundColor:'rgba(133,79,11,0.08)'},defaults)]},options:{plugins:{legend:{display:false}},scales:{y:{reverse:true,beginAtZero:false}}}});
+  var tickStyle = {font:{size:11},color:'#888'};
+  var gridStyle = {color:'rgba(0,0,0,0.05)'};
+  var baseOpts = {
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:tickStyle,grid:gridStyle},
+      y:{ticks:tickStyle,grid:gridStyle,beginAtZero:true}
+    }
+  };
+  new Chart(document.getElementById('chart-clicks'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'クリック数',data:[2832,2994,2989,2471],
+      borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#2563eb',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-imp'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'表示回数',data:[103319,98565,98040,80566],
+      borderColor:'#059669',backgroundColor:'rgba(5,150,105,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#059669',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-pos'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'平均順位',data:[7.7,7.5,7.6,7.7],
+      borderColor:'#d97706',backgroundColor:'rgba(217,119,6,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#d97706',tension:0.3,fill:true
+    }]},
+    options:{
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{ticks:tickStyle,grid:gridStyle},
+        y:{ticks:tickStyle,grid:gridStyle,reverse:false,min:5,max:11}
+      }
+    }
+  });
 })();
 </script>
 </body>
