@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みらいワークス GSC週次レポート 2026-06-18〜2026-06-24</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#1a1a1a;background:#f5f5f3;}
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px;}
+.header{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;}
+.header-title{font-size:15px;font-weight:500;}
+.header-sub{font-size:12px;color:#888;margin-top:4px;}
+.badge{font-size:11px;padding:3px 10px;border-radius:20px;background:#e1f5ee;color:#0f6e56;}
+.nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.nav-links a{font-size:12px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
+.nav-links a:hover{background:#dce6ff;}
+.up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
+.section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.section-title{font-size:13px;font-weight:500;margin-bottom:12px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:14px;}
+.kpi-label{font-size:11px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:22px;font-weight:500;}
+.kpi-diff{font-size:11px;margin-top:4px;}
+.insight{display:flex;gap:10px;padding:10px 12px;border-radius:8px;margin-bottom:8px;}
+.insight:last-child{margin-bottom:0;}
+.insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
+.insight-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+.insight-title{font-size:12px;font-weight:500;margin-bottom:3px;}
+.insight.red .insight-title{color:#a32d2d;}.insight.amber .insight-title{color:#854f0b;}.insight.green .insight-title{color:#0f6e56;}
+.insight-desc{font-size:11px;color:#555;line-height:1.6;}
+.insight-action{font-size:11px;margin-top:5px;padding:4px 8px;background:rgba(0,0,0,0.05);border-radius:4px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{text-align:left;padding:7px 8px;color:#888;border-bottom:0.5px solid #e0e0dc;font-weight:400;}
+td{padding:7px 8px;border-bottom:0.5px solid #e0e0dc;}
+tr:last-child td{border-bottom:none;}
+.url{color:#185fa5;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;border:0.5px solid #e0e0dc;}
+.pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
+.footer{text-align:center;font-size:11px;color:#aaa;padding:16px 0;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:14px;}
+.chart-box-title{font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:10px;}
+.ai-section-card{background:#f8f9fc;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid #185fa5;}
+.ai-section-card:last-child{margin-bottom:0;}
+.ai-section-header{font-size:13px;font-weight:600;color:#185fa5;margin-bottom:8px;}
+.ai-section-body{font-size:12px;line-height:1.8;color:#333;}
+.ai-section-body p{margin-bottom:6px;}
+.ai-section-body p:last-child{margin-bottom:0;}
+.ai-section-body ul{margin:6px 0 6px 16px;}
+.ai-section-body li{margin-bottom:4px;}
+.ai-action-card{border-left-color:#854f0b;background:#fdf8f0;}
+.ai-action-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:8px;}
+.ai-action-now{background:#fcebeb;border-radius:6px;padding:10px;}
+.ai-action-month{background:#faeeda;border-radius:6px;padding:10px;}
+.ai-action-later{background:#e1f5ee;border-radius:6px;padding:10px;}
+.ai-action-label{font-size:11px;font-weight:600;margin-bottom:6px;}
+.ai-action-items{font-size:11px;line-height:1.7;color:#333;}
+.ai-action-items ul{margin-left:14px;}
+.ai-action-items li{margin-bottom:3px;}
+#strategy{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px 20px;margin-bottom:16px;}
+#strategy h2{font-size:13px;font-weight:500;margin-bottom:12px;}
+.strategy-block{background:#f8f9fc;border-left:3px solid #185fa5;border-radius:8px;padding:14px 16px;margin-bottom:10px;}
+.strategy-block:last-child{margin-bottom:0;}
+.strategy-block h3{font-size:13px;font-weight:600;color:#185fa5;margin-bottom:8px;}
+.strategy-block ul{margin:0 0 0 16px;}
+.strategy-block li{font-size:12px;line-height:1.8;color:#333;margin-bottom:4px;}
+.empty-item{color:#aaa;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+    <div>
+        <div class="header-title">みらいワークス — GSC週次レポート</div>
+        <div class="header-sub">対象期間：2026-06-18〜2026-06-24　／　生成日時：2026-06-29 10:58</div>
+    </div>
+    <span class="badge">自動生成</span>
+</div>
+
+<div class="nav-links">
+    <a href="#section-goals">🎯 KGI・KPI</a>
+    <a href="#strategy">📌 戦略方針</a>
+    <a href="#section-gsc-performance">📊 GSCパフォーマンス</a>
+    <a href="#section-ga-performance">📊 GAパフォーマンス</a>
+    <a href="#section-seo-summary">🔍 SEOサマリ</a>
+    
+    <a href="#section-query">🔍 クエリ</a>
+    <a href="#section-weekly-gsc">📋 週次GSC</a>
+    <a href="#section-pages">📄 ページ一覧</a>
+</div>
+
+
+<div class="section" id="section-goals">
+    <div class="section-title">🎯 KGI・KPI達成状況</div>
+    <div style="color:#aaa;font-size:13px;padding:8px 0;">目標値未設定</div>
+</div>
+
+<section id="strategy">
+  <h2>📌 戦略方針・主要施策・期待効果</h2>
+  <div class="strategy-block">
+    <h3>戦略方針</h3>
+    <ul><li class="empty-item">－</li></ul>
+  </div>
+  <div class="strategy-block">
+    <h3>主要施策</h3>
+    <ul><li class="empty-item">－</li></ul>
+  </div>
+  <div class="strategy-block">
+    <h3>期待効果</h3>
+    <ul><li class="empty-item">－</li></ul>
+  </div>
+</section>
+
+<div class="performance-section" id="section-gsc-performance">
+    <div class="section-title">📊 GSCパフォーマンス</div>
+    <div style="font-size:12px;color:#888;margin-bottom:12px;">対象期間：2026-06-18〜2026-06-24</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">8,363</div>
+            <div class="kpi-diff"><span class="up">▲ 2.0%（前週 8,201）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">523,057</div>
+            <div class="kpi-diff"><span class="up">▲ 5.9%（前週 493,769）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">1.6%</div>
+            <div class="kpi-diff"><span class="down">▼ 3.6%（前週 1.66）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">10.5位</div>
+            <div class="kpi-diff"><span class="neutral">横ばい（前週 10.5位）</span></div>
+        </div>
+    </div>
+    <div class="chart-row">
+        <div class="chart-box">
+            <div class="chart-box-title">クリック数推移</div>
+            <canvas id="chart-clicks" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">表示回数推移</div>
+            <canvas id="chart-imp" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">平均順位推移</div>
+            <canvas id="chart-pos" height="120"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="section-ga-performance">
+    <div class="section-title">📊 GAパフォーマンス</div>
+    <div style="font-size:12px;color:#888;margin-bottom:12px;">2026年5月累計</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div class="kpi">
+            <div class="kpi-label">月間セッション数</div>
+            <div class="kpi-value">55,019</div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">月間CV数</div>
+            <div class="kpi-value">129</div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="section-seo-summary">
+    <div class="section-title">SEOサマリ</div>
+    
+        <div class="insight amber">
+            <div class="insight-icon">!</div>
+            <div class="insight-body">
+                <div class="insight-title">タイトル改善でCTRを伸ばせるページが48件あります</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://mirai-works.co.jp/consulnext/column/7752/（順位8.6位・表示24,957回・CTR0.28%）<br>  - https://mirai-works.co.jp/consulnext/column/7662/（順位9.4位・表示22,662回・CTR0.33%）<br>  - https://mirai-works.co.jp/consulnext/column/6767/（順位8.1位・表示19,286回・CTR1.91%）<br>  - https://mirai-works.co.jp/consulnext/column/7229/（順位6.7位・表示9,736回・CTR0.33%）<br>  - https://mirai-works.co.jp/media-career/column/tenshoku-site/（順位12.2位・表示9,548回・CTR1.42%）</div>
+            </div>
+        </div>
+        <div class="insight amber">
+            <div class="insight-icon">!</div>
+            <div class="insight-body">
+                <div class="insight-title">20位以下で表示されている重要ページが2件</div>
+                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://mirai-works.co.jp/consulnext/column/6016/（順位20.2位・表示1,018回）<br>  - https://mirai-works.co.jp/uragawa/（順位34.1位・表示740回）</div>
+            </div>
+        </div>
+        <div class="insight neutral">
+            <div class="insight-icon">•</div>
+            <div class="insight-body">
+                <div class="insight-title">今週新たに上位20位以内に入ったクエリが216件</div>
+                <div class="insight-desc">iyp コンサルティング、片山和也 東京都、ブリッジワン、コンサルティング大手、iypなど</div>
+            </div>
+        </div>
+        <div class="insight neutral">
+            <div class="insight-icon">•</div>
+            <div class="insight-body">
+                <div class="insight-title">先週上位20位以内にいたクエリが216件圏外に</div>
+                <div class="insight-desc">業務委託とは、プリンシパル 役職、infj、スキル、労働条件通知書 内定承諾前 メールなど</div>
+            </div>
+        </div>
+        <div class="insight green">
+            <div class="insight-icon">✓</div>
+            <div class="insight-body">
+                <div class="insight-title">クリック数が50%以上増加したクエリが78件</div>
+                <div class="insight-desc">  - 人手不足 解消（34→57CL, +67.6%）<br>  - みらいワークス 会社概要（22→41CL, +86.4%）<br>  - intp（12→37CL, +208.3%）<br>  - isfj（2→36CL, +1700.0%）<br>  - コンサル会社 大手（12→35CL, +191.7%）</div>
+            </div>
+        </div>
+        <div class="insight red">
+            <div class="insight-icon">⚠</div>
+            <div class="insight-body">
+                <div class="insight-title">クリック数が30%以上減少したクエリが66件</div>
+                <div class="insight-desc">  - intj 向いてる仕事（47→30CL, -36.2%）<br>  - intj 職業（28→18CL, -35.7%）<br>  - 転職サイト（30→18CL, -40.0%）<br>  - 建築家 mbti 向いてる仕事（19→13CL, -31.6%）<br>  - コンサル フレームワーク（20→8CL, -60.0%）</div>
+            </div>
+        </div>
+</div>
+
+
+        <div class="section" id="section-query">
+            <div class="section-title">🔍 クエリ</div>
+            <div style="margin-bottom:14px;">
+                <div style="font-size:12px;font-weight:500;color:#555;margin-bottom:8px;">今週 vs 前週（上位20件）</div>
+                <div style="overflow-x:auto;">
+                    <table style="min-width:600px;">
+                        <thead>
+                            <tr>
+                                <th>クエリ</th>
+                                <th>今週CL</th><th>前週CL</th>
+                                <th>今週順位</th><th>前週順位</th>
+                                <th>今週CTR</th><th>前週CTR</th>
+                                <th>判定</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            <tr>
+                <td>みらいワークス</td>
+                <td>687</td><td>674</td>
+                <td>1.0</td><td>1.0</td>
+                <td>57.83%</td><td>59.12%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>株式会社みらいワークス</td>
+                <td>151</td><td>196</td>
+                <td>1.0</td><td>1.0</td>
+                <td>59.92%</td><td>62.62%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>未来ワークス</td>
+                <td>58</td><td>49</td>
+                <td>1</td><td>1.0</td>
+                <td>58.0%</td><td>53.85%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>人手不足 解消</td>
+                <td>57</td><td>34</td>
+                <td>11.7</td><td>12.2</td>
+                <td>29.53%</td><td>20.73%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>転職サイト おすすめ</td>
+                <td>51</td><td>39</td>
+                <td>5.6</td><td>6.2</td>
+                <td>1.85%</td><td>1.31%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>uragawa</td>
+                <td>45</td><td>50</td>
+                <td>2.9</td><td>2.9</td>
+                <td>54.22%</td><td>54.95%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>みらいワークス 会社概要</td>
+                <td>41</td><td>22</td>
+                <td>1.2</td><td>1</td>
+                <td>74.55%</td><td>70.97%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>intp</td>
+                <td>37</td><td>12</td>
+                <td>9.6</td><td>10.6</td>
+                <td>0.21%</td><td>0.18%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>isfj</td>
+                <td>36</td><td>2</td>
+                <td>8.8</td><td>9.3</td>
+                <td>0.2%</td><td>0.06%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>コンサル会社 大手</td>
+                <td>35</td><td>12</td>
+                <td>2.1</td><td>3.1</td>
+                <td>26.72%</td><td>7.95%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>ミライワークス</td>
+                <td>33</td><td>25</td>
+                <td>1.0</td><td>1</td>
+                <td>50.0%</td><td>47.17%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>シンクタンク コンサル 違い</td>
+                <td>31</td><td>27</td>
+                <td>2.2</td><td>2.7</td>
+                <td>10.06%</td><td>8.65%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>intj-a</td>
+                <td>31</td><td>11</td>
+                <td>5.6</td><td>7.0</td>
+                <td>1.73%</td><td>0.89%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>intj 向いてる仕事</td>
+                <td>30</td><td>47</td>
+                <td>1.3</td><td>1.4</td>
+                <td>26.55%</td><td>24.61%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>みらいわーくす</td>
+                <td>29</td><td>28</td>
+                <td>1</td><td>1</td>
+                <td>49.15%</td><td>53.85%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>awwwards</td>
+                <td>28</td><td>19</td>
+                <td>3.4</td><td>3.3</td>
+                <td>3.13%</td><td>2.03%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>コンサル 大手</td>
+                <td>28</td><td>33</td>
+                <td>3.2</td><td>3.8</td>
+                <td>2.5%</td><td>2.99%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>大手コンサル会社</td>
+                <td>27</td><td>12</td>
+                <td>1.7</td><td>2.3</td>
+                <td>24.11%</td><td>13.79%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>intj</td>
+                <td>27</td><td>16</td>
+                <td>9.8</td><td>10.5</td>
+                <td>0.35%</td><td>0.43%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>副業解禁 義務化 2027</td>
+                <td>26</td><td>31</td>
+                <td>1.4</td><td>2.5</td>
+                <td>14.21%</td><td>16.58%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;">
+                <div style="background:#e1f5ee;border-radius:8px;padding:12px 14px;border:0.5px solid #b2dfdb;">
+                    <div style="font-size:12px;font-weight:600;color:#0f6e56;margin-bottom:8px;">🆕 新出現クエリ（10件）</div>
+                    <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>iyp コンサルティング</td>
+                <td>16</td>
+                <td>42</td>
+                <td>38.1%</td>
+                <td>2.6位</td>
+            </tr>
+            <tr>
+                <td>片山和也 東京都</td>
+                <td>11</td>
+                <td>77</td>
+                <td>14.29%</td>
+                <td>1.3位</td>
+            </tr>
+            <tr>
+                <td>ブリッジワン</td>
+                <td>10</td>
+                <td>444</td>
+                <td>2.25%</td>
+                <td>7.3位</td>
+            </tr>
+            <tr>
+                <td>コンサルティング大手</td>
+                <td>8</td>
+                <td>14</td>
+                <td>57.14%</td>
+                <td>1.4位</td>
+            </tr>
+            <tr>
+                <td>iyp</td>
+                <td>7</td>
+                <td>129</td>
+                <td>5.43%</td>
+                <td>9.3位</td>
+            </tr>
+            <tr>
+                <td>採用コンサルタント きつい</td>
+                <td>7</td>
+                <td>18</td>
+                <td>38.89%</td>
+                <td>1.1位</td>
+            </tr>
+            <tr>
+                <td>片山 和 也 東京都</td>
+                <td>6</td>
+                <td>19</td>
+                <td>31.58%</td>
+                <td>1.2位</td>
+            </tr>
+            <tr>
+                <td>eldesign株式会社</td>
+                <td>5</td>
+                <td>52</td>
+                <td>9.62%</td>
+                <td>3.5位</td>
+            </tr>
+            <tr>
+                <td>intp 性格</td>
+                <td>5</td>
+                <td>2176</td>
+                <td>0.23%</td>
+                <td>10.5位</td>
+            </tr>
+            <tr>
+                <td>コンサル グルディス</td>
+                <td>5</td>
+                <td>13</td>
+                <td>38.46%</td>
+                <td>2.2位</td>
+            </tr></tbody></table>
+                </div>
+                <div style="background:#fcebeb;border-radius:8px;padding:12px 14px;border:0.5px solid #ffcdd2;">
+                    <div style="font-size:12px;font-weight:600;color:#a32d2d;margin-bottom:8px;">❌ 消滅クエリ（10件）</div>
+                    <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>業務委託とは</td>
+                <td>12</td>
+                <td>3555</td>
+                <td>0.34%</td>
+                <td>1.2位</td>
+            </tr>
+            <tr>
+                <td>プリンシパル 役職</td>
+                <td>10</td>
+                <td>281</td>
+                <td>3.56%</td>
+                <td>4.6位</td>
+            </tr>
+            <tr>
+                <td>infj</td>
+                <td>7</td>
+                <td>212</td>
+                <td>3.3%</td>
+                <td>19.1位</td>
+            </tr>
+            <tr>
+                <td>スキル</td>
+                <td>7</td>
+                <td>1552</td>
+                <td>0.45%</td>
+                <td>6.6位</td>
+            </tr>
+            <tr>
+                <td>労働条件通知書 内定承諾前 メール</td>
+                <td>6</td>
+                <td>44</td>
+                <td>13.64%</td>
+                <td>2.2位</td>
+            </tr>
+            <tr>
+                <td>労務コンサルタントとは</td>
+                <td>6</td>
+                <td>16</td>
+                <td>37.5%</td>
+                <td>1.4位</td>
+            </tr>
+            <tr>
+                <td>品質向上に向けた取り組み</td>
+                <td>6</td>
+                <td>39</td>
+                <td>15.38%</td>
+                <td>1.4位</td>
+            </tr>
+            <tr>
+                <td>採用コンサルタント</td>
+                <td>6</td>
+                <td>102</td>
+                <td>5.88%</td>
+                <td>4.1位</td>
+            </tr>
+            <tr>
+                <td>業務委託 指揮命令</td>
+                <td>6</td>
+                <td>55</td>
+                <td>10.91%</td>
+                <td>1.0位</td>
+            </tr>
+            <tr>
+                <td>業務委託 指揮命令権</td>
+                <td>6</td>
+                <td>15</td>
+                <td>40.0%</td>
+                <td>1位</td>
+            </tr></tbody></table>
+                </div>
+            </div>
+        </div>
+        
+
+
+<div class="section" id="section-weekly-gsc">
+    <div class="section-title">週次GSC比較</div>
+    <table>
+        <thead>
+            <tr><th>期間</th><th>クリック数</th><th>表示回数</th><th>CTR</th><th>平均順位</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>今週（2026-06-18〜2026-06-24）</td>
+            <td>8,363</td>
+            <td>523,057</td>
+            <td>1.6%</td>
+            <td>10.5位</td>
+        </tr>
+        <tr>
+            <td>1週前（2026-06-11〜2026-06-17）</td>
+            <td>8,201</td>
+            <td>493,769</td>
+            <td>1.66%</td>
+            <td>10.5位</td>
+        </tr>
+        <tr>
+            <td>2週前（2026-06-04〜2026-06-10）</td>
+            <td>8,823</td>
+            <td>509,826</td>
+            <td>1.73%</td>
+            <td>10.0位</td>
+        </tr>
+        <tr>
+            <td>3週前（2026-05-28〜2026-06-03）</td>
+            <td>8,694</td>
+            <td>492,721</td>
+            <td>1.76%</td>
+            <td>10.2位</td>
+        </tr>
+        <tr>
+            <td>4週前（2026-05-21〜2026-05-27）</td>
+            <td>9,072</td>
+            <td>532,008</td>
+            <td>1.71%</td>
+            <td>10.2位</td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="section" id="section-pages">
+    <div class="section-title">クリック上位ページ（先週 top20）</div>
+    <table>
+        <thead>
+            <tr><th>ページURL</th><th>クリック</th><th>表示回数</th><th>CTR</th><th>順位</th><th>判定</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/">mirai-works.co.jp/</td>
+            <td>757</td>
+            <td>3,542</td>
+            <td>21.37%</td>
+            <td>3.1位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/1137/">mirai-works.co.jp/consulnext/column/1137/</td>
+            <td>449</td>
+            <td>8,644</td>
+            <td>5.19%</td>
+            <td>9.2位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/6767/">mirai-works.co.jp/consulnext/column/6767/</td>
+            <td>368</td>
+            <td>19,286</td>
+            <td>1.91%</td>
+            <td>8.1位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/corporate/overview/">mirai-works.co.jp/corporate/overview/</td>
+            <td>336</td>
+            <td>3,113</td>
+            <td>10.79%</td>
+            <td>2.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/subordinate_quitting/">mirai-works.co.jp/business-pro/business-column/subordinate_quitting/</td>
+            <td>266</td>
+            <td>4,031</td>
+            <td>6.6%</td>
+            <td>8.1位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/subcontracting_directions/">mirai-works.co.jp/business-pro/business-column/subcontracting_directions/</td>
+            <td>222</td>
+            <td>5,762</td>
+            <td>3.85%</td>
+            <td>5.1位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/media-career/column/tenshoku-site/">mirai-works.co.jp/media-career/column/tenshoku-site/</td>
+            <td>136</td>
+            <td>9,548</td>
+            <td>1.42%</td>
+            <td>12.2位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/usj-marketing-strategy">mirai-works.co.jp/business-pro/business-column/usj-marketing-strategy</td>
+            <td>115</td>
+            <td>3,366</td>
+            <td>3.42%</td>
+            <td>5.1位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/6617/">mirai-works.co.jp/consulnext/column/6617/</td>
+            <td>89</td>
+            <td>2,944</td>
+            <td>3.02%</td>
+            <td>3.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/7748/">mirai-works.co.jp/consulnext/column/7748/</td>
+            <td>88</td>
+            <td>3,106</td>
+            <td>2.83%</td>
+            <td>6.7位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/7759/">mirai-works.co.jp/consulnext/column/7759/</td>
+            <td>84</td>
+            <td>6,272</td>
+            <td>1.34%</td>
+            <td>8.5位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/project_organizationchart/">mirai-works.co.jp/business-pro/business-column/project_organizationchart/</td>
+            <td>83</td>
+            <td>2,711</td>
+            <td>3.06%</td>
+            <td>4.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/7662/">mirai-works.co.jp/consulnext/column/7662/</td>
+            <td>75</td>
+            <td>22,662</td>
+            <td>0.33%</td>
+            <td>9.4位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/mwri/column/column-reskilling/7085/">mirai-works.co.jp/mwri/column/column-reskilling/7085/</td>
+            <td>75</td>
+            <td>963</td>
+            <td>7.79%</td>
+            <td>4.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/business-pro/business-column/human_resources/">mirai-works.co.jp/business-pro/business-column/human_resources/</td>
+            <td>74</td>
+            <td>1,280</td>
+            <td>5.78%</td>
+            <td>15.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/1352/">mirai-works.co.jp/consulnext/column/1352/</td>
+            <td>71</td>
+            <td>1,890</td>
+            <td>3.76%</td>
+            <td>8.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/7752/">mirai-works.co.jp/consulnext/column/7752/</td>
+            <td>71</td>
+            <td>24,957</td>
+            <td>0.28%</td>
+            <td>8.6位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/industry/iyp_consulting/">mirai-works.co.jp/consulnext/industry/iyp_consulting/</td>
+            <td>69</td>
+            <td>602</td>
+            <td>11.46%</td>
+            <td>4.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/uragawa/award/awwwards/">mirai-works.co.jp/uragawa/award/awwwards/</td>
+            <td>69</td>
+            <td>1,619</td>
+            <td>4.26%</td>
+            <td>5.9位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://mirai-works.co.jp/consulnext/column/1337/">mirai-works.co.jp/consulnext/column/1337/</td>
+            <td>63</td>
+            <td>1,291</td>
+            <td>4.88%</td>
+            <td>3.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="footer">自動生成レポート — GSC Weekly Report</div>
+
+</div>
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:24px;right:24px;background:#1F3864;color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:999;opacity:0.85;display:flex;align-items:center;justify-content:center;">▲</button>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  var labels = ["4週前","3週前","2週前","1週前","今週"];
+  var tickStyle = {font:{size:11},color:'#888'};
+  var gridStyle = {color:'rgba(0,0,0,0.05)'};
+  var baseOpts = {
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:tickStyle,grid:gridStyle},
+      y:{ticks:tickStyle,grid:gridStyle,beginAtZero:true}
+    }
+  };
+  new Chart(document.getElementById('chart-clicks'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'クリック数',data:[9072,8694,8823,8201,8363],
+      borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#2563eb',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-imp'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'表示回数',data:[532008,492721,509826,493769,523057],
+      borderColor:'#059669',backgroundColor:'rgba(5,150,105,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#059669',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-pos'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'平均順位',data:[10.2,10.2,10.0,10.5,10.5],
+      borderColor:'#d97706',backgroundColor:'rgba(217,119,6,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#d97706',tension:0.3,fill:'start'
+    }]},
+    options:{
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{ticks:tickStyle,grid:gridStyle},
+        y:{
+          reverse:true,
+          ticks:{font:{size:11},color:'#888',callback:function(value){return value+'位';}},
+          grid:{color:'rgba(0,0,0,0.05)'}
+        }
+      }
+    }
+  });
+})();
+</script>
+</body>
+</html>
