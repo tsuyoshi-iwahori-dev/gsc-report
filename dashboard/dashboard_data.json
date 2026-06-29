@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T19:09:48",
+  "generated_at": "2026-06-29T19:16:12",
   "clients": {
     "起業の窓口": {
       "pages": [
@@ -211,6 +211,170 @@
                 "副業": 68.5,
                 "お金の稼ぎ方 副業": 8.1,
                 "副業 おすすめ": 43.9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "レンタルPCネット": {
+      "pages": [
+        {
+          "url": "https://rental-pc.net/",
+          "title": "トップページ",
+          "keywords": [
+            "レンタルpc",
+            "パソコン レンタル",
+            "pcレンタル 法人"
+          ],
+          "actions": [
+            {
+              "date": "2026-06-10",
+              "label": "ヘッダー以外対応"
+            }
+          ],
+          "weekly_data": [
+            {
+              "week": "2026-04-09",
+              "clicks": 69,
+              "impressions": 3606,
+              "ctr": 1.91,
+              "position": 13.6,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 8.0,
+                "パソコン レンタル": 14.8,
+                "pcレンタル 法人": 11.0
+              }
+            },
+            {
+              "week": "2026-04-16",
+              "clicks": 56,
+              "impressions": 3856,
+              "ctr": 1.45,
+              "position": 14.0,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 7.4,
+                "パソコン レンタル": 15.1,
+                "pcレンタル 法人": 11.8
+              }
+            },
+            {
+              "week": "2026-04-23",
+              "clicks": 40,
+              "impressions": 3511,
+              "ctr": 1.14,
+              "position": 14.4,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 8.3,
+                "パソコン レンタル": 14.0,
+                "pcレンタル 法人": 12.3
+              }
+            },
+            {
+              "week": "2026-04-30",
+              "clicks": 23,
+              "impressions": 2983,
+              "ctr": 0.77,
+              "position": 15.5,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 6.7,
+                "パソコン レンタル": 13.7,
+                "pcレンタル 法人": 12.9
+              }
+            },
+            {
+              "week": "2026-05-07",
+              "clicks": 49,
+              "impressions": 4103,
+              "ctr": 1.19,
+              "position": 12.7,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 5.9,
+                "パソコン レンタル": 12.6,
+                "pcレンタル 法人": 14.2
+              }
+            },
+            {
+              "week": "2026-05-14",
+              "clicks": 52,
+              "impressions": 4055,
+              "ctr": 1.28,
+              "position": 12.1,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 6.0,
+                "パソコン レンタル": 11.8,
+                "pcレンタル 法人": 12.5
+              }
+            },
+            {
+              "week": "2026-05-21",
+              "clicks": 61,
+              "impressions": 5124,
+              "ctr": 1.19,
+              "position": 13.2,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 6.2,
+                "パソコン レンタル": 12.0,
+                "pcレンタル 法人": 11.0
+              }
+            },
+            {
+              "week": "2026-05-28",
+              "clicks": 44,
+              "impressions": 4421,
+              "ctr": 1.0,
+              "position": 13.0,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 5.3,
+                "パソコン レンタル": 11.3,
+                "pcレンタル 法人": 12.6
+              }
+            },
+            {
+              "week": "2026-06-04",
+              "clicks": 54,
+              "impressions": 4165,
+              "ctr": 1.3,
+              "position": 13.3,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 6.5,
+                "パソコン レンタル": 13.2,
+                "pcレンタル 法人": 12.3
+              }
+            },
+            {
+              "week": "2026-06-11",
+              "clicks": 51,
+              "impressions": 4151,
+              "ctr": 1.23,
+              "position": 12.8,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 6.7,
+                "パソコン レンタル": 12.2,
+                "pcレンタル 法人": 10.7
+              }
+            },
+            {
+              "week": "2026-06-18",
+              "clicks": 48,
+              "impressions": 4146,
+              "ctr": 1.16,
+              "position": 12.5,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 5.8,
+                "パソコン レンタル": 11.0,
+                "pcレンタル 法人": 9.8
               }
             }
           ]
