@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T18:18:59",
+  "generated_at": "2026-06-29T18:43:30",
   "clients": {
     "起業の窓口": {
       "pages": [
@@ -13,11 +13,76 @@
           ],
           "actions": [
             {
-              "date": "2026-06-15",
+              "date": "2026-05-14",
               "label": "タイトル、H1タグ修正"
             }
           ],
           "weekly_data": [
+            {
+              "week": "2026-03-12",
+              "clicks": 87,
+              "impressions": 15174,
+              "ctr": 0.57,
+              "position": 10.0,
+              "sessions": 108,
+              "kw_positions": {
+                "副業": 27.7,
+                "お金の稼ぎ方 副業": 9.2,
+                "副業 おすすめ": 16.4
+              }
+            },
+            {
+              "week": "2026-03-19",
+              "clicks": 67,
+              "impressions": 15342,
+              "ctr": 0.44,
+              "position": 10.6,
+              "sessions": 81,
+              "kw_positions": {
+                "副業": 15.7,
+                "お金の稼ぎ方 副業": 1.1,
+                "副業 おすすめ": 6.1
+              }
+            },
+            {
+              "week": "2026-03-26",
+              "clicks": 47,
+              "impressions": 13927,
+              "ctr": 0.34,
+              "position": 10.8,
+              "sessions": 62,
+              "kw_positions": {
+                "副業": 17.5,
+                "お金の稼ぎ方 副業": 3.4,
+                "副業 おすすめ": 18.3
+              }
+            },
+            {
+              "week": "2026-04-02",
+              "clicks": 37,
+              "impressions": 10827,
+              "ctr": 0.34,
+              "position": 11.2,
+              "sessions": 63,
+              "kw_positions": {
+                "副業": 12.6,
+                "お金の稼ぎ方 副業": 2.6,
+                "副業 おすすめ": 10.5
+              }
+            },
+            {
+              "week": "2026-04-09",
+              "clicks": 49,
+              "impressions": 9279,
+              "ctr": 0.53,
+              "position": 13.3,
+              "sessions": 70,
+              "kw_positions": {
+                "副業": 17.0,
+                "お金の稼ぎ方 副業": 3.3,
+                "副業 おすすめ": 31.6
+              }
+            },
             {
               "week": "2026-04-16",
               "clicks": 41,
