@@ -213,7 +213,9 @@ function buildChart(id, datasets, reverseY=false, yLabel='') {
 }
 
 function initCharts() {
-  Chart.register(ChartjsPluginAnnotation);
+  if (typeof ChartjsPluginAnnotation !== 'undefined') {
+    Chart.register(ChartjsPluginAnnotation);
+  }
 
   buildChart('clicks',
     [makeLineDS('クリック数', WEEKLY.map(w=>w.clicks), '#2563eb', true)]);
