@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T10:01:37",
+  "generated_at": "2026-06-30T10:23:00",
   "clients": {
     "起業の窓口": {
       "pages": [
@@ -240,7 +240,7 @@
               "impressions": 3606,
               "ctr": 1.91,
               "position": 13.6,
-              "sessions": null,
+              "sessions": 93,
               "kw_positions": {
                 "レンタルpc": 8.0,
                 "パソコン レンタル": 14.8,
@@ -253,7 +253,7 @@
               "impressions": 3856,
               "ctr": 1.45,
               "position": 14.0,
-              "sessions": null,
+              "sessions": 94,
               "kw_positions": {
                 "レンタルpc": 7.4,
                 "パソコン レンタル": 15.1,
@@ -266,7 +266,7 @@
               "impressions": 3511,
               "ctr": 1.14,
               "position": 14.4,
-              "sessions": null,
+              "sessions": 59,
               "kw_positions": {
                 "レンタルpc": 8.3,
                 "パソコン レンタル": 14.0,
@@ -279,7 +279,7 @@
               "impressions": 2983,
               "ctr": 0.77,
               "position": 15.5,
-              "sessions": null,
+              "sessions": 31,
               "kw_positions": {
                 "レンタルpc": 6.7,
                 "パソコン レンタル": 13.7,
@@ -292,7 +292,7 @@
               "impressions": 4103,
               "ctr": 1.19,
               "position": 12.7,
-              "sessions": null,
+              "sessions": 92,
               "kw_positions": {
                 "レンタルpc": 5.9,
                 "パソコン レンタル": 12.6,
@@ -305,7 +305,7 @@
               "impressions": 4055,
               "ctr": 1.28,
               "position": 12.1,
-              "sessions": null,
+              "sessions": 67,
               "kw_positions": {
                 "レンタルpc": 6.0,
                 "パソコン レンタル": 11.8,
@@ -318,7 +318,7 @@
               "impressions": 5124,
               "ctr": 1.19,
               "position": 13.2,
-              "sessions": null,
+              "sessions": 91,
               "kw_positions": {
                 "レンタルpc": 6.2,
                 "パソコン レンタル": 12.0,
@@ -331,7 +331,7 @@
               "impressions": 4421,
               "ctr": 1.0,
               "position": 13.0,
-              "sessions": null,
+              "sessions": 91,
               "kw_positions": {
                 "レンタルpc": 5.3,
                 "パソコン レンタル": 11.3,
@@ -344,7 +344,7 @@
               "impressions": 4165,
               "ctr": 1.3,
               "position": 13.3,
-              "sessions": null,
+              "sessions": 83,
               "kw_positions": {
                 "レンタルpc": 6.5,
                 "パソコン レンタル": 13.2,
@@ -357,7 +357,7 @@
               "impressions": 4151,
               "ctr": 1.23,
               "position": 12.8,
-              "sessions": null,
+              "sessions": 79,
               "kw_positions": {
                 "レンタルpc": 6.7,
                 "パソコン レンタル": 12.2,
@@ -370,7 +370,7 @@
               "impressions": 4146,
               "ctr": 1.16,
               "position": 12.5,
-              "sessions": null,
+              "sessions": 63,
               "kw_positions": {
                 "レンタルpc": 5.8,
                 "パソコン レンタル": 11.0,
