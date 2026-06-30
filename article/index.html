@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>新規記事パフォーマンス</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#1a1a1a;background:#f5f5f3;}
+a{color:#185fa5;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 16px;}
+.page-header{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px 20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;}
+.page-title{font-size:16px;font-weight:600;}
+.back-link{font-size:12px;color:#185fa5;padding:4px 10px;border:0.5px solid #c5d3f0;border-radius:20px;background:#f0f4ff;}
+.back-link:hover{background:#dce6ff;}
+.tab-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
+.tab-btn{font-size:12px;padding:5px 12px;border-radius:20px;border:0.5px solid #e0e0dc;background:#fff;cursor:pointer;color:#555;transition:all 0.15s;}
+.tab-btn.active{background:#1F3864;color:#fff;border-color:#1F3864;}
+.tab-btn:hover:not(.active){background:#f0f4ff;border-color:#c5d3f0;}
+.card{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:16px 20px;margin-bottom:14px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{text-align:left;padding:8px 10px;color:#888;border-bottom:0.5px solid #e0e0dc;font-weight:500;white-space:nowrap;}
+td{padding:8px 10px;border-bottom:0.5px solid #e0e0dc;vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#fafaf8;}
+.url-cell{color:#185fa5;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.kw-badge{font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;display:inline-block;margin:1px;}
+.footer{text-align:center;font-size:11px;color:#aaa;padding:24px 0;}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:14px;}
+.summary-card{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px 16px;text-align:center;}
+.summary-val{font-size:22px;font-weight:700;color:#1F3864;}
+.summary-lbl{font-size:11px;color:#888;margin-top:4px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="page-header">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="../" class="back-link">← レポート一覧</a>
+      <span class="page-title">📝 新規記事パフォーマンス</span>
+    </div>
+    <span style="font-size:11px;color:#aaa;">更新: 2026-06-30T18:10:33</span>
+  </div>
+
+  <div class="tab-bar" id="tabBar">
+    <button class="tab-btn active" data-client="all" onclick="switchTab('all',this)">すべて</button>
+<button class="tab-btn" data-client="表参道デンタルクリニック" onclick="switchTab('表参道デンタルクリニック',this)">表参道デンタルクリニック</button>
+
+  </div>
+
+  <div class="card" style="padding:0 20px;">
+    <table>
+      <thead><tr>
+        <th>クライアント</th><th>URL</th><th>タイトル</th>
+        <th>公開日</th><th>経過</th><th>上位KW</th><th></th>
+      </tr></thead>
+      <tbody id="tableBody"><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/ceramic/ceramic-ha-koukai.html"><a href="https://www.omotesando-dc.com/column/ceramic/ceramic-ha-koukai.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/ceramic/ceramic-ha-koukai.html</a></td>
+  <td>セラミックの歯にして後悔？ 原因・失敗例・後悔しないための全対策</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;">0週</td>
+  <td><span class="kw-badge">セラミック歯 後悔 ブログ</span> <span class="kw-badge">オール セラミック 色 失敗</span> <span class="kw-badge">オールセラミック 失敗</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_0.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr></tbody>
+    </table>
+  </div>
+  <div class="footer">自動生成 — 新規記事パフォーマンス</div>
+</div>
+<script>
+function switchTab(client, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#tableBody tr').forEach(tr => {
+    tr.style.display = (client === 'all' || tr.dataset.client === client) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
