@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T18:10:33",
+  "generated_at": "2026-06-30T18:13:48",
   "clients": {
     "表参道デンタルクリニック": {
       "articles": [
@@ -20,7 +20,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 2,
               "kw_positions": {
                 "セラミック歯 後悔 ブログ": null,
                 "オール セラミック 色 失敗": null,
