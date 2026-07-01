@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T19:23:24",
+  "generated_at": "2026-07-01T10:59:53",
   "clients": {
     "表参道デンタルクリニック": {
       "articles": [
@@ -35,8 +35,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "セラミック",
-            "銀歯 セラミック 交換",
-            "銀歯をセラミックに変える前に"
+            "銀歯 ジルコニア 交換 費用",
+            "銀歯 セラミック 交換"
           ],
           "weekly_data": [
             {
@@ -46,11 +46,11 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": 2,
+              "sessions": null,
               "kw_positions": {
                 "セラミック": null,
-                "銀歯 セラミック 交換": null,
-                "銀歯をセラミックに変える前に": null
+                "銀歯 ジルコニア 交換 費用": null,
+                "銀歯 セラミック 交換": null
               }
             }
           ]
@@ -264,7 +264,7 @@
           "top_keywords": [
             "ガミースマイル 粘膜切除",
             "ガミースマイル 粘膜切除術",
-            "上唇粘膜切除"
+            "上唇切除術"
           ],
           "weekly_data": [
             {
@@ -274,11 +274,11 @@
               "impressions": 1,
               "ctr": 0,
               "position": 1,
-              "sessions": 1,
+              "sessions": null,
               "kw_positions": {
                 "ガミースマイル 粘膜切除": null,
                 "ガミースマイル 粘膜切除術": null,
-                "上唇粘膜切除": null
+                "上唇切除術": null
               }
             }
           ]
@@ -287,28 +287,10 @@
           "url": "https://www.omotesando-dc.com/column/gummy-smile/sankaku_kuchibiru.html",
           "title": "三角唇とは 上唇が三角・山型に尖る原因と治療法を徹底解説",
           "published_at": "2026-06-24",
-          "top_keywords": [],
-          "weekly_data": [
-            {
-              "week": "2026-06-18",
-              "week_number": 1,
-              "clicks": 0,
-              "impressions": 0,
-              "ctr": 0.0,
-              "position": 0.0,
-              "sessions": 1,
-              "kw_positions": {}
-            }
-          ]
-        },
-        {
-          "url": "https://www.omotesando-dc.com/column/gummy-smile/shikancho_enjutsu_with_doctor.html",
-          "title": "歯冠長延長術（クラウンレングスニング）とは 歯肉切除術・歯肉整形術・ガミー修正との違いも徹底解説",
-          "published_at": "2026-06-24",
           "top_keywords": [
-            "こんなかんじ",
-            "しかんちょうえんちょうじゅつ",
-            "クラウン レングス ニング 保険適用"
+            "上唇 尖ってる",
+            "上唇 山",
+            "上唇 真ん中 尖ってる"
           ],
           "weekly_data": [
             {
@@ -318,11 +300,37 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": 1,
+              "sessions": null,
               "kw_positions": {
-                "こんなかんじ": null,
-                "しかんちょうえんちょうじゅつ": null,
-                "クラウン レングス ニング 保険適用": null
+                "上唇 尖ってる": null,
+                "上唇 山": null,
+                "上唇 真ん中 尖ってる": null
+              }
+            }
+          ]
+        },
+        {
+          "url": "https://www.omotesando-dc.com/column/gummy-smile/shikancho_enjutsu_with_doctor.html",
+          "title": "歯冠長延長術（クラウンレングスニング）とは 歯肉切除術・歯肉整形術・ガミー修正との違いも徹底解説",
+          "published_at": "2026-06-24",
+          "top_keywords": [
+            "crown lengthening",
+            "歯冠長延長術 東京",
+            "こんなかんじ"
+          ],
+          "weekly_data": [
+            {
+              "week": "2026-06-18",
+              "week_number": 1,
+              "clicks": 0,
+              "impressions": 0,
+              "ctr": 0.0,
+              "position": 0.0,
+              "sessions": null,
+              "kw_positions": {
+                "crown lengthening": null,
+                "歯冠長延長術 東京": null,
+                "こんなかんじ": null
               }
             }
           ]
@@ -351,8 +359,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "ガミースマイル 上唇 めくれる",
-            "上の唇が出てる",
-            "上唇"
+            "リップ リ ポジショニング デメリット",
+            "上の唇が出てる"
           ],
           "weekly_data": [
             {
@@ -362,11 +370,11 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": 1,
+              "sessions": null,
               "kw_positions": {
                 "ガミースマイル 上唇 めくれる": null,
-                "上の唇が出てる": null,
-                "上唇": null
+                "リップ リ ポジショニング デメリット": null,
+                "上の唇が出てる": null
               }
             }
           ]
