@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T19:46:07",
+  "generated_at": "2026-07-02T11:31:34",
   "clients": {
     "レンタルPCネット": {
       "pages": [
@@ -160,6 +160,19 @@
                 "パソコン レンタル": 11.0,
                 "pcレンタル 法人": 9.8
               }
+            },
+            {
+              "week": "2026-06-25",
+              "clicks": 42,
+              "impressions": 2687,
+              "ctr": 1.56,
+              "position": 11.7,
+              "sessions": null,
+              "kw_positions": {
+                "レンタルpc": 5.4,
+                "パソコン レンタル": 11.2,
+                "pcレンタル 法人": 9.8
+              }
             }
           ]
         }
@@ -280,6 +293,19 @@
               "ctr": 0,
               "position": 30.3,
               "sessions": 0,
+              "kw_positions": {
+                "浮気調査 費用": null,
+                "浮気 探偵 費用": null,
+                "不倫 探偵 費用": null
+              }
+            },
+            {
+              "week": "2026-06-25",
+              "clicks": 0,
+              "impressions": 11,
+              "ctr": 0,
+              "position": 36.1,
+              "sessions": null,
               "kw_positions": {
                 "浮気調査 費用": null,
                 "浮気 探偵 費用": null,
@@ -406,6 +432,19 @@
                 "浮気調査 タイミング": 20.5,
                 "浮気調査 費用": null
               }
+            },
+            {
+              "week": "2026-06-25",
+              "clicks": 5,
+              "impressions": 181,
+              "ctr": 2.76,
+              "position": 14.5,
+              "sessions": null,
+              "kw_positions": {
+                "浮気調査 期間": 13.3,
+                "浮気調査 タイミング": 22.2,
+                "浮気調査 費用": null
+              }
             }
           ]
         },
@@ -527,6 +566,19 @@
                 "探偵 成功報酬": 13.7,
                 "不倫 探偵 費用": null
               }
+            },
+            {
+              "week": "2026-06-25",
+              "clicks": 3,
+              "impressions": 241,
+              "ctr": 1.24,
+              "position": 23.2,
+              "sessions": null,
+              "kw_positions": {
+                "浮気調査 成功報酬": 6.1,
+                "探偵 成功報酬": 11.9,
+                "不倫 探偵 費用": 30
+              }
             }
           ]
         },
@@ -647,6 +699,19 @@
                 "浮気調査 おすすめ": 9.1,
                 "探偵 おすすめ": 14,
                 "浮気調査 探偵": 18.1
+              }
+            },
+            {
+              "week": "2026-06-25",
+              "clicks": 3,
+              "impressions": 590,
+              "ctr": 0.51,
+              "position": 18.1,
+              "sessions": null,
+              "kw_positions": {
+                "浮気調査 おすすめ": 7.9,
+                "探偵 おすすめ": 12.5,
+                "浮気調査 探偵": 15.9
               }
             }
           ]
