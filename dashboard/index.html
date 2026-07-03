@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>施策ダッシュボード</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#1a1a1a;background:#f5f5f3;}
+a{color:#185fa5;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 16px;}
+.page-header{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px 20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;}
+.page-title{font-size:16px;font-weight:600;}
+.back-link{font-size:12px;color:#185fa5;padding:4px 10px;border:0.5px solid #c5d3f0;border-radius:20px;background:#f0f4ff;}
+.back-link:hover{background:#dce6ff;}
+.tab-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
+.tab-btn{font-size:12px;padding:5px 12px;border-radius:20px;border:0.5px solid #e0e0dc;background:#fff;cursor:pointer;color:#555;transition:all 0.15s;}
+.tab-btn.active{background:#1F3864;color:#fff;border-color:#1F3864;}
+.tab-btn:hover:not(.active){background:#f0f4ff;border-color:#c5d3f0;}
+.card{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:16px 20px;margin-bottom:14px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th{text-align:left;padding:8px 10px;color:#888;border-bottom:0.5px solid #e0e0dc;font-weight:500;white-space:nowrap;}
+td{padding:8px 10px;border-bottom:0.5px solid #e0e0dc;vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#fafaf8;}
+.badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:20px;background:#e1f5ee;color:#0f6e56;border:0.5px solid #b2dfdb;margin:2px 2px 2px 0;}
+.url-cell{color:#185fa5;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.footer{text-align:center;font-size:11px;color:#aaa;padding:24px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="page-header">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="../" class="back-link">← レポート一覧</a>
+      <span class="page-title">📋 施策ダッシュボード</span>
+    </div>
+    <span style="font-size:11px;color:#aaa;">更新: 2026-07-02T15:11:05</span>
+  </div>
+
+  <div class="tab-bar" id="tabBar">
+    <button class="tab-btn active" data-client="all" onclick="switchTab('all',this)">すべて</button>
+<button class="tab-btn" data-client="レンタルPCネット" onclick="switchTab('レンタルPCネット',this)">レンタルPCネット</button>
+<button class="tab-btn" data-client="ラビット探偵社" onclick="switchTab('ラビット探偵社',this)">ラビット探偵社</button>
+
+  </div>
+
+  <div class="card" style="padding:0 20px;">
+    <table>
+      <thead><tr>
+        <th>クライアント</th><th>URL</th><th>タイトル</th>
+        <th>主要KW</th><th>施策実行日</th><th></th>
+      </tr></thead>
+      <tbody id="tableBody"><tr data-client="レンタルPCネット">
+  <td style="white-space:nowrap;font-weight:500;">レンタルPCネット</td>
+  <td class="url-cell" title="https://rental-pc.net/"><a href="https://rental-pc.net/" target="_blank" rel="noopener">https://rental-pc.net/</a></td>
+  <td>トップページ</td>
+  <td><span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">レンタルpc</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">パソコン レンタル</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">pcレンタル 法人</span></td>
+  <td><span class="badge">2026-06-10 ヘッダー以外対応</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_0.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="ラビット探偵社">
+  <td style="white-space:nowrap;font-weight:500;">ラビット探偵社</td>
+  <td class="url-cell" title="https://rabbit-tantei.com/uwaki/column/cost-of-an-affair-investigation/"><a href="https://rabbit-tantei.com/uwaki/column/cost-of-an-affair-investigation/" target="_blank" rel="noopener">https://rabbit-tantei.com/uwaki/column/cost-of-an-affair-investigation/</a></td>
+  <td>浮気調査の費用相場はいくら？探偵費用の内訳と安く抑える5つのコツ【元刑事監修】</td>
+  <td><span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">浮気調査 費用</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">浮気 探偵 費用</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">不倫 探偵 費用</span></td>
+  <td><span class="badge">2026-06-29</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_1.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="ラビット探偵社">
+  <td style="white-space:nowrap;font-weight:500;">ラビット探偵社</td>
+  <td class="url-cell" title="https://rabbit-tantei.com/uwaki/column/duration-of-the-affair-investigation/"><a href="https://rabbit-tantei.com/uwaki/column/duration-of-the-affair-investigation/" target="_blank" rel="noopener">https://rabbit-tantei.com/uwaki/column/duration-of-the-affair-investigation/</a></td>
+  <td>浮気調査にかかる期間って？平均や費用相場＆日数を短縮するコツ</td>
+  <td><span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">浮気調査 期間</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">浮気調査 タイミング</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">浮気調査 費用</span></td>
+  <td><span class="badge">2026-06-29</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_2.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="ラビット探偵社">
+  <td style="white-space:nowrap;font-weight:500;">ラビット探偵社</td>
+  <td class="url-cell" title="https://rabbit-tantei.com/uwaki/column/infidelity-investigation-success-fee/"><a href="https://rabbit-tantei.com/uwaki/column/infidelity-investigation-success-fee/" target="_blank" rel="noopener">https://rabbit-tantei.com/uwaki/column/infidelity-investigation-success-fee/</a></td>
+  <td>浮気調査の成功報酬とは？探偵社の料金体系の種類と調査の流れを紹介！</td>
+  <td><span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">浮気調査 成功報酬</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">探偵 成功報酬</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">不倫 探偵 費用</span></td>
+  <td><span class="badge">2026-06-30</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_3.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="ラビット探偵社">
+  <td style="white-space:nowrap;font-weight:500;">ラビット探偵社</td>
+  <td class="url-cell" title="https://rabbit-tantei.com/uwaki/column/detective-recommend-uwaki/"><a href="https://rabbit-tantei.com/uwaki/column/detective-recommend-uwaki/" target="_blank" rel="noopener">https://rabbit-tantei.com/uwaki/column/detective-recommend-uwaki/</a></td>
+  <td>浮気調査に強い探偵事務所おすすめ13選！失敗しない選び方のポイントも</td>
+  <td><span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">浮気調査 おすすめ</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">探偵 おすすめ</span> <span style="font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;">浮気調査 探偵</span></td>
+  <td><span class="badge">2026-06-30</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_4.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr></tbody>
+    </table>
+  </div>
+  <div class="footer">自動生成 — 施策ダッシュボード</div>
+</div>
+<script>
+function switchTab(client, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#tableBody tr').forEach(tr => {
+    tr.style.display = (client === 'all' || tr.dataset.client === client) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

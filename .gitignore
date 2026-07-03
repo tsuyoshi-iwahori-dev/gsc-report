@@ -1,2 +1,5 @@
-
-credentials_002.json
+credentials*.json
+token*.json
+__pycache__/
+*.pyc
+.github/workflows/ANTHROPIC_API_KEY.txt

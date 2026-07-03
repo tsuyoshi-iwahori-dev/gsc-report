@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東京スタートアップ法律事務所 GSC週次レポート 2026-06-25〜2026-07-01</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;color:#1a1a1a;background:#f5f5f3;}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px;}
+.header{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:18px 24px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;}
+.header-title{font-size:17px;font-weight:500;}
+.header-sub{font-size:13px;color:#888;margin-top:4px;}
+.badge{font-size:12px;padding:3px 10px;border-radius:20px;background:#e1f5ee;color:#0f6e56;}
+.nav-links{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:10px 16px;margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.nav-links a{font-size:13px;color:#185fa5;text-decoration:none;padding:4px 10px;border-radius:20px;background:#f0f4ff;border:0.5px solid #c5d3f0;white-space:nowrap;transition:background 0.15s;}
+.nav-links a:hover{background:#dce6ff;}
+.up{color:#0f6e56;}.down{color:#a32d2d;}.neutral{color:#888;}
+.section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:18px 24px;margin-bottom:16px;}
+.section-title{font-size:15px;font-weight:500;margin-bottom:12px;}
+.performance-section{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:18px 24px;margin-bottom:16px;}
+.performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.kpi{background:#f8f9fc;border:0.5px solid #e0e0dc;border-radius:8px;padding:16px;}
+.kpi-label{font-size:12px;color:#888;margin-bottom:6px;}
+.kpi-value{font-size:26px;font-weight:500;}
+.kpi-diff{font-size:12px;margin-top:4px;}
+.insight{display:flex;gap:10px;padding:12px 14px;border-radius:8px;margin-bottom:8px;}
+.insight:last-child{margin-bottom:0;}
+.insight.red{background:#fcebeb;}.insight.amber{background:#faeeda;}.insight.green{background:#e1f5ee;}
+.insight-icon{font-size:16px;flex-shrink:0;margin-top:1px;}
+.insight-title{font-size:14px;font-weight:500;margin-bottom:3px;}
+.insight.red .insight-title{color:#a32d2d;}.insight.amber .insight-title{color:#854f0b;}.insight.green .insight-title{color:#0f6e56;}
+.insight-desc{font-size:13px;color:#555;line-height:1.6;}
+.insight-action{font-size:13px;margin-top:5px;padding:4px 8px;background:rgba(0,0,0,0.05);border-radius:4px;}
+table{width:100%;border-collapse:collapse;font-size:14px;}
+th{text-align:left;padding:8px 10px;color:#888;border-bottom:0.5px solid #e0e0dc;font-weight:400;}
+td{padding:8px 10px;border-bottom:0.5px solid #e0e0dc;}
+tr:last-child td{border-bottom:none;}
+.url{color:#185fa5;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;border:0.5px solid #e0e0dc;}
+.pill-red{background:#fcebeb;color:#a32d2d;}.pill-amber{background:#faeeda;color:#854f0b;}.pill-green{background:#e1f5ee;color:#0f6e56;}
+.footer{text-align:center;font-size:12px;color:#aaa;padding:16px 0;}
+.chart-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px;}
+.chart-box{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:16px;}
+.chart-box-title{font-size:14px;font-weight:500;color:#1a1a1a;margin-bottom:10px;}
+.ai-section-card{background:#f8f9fc;border-radius:8px;padding:16px 18px;margin-bottom:10px;border-left:3px solid #185fa5;}
+.ai-section-card:last-child{margin-bottom:0;}
+.ai-section-header{font-size:15px;font-weight:600;color:#185fa5;margin-bottom:8px;}
+.ai-section-body{font-size:14px;line-height:1.8;color:#333;}
+.ai-section-body p{margin-bottom:6px;}
+.ai-section-body p:last-child{margin-bottom:0;}
+.ai-section-body ul{margin:6px 0 6px 16px;}
+.ai-section-body li{margin-bottom:4px;}
+.ai-action-card{border-left-color:#854f0b;background:#fdf8f0;}
+.ai-action-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:8px;}
+.ai-action-now{background:#fcebeb;border-radius:6px;padding:12px;}
+.ai-action-month{background:#faeeda;border-radius:6px;padding:12px;}
+.ai-action-later{background:#e1f5ee;border-radius:6px;padding:12px;}
+.ai-action-label{font-size:12px;font-weight:600;margin-bottom:6px;}
+.ai-action-items{font-size:13px;line-height:1.7;color:#333;}
+.ai-action-items ul{margin-left:14px;}
+.ai-action-items li{margin-bottom:3px;}
+#strategy{background:#fff;border:0.5px solid #e0e0dc;border-radius:12px;padding:18px 24px;margin-bottom:16px;}
+#strategy h2{font-size:16px;font-weight:500;margin-bottom:12px;}
+.strategy-block{background:#f8f9fc;border-left:3px solid #185fa5;border-radius:8px;padding:16px 20px;margin-bottom:10px;}
+.strategy-block:last-child{margin-bottom:0;}
+.strategy-block h3{font-size:15px;font-weight:600;color:#185fa5;margin-bottom:8px;}
+.strategy-block ul{margin:0 0 0 16px;}
+.strategy-block li{font-size:14px;line-height:1.8;color:#333;margin-bottom:4px;}
+.empty-item{color:#aaa;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+    <div>
+        <div class="header-title">東京スタートアップ法律事務所 — GSC週次レポート</div>
+        <div class="header-sub">対象期間：2026-06-25〜2026-07-01　／　生成日時：2026-07-02 14:51</div>
+    </div>
+    <span class="badge">自動生成</span>
+</div>
+
+<div class="nav-links">
+    <a href="#section-goals">🎯 KGI・KPI</a>
+    <a href="#strategy">📌 戦略方針</a>
+    <a href="#section-gsc-performance">📊 GSCパフォーマンス</a>
+    <a href="#section-ga-performance">📊 GAパフォーマンス</a>
+    <a href="#section-seo-summary">🔍 SEOサマリ</a>
+    
+    <a href="#section-query">🔍 クエリ</a>
+    <a href="#section-weekly-gsc">📋 週次GSC</a>
+    <a href="#section-pages">📄 ページ一覧</a>
+</div>
+
+
+<div class="section" id="section-goals">
+    <div class="section-title">🎯 KGI・KPI達成状況</div>
+    <div style="color:#aaa;font-size:13px;padding:8px 0;">目標値未設定</div>
+</div>
+
+<section id="strategy">
+  <h2>📌 戦略方針・主要施策・期待効果</h2>
+  <div class="strategy-block">
+    <h3>戦略方針</h3>
+    <ul><li class="empty-item">－</li></ul>
+  </div>
+  <div class="strategy-block">
+    <h3>主要施策</h3>
+    <ul><li class="empty-item">－</li></ul>
+  </div>
+  <div class="strategy-block">
+    <h3>期待効果</h3>
+    <ul><li class="empty-item">－</li></ul>
+  </div>
+</section>
+<div style="margin: 8px 0 16px; display: flex; gap: 8px; flex-wrap: wrap;">
+  <a href="https://tsuyoshi-iwahori-dev.github.io/gsc-report/dashboard/"
+     target="_blank"
+     style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#185fa5;background:#f0f4f8;border:0.5px solid #c0d0e0;border-radius:6px;padding:6px 12px;text-decoration:none;">
+    📋 施策ダッシュボードを見る →
+  </a>
+  <a href="https://tsuyoshi-iwahori-dev.github.io/gsc-report/article/"
+     target="_blank"
+     style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#185fa5;background:#f0f4f8;border:0.5px solid #c0d0e0;border-radius:6px;padding:6px 12px;text-decoration:none;">
+    📝 新規記事パフォーマンスを見る →
+  </a>
+</div>
+
+<div class="performance-section" id="section-gsc-performance">
+    <div class="section-title">📊 GSCパフォーマンス</div>
+    <div style="font-size:12px;color:#888;margin-bottom:12px;">対象期間：2026-06-25〜2026-07-01</div>
+    <div class="performance-grid">
+        <div class="kpi">
+            <div class="kpi-label">クリック数</div>
+            <div class="kpi-value">2,079</div>
+            <div class="kpi-diff"><span class="down">▼ 34.0%（前週 3,152）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">表示回数</div>
+            <div class="kpi-value">172,680</div>
+            <div class="kpi-diff"><span class="down">▼ 35.1%（前週 266,256）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">CTR</div>
+            <div class="kpi-value">1.2%</div>
+            <div class="kpi-diff"><span class="up">▲ 1.7%（前週 1.18）</span></div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">平均順位</div>
+            <div class="kpi-value">12.8位</div>
+            <div class="kpi-diff"><span class="down">▼ 1.7位悪化（前週 11.1位）</span></div>
+        </div>
+    </div>
+    <div class="chart-row">
+        <div class="chart-box">
+            <div class="chart-box-title">クリック数推移</div>
+            <canvas id="chart-clicks" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">表示回数推移</div>
+            <canvas id="chart-imp" height="120"></canvas>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">平均順位推移</div>
+            <canvas id="chart-pos" height="120"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="section-ga-performance">
+    <div class="section-title">📊 GAパフォーマンス</div>
+    <div style="font-size:12px;color:#888;margin-bottom:12px;">2026年6月累計</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div class="kpi">
+            <div class="kpi-label">月間セッション数</div>
+            <div class="kpi-value">30,379</div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-label">月間CV数</div>
+            <div class="kpi-value">435</div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="section-seo-summary">
+    <div class="section-title">SEOサマリ</div>
+    
+        <div class="insight amber">
+            <div class="insight-icon">!</div>
+            <div class="insight-body">
+                <div class="insight-title">タイトル改善でCTRを伸ばせるページが38件あります</div>
+                <div class="insight-desc">5〜20位で表示回数500以上・CTR3%未満のページ（上位5件）：<br>  - https://tokyo-startup-law.or.jp/legalpark/category02/jikkei/（順位7.7位・表示6,846回・CTR0.26%）<br>  - https://tokyo-startup-law.or.jp/legalpark/category02/honey-trap/（順位8.0位・表示4,620回・CTR1.1%）<br>  - https://tokyo-startup-law.or.jp/legalpark/category02/kouchisyo/（順位7.6位・表示3,569回・CTR0.14%）<br>  - https://tokyo-startup-law.or.jp/legalpark/category02/inko-sexal-offense/（順位9.4位・表示3,025回・CTR0.56%）<br>  - https://tokyo-startup-law.or.jp/legalpark/category02/higaitodoke/（順位7.5位・表示3,007回・CTR0.93%）</div>
+            </div>
+        </div>
+        <div class="insight amber">
+            <div class="insight-icon">!</div>
+            <div class="insight-body">
+                <div class="insight-title">20位以下で表示されている重要ページが5件</div>
+                <div class="insight-desc">表示回数200以上・20位以下のページ（上位5件）：<br>  - https://tokyo-startup-law.or.jp/legalpark/category03/adultery-partner-discussion/（順位29.5位・表示408回）<br>  - https://tokyo-startup-law.or.jp/legalpark/category03/once/（順位30.3位・表示376回）<br>  - https://tokyo-startup-law.or.jp/legalpark/category02/manbiki/（順位26.9位・表示309回）<br>  - https://tokyo-startup-law.or.jp/legalpark/category02/kyouseiwaisetu-syoko/（順位25.5位・表示235回）<br>  - https://tokyo-startup-law.or.jp/legalpark/category03/shiharaigo/（順位25.9位・表示231回）</div>
+            </div>
+        </div>
+        <div class="insight neutral">
+            <div class="insight-icon">•</div>
+            <div class="insight-body">
+                <div class="insight-title">今週新たに上位20位以内に入ったクエリが339件</div>
+                <div class="insight-desc">逮捕 家族に連絡、自己破産 今持ってるクレジットカード、陳述書 書き方、コインランドリー 下着泥棒、山口 友視香など</div>
+            </div>
+        </div>
+        <div class="insight neutral">
+            <div class="insight-icon">•</div>
+            <div class="insight-body">
+                <div class="insight-title">先週上位20位以内にいたクエリが339件圏外に</div>
+                <div class="insight-desc">詐欺時効、あいちスタートアップ法律事務所、プライバシーポリシー ひな形、三浦恵太、器物損壊 構成要件など</div>
+            </div>
+        </div>
+        <div class="insight green">
+            <div class="insight-icon">✓</div>
+            <div class="insight-body">
+                <div class="insight-title">クリック数が50%以上増加したクエリが23件</div>
+                <div class="insight-desc">  - 別居中 連絡 しない 方がいい（2→7CL, +250.0%）<br>  - 東京スタートアップ法律事務所 さいたま支店（3→7CL, +133.3%）<br>  - 不貞行為1回 慰謝料 判例（3→5CL, +66.7%）<br>  - 後藤亜由夢（1→5CL, +400.0%）<br>  - 0352134205（2→4CL, +100.0%）</div>
+            </div>
+        </div>
+        <div class="insight red">
+            <div class="insight-icon">⚠</div>
+            <div class="insight-body">
+                <div class="insight-title">クリック数が30%以上減少したクエリが78件</div>
+                <div class="insight-desc">  - 東京スタートアップ法律事務所（250→172CL, -31.2%）<br>  - スタートアップ法律事務所（75→38CL, -49.3%）<br>  - 離婚時の年金分割額 シュミレーション（15→10CL, -33.3%）<br>  - 0352134142（12→6CL, -50.0%）<br>  - 懲役と実刑の違い（11→4CL, -63.6%）</div>
+            </div>
+        </div>
+</div>
+
+
+        <div class="section" id="section-query">
+            <div class="section-title">🔍 クエリ</div>
+            <div style="margin-bottom:14px;">
+                <div style="font-size:12px;font-weight:500;color:#555;margin-bottom:8px;">今週 vs 前週（上位20件）</div>
+                <div style="overflow-x:auto;">
+                    <table style="min-width:600px;">
+                        <thead>
+                            <tr>
+                                <th>クエリ</th>
+                                <th>今週CL</th><th>前週CL</th>
+                                <th>今週順位</th><th>前週順位</th>
+                                <th>今週CTR</th><th>前週CTR</th>
+                                <th>判定</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            <tr>
+                <td>東京スタートアップ法律事務所</td>
+                <td>172</td><td>250</td>
+                <td>1.0</td><td>1.0</td>
+                <td>36.13%</td><td>39.56%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>スタートアップ法律事務所</td>
+                <td>38</td><td>75</td>
+                <td>1.0</td><td>1.0</td>
+                <td>45.78%</td><td>58.14%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>東京スタートアップ</td>
+                <td>15</td><td>19</td>
+                <td>2.9</td><td>3.0</td>
+                <td>20.83%</td><td>19.19%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>離婚時の年金分割額 シュミレーション</td>
+                <td>10</td><td>15</td>
+                <td>4.9</td><td>5.0</td>
+                <td>2.43%</td><td>2.74%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>別居中 連絡 しない 方がいい</td>
+                <td>7</td><td>2</td>
+                <td>2.4</td><td>2.3</td>
+                <td>8.24%</td><td>2.9%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>逮捕 家族に連絡</td>
+                <td>7</td><td>-</td>
+                <td>1.5</td><td>-</td>
+                <td>46.67%</td><td>-</td>
+                <td><span class="pill pill-green">🆕 新出現</span></td>
+            </tr>
+            <tr>
+                <td>刑務所 楽しかった</td>
+                <td>7</td><td>6</td>
+                <td>7.8</td><td>7.4</td>
+                <td>2.49%</td><td>1.06%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>東京スタートアップ法律事務所 さいたま支店</td>
+                <td>7</td><td>3</td>
+                <td>1</td><td>1</td>
+                <td>46.67%</td><td>33.33%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>大泉まどか</td>
+                <td>6</td><td>5</td>
+                <td>1</td><td>1</td>
+                <td>54.55%</td><td>31.25%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>0352134142</td>
+                <td>6</td><td>12</td>
+                <td>1</td><td>1.0</td>
+                <td>33.33%</td><td>27.27%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>東京スタートアップ法律事務所 炎上</td>
+                <td>5</td><td>5</td>
+                <td>1.7</td><td>1.7</td>
+                <td>12.5%</td><td>6.1%</td>
+                <td><span class="pill">－ 横ばい</span></td>
+            </tr>
+            <tr>
+                <td>東京スタートアップ法律事務所 評判</td>
+                <td>5</td><td>6</td>
+                <td>1.6</td><td>2.3</td>
+                <td>11.36%</td><td>11.32%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>不貞行為1回 慰謝料 判例</td>
+                <td>5</td><td>3</td>
+                <td>1.3</td><td>1.6</td>
+                <td>22.73%</td><td>21.43%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>保護観察とは</td>
+                <td>5</td><td>5</td>
+                <td>6.4</td><td>6.2</td>
+                <td>0.54%</td><td>0.37%</td>
+                <td><span class="pill">－ 横ばい</span></td>
+            </tr>
+            <tr>
+                <td>東京 スタートアップ法律事務所</td>
+                <td>5</td><td>4</td>
+                <td>1</td><td>1</td>
+                <td>41.67%</td><td>40.0%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>後藤亜由夢</td>
+                <td>5</td><td>1</td>
+                <td>1</td><td>1</td>
+                <td>55.56%</td><td>100%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>懲役とは</td>
+                <td>4</td><td>5</td>
+                <td>8.3</td><td>8.9</td>
+                <td>0.11%</td><td>0.15%</td>
+                <td><span class="pill pill-red">🔴 減少</span></td>
+            </tr>
+            <tr>
+                <td>0352134205</td>
+                <td>4</td><td>2</td>
+                <td>1</td><td>1</td>
+                <td>23.53%</td><td>11.11%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>スタートアップ弁護士</td>
+                <td>4</td><td>1</td>
+                <td>1</td><td>1</td>
+                <td>80.0%</td><td>11.11%</td>
+                <td><span class="pill pill-green">✅ 増加</span></td>
+            </tr>
+            <tr>
+                <td>山口友視香</td>
+                <td>4</td><td>4</td>
+                <td>1.2</td><td>1.8</td>
+                <td>25.0%</td><td>30.77%</td>
+                <td><span class="pill">－ 横ばい</span></td>
+            </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;">
+                <div style="background:#e1f5ee;border-radius:8px;padding:12px 14px;border:0.5px solid #b2dfdb;">
+                    <div style="font-size:12px;font-weight:600;color:#0f6e56;margin-bottom:8px;">🆕 新出現クエリ（10件）</div>
+                    <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>逮捕 家族に連絡</td>
+                <td>7</td>
+                <td>15</td>
+                <td>46.67%</td>
+                <td>1.5位</td>
+            </tr>
+            <tr>
+                <td>自己破産 今持ってるクレジットカード</td>
+                <td>4</td>
+                <td>10</td>
+                <td>40.0%</td>
+                <td>2.7位</td>
+            </tr>
+            <tr>
+                <td>陳述書 書き方</td>
+                <td>4</td>
+                <td>171</td>
+                <td>2.34%</td>
+                <td>8.7位</td>
+            </tr>
+            <tr>
+                <td>コインランドリー 下着泥棒</td>
+                <td>3</td>
+                <td>14</td>
+                <td>21.43%</td>
+                <td>3.6位</td>
+            </tr>
+            <tr>
+                <td>山口 友視香</td>
+                <td>3</td>
+                <td>10</td>
+                <td>30.0%</td>
+                <td>1位</td>
+            </tr>
+            <tr>
+                <td>覚書 書き方 個人</td>
+                <td>3</td>
+                <td>26</td>
+                <td>11.54%</td>
+                <td>4.1位</td>
+            </tr>
+            <tr>
+                <td>48拘留</td>
+                <td>2</td>
+                <td>25</td>
+                <td>8.0%</td>
+                <td>3.3位</td>
+            </tr>
+            <tr>
+                <td>いんこう</td>
+                <td>2</td>
+                <td>76</td>
+                <td>2.63%</td>
+                <td>4.9位</td>
+            </tr>
+            <tr>
+                <td>不倫する理由</td>
+                <td>2</td>
+                <td>20</td>
+                <td>10.0%</td>
+                <td>3.0位</td>
+            </tr>
+            <tr>
+                <td>不同意性交 執行猶予</td>
+                <td>2</td>
+                <td>25</td>
+                <td>8.0%</td>
+                <td>9.2位</td>
+            </tr></tbody></table>
+                </div>
+                <div style="background:#fcebeb;border-radius:8px;padding:12px 14px;border:0.5px solid #ffcdd2;">
+                    <div style="font-size:12px;font-weight:600;color:#a32d2d;margin-bottom:8px;">❌ 消滅クエリ（10件）</div>
+                    <table><thead><tr><th>クエリ</th><th>CL</th><th>IMP</th><th>CTR</th><th>順位</th></tr></thead><tbody>
+            <tr>
+                <td>詐欺時効</td>
+                <td>5</td>
+                <td>103</td>
+                <td>4.85%</td>
+                <td>3.3位</td>
+            </tr>
+            <tr>
+                <td>あいちスタートアップ法律事務所</td>
+                <td>4</td>
+                <td>39</td>
+                <td>10.26%</td>
+                <td>4.3位</td>
+            </tr>
+            <tr>
+                <td>プライバシーポリシー ひな形</td>
+                <td>4</td>
+                <td>160</td>
+                <td>2.5%</td>
+                <td>6.9位</td>
+            </tr>
+            <tr>
+                <td>器物損壊 構成要件</td>
+                <td>4</td>
+                <td>64</td>
+                <td>6.25%</td>
+                <td>7.3位</td>
+            </tr>
+            <tr>
+                <td>遺失物横領 被害者</td>
+                <td>4</td>
+                <td>10</td>
+                <td>40.0%</td>
+                <td>1.4位</td>
+            </tr>
+            <tr>
+                <td>離婚後 手続き</td>
+                <td>4</td>
+                <td>58</td>
+                <td>6.9%</td>
+                <td>5.9位</td>
+            </tr>
+            <tr>
+                <td>ごうかん</td>
+                <td>3</td>
+                <td>413</td>
+                <td>0.73%</td>
+                <td>8.9位</td>
+            </tr>
+            <tr>
+                <td>不同意わいせつ 未遂</td>
+                <td>3</td>
+                <td>28</td>
+                <td>10.71%</td>
+                <td>7.8位</td>
+            </tr>
+            <tr>
+                <td>不起訴 無罪</td>
+                <td>3</td>
+                <td>353</td>
+                <td>0.85%</td>
+                <td>7.5位</td>
+            </tr>
+            <tr>
+                <td>受刑者の一日</td>
+                <td>3</td>
+                <td>27</td>
+                <td>11.11%</td>
+                <td>4.3位</td>
+            </tr></tbody></table>
+                </div>
+            </div>
+        </div>
+        
+
+
+<div class="section" id="section-weekly-gsc">
+    <div class="section-title">週次GSC比較</div>
+    <table>
+        <thead>
+            <tr><th>期間</th><th>クリック数</th><th>表示回数</th><th>CTR</th><th>平均順位</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>今週（2026-06-25〜2026-07-01）</td>
+            <td>2,079</td>
+            <td>172,680</td>
+            <td>1.2%</td>
+            <td>12.8位</td>
+        </tr>
+        <tr>
+            <td>1週前（2026-06-18〜2026-06-24）</td>
+            <td>3,152</td>
+            <td>266,256</td>
+            <td>1.18%</td>
+            <td>11.1位</td>
+        </tr>
+        <tr>
+            <td>2週前（2026-06-11〜2026-06-17）</td>
+            <td>3,367</td>
+            <td>299,965</td>
+            <td>1.12%</td>
+            <td>11.2位</td>
+        </tr>
+        <tr>
+            <td>3週前（2026-06-04〜2026-06-10）</td>
+            <td>3,736</td>
+            <td>327,076</td>
+            <td>1.14%</td>
+            <td>10.7位</td>
+        </tr>
+        <tr>
+            <td>4週前（2026-05-28〜2026-06-03）</td>
+            <td>3,761</td>
+            <td>294,352</td>
+            <td>1.28%</td>
+            <td>11.1位</td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="section" id="section-pages">
+    <div class="section-title">クリック上位ページ（先週 top20）</div>
+    <table>
+        <thead>
+            <tr><th>ページURL</th><th>クリック</th><th>表示回数</th><th>CTR</th><th>順位</th><th>判定</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/">tokyo-startup-law.or.jp/</td>
+            <td>201</td>
+            <td>1,353</td>
+            <td>14.86%</td>
+            <td>3.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/honey-trap/">tokyo-startup-law.or.jp/legalpark/category02/honey-trap/</td>
+            <td>51</td>
+            <td>4,620</td>
+            <td>1.1%</td>
+            <td>8.0位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/member/">tokyo-startup-law.or.jp/member/</td>
+            <td>50</td>
+            <td>799</td>
+            <td>6.26%</td>
+            <td>2.5位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/personal/fee/">tokyo-startup-law.or.jp/personal/fee/</td>
+            <td>46</td>
+            <td>913</td>
+            <td>5.04%</td>
+            <td>2.7位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/keimusyo/">tokyo-startup-law.or.jp/legalpark/category02/keimusyo/</td>
+            <td>29</td>
+            <td>2,138</td>
+            <td>1.36%</td>
+            <td>7.1位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/sexual-assault/">tokyo-startup-law.or.jp/legalpark/category02/sexual-assault/</td>
+            <td>29</td>
+            <td>1,106</td>
+            <td>2.62%</td>
+            <td>8.1位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/higaitodoke/">tokyo-startup-law.or.jp/legalpark/category02/higaitodoke/</td>
+            <td>28</td>
+            <td>3,007</td>
+            <td>0.93%</td>
+            <td>7.5位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category03/cheating-gender-gap/">tokyo-startup-law.or.jp/legalpark/category03/cheating-gender-gap/</td>
+            <td>28</td>
+            <td>1,081</td>
+            <td>2.59%</td>
+            <td>10.2位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/magazine/category02/oboegaki/">tokyo-startup-law.or.jp/magazine/category02/oboegaki/</td>
+            <td>28</td>
+            <td>922</td>
+            <td>3.04%</td>
+            <td>9.5位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category08/lawyer-appointed-negotiation/">tokyo-startup-law.or.jp/legalpark/category08/lawyer-appointed-negotiation/</td>
+            <td>24</td>
+            <td>623</td>
+            <td>3.85%</td>
+            <td>6.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/syakuhokazoku/">tokyo-startup-law.or.jp/legalpark/category02/syakuhokazoku/</td>
+            <td>23</td>
+            <td>524</td>
+            <td>4.39%</td>
+            <td>8.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category03/ninshin/">tokyo-startup-law.or.jp/legalpark/category03/ninshin/</td>
+            <td>23</td>
+            <td>593</td>
+            <td>3.88%</td>
+            <td>8.3位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/member/yamaguchiyu/">tokyo-startup-law.or.jp/member/yamaguchiyu/</td>
+            <td>22</td>
+            <td>136</td>
+            <td>16.18%</td>
+            <td>3.8位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/jijochoshu-jitaku/">tokyo-startup-law.or.jp/legalpark/category02/jijochoshu-jitaku/</td>
+            <td>19</td>
+            <td>2,114</td>
+            <td>0.9%</td>
+            <td>9.7位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/magazine/category05/images-copyright-infringement/">tokyo-startup-law.or.jp/magazine/category05/images-copyright-infringement/</td>
+            <td>19</td>
+            <td>957</td>
+            <td>1.99%</td>
+            <td>15.5位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/jikkei/">tokyo-startup-law.or.jp/legalpark/category02/jikkei/</td>
+            <td>18</td>
+            <td>6,846</td>
+            <td>0.26%</td>
+            <td>7.7位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/magazine/category04/retirement-recommendation-notice/">tokyo-startup-law.or.jp/magazine/category04/retirement-recommendation-notice/</td>
+            <td>18</td>
+            <td>353</td>
+            <td>5.1%</td>
+            <td>17.0位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/child-pornography/">tokyo-startup-law.or.jp/legalpark/category02/child-pornography/</td>
+            <td>17</td>
+            <td>581</td>
+            <td>2.93%</td>
+            <td>11.8位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/flow-after-arrest/">tokyo-startup-law.or.jp/legalpark/category02/flow-after-arrest/</td>
+            <td>17</td>
+            <td>658</td>
+            <td>2.58%</td>
+            <td>17.5位</td>
+            <td><span class="pill pill-amber">改善余地</span></td>
+        </tr>
+        <tr>
+            <td class="url" title="https://tokyo-startup-law.or.jp/legalpark/category02/fudoi-waisetsu/">tokyo-startup-law.or.jp/legalpark/category02/fudoi-waisetsu/</td>
+            <td>17</td>
+            <td>259</td>
+            <td>6.56%</td>
+            <td>9.6位</td>
+            <td><span class="pill pill-green">良好</span></td>
+        </tr></tbody>
+    </table>
+</div>
+
+<div class="footer">自動生成レポート — GSC Weekly Report</div>
+
+</div>
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:24px;right:24px;background:#1F3864;color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:999;opacity:0.85;display:flex;align-items:center;justify-content:center;">▲</button>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  var labels = ["4週前","3週前","2週前","1週前","今週"];
+  var tickStyle = {font:{size:11},color:'#888'};
+  var gridStyle = {color:'rgba(0,0,0,0.05)'};
+  var baseOpts = {
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:tickStyle,grid:gridStyle},
+      y:{ticks:tickStyle,grid:gridStyle,beginAtZero:true}
+    }
+  };
+  new Chart(document.getElementById('chart-clicks'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'クリック数',data:[3761,3736,3367,3152,2079],
+      borderColor:'#2563eb',backgroundColor:'rgba(37,99,235,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#2563eb',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-imp'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'表示回数',data:[294352,327076,299965,266256,172680],
+      borderColor:'#059669',backgroundColor:'rgba(5,150,105,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#059669',tension:0.3,fill:true
+    }]},
+    options:JSON.parse(JSON.stringify(baseOpts))
+  });
+  new Chart(document.getElementById('chart-pos'),{
+    type:'line',
+    data:{labels:labels,datasets:[{
+      label:'平均順位',data:[11.1,10.7,11.2,11.1,12.8],
+      borderColor:'#d97706',backgroundColor:'rgba(217,119,6,0.1)',
+      borderWidth:2,pointRadius:3,pointBackgroundColor:'#d97706',tension:0.3,fill:'start'
+    }]},
+    options:{
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{ticks:tickStyle,grid:gridStyle},
+        y:{
+          reverse:true,
+          ticks:{font:{size:11},color:'#888',callback:function(value){return value+'位';}},
+          grid:{color:'rgba(0,0,0,0.05)'}
+        }
+      }
+    }
+  });
+})();
+</script>
+</body>
+</html>

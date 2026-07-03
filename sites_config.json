@@ -1,0 +1,148 @@
+[
+  {
+    "name": "ヒューマンワーク",
+    "property": "https://www.human-work.co.jp/",
+    "sheet_id": "1ydh6ElguVth-XAvgPd7aXYE520TLxOsqHt6Hf0XCRiQ",
+    "ga4_property_id": "360014350",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": { "kgi": "未定", "kpi": [], "targets": [] }
+  },
+  {
+    "name": "Revcomm",
+    "property": "https://miitel.com/jp/",
+    "sheet_id": "1pedLEQmAqNNl2CHz4unkMlaFj8ulQ8sP2aTvLvb3e-o",
+    "ga4_property_id": "319601988",
+    "ga4_cv_config": { "type": "events", "event_names": ["MiiTelCallCenter_資料請求完了","MiiTelMeetings_トライアル申込完了","MiiTelMeetings_資料請求完了","MiiTelPhone_資料請求完了","MiiTelPhone_説明・デモ依頼完了","MiitelRecPod_資料請求完了","MiiTel総合_資料請求完了","MiiTel総合_説明・デモ依頼完了"] },
+    "goals": { "kgi": "未定", "kpi": [], "targets": [] }
+  },
+  {
+    "name": "レンタルPCネット",
+    "property": "sc-domain:rental-pc.net",
+    "sheet_id": "1suD-xKIfaFE7zS86T30ewFEqWwBixtm5kZtEeqSdK_o",
+    "ga4_property_id": "268243619",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": {
+      "kgi": "CV数",
+      "kpi": ["セッション数"],
+      "targets": [
+        { "label": "月間CV数", "target": 28, "unit": "件", "note": "2027年1月時点", "source": "manual" },
+        { "label": "月間セッション数", "target": 3500, "unit": "", "note": "2027年1月時点", "source": "ga4_sessions" }
+      ]
+    }
+  },
+  {
+    "name": "田所商店",
+    "property": "https://misoya.net/",
+    "sheet_id": "1gLWa4J6WO1QhHZE5U_0D5YKj1LA4PLV6C4obxJBvX64",
+    "ga4_property_id": "371188927",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": { "kgi": "未定", "kpi": [], "targets": [] }
+  },
+  {
+    "name": "みらいワークス",
+    "property": "sc-domain:mirai-works.co.jp",
+    "sheet_id": "1vNCvJ3yvPVq035O3WImQ0z21OmjRhUlA6exzNxMcol0",
+    "ga4_property_id": "321687923",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": { "kgi": "未定", "kpi": [], "targets": [] }
+  },
+  {
+    "name": "ラビット探偵社",
+    "property": "https://rabbit-tantei.com/",
+    "sheet_id": "1F9eCIRDWjzc6S-yzJBR5vhomDDO6bc6H_JTyBhXWRjQ",
+    "token_file": "token_002.json",
+    "ga4_property_id": "326011288",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": {
+      "kgi": "CV数",
+      "kpi": ["月間CV数"],
+      "targets": [
+        { "label": "月間CV数", "target": 600, "unit": "件", "note": "2027年6月時点", "source": "manual" }
+      ]
+    }
+  },
+  {
+    "name": "クルーズプラネット",
+    "property": "https://www.cruiseplanet.co.jp/",
+    "sheet_id": "16bJ5tCD9G3seOp3NqUaBd0HyNt0LEupgkXBFvtZIgoA",
+    "token_file": "token_002.json",
+    "ga4_property_id": "375766666",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": {
+      "kgi": "CV数",
+      "kpi": ["セッション数"],
+      "targets": [
+        { "label": "月間CV数", "target": 876, "unit": "件", "note": "2026年11月時点", "source": "manual" },
+        { "label": "月間セッション数", "target": 145936, "unit": "", "note": "2026年11月時点", "source": "ga4_sessions" }
+      ]
+    }
+  },
+  {
+    "name": "3大セキュリティ",
+    "property": "https://group.gmo/",
+    "page_filter": "https://group.gmo/security/",
+    "sheet_id": "1Zl8n4_3ZG6PA1JdSNWDeENv9hbFkjk1HA26OZnvpLzs",
+    "token_file": "token_003.json",
+    "ga4_property_id": "314137428",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": {
+      "kgi": "順位",
+      "kpi": ["セッション数"],
+      "targets": [
+        { "label": "月間セッション数", "target": 72392, "unit": "", "note": "2027年1月時点", "source": "ga4_sessions" }
+      ]
+    }
+  },
+  {
+    "name": "起業の窓口",
+    "property": "https://kigyo.gmo/",
+    "sheet_id": "1yAWn7T59l9nlKnmtg-OdxiXZdUt2SHyhCzpG63g1D0w",
+    "ga4_property_id": "310992908",
+    "ga4_cv_config": { "type": "events", "event_names": ["Aservice_click"] },
+    "goals": { "kgi": "未定", "kpi": [], "targets": [] }
+  },
+  {
+    "name": "中央住宅",
+    "property": "https://www.polus-kodate.com/",
+    "sheet_id": "1XVjV1e-YNDdefZRXLsSzTpwkTGlxEScMh1Av2ktdBrU",
+    "token_file": "token_005.json",
+    "ga4_property_id": "320359150",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": {
+      "kgi": "CV数",
+      "kpi": ["セッション数", "順位"],
+      "targets": [
+        { "label": "年間CV数", "target": 200, "unit": "件", "note": "2026年全体", "source": "manual_annual" },
+        { "label": "年間セッション数", "target": 117493, "unit": "", "note": "2026年全体", "source": "ga4_sessions_annual" }
+      ]
+    }
+  },
+  {
+    "name": "東京スタートアップ法律事務所",
+    "property": "https://tokyo-startup-law.or.jp/",
+    "sheet_id": "",
+    "ga4_property_id": "315852761",
+    "ga4_cv_config": { "type": "key_events" },
+    "goals": { "kgi": "未定", "kpi": [], "targets": [] }
+  },
+  {
+    "name": "表参道デンタルクリニック",
+    "property": "https://www.omotesando-dc.com/",
+    "sheet_id": "1_hioaVQP-WsT36TcH4b_mTlprRD8lhODMX01VyoU3xU",
+    "token_file": "token_006.json",
+    "ga4_property_id": "342213543",
+    "ga4_cv_config": { "type": "events", "event_names": ["GA4電話cvヘッダー","GA4電話cv追従バナー","GA4電話CVメイン","GA4電話cvバナー"] },
+    "goals": {
+      "kgi": "順位",
+      "kpi": ["セッション数"],
+      "targets": [
+        { "label": "ガミースマイル", "target": 3, "unit": "位以内", "source": "kw_ranking", "keyword": "ガミースマイル", "direction": "lower_is_better" },
+        { "label": "セラミック 矯正", "target": 10, "unit": "位以内", "source": "kw_ranking", "keyword": "セラミック 矯正", "direction": "lower_is_better" },
+        { "label": "歯 セラミック", "target": 3, "unit": "位以内", "source": "kw_ranking", "keyword": "歯 セラミック", "direction": "lower_is_better" },
+        { "label": "セラミック 歯 値段", "target": 3, "unit": "位以内", "source": "kw_ranking", "keyword": "セラミック 歯 値段", "direction": "lower_is_better" },
+        { "label": "ラミネートベニア", "target": 10, "unit": "位以内", "source": "kw_ranking", "keyword": "ラミネートベニア", "direction": "lower_is_better" },
+        { "label": "インビザライン", "target": 10, "unit": "位以内", "source": "kw_ranking", "keyword": "インビザライン", "direction": "lower_is_better" }
+      ]
+    }
+  }
+]
