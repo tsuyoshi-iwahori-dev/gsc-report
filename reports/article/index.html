@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>新規記事パフォーマンス</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#1a1a1a;background:#f5f5f3;}
+a{color:#185fa5;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:1800px;margin:0 auto;padding:24px 16px;}
+.page-header{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px 20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;}
+.page-title{font-size:16px;font-weight:600;}
+.back-link{font-size:12px;color:#185fa5;padding:4px 10px;border:0.5px solid #c5d3f0;border-radius:20px;background:#f0f4ff;}
+.back-link:hover{background:#dce6ff;}
+.tab-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
+.tab-btn{font-size:12px;padding:5px 12px;border-radius:20px;border:0.5px solid #e0e0dc;background:#fff;cursor:pointer;color:#555;transition:all 0.15s;}
+.tab-btn.active{background:#1F3864;color:#fff;border-color:#1F3864;}
+.tab-btn:hover:not(.active){background:#f0f4ff;border-color:#c5d3f0;}
+.card{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:16px 20px;margin-bottom:14px;}
+.table-card{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;margin-bottom:14px;overflow-x:auto;}
+table{width:max-content;min-width:100%;border-collapse:collapse;font-size:12px;}
+th{text-align:left;padding:6px 10px;color:#888;border-bottom:0.5px solid #e0e0dc;font-weight:500;white-space:nowrap;}
+td{padding:5px 10px;border-bottom:0.5px solid #e0e0dc;vertical-align:middle;white-space:nowrap;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#fafaf8;}
+.url-cell{color:#185fa5;max-width:200px;overflow:hidden;text-overflow:ellipsis;}
+.title-cell{max-width:220px;overflow:hidden;text-overflow:ellipsis;}
+.kw-cell{white-space:nowrap;}
+.kw-badge{font-size:10px;padding:2px 6px;border-radius:20px;background:#f0f4ff;color:#185fa5;border:0.5px solid #c5d3f0;display:inline-block;margin:1px;white-space:nowrap;}
+.num-cell{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;}
+.footer{text-align:center;font-size:11px;color:#aaa;padding:24px 0;}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:14px;}
+.summary-card{background:#fff;border:0.5px solid #e0e0dc;border-radius:10px;padding:14px 16px;text-align:center;}
+.summary-val{font-size:22px;font-weight:700;color:#1F3864;}
+.summary-lbl{font-size:11px;color:#888;margin-top:4px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="page-header">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="../" class="back-link">← レポート一覧</a>
+      <span class="page-title">📝 新規記事パフォーマンス</span>
+    </div>
+    <span style="font-size:11px;color:#aaa;">更新: 2026-07-02T15:11:19</span>
+  </div>
+
+  <div class="tab-bar" id="tabBar">
+    <button class="tab-btn active" data-client="all" onclick="switchTab('all',this)">すべて</button>
+<button class="tab-btn" data-client="表参道デンタルクリニック" onclick="switchTab('表参道デンタルクリニック',this)">表参道デンタルクリニック</button>
+
+  </div>
+
+  <div class="table-card">
+    <table>
+      <thead><tr>
+        <th>クライアント</th><th>URL</th><th>タイトル</th>
+        <th>公開日</th><th>経過</th>
+        <th style="text-align:right;">クリック</th>
+        <th style="text-align:right;">表示回数</th>
+        <th style="text-align:right;">平均順位</th>
+        <th style="text-align:right;">セッション</th>
+        <th>上位KW</th><th></th>
+      </tr></thead>
+      <tbody id="tableBody"><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/ceramic/ceramic-ha-koukai.html"><a href="https://www.omotesando-dc.com/column/ceramic/ceramic-ha-koukai.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/cer…</a></td>
+  <td class="title-cell" title="セラミックの歯にして後悔？ 原因・失敗例・後悔しないための全対策">セラミックの歯にして後悔？ 原因・失敗例・後悔しないための全対策</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">107</td>
+  <td class="num-cell">18.7</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">セラミック歯 後悔 ブログ</span><span class="kw-badge">オール セラミック 色 失敗</span><span class="kw-badge">オールセラミック 失敗</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_0.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/ceramic/ginba_ceramic.html"><a href="https://www.omotesando-dc.com/column/ceramic/ginba_ceramic.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/cer…</a></td>
+  <td class="title-cell" title="銀歯をセラミックに交換する 費用・メリット・デメリット・治療の流れを歯科医師が解説">銀歯をセラミックに交換する 費用・メリット・デメリット・治療の流れを歯…</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">23</td>
+  <td class="num-cell">24.5</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">セラミック</span><span class="kw-badge">銀歯 ジルコニア 交換 費用</span><span class="kw-badge">銀歯 セラミック 交換</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_1.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/ceramic/ha-cleaning-hindo.html"><a href="https://www.omotesando-dc.com/column/ceramic/ha-cleaning-hindo.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/cer…</a></td>
+  <td class="title-cell" title="歯のクリーニング頻度はどのくらいが正解？ 状態別の目安と保険・セラミックの注意点">歯のクリーニング頻度はどのくらいが正解？ 状態別の目安と保険・セラミッ…</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">27</td>
+  <td class="num-cell">7.5</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">歯 の クリーニング 時間</span><span class="kw-badge">歯のクリーニング 何ヶ月に一回</span><span class="kw-badge">歯のクリーニングは何ヶ月に一回</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_2.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/ceramic/ha-wo-shiroku.html"><a href="https://www.omotesando-dc.com/column/ceramic/ha-wo-shiroku.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/cer…</a></td>
+  <td class="title-cell" title="歯を白くする方法まとめ ホワイトニング・セラミック歯の違いと選び方">歯を白くする方法まとめ ホワイトニング・セラミック歯の違いと選び方</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">4</td>
+  <td class="num-cell">13.2</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">ホワイトニング セラミック</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_3.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/ceramic/maeba-2hon-ceramic.html"><a href="https://www.omotesando-dc.com/column/ceramic/maeba-2hon-ceramic.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/cer…</a></td>
+  <td class="title-cell" title="前歯2本のセラミック治療 費用・素材・メリット・デメリットを徹底解説">前歯2本のセラミック治療 費用・素材・メリット・デメリットを徹底解説</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">213</td>
+  <td class="num-cell">7.3</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">セラミック 前歯2本だけ</span><span class="kw-badge">セラミック</span><span class="kw-badge">セラミック 前歯2本 デメリット</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_4.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/ceramic/okuba-ireba.html"><a href="https://www.omotesando-dc.com/column/ceramic/okuba-ireba.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/cer…</a></td>
+  <td class="title-cell" title="奥歯の入れ歯（部分義歯） 種類・費用・セラミックとの比較を徹底解説">奥歯の入れ歯（部分義歯） 種類・費用・セラミックとの比較を徹底解説</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">21</td>
+  <td class="num-cell">24.3</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">40代 部分入れ歯 奥歯 2本 値段</span><span class="kw-badge">入れ歯 奥歯</span><span class="kw-badge">奥歯 一 本 入れ歯</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_5.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/ceramic/zirconia_nedan.html"><a href="https://www.omotesando-dc.com/column/ceramic/zirconia_nedan.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/cer…</a></td>
+  <td class="title-cell" title="ジルコニアの値段・費用相場 種類別・部位別に徹底解説">ジルコニアの値段・費用相場 種類別・部位別に徹底解説</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">4</td>
+  <td class="num-cell">480</td>
+  <td class="num-cell">7.9</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">ジルコニア 値段の違い</span><span class="kw-badge">e-max ジルコニア 値段</span><span class="kw-badge">インプラント ジルコニア 費用</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_6.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/botox-1month-kireru.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/botox-1month-kireru.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="ボトックスが1ヶ月で切れる？原因・対処法・再注射のタイミングを解説">ボトックスが1ヶ月で切れる？原因・対処法・再注射のタイミングを解説</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">77</td>
+  <td class="num-cell">5.3</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">1</span><span class="kw-badge">ボトックス 2ヶ月で 切れる</span><span class="kw-badge">ボトックス 2ヶ月で切れる</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_7.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/gummy-smile-kaigai.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/gummy-smile-kaigai.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="ガミースマイルは海外で目立つ？ 欧米との骨格差・歯の意識の違いと治療法を歯科医師が解説">ガミースマイルは海外で目立つ？ 欧米との骨格差・歯の意識の違いと治療法…</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">12</td>
+  <td class="num-cell">9.0</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">ガミースマイル 海外</span><span class="kw-badge">ガミースマイル 海外の 反応</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_8.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/ha-ga-chiisai.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/ha-ga-chiisai.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="歯が小さい・もっと大きくしたい ｜矮小歯の原因と治療法を徹底解説">歯が小さい・もっと大きくしたい ｜矮小歯の原因と治療法を徹底解説</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">38</td>
+  <td class="num-cell">10.9</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">親知らず 矮小歯</span><span class="kw-badge">ガミースマイル 歯が小さい</span><span class="kw-badge">小さい歯を大きくする方法</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_9.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/joshinkenmaku-demerit.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/joshinkenmaku-demerit.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="上唇粘膜切除術のデメリットを 歯科医師が包み隠さず解説">上唇粘膜切除術のデメリットを 歯科医師が包み隠さず解説</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">93</td>
+  <td class="num-cell">6.4</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">ガミースマイル 粘膜切除</span><span class="kw-badge">ガミースマイル 粘膜切除 失敗</span><span class="kw-badge">ガミースマイル 粘膜切除術</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_10.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/sankaku_kuchibiru.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/sankaku_kuchibiru.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="三角唇とは 上唇が三角・山型に尖る原因と治療法を徹底解説">三角唇とは 上唇が三角・山型に尖る原因と治療法を徹底解説</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">81</td>
+  <td class="num-cell">5.1</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">唇の形 山がある</span><span class="kw-badge">尖った口</span><span class="kw-badge">三角口</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_11.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/shikancho_enjutsu_with_doctor.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/shikancho_enjutsu_with_doctor.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="歯冠長延長術（クラウンレングスニング）とは 歯肉切除術・歯肉整形術・ガミー修正との違いも徹底解説">歯冠長延長術（クラウンレングスニング）とは 歯肉切除術・歯肉整形術・ガ…</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">116</td>
+  <td class="num-cell">8.7</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">crown lengthening</span><span class="kw-badge">クラウンレングスニング ガミースマイル</span><span class="kw-badge">歯冠長延長術 東京</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_12.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/shinin-modori.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/shinin-modori.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="歯肉整形の後戻りはなぜ起きる？ 原因・期間・防止法を徹底解説">歯肉整形の後戻りはなぜ起きる？ 原因・期間・防止法を徹底解説</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">9</td>
+  <td class="num-cell">6.1</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">歯肉切除 後戻り</span><span class="kw-badge">gummy 整形</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_13.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/uwagawa-agatteru.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/uwagawa-agatteru.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="上唇が上がってる原因と治し方を徹底解説 ガミースマイルとの関係・治療法比較">上唇が上がってる原因と治し方を徹底解説 ガミースマイルとの関係・治療法…</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">282</td>
+  <td class="num-cell">6.6</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">ガミースマイル 上唇 めくれる</span><span class="kw-badge">リップ リ ポジショニング デメリット</span><span class="kw-badge">上の唇が出てる</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_14.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr><tr data-client="表参道デンタルクリニック">
+  <td style="white-space:nowrap;font-weight:500;">表参道デンタルクリニック</td>
+  <td class="url-cell" title="https://www.omotesando-dc.com/column/gummy-smile/uwashin_atsui.html"><a href="https://www.omotesando-dc.com/column/gummy-smile/uwashin_atsui.html" target="_blank" rel="noopener">https://www.omotesando-dc.com/column/gum…</a></td>
+  <td class="title-cell" title="上唇が厚い原因と治し方を徹底解説 マッサージ・鼻呼吸・歯科矯正・口唇縮小術まで">上唇が厚い原因と治し方を徹底解説 マッサージ・鼻呼吸・歯科矯正・口唇縮…</td>
+  <td style="white-space:nowrap;">2026-06-24</td>
+  <td style="text-align:center;white-space:nowrap;">1週</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">21</td>
+  <td class="num-cell">7.2</td>
+  <td class="num-cell">-</td>
+  <td class="kw-cell"><span class="kw-badge">上唇 厚い</span><span class="kw-badge">上唇が厚い</span><span class="kw-badge">上唇厚い</span></td>
+  <td style="white-space:nowrap;"><a href="./detail_15.html" style="font-size:12px;padding:3px 10px;border:0.5px solid #c5d3f0;border-radius:5px;background:#f0f4ff;">詳細 →</a></td>
+</tr></tbody>
+    </table>
+  </div>
+  <div class="footer">自動生成 — 新規記事パフォーマンス</div>
+</div>
+<script>
+function switchTab(client, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#tableBody tr').forEach(tr => {
+    tr.style.display = (client === 'all' || tr.dataset.client === client) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
