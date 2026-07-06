@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T15:01:52",
+  "generated_at": "2026-07-06T15:43:27",
   "clients": {
     "表参道デンタルクリニック": {
       "articles": [
@@ -20,7 +20,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 2,
               "kw_positions": {
                 "セラミック歯 後悔 ブログ": null,
                 "にじほ セラミック": null,
@@ -34,7 +34,7 @@
               "impressions": 140,
               "ctr": 1.43,
               "position": 20.4,
-              "sessions": null,
+              "sessions": 14,
               "kw_positions": {
                 "セラミック歯 後悔 ブログ": 69,
                 "にじほ セラミック": null,
@@ -60,7 +60,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 2,
               "kw_positions": {
                 "セラミック": null,
                 "セラミック 銀 歯": null,
@@ -74,7 +74,7 @@
               "impressions": 24,
               "ctr": 0,
               "position": 25.1,
-              "sessions": null,
+              "sessions": 7,
               "kw_positions": {
                 "セラミック": 9,
                 "セラミック 銀 歯": null,
@@ -111,10 +111,10 @@
               "week": "2026-06-25",
               "week_number": 2,
               "clicks": 1,
-              "impressions": 27,
-              "ctr": 3.7,
-              "position": 7.5,
-              "sessions": null,
+              "impressions": 31,
+              "ctr": 3.23,
+              "position": 7.3,
+              "sessions": 6,
               "kw_positions": {
                 "歯 の クリーニング 時間": 44,
                 "歯のクリーニング 何ヶ月に一回": 8,
@@ -150,7 +150,7 @@
               "impressions": 4,
               "ctr": 0,
               "position": 13.2,
-              "sessions": null,
+              "sessions": 4,
               "kw_positions": {
                 "ホワイトニング セラミック": 33
               }
@@ -184,15 +184,15 @@
             {
               "week": "2026-06-25",
               "week_number": 2,
-              "clicks": 2,
-              "impressions": 213,
-              "ctr": 0.94,
-              "position": 7.3,
-              "sessions": null,
+              "clicks": 3,
+              "impressions": 306,
+              "ctr": 0.98,
+              "position": 7.5,
+              "sessions": 10,
               "kw_positions": {
-                "セラミック 前歯2本だけ": 8.6,
+                "セラミック 前歯2本だけ": 9.1,
                 "セラミック": 5,
-                "セラミック 前歯2本 デメリット": 6.3
+                "セラミック 前歯2本 デメリット": 6.1
               }
             }
           ]
@@ -225,10 +225,10 @@
               "week": "2026-06-25",
               "week_number": 2,
               "clicks": 0,
-              "impressions": 21,
+              "impressions": 23,
               "ctr": 0,
-              "position": 24.3,
-              "sessions": null,
+              "position": 23.5,
+              "sessions": 10,
               "kw_positions": {
                 "40代 部分入れ歯 奥歯 2本 値段": 40,
                 "入れ歯 奥歯": 39.5,
@@ -254,7 +254,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 1,
               "kw_positions": {
                 "ジルコニア 値段 保険": null,
                 "ジルコニア 値段の違い": null,
@@ -268,7 +268,7 @@
               "impressions": 586,
               "ctr": 0.85,
               "position": 7.6,
-              "sessions": null,
+              "sessions": 9,
               "kw_positions": {
                 "ジルコニア 値段 保険": 2.4,
                 "ジルコニア 値段の違い": 8.6,
@@ -305,10 +305,10 @@
               "week": "2026-06-25",
               "week_number": 2,
               "clicks": 3,
-              "impressions": 77,
-              "ctr": 3.9,
-              "position": 5.3,
-              "sessions": null,
+              "impressions": 78,
+              "ctr": 3.85,
+              "position": 5.2,
+              "sessions": 9,
               "kw_positions": {
                 "1": null,
                 "ボトックス 2ヶ月で 切れる": 5.1,
@@ -343,10 +343,10 @@
               "week": "2026-06-25",
               "week_number": 2,
               "clicks": 0,
-              "impressions": 12,
+              "impressions": 14,
               "ctr": 0,
-              "position": 9,
-              "sessions": null,
+              "position": 8.4,
+              "sessions": 4,
               "kw_positions": {
                 "ガミースマイル 海外": 2,
                 "ガミースマイル 海外の 反応": 2
@@ -385,7 +385,7 @@
               "impressions": 38,
               "ctr": 2.63,
               "position": 10.9,
-              "sessions": null,
+              "sessions": 5,
               "kw_positions": {
                 "親知らず 矮小歯": 10,
                 "ガミースマイル 歯が小さい": 29,
@@ -411,7 +411,7 @@
               "impressions": 1,
               "ctr": 0,
               "position": 1,
-              "sessions": null,
+              "sessions": 1,
               "kw_positions": {
                 "上唇粘膜切除術 デメリット": null,
                 "上唇粘膜切除術 ダウンタイム": null,
@@ -425,7 +425,7 @@
               "impressions": 126,
               "ctr": 3.17,
               "position": 6.1,
-              "sessions": null,
+              "sessions": 13,
               "kw_positions": {
                 "上唇粘膜切除術 デメリット": 2.8,
                 "上唇粘膜切除術 ダウンタイム": 5.9,
@@ -451,7 +451,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 1,
               "kw_positions": {
                 "唇の形 山がある": null,
                 "尖った口": null,
@@ -465,7 +465,7 @@
               "impressions": 199,
               "ctr": 2.51,
               "position": 5.2,
-              "sessions": null,
+              "sessions": 8,
               "kw_positions": {
                 "唇の形 山がある": 4.6,
                 "尖った口": 6.7,
@@ -491,7 +491,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 1,
               "kw_positions": {
                 "歯冠長延長術 東京": null,
                 "crown lengthening": null,
@@ -505,7 +505,7 @@
               "impressions": 125,
               "ctr": 3.2,
               "position": 8.7,
-              "sessions": null,
+              "sessions": 11,
               "kw_positions": {
                 "歯冠長延長術 東京": 7.8,
                 "crown lengthening": 6,
@@ -531,7 +531,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 1,
               "kw_positions": {
                 "歯肉切除 後戻り": null,
                 "gummy 整形": null,
@@ -545,7 +545,7 @@
               "impressions": 19,
               "ctr": 10.53,
               "position": 6.4,
-              "sessions": null,
+              "sessions": 5,
               "kw_positions": {
                 "歯肉切除 後戻り": 5,
                 "gummy 整形": 12,
@@ -571,7 +571,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 1,
               "kw_positions": {
                 "上唇 めくれ てる 治す": null,
                 "上唇挙筋": null,
@@ -585,7 +585,7 @@
               "impressions": 573,
               "ctr": 1.4,
               "position": 6.5,
-              "sessions": null,
+              "sessions": 19,
               "kw_positions": {
                 "上唇 めくれ てる 治す": 6,
                 "上唇挙筋": 1,
@@ -611,7 +611,7 @@
               "impressions": 0,
               "ctr": 0.0,
               "position": 0.0,
-              "sessions": null,
+              "sessions": 1,
               "kw_positions": {
                 "した唇の方が厚い": null,
                 "上唇 厚い": null,
@@ -625,7 +625,7 @@
               "impressions": 107,
               "ctr": 0,
               "position": 7.0,
-              "sessions": null,
+              "sessions": 5,
               "kw_positions": {
                 "した唇の方が厚い": 11,
                 "上唇 厚い": 5.2,
