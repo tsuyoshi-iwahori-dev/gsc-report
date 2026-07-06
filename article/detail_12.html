@@ -100,8 +100,12 @@ canvas{max-height:320px;}
 const WEEKLY   = [{"week": "2026-06-18", "week_number": 1, "clicks": 0, "impressions": 0, "ctr": 0.0, "position": 0.0, "sessions": null, "kw_positions": {"歯冠長延長術 東京": null, "crown lengthening": null, "クラウンレングスニング ガミースマイル": null}}, {"week": "2026-06-25", "week_number": 2, "clicks": 4, "impressions": 125, "ctr": 3.2, "position": 8.7, "sessions": null, "kw_positions": {"歯冠長延長術 東京": 7.8, "crown lengthening": 6, "クラウンレングスニング ガミースマイル": 17}}];
 const KEYWORDS = ["歯冠長延長術 東京", "crown lengthening", "クラウンレングスニング ガミースマイル"];
 
-// X軸ラベル: 「1週目」「2週目」...
-const LABELS = WEEKLY.map(w => w.week_number ? w.week_number + '週目' : w.week);
+// X軸ラベル: 「1週目（06/18）」形式
+const LABELS = WEEKLY.map(w => {
+  if (!w.week_number || !w.week) return w.week || '';
+  const parts = w.week.split('-');
+  return w.week_number + '週目（' + parts[1] + '/' + parts[2] + '）';
+});
 
 const CHART_OPTS_BASE = {
   responsive: true,
@@ -110,12 +114,15 @@ const CHART_OPTS_BASE = {
     legend: { labels: { font: { size: 11 } } },
     tooltip: {
       callbacks: {
-        title: (items) => WEEKLY[items[0].dataIndex]?.week + '（' + items[0].label + '）',
+        title: (items) => {
+          const w = WEEKLY[items[0].dataIndex];
+          return w ? w.week_number + '週目（' + w.week + '）' : items[0].label;
+        },
       },
     },
   },
   scales: {
-    x: { ticks: { font: { size: 11 } } },
+    x: { ticks: { font: { size: 11 }, maxRotation: 45, minRotation: 30 } },
     y: { ticks: { font: { size: 11 }, precision: 0 }, beginAtZero: true },
   },
 };
