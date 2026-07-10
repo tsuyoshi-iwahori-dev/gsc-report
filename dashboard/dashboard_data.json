@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T11:57:56",
+  "generated_at": "2026-07-10T10:57:46",
   "clients": {
     "レンタルPCネット": {
       "pages": [
@@ -162,7 +162,7 @@
           ]
         }
       ],
-      "last_fetched_at": "2026-07-09T11:58:05.290524"
+      "last_fetched_at": "2026-07-10T10:57:47.623211"
     },
     "ラビット探偵社": {
       "pages": [
@@ -1092,9 +1092,9 @@
             {
               "week": "2026-07-02",
               "clicks": 1,
-              "impressions": 220,
-              "ctr": 0.45,
-              "position": 21.0,
+              "impressions": 249,
+              "ctr": 0.4,
+              "position": 20.6,
               "sessions": 17,
               "kw_positions": {
                 "浮気調査 費用": 25.3
@@ -1215,9 +1215,123 @@
               }
             }
           ]
+        },
+        {
+          "url": "https://rabbit-tantei.com/uwaki/column/useful-infidelity-investigation-gadgets/",
+          "title": "役に立った浮気調査グッズ10選｜合法・違法の境界と証拠になる条件【元刑事監修】 | 浮気調査の探偵事務所ならラビット探偵社",
+          "keywords": [
+            "役に立った浮気調査アプリ"
+          ],
+          "actions": [
+            {
+              "date": "2026-07-09",
+              "label": ""
+            }
+          ],
+          "weekly_data": [
+            {
+              "week": "2026-05-07",
+              "clicks": 35,
+              "impressions": 709,
+              "ctr": 4.94,
+              "position": 15.3,
+              "sessions": 42,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            },
+            {
+              "week": "2026-05-14",
+              "clicks": 30,
+              "impressions": 665,
+              "ctr": 4.51,
+              "position": 12.6,
+              "sessions": 30,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            },
+            {
+              "week": "2026-05-21",
+              "clicks": 44,
+              "impressions": 805,
+              "ctr": 5.47,
+              "position": 13.1,
+              "sessions": 43,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            },
+            {
+              "week": "2026-05-28",
+              "clicks": 33,
+              "impressions": 622,
+              "ctr": 5.31,
+              "position": 13.2,
+              "sessions": 38,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            },
+            {
+              "week": "2026-06-04",
+              "clicks": 30,
+              "impressions": 685,
+              "ctr": 4.38,
+              "position": 13.8,
+              "sessions": 40,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            },
+            {
+              "week": "2026-06-11",
+              "clicks": 36,
+              "impressions": 725,
+              "ctr": 4.97,
+              "position": 13.8,
+              "sessions": 47,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            },
+            {
+              "week": "2026-06-18",
+              "clicks": 31,
+              "impressions": 654,
+              "ctr": 4.74,
+              "position": 14.0,
+              "sessions": 34,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            },
+            {
+              "week": "2026-06-25",
+              "clicks": 31,
+              "impressions": 638,
+              "ctr": 4.86,
+              "position": 14.9,
+              "sessions": 28,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "clicks": 36,
+              "impressions": 617,
+              "ctr": 5.83,
+              "position": 12.9,
+              "sessions": 45,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
+            }
+          ]
         }
       ],
-      "last_fetched_at": "2026-07-09T11:58:35.430743"
+      "last_fetched_at": "2026-07-10T10:58:18.909522"
     }
   }
 }
