@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:09:10",
+  "generated_at": "2026-07-13T11:56:17",
   "clients": {
     "表参道デンタルクリニック": {
       "articles": [
@@ -9,8 +9,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "セラミック歯 後悔 ブログ",
-            "にじほ セラミック",
-            "オール セラミック 色 失敗"
+            "site:omotesando-dc.com",
+            "にじほ セラミック"
           ],
           "weekly_data": [
             {
@@ -23,8 +23,8 @@
               "sessions": 2,
               "kw_positions": {
                 "セラミック歯 後悔 ブログ": null,
-                "にじほ セラミック": null,
-                "オール セラミック 色 失敗": null
+                "site:omotesando-dc.com": null,
+                "にじほ セラミック": null
               }
             },
             {
@@ -37,8 +37,22 @@
               "sessions": 14,
               "kw_positions": {
                 "セラミック歯 後悔 ブログ": 69,
-                "にじほ セラミック": null,
-                "オール セラミック 色 失敗": 11
+                "site:omotesando-dc.com": null,
+                "にじほ セラミック": null
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 97,
+              "ctr": 0,
+              "position": 17.3,
+              "sessions": 6,
+              "kw_positions": {
+                "セラミック歯 後悔 ブログ": null,
+                "site:omotesando-dc.com": 69,
+                "にじほ セラミック": 22
               }
             }
           ]
@@ -48,9 +62,9 @@
           "title": "銀歯をセラミックに交換する 費用・メリット・デメリット・治療の流れを歯科医師が解説",
           "published_at": "2026-06-24",
           "top_keywords": [
+            "site:omotesando-dc.com",
             "セラミック",
-            "セラミック 銀 歯",
-            "銀 歯 セラミック"
+            "セラミック 銀 歯"
           ],
           "weekly_data": [
             {
@@ -62,9 +76,9 @@
               "position": 0.0,
               "sessions": 2,
               "kw_positions": {
+                "site:omotesando-dc.com": null,
                 "セラミック": null,
-                "セラミック 銀 歯": null,
-                "銀 歯 セラミック": null
+                "セラミック 銀 歯": null
               }
             },
             {
@@ -76,9 +90,23 @@
               "position": 25.1,
               "sessions": 7,
               "kw_positions": {
+                "site:omotesando-dc.com": null,
                 "セラミック": 9,
-                "セラミック 銀 歯": null,
-                "銀 歯 セラミック": null
+                "セラミック 銀 歯": null
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 28,
+              "ctr": 0,
+              "position": 42.0,
+              "sessions": 2,
+              "kw_positions": {
+                "site:omotesando-dc.com": 61,
+                "セラミック": null,
+                "セラミック 銀 歯": 100
               }
             }
           ]
@@ -120,6 +148,20 @@
                 "歯のクリーニング 何ヶ月に一回": 8,
                 "歯のクリーニングは何ヶ月に一回": 8
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 7.3,
+              "sessions": 1,
+              "kw_positions": {
+                "歯 の クリーニング 時間": null,
+                "歯のクリーニング 何ヶ月に一回": null,
+                "歯のクリーニングは何ヶ月に一回": null
+              }
             }
           ]
         },
@@ -154,6 +196,18 @@
               "kw_positions": {
                 "ホワイトニング セラミック": 33
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 1,
+              "impressions": 4,
+              "ctr": 25.0,
+              "position": 12.8,
+              "sessions": 1,
+              "kw_positions": {
+                "ホワイトニング セラミック": null
+              }
             }
           ]
         },
@@ -164,7 +218,7 @@
           "top_keywords": [
             "セラミック 前歯2本だけ",
             "セラミック",
-            "セラミック 前歯2本 デメリット"
+            "セラミック 前歯 2 本 保険"
           ],
           "weekly_data": [
             {
@@ -178,7 +232,7 @@
               "kw_positions": {
                 "セラミック 前歯2本だけ": null,
                 "セラミック": null,
-                "セラミック 前歯2本 デメリット": null
+                "セラミック 前歯 2 本 保険": null
               }
             },
             {
@@ -192,7 +246,21 @@
               "kw_positions": {
                 "セラミック 前歯2本だけ": 9.1,
                 "セラミック": 5,
-                "セラミック 前歯2本 デメリット": 6.1
+                "セラミック 前歯 2 本 保険": null
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 85,
+              "ctr": 0,
+              "position": 7.7,
+              "sessions": 2,
+              "kw_positions": {
+                "セラミック 前歯2本だけ": 10.1,
+                "セラミック": null,
+                "セラミック 前歯 2 本 保険": null
               }
             }
           ]
@@ -203,8 +271,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "40代 部分入れ歯 奥歯 2本 値段",
-            "入れ歯 奥歯",
-            "奥歯 一 本 入れ歯"
+            "site:omotesando-dc.com",
+            "入れ歯 奥歯"
           ],
           "weekly_data": [
             {
@@ -217,8 +285,8 @@
               "sessions": 1,
               "kw_positions": {
                 "40代 部分入れ歯 奥歯 2本 値段": null,
-                "入れ歯 奥歯": null,
-                "奥歯 一 本 入れ歯": null
+                "site:omotesando-dc.com": null,
+                "入れ歯 奥歯": null
               }
             },
             {
@@ -231,8 +299,22 @@
               "sessions": 10,
               "kw_positions": {
                 "40代 部分入れ歯 奥歯 2本 値段": 40,
-                "入れ歯 奥歯": 39.5,
-                "奥歯 一 本 入れ歯": 31.5
+                "site:omotesando-dc.com": null,
+                "入れ歯 奥歯": 39.5
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 23.3,
+              "sessions": 1,
+              "kw_positions": {
+                "40代 部分入れ歯 奥歯 2本 値段": null,
+                "site:omotesando-dc.com": 65,
+                "入れ歯 奥歯": null
               }
             }
           ]
@@ -274,6 +356,20 @@
                 "ジルコニア 値段の違い": 8.6,
                 "e-max ジルコニア 値段": 3
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 34,
+              "ctr": 0,
+              "position": 2.2,
+              "sessions": 2,
+              "kw_positions": {
+                "ジルコニア 値段 保険": 1,
+                "ジルコニア 値段の違い": 1,
+                "e-max ジルコニア 値段": null
+              }
             }
           ]
         },
@@ -314,6 +410,20 @@
                 "ボトックス 2ヶ月で 切れる": 5.1,
                 "ボトックス 2ヶ月で切れる": 5
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 8,
+              "impressions": 39,
+              "ctr": 20.51,
+              "position": 4.6,
+              "sessions": 15,
+              "kw_positions": {
+                "1": null,
+                "ボトックス 2ヶ月で 切れる": null,
+                "ボトックス 2ヶ月で切れる": null
+              }
             }
           ]
         },
@@ -350,6 +460,19 @@
               "kw_positions": {
                 "ガミースマイル 海外": 2,
                 "ガミースマイル 海外の 反応": 2
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 5.1,
+              "sessions": 1,
+              "kw_positions": {
+                "ガミースマイル 海外": null,
+                "ガミースマイル 海外の 反応": null
               }
             }
           ]
@@ -391,6 +514,20 @@
                 "ガミースマイル 歯が小さい": 29,
                 "小さい歯を大きくする方法": 11
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 13,
+              "ctr": 0,
+              "position": 6.2,
+              "sessions": 1,
+              "kw_positions": {
+                "親知らず 矮小歯": null,
+                "ガミースマイル 歯が小さい": null,
+                "小さい歯を大きくする方法": null
+              }
             }
           ]
         },
@@ -431,6 +568,20 @@
                 "上唇粘膜切除術 ダウンタイム": 5.9,
                 "上唇粘膜切除術 失敗": 7.8
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 4,
+              "impressions": 110,
+              "ctr": 3.64,
+              "position": 5.5,
+              "sessions": 7,
+              "kw_positions": {
+                "上唇粘膜切除術 デメリット": 2,
+                "上唇粘膜切除術 ダウンタイム": 7.1,
+                "上唇粘膜切除術 失敗": 7.2
+              }
             }
           ]
         },
@@ -440,8 +591,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "唇の形 山がある",
-            "尖った口",
-            "三角 口"
+            "三角唇",
+            "上唇 尖ってる"
           ],
           "weekly_data": [
             {
@@ -454,8 +605,8 @@
               "sessions": 1,
               "kw_positions": {
                 "唇の形 山がある": null,
-                "尖った口": null,
-                "三角 口": null
+                "三角唇": null,
+                "上唇 尖ってる": null
               }
             },
             {
@@ -468,8 +619,22 @@
               "sessions": 8,
               "kw_positions": {
                 "唇の形 山がある": 4.6,
-                "尖った口": 6.7,
-                "三角 口": null
+                "三角唇": 2.8,
+                "上唇 尖ってる": 5
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 9,
+              "impressions": 536,
+              "ctr": 1.68,
+              "position": 5.6,
+              "sessions": 16,
+              "kw_positions": {
+                "唇の形 山がある": 5.4,
+                "三角唇": 4,
+                "上唇 尖ってる": 4.8
               }
             }
           ]
@@ -511,6 +676,20 @@
                 "crown lengthening": 6,
                 "クラウンレングスニング ガミースマイル": 17
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 5,
+              "sessions": 1,
+              "kw_positions": {
+                "歯冠長延長術 東京": null,
+                "crown lengthening": null,
+                "クラウンレングスニング ガミースマイル": null
+              }
             }
           ]
         },
@@ -551,6 +730,20 @@
                 "gummy 整形": 12,
                 "歯冠長延長術 デメリット": null
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 6,
+              "sessions": 4,
+              "kw_positions": {
+                "歯肉切除 後戻り": null,
+                "gummy 整形": null,
+                "歯冠長延長術 デメリット": 4
+              }
             }
           ]
         },
@@ -559,9 +752,9 @@
           "title": "上唇が上がってる原因と治し方を徹底解説 ガミースマイルとの関係・治療法比較",
           "published_at": "2026-06-24",
           "top_keywords": [
+            "上唇",
             "上唇 めくれ てる 治す",
-            "上唇挙筋",
-            "唇が上に上がってる"
+            "上唇 めくれる"
           ],
           "weekly_data": [
             {
@@ -573,9 +766,9 @@
               "position": 0.0,
               "sessions": 1,
               "kw_positions": {
+                "上唇": null,
                 "上唇 めくれ てる 治す": null,
-                "上唇挙筋": null,
-                "唇が上に上がってる": null
+                "上唇 めくれる": null
               }
             },
             {
@@ -587,9 +780,23 @@
               "position": 6.5,
               "sessions": 19,
               "kw_positions": {
+                "上唇": 8.0,
                 "上唇 めくれ てる 治す": 6,
-                "上唇挙筋": 1,
-                "唇が上に上がってる": 4
+                "上唇 めくれる": null
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 10,
+              "impressions": 1120,
+              "ctr": 0.89,
+              "position": 6.5,
+              "sessions": 16,
+              "kw_positions": {
+                "上唇": 7.9,
+                "上唇 めくれ てる 治す": 7,
+                "上唇 めくれる": 6
               }
             }
           ]
@@ -631,10 +838,25 @@
                 "上唇 厚い": 5.2,
                 "上唇 厚い 口ゴボ": 6
               }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 8.6,
+              "sessions": 1,
+              "kw_positions": {
+                "した唇の方が厚い": null,
+                "上唇 厚い": 7,
+                "上唇 厚い 口ゴボ": null
+              }
             }
           ]
         }
-      ]
+      ],
+      "last_fetched_at": "2026-07-13T11:56:49.680168"
     },
     "ラビット探偵社": {
       "articles": [
@@ -643,27 +865,78 @@
           "title": "港区の浮気調査・不倫調査匿名・即日相談OK！ラビット探偵社",
           "published_at": "2026-07-03",
           "top_keywords": [
-            "浮気調査 港区"
+            "site:rabbit-tantei.com",
+            "ラビット探偵社 問い合わせ",
+            "六本木 浮気調査"
           ],
-          "weekly_data": []
+          "weekly_data": [
+            {
+              "week": "2026-07-02",
+              "week_number": 1,
+              "clicks": 0,
+              "impressions": 26,
+              "ctr": 0,
+              "position": 35,
+              "sessions": 2,
+              "kw_positions": {
+                "site:rabbit-tantei.com": 62.6,
+                "ラビット探偵社 問い合わせ": 41,
+                "六本木 浮気調査": 29
+              }
+            }
+          ]
         },
         {
           "url": "https://rabbit-tantei.com/area/otaku/",
           "title": "大田区の浮気調査・不倫調査なら｜探偵の無料相談・即日対応のラビット探偵社",
           "published_at": "2026-07-03",
           "top_keywords": [
-            "浮気調査 大田区"
+            "site:rabbit-tantei.com",
+            "大田区 探偵",
+            "大田区 浮気調査"
           ],
-          "weekly_data": []
+          "weekly_data": [
+            {
+              "week": "2026-07-02",
+              "week_number": 1,
+              "clicks": 0,
+              "impressions": 39,
+              "ctr": 0,
+              "position": 18.4,
+              "sessions": 1,
+              "kw_positions": {
+                "site:rabbit-tantei.com": 18,
+                "大田区 探偵": null,
+                "大田区 浮気調査": 22.1
+              }
+            }
+          ]
         },
         {
           "url": "https://rabbit-tantei.com/area/sumida-ward/",
           "title": "墨田区の浮気調査・不倫調査匿名・即日相談OK！ラビット探偵社",
           "published_at": "2026-07-03",
           "top_keywords": [
-            "浮気調査 墨田区"
+            "浮気調査 墨田区",
+            "site:rabbit-tantei.com",
+            "ラビット探偵社 問い合わせ"
           ],
-          "weekly_data": []
+          "weekly_data": [
+            {
+              "week": "2026-07-02",
+              "week_number": 1,
+              "clicks": 1,
+              "impressions": 25,
+              "ctr": 4.0,
+              "position": 31.6,
+              "sessions": 13,
+              "kw_positions": {
+                "浮気調査 墨田区": 19.2,
+                "site:rabbit-tantei.com": 64.6,
+                "ラビット探偵社 問い合わせ": 23
+              }
+            }
+          ]
         },
         {
           "url": "https://rabbit-tantei.com/area/chuo-ward/",
@@ -672,7 +945,20 @@
           "top_keywords": [
             "浮気調査 中央区"
           ],
-          "weekly_data": []
+          "weekly_data": [
+            {
+              "week": "2026-07-02",
+              "week_number": 1,
+              "clicks": 0,
+              "impressions": 0,
+              "ctr": 0.0,
+              "position": 0.0,
+              "sessions": 6,
+              "kw_positions": {
+                "浮気調査 中央区": null
+              }
+            }
+          ]
         },
         {
           "url": "https://rabbit-tantei.com/area/nakano-ward/",
@@ -681,9 +967,23 @@
           "top_keywords": [
             "浮気調査 中野区"
           ],
-          "weekly_data": []
+          "weekly_data": [
+            {
+              "week": "2026-07-02",
+              "week_number": 1,
+              "clicks": 0,
+              "impressions": 0,
+              "ctr": 0.0,
+              "position": 0.0,
+              "sessions": 1,
+              "kw_positions": {
+                "浮気調査 中野区": null
+              }
+            }
+          ]
         }
-      ]
+      ],
+      "last_fetched_at": "2026-07-13T11:56:55.666613"
     }
   }
 }
