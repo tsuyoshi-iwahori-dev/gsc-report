@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T10:57:46",
+  "generated_at": "2026-07-13T11:55:17",
   "clients": {
     "レンタルPCネット": {
       "pages": [
@@ -162,7 +162,7 @@
           ]
         }
       ],
-      "last_fetched_at": "2026-07-10T10:57:47.623211"
+      "last_fetched_at": "2026-07-13T11:55:18.328194"
     },
     "ラビット探偵社": {
       "pages": [
@@ -1092,8 +1092,8 @@
             {
               "week": "2026-07-02",
               "clicks": 1,
-              "impressions": 249,
-              "ctr": 0.4,
+              "impressions": 289,
+              "ctr": 0.35,
               "position": 20.6,
               "sessions": 17,
               "kw_positions": {
@@ -1331,7 +1331,7 @@
           ]
         }
       ],
-      "last_fetched_at": "2026-07-10T10:58:18.909522"
+      "last_fetched_at": "2026-07-13T11:55:36.922940"
     }
   }
 }
