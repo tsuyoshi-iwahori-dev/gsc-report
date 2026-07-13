@@ -66,7 +66,13 @@ canvas{max-height:320px;}
   </div>
 
   <!-- サマリー -->
-  
+  <div class="summary-grid">
+  <div class="summary-card"><div class="summary-val">1</div><div class="summary-lbl">累積クリック数</div></div>
+  <div class="summary-card"><div class="summary-val">25</div><div class="summary-lbl">累積表示回数</div></div>
+  <div class="summary-card"><div class="summary-val">31.6</div><div class="summary-lbl">直近平均順位</div></div>
+  <div class="summary-card"><div class="summary-val">13</div><div class="summary-lbl">直近週セッション</div></div>
+  <div class="summary-card"><div class="summary-val">1</div><div class="summary-lbl">計測週数</div></div>
+</div>
 
   <!-- グラフタブ -->
   <div class="tab-bar" id="chartTabBar">
@@ -91,7 +97,7 @@ canvas{max-height:320px;}
 </div>
 
 <script>
-const WEEKLY   = [];
+const WEEKLY   = [{"week": "2026-07-02", "week_number": 1, "clicks": 1, "impressions": 25, "ctr": 4.0, "position": 31.6, "sessions": 13, "kw_positions": {"浮気調査 墨田区": 19.2, "site:rabbit-tantei.com": 64.6, "ラビット探偵社 問い合わせ": 23}}];
 const KEYWORDS = ["浮気調査 墨田区"];
 
 // X軸ラベル: 「1週目（06/18）」形式
