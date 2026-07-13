@@ -66,7 +66,13 @@ canvas{max-height:320px;}
   </div>
 
   <!-- サマリー -->
-  
+  <div class="summary-grid">
+  <div class="summary-card"><div class="summary-val">0</div><div class="summary-lbl">累積クリック数</div></div>
+  <div class="summary-card"><div class="summary-val">0</div><div class="summary-lbl">累積表示回数</div></div>
+  <div class="summary-card"><div class="summary-val">0.0</div><div class="summary-lbl">直近平均順位</div></div>
+  <div class="summary-card"><div class="summary-val">6</div><div class="summary-lbl">直近週セッション</div></div>
+  <div class="summary-card"><div class="summary-val">1</div><div class="summary-lbl">計測週数</div></div>
+</div>
 
   <!-- グラフタブ -->
   <div class="tab-bar" id="chartTabBar">
@@ -91,7 +97,7 @@ canvas{max-height:320px;}
 </div>
 
 <script>
-const WEEKLY   = [];
+const WEEKLY   = [{"week": "2026-07-02", "week_number": 1, "clicks": 0, "impressions": 0, "ctr": 0.0, "position": 0.0, "sessions": 6, "kw_positions": {"浮気調査 中央区": null}}];
 const KEYWORDS = ["浮気調査 中央区"];
 
 // X軸ラベル: 「1週目（06/18）」形式
