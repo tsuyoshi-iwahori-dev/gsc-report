@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T11:56:17",
+  "generated_at": "2026-07-14T18:20:35",
   "clients": {
     "表参道デンタルクリニック": {
       "articles": [
@@ -856,7 +856,7 @@
           ]
         }
       ],
-      "last_fetched_at": "2026-07-13T11:56:49.680168"
+      "last_fetched_at": "2026-07-14T18:20:45.724356"
     },
     "ラビット探偵社": {
       "articles": [
@@ -983,7 +983,90 @@
           ]
         }
       ],
-      "last_fetched_at": "2026-07-13T11:56:55.666613"
+      "last_fetched_at": "2026-07-14T18:20:50.639374"
+    },
+    "レンタルPCネット": {
+      "articles": [
+        {
+          "url": "https://rental-pc.net/article/core_i5/",
+          "title": "法人向けCore i5性能比較と選び方！実務に必要な世代と推奨スペックを徹底解説｜法人向けパソコンレンタルならレンタルPCネット",
+          "published_at": "2026-07-07",
+          "top_keywords": [
+            "core i5 性能比較",
+            "site:rental-pc.net/"
+          ],
+          "weekly_data": [
+            {
+              "week": "2026-07-02",
+              "week_number": 1,
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 5.7,
+              "sessions": 1,
+              "kw_positions": {
+                "core i5 性能比較": 14,
+                "site:rental-pc.net/": 1
+              }
+            }
+          ]
+        },
+        {
+          "url": "https://rental-pc.net/article/expenses/",
+          "title": "法人パソコン購入前に確認！リース・レンタルとの経費比較と稟議の通し方｜法人向けパソコンレンタルならレンタルPCネット",
+          "published_at": "2026-06-22",
+          "top_keywords": [
+            "pc リース コスト",
+            "pc リース 法人",
+            "pc レンタル リース 違い"
+          ],
+          "weekly_data": [
+            {
+              "week": "2026-06-18",
+              "week_number": 1,
+              "clicks": 2,
+              "impressions": 26,
+              "ctr": 7.69,
+              "position": 28.3,
+              "sessions": 6,
+              "kw_positions": {
+                "pc リース コスト": null,
+                "pc リース 法人": null,
+                "pc レンタル リース 違い": 77
+              }
+            },
+            {
+              "week": "2026-06-25",
+              "week_number": 2,
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 23.7,
+              "sessions": 1,
+              "kw_positions": {
+                "pc リース コスト": null,
+                "pc リース 法人": 65,
+                "pc レンタル リース 違い": null
+              }
+            },
+            {
+              "week": "2026-07-02",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 8,
+              "ctr": 0,
+              "position": 57.6,
+              "sessions": 1,
+              "kw_positions": {
+                "pc リース コスト": 39,
+                "pc リース 法人": null,
+                "pc レンタル リース 違い": null
+              }
+            }
+          ]
+        }
+      ],
+      "last_fetched_at": "2026-07-14T18:21:05.528266"
     }
   }
 }
