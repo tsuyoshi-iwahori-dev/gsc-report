@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T18:27:58",
+  "generated_at": "2026-07-21T12:05:33",
   "clients": {
     "表参道デンタルクリニック": {
       "articles": [
@@ -9,8 +9,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "セラミック歯 後悔 ブログ",
-            "site:omotesando-dc.com",
-            "にじほ セラミック"
+            "mi治療",
+            "site:omotesando-dc.com"
           ],
           "weekly_data": [
             {
@@ -23,8 +23,8 @@
               "sessions": 2,
               "kw_positions": {
                 "セラミック歯 後悔 ブログ": null,
-                "site:omotesando-dc.com": null,
-                "にじほ セラミック": null
+                "mi治療": null,
+                "site:omotesando-dc.com": null
               }
             },
             {
@@ -37,22 +37,36 @@
               "sessions": 14,
               "kw_positions": {
                 "セラミック歯 後悔 ブログ": 69,
-                "site:omotesando-dc.com": null,
-                "にじほ セラミック": null
+                "mi治療": null,
+                "site:omotesando-dc.com": null
               }
             },
             {
               "week": "2026-07-02",
               "week_number": 3,
               "clicks": 0,
-              "impressions": 97,
+              "impressions": 99,
               "ctr": 0,
-              "position": 17.3,
+              "position": 17.6,
               "sessions": 6,
               "kw_positions": {
                 "セラミック歯 後悔 ブログ": null,
-                "site:omotesando-dc.com": 69,
-                "にじほ セラミック": 22
+                "mi治療": null,
+                "site:omotesando-dc.com": 69
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 11.7,
+              "sessions": 6,
+              "kw_positions": {
+                "セラミック歯 後悔 ブログ": null,
+                "mi治療": null,
+                "site:omotesando-dc.com": null
               }
             }
           ]
@@ -108,6 +122,20 @@
                 "セラミック": null,
                 "セラミック 銀 歯": 100
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 7,
+              "sessions": 1,
+              "kw_positions": {
+                "site:omotesando-dc.com": null,
+                "セラミック": null,
+                "セラミック 銀 歯": null
+              }
             }
           ]
         },
@@ -162,6 +190,20 @@
                 "歯のクリーニング 何ヶ月に一回": null,
                 "歯のクリーニングは何ヶ月に一回": null
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 0,
+              "impressions": 19,
+              "ctr": 0,
+              "position": 9.6,
+              "sessions": 0,
+              "kw_positions": {
+                "歯 の クリーニング 時間": null,
+                "歯のクリーニング 何ヶ月に一回": null,
+                "歯のクリーニングは何ヶ月に一回": null
+              }
             }
           ]
         },
@@ -205,6 +247,18 @@
               "ctr": 25.0,
               "position": 12.8,
               "sessions": 1,
+              "kw_positions": {
+                "ホワイトニング セラミック": null
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 5.2,
+              "sessions": 0,
               "kw_positions": {
                 "ホワイトニング セラミック": null
               }
@@ -262,6 +316,20 @@
                 "セラミック": null,
                 "セラミック 前歯 2 本 保険": null
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 2,
+              "impressions": 59,
+              "ctr": 3.39,
+              "position": 5.6,
+              "sessions": 3,
+              "kw_positions": {
+                "セラミック 前歯2本だけ": null,
+                "セラミック": null,
+                "セラミック 前歯 2 本 保険": 1
+              }
             }
           ]
         },
@@ -314,6 +382,20 @@
               "kw_positions": {
                 "40代 部分入れ歯 奥歯 2本 値段": null,
                 "site:omotesando-dc.com": 65,
+                "入れ歯 奥歯": null
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 0,
+              "impressions": 14,
+              "ctr": 0,
+              "position": 13.1,
+              "sessions": 1,
+              "kw_positions": {
+                "40代 部分入れ歯 奥歯 2本 値段": null,
+                "site:omotesando-dc.com": null,
                 "入れ歯 奥歯": null
               }
             }
@@ -370,6 +452,20 @@
                 "ジルコニア 値段の違い": 1,
                 "e-max ジルコニア 値段": null
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 0,
+              "impressions": 159,
+              "ctr": 0,
+              "position": 5.2,
+              "sessions": 1,
+              "kw_positions": {
+                "ジルコニア 値段 保険": null,
+                "ジルコニア 値段の違い": null,
+                "e-max ジルコニア 値段": null
+              }
             }
           ]
         },
@@ -378,9 +474,9 @@
           "title": "ボトックスが1ヶ月で切れる？原因・対処法・再注射のタイミングを解説",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "1",
-            "ボトックス 2ヶ月で 切れる",
-            "ボトックス 2ヶ月で切れる"
+            "ボトックス 1ヶ月で 切れ た",
+            "ボトックス 1ヶ月で 切れる",
+            "ボトックス 2ヶ月で 切れる"
           ],
           "weekly_data": [
             {
@@ -392,9 +488,9 @@
               "position": 5.8,
               "sessions": 3,
               "kw_positions": {
-                "1": 8,
-                "ボトックス 2ヶ月で 切れる": 6,
-                "ボトックス 2ヶ月で切れる": null
+                "ボトックス 1ヶ月で 切れ た": null,
+                "ボトックス 1ヶ月で 切れる": null,
+                "ボトックス 2ヶ月で 切れる": 6
               }
             },
             {
@@ -406,23 +502,37 @@
               "position": 5.2,
               "sessions": 9,
               "kw_positions": {
-                "1": null,
-                "ボトックス 2ヶ月で 切れる": 5.1,
-                "ボトックス 2ヶ月で切れる": 5
+                "ボトックス 1ヶ月で 切れ た": null,
+                "ボトックス 1ヶ月で 切れる": null,
+                "ボトックス 2ヶ月で 切れる": 5.1
               }
             },
             {
               "week": "2026-07-02",
               "week_number": 3,
-              "clicks": 8,
-              "impressions": 39,
-              "ctr": 20.51,
-              "position": 4.6,
+              "clicks": 11,
+              "impressions": 60,
+              "ctr": 18.33,
+              "position": 3.9,
               "sessions": 15,
               "kw_positions": {
-                "1": null,
-                "ボトックス 2ヶ月で 切れる": null,
-                "ボトックス 2ヶ月で切れる": null
+                "ボトックス 1ヶ月で 切れ た": null,
+                "ボトックス 1ヶ月で 切れる": null,
+                "ボトックス 2ヶ月で 切れる": null
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 8,
+              "impressions": 131,
+              "ctr": 6.11,
+              "position": 4.4,
+              "sessions": 6,
+              "kw_positions": {
+                "ボトックス 1ヶ月で 切れ た": 2,
+                "ボトックス 1ヶ月で 切れる": null,
+                "ボトックス 2ヶ月で 切れる": 5.5
               }
             }
           ]
@@ -474,6 +584,19 @@
                 "ガミースマイル 海外": null,
                 "ガミースマイル 海外の 反応": null
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 1,
+              "impressions": 14,
+              "ctr": 7.14,
+              "position": 5.3,
+              "sessions": 1,
+              "kw_positions": {
+                "ガミースマイル 海外": null,
+                "ガミースマイル 海外の 反応": null
+              }
             }
           ]
         },
@@ -484,7 +607,7 @@
           "top_keywords": [
             "親知らず 矮小歯",
             "ガミースマイル 歯が小さい",
-            "小さい歯を大きくする方法"
+            "側切歯 小さい"
           ],
           "weekly_data": [
             {
@@ -498,7 +621,7 @@
               "kw_positions": {
                 "親知らず 矮小歯": null,
                 "ガミースマイル 歯が小さい": null,
-                "小さい歯を大きくする方法": null
+                "側切歯 小さい": null
               }
             },
             {
@@ -512,21 +635,35 @@
               "kw_positions": {
                 "親知らず 矮小歯": 10,
                 "ガミースマイル 歯が小さい": 29,
-                "小さい歯を大きくする方法": 11
+                "側切歯 小さい": null
               }
             },
             {
               "week": "2026-07-02",
               "week_number": 3,
               "clicks": 0,
-              "impressions": 13,
+              "impressions": 26,
               "ctr": 0,
-              "position": 6.2,
+              "position": 5.7,
               "sessions": 1,
               "kw_positions": {
                 "親知らず 矮小歯": null,
                 "ガミースマイル 歯が小さい": null,
-                "小さい歯を大きくする方法": null
+                "側切歯 小さい": null
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 0,
+              "impressions": 23,
+              "ctr": 0,
+              "position": 6.1,
+              "sessions": 0,
+              "kw_positions": {
+                "親知らず 矮小歯": null,
+                "ガミースマイル 歯が小さい": null,
+                "側切歯 小さい": 3
               }
             }
           ]
@@ -537,8 +674,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "上唇粘膜切除術 デメリット",
-            "上唇粘膜切除術 ダウンタイム",
-            "上唇粘膜切除術 失敗"
+            "上唇粘膜切除術 失敗",
+            "上唇粘膜切除術 ダウンタイム"
           ],
           "weekly_data": [
             {
@@ -551,8 +688,8 @@
               "sessions": 1,
               "kw_positions": {
                 "上唇粘膜切除術 デメリット": null,
-                "上唇粘膜切除術 ダウンタイム": null,
-                "上唇粘膜切除術 失敗": null
+                "上唇粘膜切除術 失敗": null,
+                "上唇粘膜切除術 ダウンタイム": null
               }
             },
             {
@@ -565,22 +702,36 @@
               "sessions": 13,
               "kw_positions": {
                 "上唇粘膜切除術 デメリット": 2.8,
-                "上唇粘膜切除術 ダウンタイム": 5.9,
-                "上唇粘膜切除術 失敗": 7.8
+                "上唇粘膜切除術 失敗": 7.8,
+                "上唇粘膜切除術 ダウンタイム": 5.9
               }
             },
             {
               "week": "2026-07-02",
               "week_number": 3,
-              "clicks": 4,
-              "impressions": 110,
-              "ctr": 3.64,
-              "position": 5.5,
+              "clicks": 5,
+              "impressions": 165,
+              "ctr": 3.03,
+              "position": 5.6,
               "sessions": 7,
               "kw_positions": {
                 "上唇粘膜切除術 デメリット": 2,
-                "上唇粘膜切除術 ダウンタイム": 7.1,
-                "上唇粘膜切除術 失敗": 7.2
+                "上唇粘膜切除術 失敗": 7.2,
+                "上唇粘膜切除術 ダウンタイム": 7.1
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 2,
+              "impressions": 123,
+              "ctr": 1.63,
+              "position": 5.8,
+              "sessions": 6,
+              "kw_positions": {
+                "上唇粘膜切除術 デメリット": 3.2,
+                "上唇粘膜切除術 失敗": 3.3,
+                "上唇粘膜切除術 ダウンタイム": 5
               }
             }
           ]
@@ -636,6 +787,20 @@
                 "三角唇": 4,
                 "上唇 尖ってる": 4.8
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 4,
+              "impressions": 90,
+              "ctr": 4.44,
+              "position": 4.7,
+              "sessions": 6,
+              "kw_positions": {
+                "唇の形 山がある": 5,
+                "三角唇": 3,
+                "上唇 尖ってる": 5
+              }
             }
           ]
         },
@@ -685,6 +850,20 @@
               "ctr": 0,
               "position": 5,
               "sessions": 1,
+              "kw_positions": {
+                "歯冠長延長術 東京": null,
+                "crown lengthening": null,
+                "クラウンレングスニング ガミースマイル": null
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 0,
+              "impressions": 24,
+              "ctr": 0,
+              "position": 6.5,
+              "sessions": 0,
               "kw_positions": {
                 "歯冠長延長術 東京": null,
                 "crown lengthening": null,
@@ -744,6 +923,20 @@
                 "gummy 整形": null,
                 "歯冠長延長術 デメリット": 4
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 2,
+              "impressions": 19,
+              "ctr": 10.53,
+              "position": 5,
+              "sessions": 0,
+              "kw_positions": {
+                "歯肉切除 後戻り": null,
+                "gummy 整形": null,
+                "歯冠長延長術 デメリット": null
+              }
             }
           ]
         },
@@ -752,9 +945,9 @@
           "title": "上唇が上がってる原因と治し方を徹底解説 ガミースマイルとの関係・治療法比較",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "上唇",
-            "上唇 めくれ てる 治す",
-            "上唇 めくれる"
+            "唇が上に上がってる",
+            "上唇上がってる",
+            "笑うと上唇が薄くなる"
           ],
           "weekly_data": [
             {
@@ -766,9 +959,9 @@
               "position": 0.0,
               "sessions": 1,
               "kw_positions": {
-                "上唇": null,
-                "上唇 めくれ てる 治す": null,
-                "上唇 めくれる": null
+                "唇が上に上がってる": null,
+                "上唇上がってる": null,
+                "笑うと上唇が薄くなる": null
               }
             },
             {
@@ -780,9 +973,9 @@
               "position": 6.5,
               "sessions": 19,
               "kw_positions": {
-                "上唇": 8.0,
-                "上唇 めくれ てる 治す": 6,
-                "上唇 めくれる": null
+                "唇が上に上がってる": 4,
+                "上唇上がってる": 2.7,
+                "笑うと上唇が薄くなる": 5
               }
             },
             {
@@ -794,9 +987,23 @@
               "position": 6.5,
               "sessions": 16,
               "kw_positions": {
-                "上唇": 7.9,
-                "上唇 めくれ てる 治す": 7,
-                "上唇 めくれる": 6
+                "唇が上に上がってる": 3.5,
+                "上唇上がってる": 3,
+                "笑うと上唇が薄くなる": 3.7
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 25,
+              "impressions": 1549,
+              "ctr": 1.61,
+              "position": 5.3,
+              "sessions": 29,
+              "kw_positions": {
+                "唇が上に上がってる": 2.6,
+                "上唇上がってる": 2,
+                "笑うと上唇が薄くなる": 5
               }
             }
           ]
@@ -852,11 +1059,25 @@
                 "上唇 厚い": 7,
                 "上唇 厚い 口ゴボ": null
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 1,
+              "impressions": 167,
+              "ctr": 0.6,
+              "position": 6.5,
+              "sessions": 2,
+              "kw_positions": {
+                "した唇の方が厚い": null,
+                "上唇 厚い": 7,
+                "上唇 厚い 口ゴボ": null
+              }
             }
           ]
         }
       ],
-      "last_fetched_at": "2026-07-14T18:28:05.943235"
+      "last_fetched_at": "2026-07-21T12:06:51.582722"
     },
     "ラビット探偵社": {
       "articles": [
@@ -882,6 +1103,20 @@
                 "site:rabbit-tantei.com": 62.6,
                 "ラビット探偵社 問い合わせ": 41,
                 "六本木 浮気調査": 29
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 2,
+              "clicks": 0,
+              "impressions": 31,
+              "ctr": 0,
+              "position": 24.5,
+              "sessions": 0,
+              "kw_positions": {
+                "site:rabbit-tantei.com": null,
+                "ラビット探偵社 問い合わせ": 47,
+                "六本木 浮気調査": null
               }
             }
           ]
@@ -909,6 +1144,20 @@
                 "大田区 探偵": null,
                 "大田区 浮気調査": 22.1
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 2,
+              "clicks": 0,
+              "impressions": 31,
+              "ctr": 0,
+              "position": 19.8,
+              "sessions": 0,
+              "kw_positions": {
+                "site:rabbit-tantei.com": null,
+                "大田区 探偵": 31,
+                "大田区 浮気調査": 22.3
+              }
             }
           ]
         },
@@ -918,22 +1167,36 @@
           "published_at": "2026-07-03",
           "top_keywords": [
             "浮気調査 墨田区",
-            "site:rabbit-tantei.com",
-            "ラビット探偵社 問い合わせ"
+            "墨田区 浮気調査",
+            "site:rabbit-tantei.com"
           ],
           "weekly_data": [
             {
               "week": "2026-07-02",
               "week_number": 1,
               "clicks": 1,
-              "impressions": 25,
-              "ctr": 4.0,
-              "position": 31.6,
+              "impressions": 35,
+              "ctr": 2.86,
+              "position": 27.4,
               "sessions": 13,
               "kw_positions": {
-                "浮気調査 墨田区": 19.2,
-                "site:rabbit-tantei.com": 64.6,
-                "ラビット探偵社 問い合わせ": 23
+                "浮気調査 墨田区": 18.9,
+                "墨田区 浮気調査": 18.7,
+                "site:rabbit-tantei.com": 64.6
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 2,
+              "clicks": 0,
+              "impressions": 44,
+              "ctr": 0,
+              "position": 16.6,
+              "sessions": 0,
+              "kw_positions": {
+                "浮気調査 墨田区": 17.1,
+                "墨田区 浮気調査": 15.3,
+                "site:rabbit-tantei.com": null
               }
             }
           ]
@@ -943,7 +1206,9 @@
           "title": "中央区の浮気調査・不倫調査匿名・即日相談OK！ラビット探偵社",
           "published_at": "2026-07-03",
           "top_keywords": [
-            "浮気調査 中央区"
+            "中央区 不倫調査",
+            "中央区 不倫調査 料金 見積り",
+            "中央区 不倫調査 相談"
           ],
           "weekly_data": [
             {
@@ -955,7 +1220,23 @@
               "position": 0.0,
               "sessions": 6,
               "kw_positions": {
-                "浮気調査 中央区": null
+                "中央区 不倫調査": null,
+                "中央区 不倫調査 料金 見積り": null,
+                "中央区 不倫調査 相談": null
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 2,
+              "clicks": 0,
+              "impressions": 0,
+              "ctr": 0.0,
+              "position": 0.0,
+              "sessions": 0,
+              "kw_positions": {
+                "中央区 不倫調査": null,
+                "中央区 不倫調査 料金 見積り": null,
+                "中央区 不倫調査 相談": null
               }
             }
           ]
@@ -965,6 +1246,8 @@
           "title": "中野区の浮気調査・不倫調査匿名・即日相談OK！ラビット探偵社",
           "published_at": "2026-07-03",
           "top_keywords": [
+            "中野区 探偵",
+            "中野区 浮気調査",
             "浮気調査 中野区"
           ],
           "weekly_data": [
@@ -977,13 +1260,29 @@
               "position": 0.0,
               "sessions": 1,
               "kw_positions": {
+                "中野区 探偵": null,
+                "中野区 浮気調査": null,
+                "浮気調査 中野区": null
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 2,
+              "clicks": 0,
+              "impressions": 0,
+              "ctr": 0.0,
+              "position": 0.0,
+              "sessions": 0,
+              "kw_positions": {
+                "中野区 探偵": null,
+                "中野区 浮気調査": null,
                 "浮気調査 中野区": null
               }
             }
           ]
         }
       ],
-      "last_fetched_at": "2026-07-14T18:28:09.218744"
+      "last_fetched_at": "2026-07-21T12:07:16.260588"
     },
     "レンタルPCネット": {
       "articles": [
@@ -992,8 +1291,9 @@
           "title": "法人向けCore i5性能比較と選び方！実務に必要な世代と推奨スペックを徹底解説｜法人向けパソコンレンタルならレンタルPCネット",
           "published_at": "2026-07-07",
           "top_keywords": [
-            "core i5 性能比較",
-            "site:rental-pc.net/"
+            "amd ryzen",
+            "core i5 i7 違い",
+            "core i5 性能比較"
           ],
           "weekly_data": [
             {
@@ -1005,8 +1305,23 @@
               "position": 5.7,
               "sessions": 1,
               "kw_positions": {
-                "core i5 性能比較": 14,
-                "site:rental-pc.net/": 1
+                "amd ryzen": null,
+                "core i5 i7 違い": null,
+                "core i5 性能比較": 14
+              }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 2,
+              "clicks": 1,
+              "impressions": 52,
+              "ctr": 1.92,
+              "position": 5.6,
+              "sessions": 5,
+              "kw_positions": {
+                "amd ryzen": 3,
+                "core i5 i7 違い": 3,
+                "core i5 性能比較": null
               }
             }
           ]
@@ -1062,11 +1377,25 @@
                 "pc リース 法人": null,
                 "pc レンタル リース 違い": null
               }
+            },
+            {
+              "week": "2026-07-09",
+              "week_number": 4,
+              "clicks": 1,
+              "impressions": 22,
+              "ctr": 4.55,
+              "position": 28.5,
+              "sessions": 4,
+              "kw_positions": {
+                "pc リース コスト": 37,
+                "pc リース 法人": null,
+                "pc レンタル リース 違い": null
+              }
             }
           ]
         }
       ],
-      "last_fetched_at": "2026-07-14T18:28:11.008966"
+      "last_fetched_at": "2026-07-21T12:07:25.815284"
     }
   }
 }
