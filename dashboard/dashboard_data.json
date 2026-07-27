@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T12:04:45",
+  "generated_at": "2026-07-27T17:47:25",
   "clients": {
     "レンタルPCネット": {
       "pages": [
@@ -169,11 +169,22 @@
               "kw_positions": {
                 "レンタルpc": 9.1
               }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 32,
+              "impressions": 2768,
+              "ctr": 1.16,
+              "position": 15.1,
+              "sessions": 58,
+              "kw_positions": {
+                "レンタルpc": 9.4
+              }
             }
           ]
         }
       ],
-      "last_fetched_at": "2026-07-21T12:04:46.424011"
+      "last_fetched_at": "2026-07-27T17:47:27.718478"
     },
     "ラビット探偵社": {
       "pages": [
@@ -327,6 +338,17 @@
               "sessions": 11,
               "kw_positions": {
                 "浮気調査 費用": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 2,
+              "impressions": 251,
+              "ctr": 0.8,
+              "position": 20.8,
+              "sessions": 5,
+              "kw_positions": {
+                "浮気調査 費用": 26.5
               }
             }
           ]
@@ -482,6 +504,17 @@
               "kw_positions": {
                 "浮気調査 期間": 10.3
               }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 4,
+              "impressions": 204,
+              "ctr": 1.96,
+              "position": 9.5,
+              "sessions": 7,
+              "kw_positions": {
+                "浮気調査 期間": 11.3
+              }
             }
           ]
         },
@@ -635,6 +668,17 @@
               "sessions": 7,
               "kw_positions": {
                 "浮気調査 成功報酬": 5.8
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 5,
+              "impressions": 303,
+              "ctr": 1.65,
+              "position": 22.0,
+              "sessions": 8,
+              "kw_positions": {
+                "浮気調査 成功報酬": 7.8
               }
             }
           ]
@@ -790,6 +834,17 @@
               "kw_positions": {
                 "浮気調査 おすすめ": 9.6
               }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 4,
+              "impressions": 798,
+              "ctr": 0.5,
+              "position": 23.6,
+              "sessions": 3,
+              "kw_positions": {
+                "浮気調査 おすすめ": 9.1
+              }
             }
           ]
         },
@@ -926,6 +981,17 @@
               "kw_positions": {
                 "浮気調査 GPS": 23.2
               }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 7,
+              "impressions": 852,
+              "ctr": 0.82,
+              "position": 11.9,
+              "sessions": 15,
+              "kw_positions": {
+                "浮気調査 GPS": 12.6
+              }
             }
           ]
         },
@@ -1047,6 +1113,17 @@
               "impressions": 378,
               "ctr": 0.26,
               "position": 19.2,
+              "sessions": 8,
+              "kw_positions": {
+                "LINE  浮気調査": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 4,
+              "impressions": 379,
+              "ctr": 1.06,
+              "position": 17.8,
               "sessions": 8,
               "kw_positions": {
                 "LINE  浮気調査": null
@@ -1187,6 +1264,17 @@
               "kw_positions": {
                 "浮気調査 費用": null
               }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 2,
+              "impressions": 251,
+              "ctr": 0.8,
+              "position": 20.8,
+              "sessions": 5,
+              "kw_positions": {
+                "浮気調査 費用": 26.5
+              }
             }
           ]
         },
@@ -1311,6 +1399,17 @@
               "sessions": 109,
               "kw_positions": {
                 "浮気調査 アプリ": 3.6
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 32,
+              "impressions": 1672,
+              "ctr": 1.91,
+              "position": 9.0,
+              "sessions": 72,
+              "kw_positions": {
+                "浮気調査 アプリ": 7.6
               }
             }
           ]
@@ -1437,11 +1536,22 @@
               "kw_positions": {
                 "役に立った浮気調査アプリ": null
               }
+            },
+            {
+              "week": "2026-07-16",
+              "clicks": 29,
+              "impressions": 853,
+              "ctr": 3.4,
+              "position": 15.9,
+              "sessions": 24,
+              "kw_positions": {
+                "役に立った浮気調査アプリ": null
+              }
             }
           ]
         }
       ],
-      "last_fetched_at": "2026-07-21T12:05:04.374223"
+      "last_fetched_at": "2026-07-27T17:48:04.395709"
     }
   }
 }
