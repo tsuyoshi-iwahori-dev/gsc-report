@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T12:05:33",
+  "generated_at": "2026-07-27T17:48:35",
   "clients": {
     "表参道デンタルクリニック": {
       "articles": [
@@ -68,6 +68,20 @@
                 "mi治療": null,
                 "site:omotesando-dc.com": null
               }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 34,
+              "ctr": 0,
+              "position": 8.2,
+              "sessions": 3,
+              "kw_positions": {
+                "セラミック歯 後悔 ブログ": null,
+                "mi治療": 3,
+                "site:omotesando-dc.com": null
+              }
             }
           ]
         },
@@ -77,8 +91,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "site:omotesando-dc.com",
-            "セラミック",
-            "セラミック 銀 歯"
+            "セラミック 銀 歯",
+            "銀 歯 セラミック"
           ],
           "weekly_data": [
             {
@@ -91,8 +105,8 @@
               "sessions": 2,
               "kw_positions": {
                 "site:omotesando-dc.com": null,
-                "セラミック": null,
-                "セラミック 銀 歯": null
+                "セラミック 銀 歯": null,
+                "銀 歯 セラミック": null
               }
             },
             {
@@ -105,8 +119,8 @@
               "sessions": 7,
               "kw_positions": {
                 "site:omotesando-dc.com": null,
-                "セラミック": 9,
-                "セラミック 銀 歯": null
+                "セラミック 銀 歯": null,
+                "銀 歯 セラミック": null
               }
             },
             {
@@ -119,8 +133,8 @@
               "sessions": 2,
               "kw_positions": {
                 "site:omotesando-dc.com": 61,
-                "セラミック": null,
-                "セラミック 銀 歯": 100
+                "セラミック 銀 歯": 100,
+                "銀 歯 セラミック": 96.7
               }
             },
             {
@@ -133,8 +147,22 @@
               "sessions": 1,
               "kw_positions": {
                 "site:omotesando-dc.com": null,
-                "セラミック": null,
-                "セラミック 銀 歯": null
+                "セラミック 銀 歯": null,
+                "銀 歯 セラミック": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 47,
+              "sessions": 1,
+              "kw_positions": {
+                "site:omotesando-dc.com": null,
+                "セラミック 銀 歯": null,
+                "銀 歯 セラミック": null
               }
             }
           ]
@@ -144,9 +172,7 @@
           "title": "歯のクリーニング頻度はどのくらいが正解？ 状態別の目安と保険・セラミックの注意点",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "歯 の クリーニング 時間",
-            "歯のクリーニング 何ヶ月に一回",
-            "歯のクリーニングは何ヶ月に一回"
+            "歯のクリーニング 何ヶ月に一回"
           ],
           "weekly_data": [
             {
@@ -158,9 +184,7 @@
               "position": 0.0,
               "sessions": 2,
               "kw_positions": {
-                "歯 の クリーニング 時間": null,
-                "歯のクリーニング 何ヶ月に一回": null,
-                "歯のクリーニングは何ヶ月に一回": null
+                "歯のクリーニング 何ヶ月に一回": null
               }
             },
             {
@@ -172,23 +196,19 @@
               "position": 7.3,
               "sessions": 6,
               "kw_positions": {
-                "歯 の クリーニング 時間": 44,
-                "歯のクリーニング 何ヶ月に一回": 8,
-                "歯のクリーニングは何ヶ月に一回": 8
+                "歯のクリーニング 何ヶ月に一回": 8
               }
             },
             {
               "week": "2026-07-02",
               "week_number": 3,
               "clicks": 0,
-              "impressions": 7,
+              "impressions": 16,
               "ctr": 0,
-              "position": 7.3,
+              "position": 7.2,
               "sessions": 1,
               "kw_positions": {
-                "歯 の クリーニング 時間": null,
-                "歯のクリーニング 何ヶ月に一回": null,
-                "歯のクリーニングは何ヶ月に一回": null
+                "歯のクリーニング 何ヶ月に一回": null
               }
             },
             {
@@ -200,9 +220,19 @@
               "position": 9.6,
               "sessions": 0,
               "kw_positions": {
-                "歯 の クリーニング 時間": null,
-                "歯のクリーニング 何ヶ月に一回": null,
-                "歯のクリーニングは何ヶ月に一回": null
+                "歯のクリーニング 何ヶ月に一回": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 1,
+              "impressions": 18,
+              "ctr": 5.56,
+              "position": 7.8,
+              "sessions": 1,
+              "kw_positions": {
+                "歯のクリーニング 何ヶ月に一回": null
               }
             }
           ]
@@ -262,6 +292,18 @@
               "kw_positions": {
                 "ホワイトニング セラミック": null
               }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 8.5,
+              "sessions": 0,
+              "kw_positions": {
+                "ホワイトニング セラミック": null
+              }
             }
           ]
         },
@@ -271,8 +313,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "セラミック 前歯2本だけ",
-            "セラミック",
-            "セラミック 前歯 2 本 保険"
+            "セラミック 前歯 2 本 保険",
+            "セラミック 前歯2本 デメリット"
           ],
           "weekly_data": [
             {
@@ -285,8 +327,8 @@
               "sessions": 1,
               "kw_positions": {
                 "セラミック 前歯2本だけ": null,
-                "セラミック": null,
-                "セラミック 前歯 2 本 保険": null
+                "セラミック 前歯 2 本 保険": null,
+                "セラミック 前歯2本 デメリット": null
               }
             },
             {
@@ -299,8 +341,8 @@
               "sessions": 10,
               "kw_positions": {
                 "セラミック 前歯2本だけ": 9.1,
-                "セラミック": 5,
-                "セラミック 前歯 2 本 保険": null
+                "セラミック 前歯 2 本 保険": null,
+                "セラミック 前歯2本 デメリット": 6.1
               }
             },
             {
@@ -313,8 +355,8 @@
               "sessions": 2,
               "kw_positions": {
                 "セラミック 前歯2本だけ": 10.1,
-                "セラミック": null,
-                "セラミック 前歯 2 本 保険": null
+                "セラミック 前歯 2 本 保険": null,
+                "セラミック 前歯2本 デメリット": 5.5
               }
             },
             {
@@ -327,8 +369,22 @@
               "sessions": 3,
               "kw_positions": {
                 "セラミック 前歯2本だけ": null,
-                "セラミック": null,
-                "セラミック 前歯 2 本 保険": 1
+                "セラミック 前歯 2 本 保険": 1,
+                "セラミック 前歯2本 デメリット": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 33,
+              "ctr": 0,
+              "position": 7.1,
+              "sessions": 0,
+              "kw_positions": {
+                "セラミック 前歯2本だけ": null,
+                "セラミック 前歯 2 本 保険": null,
+                "セラミック 前歯2本 デメリット": null
               }
             }
           ]
@@ -338,9 +394,8 @@
           "title": "奥歯の入れ歯（部分義歯） 種類・費用・セラミックとの比較を徹底解説",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "40代 部分入れ歯 奥歯 2本 値段",
             "site:omotesando-dc.com",
-            "入れ歯 奥歯"
+            "奥歯 入れ歯"
           ],
           "weekly_data": [
             {
@@ -352,9 +407,8 @@
               "position": 0.0,
               "sessions": 1,
               "kw_positions": {
-                "40代 部分入れ歯 奥歯 2本 値段": null,
                 "site:omotesando-dc.com": null,
-                "入れ歯 奥歯": null
+                "奥歯 入れ歯": null
               }
             },
             {
@@ -366,9 +420,8 @@
               "position": 23.5,
               "sessions": 10,
               "kw_positions": {
-                "40代 部分入れ歯 奥歯 2本 値段": 40,
                 "site:omotesando-dc.com": null,
-                "入れ歯 奥歯": 39.5
+                "奥歯 入れ歯": 38
               }
             },
             {
@@ -380,9 +433,8 @@
               "position": 23.3,
               "sessions": 1,
               "kw_positions": {
-                "40代 部分入れ歯 奥歯 2本 値段": null,
                 "site:omotesando-dc.com": 65,
-                "入れ歯 奥歯": null
+                "奥歯 入れ歯": null
               }
             },
             {
@@ -394,9 +446,21 @@
               "position": 13.1,
               "sessions": 1,
               "kw_positions": {
-                "40代 部分入れ歯 奥歯 2本 値段": null,
                 "site:omotesando-dc.com": null,
-                "入れ歯 奥歯": null
+                "奥歯 入れ歯": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 10.4,
+              "sessions": 3,
+              "kw_positions": {
+                "site:omotesando-dc.com": null,
+                "奥歯 入れ歯": null
               }
             }
           ]
@@ -406,9 +470,9 @@
           "title": "ジルコニアの値段・費用相場 種類別・部位別に徹底解説",
           "published_at": "2026-06-24",
           "top_keywords": [
+            "ジルコニア",
             "ジルコニア 値段 保険",
-            "ジルコニア 値段の違い",
-            "e-max ジルコニア 値段"
+            "ジルコニア 値段の違い"
           ],
           "weekly_data": [
             {
@@ -420,9 +484,9 @@
               "position": 0.0,
               "sessions": 1,
               "kw_positions": {
+                "ジルコニア": null,
                 "ジルコニア 値段 保険": null,
-                "ジルコニア 値段の違い": null,
-                "e-max ジルコニア 値段": null
+                "ジルコニア 値段の違い": null
               }
             },
             {
@@ -434,23 +498,23 @@
               "position": 7.6,
               "sessions": 9,
               "kw_positions": {
+                "ジルコニア": 3,
                 "ジルコニア 値段 保険": 2.4,
-                "ジルコニア 値段の違い": 8.6,
-                "e-max ジルコニア 値段": 3
+                "ジルコニア 値段の違い": 8.6
               }
             },
             {
               "week": "2026-07-02",
               "week_number": 3,
               "clicks": 0,
-              "impressions": 34,
+              "impressions": 40,
               "ctr": 0,
-              "position": 2.2,
+              "position": 2.6,
               "sessions": 2,
               "kw_positions": {
+                "ジルコニア": 3,
                 "ジルコニア 値段 保険": 1,
-                "ジルコニア 値段の違い": 1,
-                "e-max ジルコニア 値段": null
+                "ジルコニア 値段の違い": 1
               }
             },
             {
@@ -462,9 +526,23 @@
               "position": 5.2,
               "sessions": 1,
               "kw_positions": {
+                "ジルコニア": 3,
                 "ジルコニア 値段 保険": null,
-                "ジルコニア 値段の違い": null,
-                "e-max ジルコニア 値段": null
+                "ジルコニア 値段の違い": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 1,
+              "impressions": 229,
+              "ctr": 0.44,
+              "position": 5.0,
+              "sessions": 5,
+              "kw_positions": {
+                "ジルコニア": 3,
+                "ジルコニア 値段 保険": null,
+                "ジルコニア 値段の違い": null
               }
             }
           ]
@@ -474,7 +552,7 @@
           "title": "ボトックスが1ヶ月で切れる？原因・対処法・再注射のタイミングを解説",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "ボトックス 1ヶ月で 切れ た",
+            "眉間ボトックス すぐ 切れる",
             "ボトックス 1ヶ月で 切れる",
             "ボトックス 2ヶ月で 切れる"
           ],
@@ -488,7 +566,7 @@
               "position": 5.8,
               "sessions": 3,
               "kw_positions": {
-                "ボトックス 1ヶ月で 切れ た": null,
+                "眉間ボトックス すぐ 切れる": null,
                 "ボトックス 1ヶ月で 切れる": null,
                 "ボトックス 2ヶ月で 切れる": 6
               }
@@ -502,7 +580,7 @@
               "position": 5.2,
               "sessions": 9,
               "kw_positions": {
-                "ボトックス 1ヶ月で 切れ た": null,
+                "眉間ボトックス すぐ 切れる": null,
                 "ボトックス 1ヶ月で 切れる": null,
                 "ボトックス 2ヶ月で 切れる": 5.1
               }
@@ -516,7 +594,7 @@
               "position": 3.9,
               "sessions": 15,
               "kw_positions": {
-                "ボトックス 1ヶ月で 切れ た": null,
+                "眉間ボトックス すぐ 切れる": null,
                 "ボトックス 1ヶ月で 切れる": null,
                 "ボトックス 2ヶ月で 切れる": null
               }
@@ -530,9 +608,23 @@
               "position": 4.4,
               "sessions": 6,
               "kw_positions": {
-                "ボトックス 1ヶ月で 切れ た": 2,
+                "眉間ボトックス すぐ 切れる": 2,
                 "ボトックス 1ヶ月で 切れる": null,
                 "ボトックス 2ヶ月で 切れる": 5.5
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 31,
+              "impressions": 575,
+              "ctr": 5.39,
+              "position": 5.2,
+              "sessions": 46,
+              "kw_positions": {
+                "眉間ボトックス すぐ 切れる": 2,
+                "ボトックス 1ヶ月で 切れる": 1.1,
+                "ボトックス 2ヶ月で 切れる": 4.6
               }
             }
           ]
@@ -597,6 +689,19 @@
                 "ガミースマイル 海外": null,
                 "ガミースマイル 海外の 反応": null
               }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 4.9,
+              "sessions": 1,
+              "kw_positions": {
+                "ガミースマイル 海外": null,
+                "ガミースマイル 海外の 反応": null
+              }
             }
           ]
         },
@@ -605,9 +710,8 @@
           "title": "歯が小さい・もっと大きくしたい ｜矮小歯の原因と治療法を徹底解説",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "親知らず 矮小歯",
-            "ガミースマイル 歯が小さい",
-            "側切歯 小さい"
+            "側切歯 小さい",
+            "矮小歯"
           ],
           "weekly_data": [
             {
@@ -619,9 +723,8 @@
               "position": 0.0,
               "sessions": 1,
               "kw_positions": {
-                "親知らず 矮小歯": null,
-                "ガミースマイル 歯が小さい": null,
-                "側切歯 小さい": null
+                "側切歯 小さい": null,
+                "矮小歯": null
               }
             },
             {
@@ -633,9 +736,8 @@
               "position": 10.9,
               "sessions": 5,
               "kw_positions": {
-                "親知らず 矮小歯": 10,
-                "ガミースマイル 歯が小さい": 29,
-                "側切歯 小さい": null
+                "側切歯 小さい": null,
+                "矮小歯": 15.1
               }
             },
             {
@@ -647,9 +749,8 @@
               "position": 5.7,
               "sessions": 1,
               "kw_positions": {
-                "親知らず 矮小歯": null,
-                "ガミースマイル 歯が小さい": null,
-                "側切歯 小さい": null
+                "側切歯 小さい": null,
+                "矮小歯": null
               }
             },
             {
@@ -661,9 +762,21 @@
               "position": 6.1,
               "sessions": 0,
               "kw_positions": {
-                "親知らず 矮小歯": null,
-                "ガミースマイル 歯が小さい": null,
-                "側切歯 小さい": 3
+                "側切歯 小さい": 3,
+                "矮小歯": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 27,
+              "ctr": 0,
+              "position": 7.1,
+              "sessions": 0,
+              "kw_positions": {
+                "側切歯 小さい": null,
+                "矮小歯": 3
               }
             }
           ]
@@ -673,9 +786,9 @@
           "title": "上唇粘膜切除術のデメリットを 歯科医師が包み隠さず解説",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "上唇粘膜切除術 デメリット",
             "上唇粘膜切除術 失敗",
-            "上唇粘膜切除術 ダウンタイム"
+            "上唇粘膜切除術 デメリット",
+            "上唇粘膜切除術 後戻り"
           ],
           "weekly_data": [
             {
@@ -687,9 +800,9 @@
               "position": 1,
               "sessions": 1,
               "kw_positions": {
-                "上唇粘膜切除術 デメリット": null,
                 "上唇粘膜切除術 失敗": null,
-                "上唇粘膜切除術 ダウンタイム": null
+                "上唇粘膜切除術 デメリット": null,
+                "上唇粘膜切除術 後戻り": null
               }
             },
             {
@@ -701,9 +814,9 @@
               "position": 6.1,
               "sessions": 13,
               "kw_positions": {
-                "上唇粘膜切除術 デメリット": 2.8,
                 "上唇粘膜切除術 失敗": 7.8,
-                "上唇粘膜切除術 ダウンタイム": 5.9
+                "上唇粘膜切除術 デメリット": 2.8,
+                "上唇粘膜切除術 後戻り": 3.7
               }
             },
             {
@@ -715,9 +828,9 @@
               "position": 5.6,
               "sessions": 7,
               "kw_positions": {
-                "上唇粘膜切除術 デメリット": 2,
                 "上唇粘膜切除術 失敗": 7.2,
-                "上唇粘膜切除術 ダウンタイム": 7.1
+                "上唇粘膜切除術 デメリット": 2,
+                "上唇粘膜切除術 後戻り": 4.2
               }
             },
             {
@@ -729,9 +842,23 @@
               "position": 5.8,
               "sessions": 6,
               "kw_positions": {
-                "上唇粘膜切除術 デメリット": 3.2,
                 "上唇粘膜切除術 失敗": 3.3,
-                "上唇粘膜切除術 ダウンタイム": 5
+                "上唇粘膜切除術 デメリット": 3.2,
+                "上唇粘膜切除術 後戻り": 4.2
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 9,
+              "impressions": 170,
+              "ctr": 5.29,
+              "position": 6.1,
+              "sessions": 9,
+              "kw_positions": {
+                "上唇粘膜切除術 失敗": 3.2,
+                "上唇粘膜切除術 デメリット": 3,
+                "上唇粘膜切除術 後戻り": 4.5
               }
             }
           ]
@@ -801,6 +928,20 @@
                 "三角唇": 3,
                 "上唇 尖ってる": 5
               }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 1,
+              "impressions": 29,
+              "ctr": 3.45,
+              "position": 4.8,
+              "sessions": 1,
+              "kw_positions": {
+                "唇の形 山がある": null,
+                "三角唇": null,
+                "上唇 尖ってる": null
+              }
             }
           ]
         },
@@ -863,6 +1004,20 @@
               "impressions": 24,
               "ctr": 0,
               "position": 6.5,
+              "sessions": 0,
+              "kw_positions": {
+                "歯冠長延長術 東京": null,
+                "crown lengthening": null,
+                "クラウンレングスニング ガミースマイル": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 22,
+              "ctr": 0,
+              "position": 7.9,
               "sessions": 0,
               "kw_positions": {
                 "歯冠長延長術 東京": null,
@@ -937,6 +1092,20 @@
                 "gummy 整形": null,
                 "歯冠長延長術 デメリット": null
               }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 12,
+              "ctr": 0,
+              "position": 3.1,
+              "sessions": 2,
+              "kw_positions": {
+                "歯肉切除 後戻り": null,
+                "gummy 整形": null,
+                "歯冠長延長術 デメリット": null
+              }
             }
           ]
         },
@@ -946,8 +1115,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "唇が上に上がってる",
-            "上唇上がってる",
-            "笑うと上唇が薄くなる"
+            "上唇",
+            "上唇上がってる"
           ],
           "weekly_data": [
             {
@@ -960,8 +1129,8 @@
               "sessions": 1,
               "kw_positions": {
                 "唇が上に上がってる": null,
-                "上唇上がってる": null,
-                "笑うと上唇が薄くなる": null
+                "上唇": null,
+                "上唇上がってる": null
               }
             },
             {
@@ -974,8 +1143,8 @@
               "sessions": 19,
               "kw_positions": {
                 "唇が上に上がってる": 4,
-                "上唇上がってる": 2.7,
-                "笑うと上唇が薄くなる": 5
+                "上唇": 8.0,
+                "上唇上がってる": 2.7
               }
             },
             {
@@ -988,8 +1157,8 @@
               "sessions": 16,
               "kw_positions": {
                 "唇が上に上がってる": 3.5,
-                "上唇上がってる": 3,
-                "笑うと上唇が薄くなる": 3.7
+                "上唇": 7.9,
+                "上唇上がってる": 3
               }
             },
             {
@@ -1002,8 +1171,22 @@
               "sessions": 29,
               "kw_positions": {
                 "唇が上に上がってる": 2.6,
-                "上唇上がってる": 2,
-                "笑うと上唇が薄くなる": 5
+                "上唇": 4.7,
+                "上唇上がってる": 2
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 21,
+              "impressions": 1531,
+              "ctr": 1.37,
+              "position": 5.3,
+              "sessions": 32,
+              "kw_positions": {
+                "唇が上に上がってる": 3.1,
+                "上唇": 4.9,
+                "上唇上がってる": 1.5
               }
             }
           ]
@@ -1073,11 +1256,25 @@
                 "上唇 厚い": 7,
                 "上唇 厚い 口ゴボ": null
               }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 197,
+              "ctr": 0,
+              "position": 6.7,
+              "sessions": 0,
+              "kw_positions": {
+                "した唇の方が厚い": null,
+                "上唇 厚い": 4,
+                "上唇 厚い 口ゴボ": 8
+              }
             }
           ]
         }
       ],
-      "last_fetched_at": "2026-07-21T12:06:51.582722"
+      "last_fetched_at": "2026-07-27T17:50:45.322692"
     },
     "ラビット探偵社": {
       "articles": [
@@ -1117,6 +1314,20 @@
                 "site:rabbit-tantei.com": null,
                 "ラビット探偵社 問い合わせ": 47,
                 "六本木 浮気調査": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 57,
+              "ctr": 0,
+              "position": 34.2,
+              "sessions": 2,
+              "kw_positions": {
+                "site:rabbit-tantei.com": null,
+                "ラビット探偵社 問い合わせ": null,
+                "六本木 浮気調査": 29.4
               }
             }
           ]
@@ -1158,6 +1369,20 @@
                 "大田区 探偵": 31,
                 "大田区 浮気調査": 22.3
               }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 35,
+              "ctr": 0,
+              "position": 20.2,
+              "sessions": 1,
+              "kw_positions": {
+                "site:rabbit-tantei.com": null,
+                "大田区 探偵": 31,
+                "大田区 浮気調査": 22
+              }
             }
           ]
         },
@@ -1196,6 +1421,20 @@
               "kw_positions": {
                 "浮気調査 墨田区": 17.1,
                 "墨田区 浮気調査": 15.3,
+                "site:rabbit-tantei.com": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 3,
+              "clicks": 2,
+              "impressions": 49,
+              "ctr": 4.08,
+              "position": 28.3,
+              "sessions": 4,
+              "kw_positions": {
+                "浮気調査 墨田区": 24.7,
+                "墨田区 浮気調査": 24.8,
                 "site:rabbit-tantei.com": null
               }
             }
@@ -1238,6 +1477,20 @@
                 "中央区 不倫調査 料金 見積り": null,
                 "中央区 不倫調査 相談": null
               }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 83,
+              "ctr": 0,
+              "position": 27.8,
+              "sessions": 2,
+              "kw_positions": {
+                "中央区 不倫調査": 17.3,
+                "中央区 不倫調査 料金 見積り": 40.3,
+                "中央区 不倫調査 相談": 18.5
+              }
             }
           ]
         },
@@ -1248,7 +1501,7 @@
           "top_keywords": [
             "中野区 探偵",
             "中野区 浮気調査",
-            "浮気調査 中野区"
+            "探偵 中野区"
           ],
           "weekly_data": [
             {
@@ -1262,7 +1515,7 @@
               "kw_positions": {
                 "中野区 探偵": null,
                 "中野区 浮気調査": null,
-                "浮気調査 中野区": null
+                "探偵 中野区": null
               }
             },
             {
@@ -1276,13 +1529,27 @@
               "kw_positions": {
                 "中野区 探偵": null,
                 "中野区 浮気調査": null,
-                "浮気調査 中野区": null
+                "探偵 中野区": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 3,
+              "clicks": 0,
+              "impressions": 32,
+              "ctr": 0,
+              "position": 29.4,
+              "sessions": 2,
+              "kw_positions": {
+                "中野区 探偵": 31,
+                "中野区 浮気調査": 29.8,
+                "探偵 中野区": 35
               }
             }
           ]
         }
       ],
-      "last_fetched_at": "2026-07-21T12:07:16.260588"
+      "last_fetched_at": "2026-07-27T17:51:08.080809"
     },
     "レンタルPCネット": {
       "articles": [
@@ -1291,9 +1558,9 @@
           "title": "法人向けCore i5性能比較と選び方！実務に必要な世代と推奨スペックを徹底解説｜法人向けパソコンレンタルならレンタルPCネット",
           "published_at": "2026-07-07",
           "top_keywords": [
+            "11世代 i5",
             "amd ryzen",
-            "core i5 i7 違い",
-            "core i5 性能比較"
+            "core 5 210h"
           ],
           "weekly_data": [
             {
@@ -1305,9 +1572,9 @@
               "position": 5.7,
               "sessions": 1,
               "kw_positions": {
+                "11世代 i5": null,
                 "amd ryzen": null,
-                "core i5 i7 違い": null,
-                "core i5 性能比較": 14
+                "core 5 210h": null
               }
             },
             {
@@ -1319,9 +1586,23 @@
               "position": 5.6,
               "sessions": 5,
               "kw_positions": {
+                "11世代 i5": null,
                 "amd ryzen": 3,
-                "core i5 i7 違い": 3,
-                "core i5 性能比較": null
+                "core 5 210h": null
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 3,
+              "clicks": 1,
+              "impressions": 81,
+              "ctr": 1.23,
+              "position": 3.6,
+              "sessions": 1,
+              "kw_positions": {
+                "11世代 i5": null,
+                "amd ryzen": null,
+                "core 5 210h": 4
               }
             }
           ]
@@ -1332,8 +1613,8 @@
           "published_at": "2026-06-22",
           "top_keywords": [
             "pc リース コスト",
-            "pc リース 法人",
-            "pc レンタル リース 違い"
+            "パソコン リース コスト",
+            "法人 パソコン リース"
           ],
           "weekly_data": [
             {
@@ -1346,8 +1627,8 @@
               "sessions": 6,
               "kw_positions": {
                 "pc リース コスト": null,
-                "pc リース 法人": null,
-                "pc レンタル リース 違い": 77
+                "パソコン リース コスト": null,
+                "法人 パソコン リース": null
               }
             },
             {
@@ -1360,8 +1641,8 @@
               "sessions": 1,
               "kw_positions": {
                 "pc リース コスト": null,
-                "pc リース 法人": 65,
-                "pc レンタル リース 違い": null
+                "パソコン リース コスト": null,
+                "法人 パソコン リース": null
               }
             },
             {
@@ -1374,8 +1655,8 @@
               "sessions": 1,
               "kw_positions": {
                 "pc リース コスト": 39,
-                "pc リース 法人": null,
-                "pc レンタル リース 違い": null
+                "パソコン リース コスト": null,
+                "法人 パソコン リース": null
               }
             },
             {
@@ -1388,14 +1669,28 @@
               "sessions": 4,
               "kw_positions": {
                 "pc リース コスト": 37,
-                "pc リース 法人": null,
-                "pc レンタル リース 違い": null
+                "パソコン リース コスト": 35,
+                "法人 パソコン リース": 69
+              }
+            },
+            {
+              "week": "2026-07-16",
+              "week_number": 5,
+              "clicks": 0,
+              "impressions": 40,
+              "ctr": 0,
+              "position": 24.4,
+              "sessions": 2,
+              "kw_positions": {
+                "pc リース コスト": null,
+                "パソコン リース コスト": null,
+                "法人 パソコン リース": 71
               }
             }
           ]
         }
       ],
-      "last_fetched_at": "2026-07-21T12:07:25.815284"
+      "last_fetched_at": "2026-07-27T17:52:19.503466"
     }
   }
 }
