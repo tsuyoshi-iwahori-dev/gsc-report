@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T22:53:56",
+  "generated_at": "2026-07-29T17:05:18",
   "clients": {
     "表参道デンタルクリニック": {
       "articles": [
@@ -8,9 +8,9 @@
           "title": "セラミックの歯にして後悔？ 原因・失敗例・後悔しないための全対策",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "セラミック歯 後悔 ブログ",
             "mi治療",
-            "site:omotesando-dc.com"
+            "site:omotesando-dc.com",
+            "にじほ セラミック"
           ],
           "weekly_data": [
             {
@@ -22,9 +22,9 @@
               "position": 0.0,
               "sessions": 2,
               "kw_positions": {
-                "セラミック歯 後悔 ブログ": null,
                 "mi治療": null,
-                "site:omotesando-dc.com": null
+                "site:omotesando-dc.com": null,
+                "にじほ セラミック": null
               }
             },
             {
@@ -36,9 +36,9 @@
               "position": 20.4,
               "sessions": 14,
               "kw_positions": {
-                "セラミック歯 後悔 ブログ": 69,
                 "mi治療": null,
-                "site:omotesando-dc.com": null
+                "site:omotesando-dc.com": null,
+                "にじほ セラミック": null
               }
             },
             {
@@ -50,9 +50,9 @@
               "position": 17.6,
               "sessions": 6,
               "kw_positions": {
-                "セラミック歯 後悔 ブログ": null,
                 "mi治療": null,
-                "site:omotesando-dc.com": 69
+                "site:omotesando-dc.com": 69,
+                "にじほ セラミック": 22
               }
             },
             {
@@ -64,9 +64,9 @@
               "position": 11.7,
               "sessions": 6,
               "kw_positions": {
-                "セラミック歯 後悔 ブログ": null,
                 "mi治療": null,
-                "site:omotesando-dc.com": null
+                "site:omotesando-dc.com": null,
+                "にじほ セラミック": null
               }
             },
             {
@@ -78,9 +78,9 @@
               "position": 8.2,
               "sessions": 3,
               "kw_positions": {
-                "セラミック歯 後悔 ブログ": null,
                 "mi治療": 3,
-                "site:omotesando-dc.com": null
+                "site:omotesando-dc.com": null,
+                "にじほ セラミック": null
               }
             }
           ]
@@ -312,9 +312,9 @@
           "title": "前歯2本のセラミック治療 費用・素材・メリット・デメリットを徹底解説",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "セラミック 前歯2本だけ",
             "セラミック 前歯 2 本 保険",
-            "セラミック 前歯2本 デメリット"
+            "セラミック 前歯2本 デメリット",
+            "セラミック 前歯2本 値段"
           ],
           "weekly_data": [
             {
@@ -326,9 +326,9 @@
               "position": 10,
               "sessions": 1,
               "kw_positions": {
-                "セラミック 前歯2本だけ": null,
                 "セラミック 前歯 2 本 保険": null,
-                "セラミック 前歯2本 デメリット": null
+                "セラミック 前歯2本 デメリット": null,
+                "セラミック 前歯2本 値段": null
               }
             },
             {
@@ -340,9 +340,9 @@
               "position": 7.5,
               "sessions": 10,
               "kw_positions": {
-                "セラミック 前歯2本だけ": 9.1,
                 "セラミック 前歯 2 本 保険": null,
-                "セラミック 前歯2本 デメリット": 6.1
+                "セラミック 前歯2本 デメリット": 6.1,
+                "セラミック 前歯2本 値段": 6.4
               }
             },
             {
@@ -354,9 +354,9 @@
               "position": 7.7,
               "sessions": 2,
               "kw_positions": {
-                "セラミック 前歯2本だけ": 10.1,
                 "セラミック 前歯 2 本 保険": null,
-                "セラミック 前歯2本 デメリット": 5.5
+                "セラミック 前歯2本 デメリット": 5.5,
+                "セラミック 前歯2本 値段": 4.7
               }
             },
             {
@@ -368,9 +368,9 @@
               "position": 5.6,
               "sessions": 3,
               "kw_positions": {
-                "セラミック 前歯2本だけ": null,
                 "セラミック 前歯 2 本 保険": 1,
-                "セラミック 前歯2本 デメリット": null
+                "セラミック 前歯2本 デメリット": null,
+                "セラミック 前歯2本 値段": 4
               }
             },
             {
@@ -382,9 +382,9 @@
               "position": 7.1,
               "sessions": 0,
               "kw_positions": {
-                "セラミック 前歯2本だけ": null,
                 "セラミック 前歯 2 本 保険": null,
-                "セラミック 前歯2本 デメリット": null
+                "セラミック 前歯2本 デメリット": null,
+                "セラミック 前歯2本 値段": null
               }
             }
           ]
@@ -394,8 +394,7 @@
           "title": "奥歯の入れ歯（部分義歯） 種類・費用・セラミックとの比較を徹底解説",
           "published_at": "2026-06-24",
           "top_keywords": [
-            "site:omotesando-dc.com",
-            "奥歯 入れ歯"
+            "site:omotesando-dc.com"
           ],
           "weekly_data": [
             {
@@ -407,8 +406,7 @@
               "position": 0.0,
               "sessions": 1,
               "kw_positions": {
-                "site:omotesando-dc.com": null,
-                "奥歯 入れ歯": null
+                "site:omotesando-dc.com": null
               }
             },
             {
@@ -420,8 +418,7 @@
               "position": 23.5,
               "sessions": 10,
               "kw_positions": {
-                "site:omotesando-dc.com": null,
-                "奥歯 入れ歯": 38
+                "site:omotesando-dc.com": null
               }
             },
             {
@@ -433,8 +430,7 @@
               "position": 23.3,
               "sessions": 1,
               "kw_positions": {
-                "site:omotesando-dc.com": 65,
-                "奥歯 入れ歯": null
+                "site:omotesando-dc.com": 65
               }
             },
             {
@@ -446,8 +442,7 @@
               "position": 13.1,
               "sessions": 1,
               "kw_positions": {
-                "site:omotesando-dc.com": null,
-                "奥歯 入れ歯": null
+                "site:omotesando-dc.com": null
               }
             },
             {
@@ -459,8 +454,7 @@
               "position": 10.4,
               "sessions": 3,
               "kw_positions": {
-                "site:omotesando-dc.com": null,
-                "奥歯 入れ歯": null
+                "site:omotesando-dc.com": null
               }
             }
           ]
@@ -472,7 +466,7 @@
           "top_keywords": [
             "ジルコニア",
             "ジルコニア 値段 保険",
-            "ジルコニア 値段の違い"
+            "どっちが安い"
           ],
           "weekly_data": [
             {
@@ -486,7 +480,7 @@
               "kw_positions": {
                 "ジルコニア": null,
                 "ジルコニア 値段 保険": null,
-                "ジルコニア 値段の違い": null
+                "どっちが安い": null
               }
             },
             {
@@ -500,7 +494,7 @@
               "kw_positions": {
                 "ジルコニア": 3,
                 "ジルコニア 値段 保険": 2.4,
-                "ジルコニア 値段の違い": 8.6
+                "どっちが安い": null
               }
             },
             {
@@ -514,7 +508,7 @@
               "kw_positions": {
                 "ジルコニア": 3,
                 "ジルコニア 値段 保険": 1,
-                "ジルコニア 値段の違い": 1
+                "どっちが安い": null
               }
             },
             {
@@ -528,7 +522,7 @@
               "kw_positions": {
                 "ジルコニア": 3,
                 "ジルコニア 値段 保険": null,
-                "ジルコニア 値段の違い": null
+                "どっちが安い": 7
               }
             },
             {
@@ -542,7 +536,7 @@
               "kw_positions": {
                 "ジルコニア": 3,
                 "ジルコニア 値段 保険": null,
-                "ジルコニア 値段の違い": null
+                "どっちが安い": null
               }
             }
           ]
@@ -711,7 +705,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "側切歯 小さい",
-            "矮小歯"
+            "矮小歯",
+            "親知らず 矮小歯"
           ],
           "weekly_data": [
             {
@@ -724,7 +719,8 @@
               "sessions": 1,
               "kw_positions": {
                 "側切歯 小さい": null,
-                "矮小歯": null
+                "矮小歯": null,
+                "親知らず 矮小歯": null
               }
             },
             {
@@ -737,7 +733,8 @@
               "sessions": 5,
               "kw_positions": {
                 "側切歯 小さい": null,
-                "矮小歯": 15.1
+                "矮小歯": 15.1,
+                "親知らず 矮小歯": 10
               }
             },
             {
@@ -750,7 +747,8 @@
               "sessions": 1,
               "kw_positions": {
                 "側切歯 小さい": null,
-                "矮小歯": null
+                "矮小歯": null,
+                "親知らず 矮小歯": null
               }
             },
             {
@@ -763,7 +761,8 @@
               "sessions": 0,
               "kw_positions": {
                 "側切歯 小さい": 3,
-                "矮小歯": null
+                "矮小歯": null,
+                "親知らず 矮小歯": null
               }
             },
             {
@@ -776,7 +775,8 @@
               "sessions": 0,
               "kw_positions": {
                 "側切歯 小さい": null,
-                "矮小歯": 3
+                "矮小歯": 3,
+                "親知らず 矮小歯": null
               }
             }
           ]
@@ -787,8 +787,8 @@
           "published_at": "2026-06-24",
           "top_keywords": [
             "上唇粘膜切除術 失敗",
-            "上唇粘膜切除術 デメリット",
-            "上唇粘膜切除術 後戻り"
+            "上唇粘膜切除術 後戻り",
+            "上唇粘膜切除術 デメリット"
           ],
           "weekly_data": [
             {
@@ -801,8 +801,8 @@
               "sessions": 1,
               "kw_positions": {
                 "上唇粘膜切除術 失敗": null,
-                "上唇粘膜切除術 デメリット": null,
-                "上唇粘膜切除術 後戻り": null
+                "上唇粘膜切除術 後戻り": null,
+                "上唇粘膜切除術 デメリット": null
               }
             },
             {
@@ -815,8 +815,8 @@
               "sessions": 13,
               "kw_positions": {
                 "上唇粘膜切除術 失敗": 7.8,
-                "上唇粘膜切除術 デメリット": 2.8,
-                "上唇粘膜切除術 後戻り": 3.7
+                "上唇粘膜切除術 後戻り": 3.7,
+                "上唇粘膜切除術 デメリット": 2.8
               }
             },
             {
@@ -829,8 +829,8 @@
               "sessions": 7,
               "kw_positions": {
                 "上唇粘膜切除術 失敗": 7.2,
-                "上唇粘膜切除術 デメリット": 2,
-                "上唇粘膜切除術 後戻り": 4.2
+                "上唇粘膜切除術 後戻り": 4.2,
+                "上唇粘膜切除術 デメリット": 2
               }
             },
             {
@@ -843,8 +843,8 @@
               "sessions": 6,
               "kw_positions": {
                 "上唇粘膜切除術 失敗": 3.3,
-                "上唇粘膜切除術 デメリット": 3.2,
-                "上唇粘膜切除術 後戻り": 4.2
+                "上唇粘膜切除術 後戻り": 4.2,
+                "上唇粘膜切除術 デメリット": 3.2
               }
             },
             {
@@ -857,8 +857,8 @@
               "sessions": 9,
               "kw_positions": {
                 "上唇粘膜切除術 失敗": 3.2,
-                "上唇粘膜切除術 デメリット": 3,
-                "上唇粘膜切除術 後戻り": 4.5
+                "上唇粘膜切除術 後戻り": 4.5,
+                "上唇粘膜切除術 デメリット": 3
               }
             }
           ]
@@ -950,9 +950,9 @@
           "title": "歯冠長延長術（クラウンレングスニング）とは 歯肉切除術・歯肉整形術・ガミー修正との違いも徹底解説",
           "published_at": "2026-06-24",
           "top_keywords": [
+            "クラウンレングスニング ガミースマイル",
             "歯冠長延長術 東京",
-            "crown lengthening",
-            "クラウンレングスニング ガミースマイル"
+            "カプリ レーザー デメリット"
           ],
           "weekly_data": [
             {
@@ -964,9 +964,9 @@
               "position": 0.0,
               "sessions": 1,
               "kw_positions": {
+                "クラウンレングスニング ガミースマイル": null,
                 "歯冠長延長術 東京": null,
-                "crown lengthening": null,
-                "クラウンレングスニング ガミースマイル": null
+                "カプリ レーザー デメリット": null
               }
             },
             {
@@ -978,23 +978,23 @@
               "position": 8.7,
               "sessions": 11,
               "kw_positions": {
+                "クラウンレングスニング ガミースマイル": 17,
                 "歯冠長延長術 東京": 7.8,
-                "crown lengthening": 6,
-                "クラウンレングスニング ガミースマイル": 17
+                "カプリ レーザー デメリット": 9
               }
             },
             {
               "week": "2026-07-02",
               "week_number": 3,
               "clicks": 0,
-              "impressions": 10,
+              "impressions": 23,
               "ctr": 0,
-              "position": 5,
+              "position": 5.7,
               "sessions": 1,
               "kw_positions": {
+                "クラウンレングスニング ガミースマイル": null,
                 "歯冠長延長術 東京": null,
-                "crown lengthening": null,
-                "クラウンレングスニング ガミースマイル": null
+                "カプリ レーザー デメリット": null
               }
             },
             {
@@ -1006,9 +1006,9 @@
               "position": 6.5,
               "sessions": 0,
               "kw_positions": {
+                "クラウンレングスニング ガミースマイル": null,
                 "歯冠長延長術 東京": null,
-                "crown lengthening": null,
-                "クラウンレングスニング ガミースマイル": null
+                "カプリ レーザー デメリット": null
               }
             },
             {
@@ -1020,9 +1020,9 @@
               "position": 7.9,
               "sessions": 0,
               "kw_positions": {
+                "クラウンレングスニング ガミースマイル": null,
                 "歯冠長延長術 東京": null,
-                "crown lengthening": null,
-                "クラウンレングスニング ガミースマイル": null
+                "カプリ レーザー デメリット": null
               }
             }
           ]
@@ -1274,7 +1274,7 @@
           ]
         }
       ],
-      "last_fetched_at": "2026-07-27T22:54:07.701712"
+      "last_fetched_at": "2026-07-29T17:06:34.892043"
     },
     "ラビット探偵社": {
       "articles": [
@@ -1445,9 +1445,9 @@
           "title": "中央区の浮気調査・不倫調査匿名・即日相談OK！ラビット探偵社",
           "published_at": "2026-07-03",
           "top_keywords": [
+            "ラビット探偵社 問い合わせ",
             "中央区 不倫調査",
-            "中央区 不倫調査 料金 見積り",
-            "中央区 不倫調査 相談"
+            "中央区 不倫調査 料金 見積り"
           ],
           "weekly_data": [
             {
@@ -1459,9 +1459,9 @@
               "position": 0.0,
               "sessions": 6,
               "kw_positions": {
+                "ラビット探偵社 問い合わせ": null,
                 "中央区 不倫調査": null,
-                "中央区 不倫調査 料金 見積り": null,
-                "中央区 不倫調査 相談": null
+                "中央区 不倫調査 料金 見積り": null
               }
             },
             {
@@ -1473,9 +1473,9 @@
               "position": 0.0,
               "sessions": 0,
               "kw_positions": {
+                "ラビット探偵社 問い合わせ": null,
                 "中央区 不倫調査": null,
-                "中央区 不倫調査 料金 見積り": null,
-                "中央区 不倫調査 相談": null
+                "中央区 不倫調査 料金 見積り": null
               }
             },
             {
@@ -1487,9 +1487,9 @@
               "position": 27.8,
               "sessions": 2,
               "kw_positions": {
+                "ラビット探偵社 問い合わせ": null,
                 "中央区 不倫調査": 17.3,
-                "中央区 不倫調査 料金 見積り": 40.3,
-                "中央区 不倫調査 相談": 18.5
+                "中央区 不倫調査 料金 見積り": 40.3
               }
             }
           ]
@@ -1549,7 +1549,7 @@
           ]
         }
       ],
-      "last_fetched_at": "2026-07-27T22:54:12.721812"
+      "last_fetched_at": "2026-07-29T17:06:51.096083"
     },
     "レンタルPCネット": {
       "articles": [
@@ -1690,7 +1690,7 @@
           ]
         }
       ],
-      "last_fetched_at": "2026-07-27T22:54:15.792933"
+      "last_fetched_at": "2026-07-29T17:06:52.914312"
     }
   }
 }
