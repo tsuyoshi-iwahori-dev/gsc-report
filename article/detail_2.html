@@ -67,11 +67,11 @@ canvas{max-height:320px;}
 
   <!-- サマリー -->
   <div class="summary-grid">
-  <div class="summary-card"><div class="summary-val">2</div><div class="summary-lbl">累積クリック数</div></div>
-  <div class="summary-card"><div class="summary-val">84</div><div class="summary-lbl">累積表示回数</div></div>
+  <div class="summary-card"><div class="summary-val">3</div><div class="summary-lbl">累積クリック数</div></div>
+  <div class="summary-card"><div class="summary-val">111</div><div class="summary-lbl">累積表示回数</div></div>
   <div class="summary-card"><div class="summary-val">7.8</div><div class="summary-lbl">直近平均順位</div></div>
-  <div class="summary-card"><div class="summary-val">1</div><div class="summary-lbl">直近週セッション</div></div>
-  <div class="summary-card"><div class="summary-val">5</div><div class="summary-lbl">計測週数</div></div>
+  <div class="summary-card"><div class="summary-val">4</div><div class="summary-lbl">直近週セッション</div></div>
+  <div class="summary-card"><div class="summary-val">10</div><div class="summary-lbl">計測週数</div></div>
 </div>
 
   <!-- グラフタブ -->
@@ -97,7 +97,7 @@ canvas{max-height:320px;}
 </div>
 
 <script>
-const WEEKLY   = [{"week": "2026-06-18", "week_number": 1, "clicks": 0, "impressions": 0, "ctr": 0.0, "position": 0.0, "sessions": 2, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-06-25", "week_number": 2, "clicks": 1, "impressions": 31, "ctr": 3.23, "position": 7.3, "sessions": 6, "kw_positions": {"歯のクリーニング 何ヶ月に一回": 8}}, {"week": "2026-07-02", "week_number": 3, "clicks": 0, "impressions": 16, "ctr": 0, "position": 7.2, "sessions": 1, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-07-09", "week_number": 4, "clicks": 0, "impressions": 19, "ctr": 0, "position": 9.6, "sessions": 0, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-07-16", "week_number": 5, "clicks": 1, "impressions": 18, "ctr": 5.56, "position": 7.8, "sessions": 1, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}];
+const WEEKLY   = [{"week": "2026-06-18", "week_number": 1, "clicks": 0, "impressions": 0, "ctr": 0.0, "position": 0.0, "sessions": 2, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-06-25", "week_number": 2, "clicks": 1, "impressions": 31, "ctr": 3.23, "position": 7.3, "sessions": 6, "kw_positions": {"歯のクリーニング 何ヶ月に一回": 8}}, {"week": "2026-07-02", "week_number": 3, "clicks": 0, "impressions": 16, "ctr": 0, "position": 7.2, "sessions": 1, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-07-09", "week_number": 4, "clicks": 0, "impressions": 19, "ctr": 0, "position": 9.6, "sessions": 0, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-07-16", "week_number": 5, "clicks": 1, "impressions": 18, "ctr": 5.56, "position": 7.8, "sessions": 1, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-07-23", "week_number": 6, "clicks": 1, "impressions": 6, "ctr": 16.67, "position": 4.8, "sessions": 3, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-07-30", "week_number": 7, "clicks": 0, "impressions": 3, "ctr": 0, "position": 7.7, "sessions": 1, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-08-06", "week_number": 8, "clicks": 0, "impressions": 8, "ctr": 0, "position": 11.8, "sessions": 0, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-08-13", "week_number": 9, "clicks": 0, "impressions": 4, "ctr": 0, "position": 6.8, "sessions": 1, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}, {"week": "2026-08-20", "week_number": 10, "clicks": 0, "impressions": 6, "ctr": 0, "position": 7.8, "sessions": 4, "kw_positions": {"歯のクリーニング 何ヶ月に一回": null}}];
 const KEYWORDS = ["歯のクリーニング 何ヶ月に一回"];
 
 // X軸ラベル: 「1週目（06/18）」形式
